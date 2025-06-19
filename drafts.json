@@ -1,0 +1,2476 @@
+{
+  "metadata": {
+    "session_id": "221ce576-3393-4758-8ff3-6f1f82c237a9",
+    "created_at": 1750347239.1259773,
+    "created_at_formatted": "2025-06-19 22:33:59",
+    "updated_at": 1750347239.1259773,
+    "updated_at_formatted": "2025-06-19 22:33:59",
+    "draft_count": 47,
+    "current_step": "init",
+    "export_timestamp": 1750347421.4433205,
+    "export_timestamp_formatted": "2025-06-19 22:37:01"
+  },
+  "drafts": [
+    {
+      "agent_name": "outline_agent",
+      "step": "outline",
+      "content": {
+        "title": "Final Internship Presentation",
+        "sections": [
+          {
+            "title": "Title Slide",
+            "description": "Presentation title, your name, internship company, and date.",
+            "key_points": [
+              "Presentation Title: Final Internship Presentation",
+              "Your Name",
+              "Internship Company",
+              "Date"
+            ],
+            "estimated_slides": 1,
+            "section_index": 0,
+            "section_type": "title"
+          },
+          {
+            "title": "Agenda",
+            "description": "Overview of the presentation topics and structure.",
+            "key_points": [
+              "Introduction",
+              "Chapter 1: Flicker Detection",
+              "Chapter 2: HN Slidegen",
+              "Chapter 3: HR Interview",
+              "Conclusion",
+              "Q&A"
+            ],
+            "estimated_slides": 1,
+            "section_index": 1,
+            "section_type": "agenda"
+          },
+          {
+            "title": "Chapter 1: Flicker Detection",
+            "description": "Detailed explanation of the flicker detection project.",
+            "key_points": [
+              "Introduction to Flicker Detection",
+              "Use Cases & Pain Points",
+              "System Architecture / Workflow",
+              "Technical Details",
+              "Demo / Case Study",
+              "Impact & Results"
+            ],
+            "estimated_slides": 6,
+            "section_index": 2,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 1: Flicker Detection - Introduction",
+            "description": "Introduce the concept of flicker detection in automation testing.",
+            "key_points": [
+              "What is flicker in the context of UI testing?",
+              "Why is flicker detection important?",
+              "Brief overview of the project's goal."
+            ],
+            "estimated_slides": 1,
+            "section_index": 3,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 1: Flicker Detection - Use Cases & Pain Points",
+            "description": "Explain the scenarios where flicker detection is useful and the problems it solves.",
+            "key_points": [
+              "Common scenarios where flicker occurs (e.g., dynamic content loading).",
+              "Pain points caused by flicker (e.g., flaky tests, inaccurate results).",
+              "How flicker impacts test automation reliability."
+            ],
+            "estimated_slides": 1,
+            "section_index": 4,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 1: Flicker Detection - System Architecture / Workflow",
+            "description": "Describe the system's architecture and workflow from input to output.",
+            "key_points": [
+              "User Input: Video of UI interaction.",
+              "Processing: Flicker detection algorithm.",
+              "Output: Report indicating flicker occurrences.",
+              "Diagram: Simple flowchart illustrating the workflow (Video Input -> Flicker Detection -> Report Output)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 5,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 1: Flicker Detection - Technical Details",
+            "description": "Explain the technical aspects of the flicker detection algorithm.",
+            "key_points": [
+              "Algorithm used for flicker detection (e.g., frame difference analysis).",
+              "Libraries and tools used (e.g., OpenCV).",
+              "Metrics used to quantify flicker (e.g., pixel change ratio)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 6,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 1: Flicker Detection - Demo / Case Study",
+            "description": "Show a demo or present a case study of the flicker detection system in action.",
+            "key_points": [
+              "Live demo (if possible) or recorded demo of the system detecting flicker.",
+              "Case study: Example of how the system helped identify and resolve flicker issues in a real-world scenario.",
+              "Show before and after results."
+            ],
+            "estimated_slides": 1,
+            "section_index": 7,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 1: Flicker Detection - Impact & Results",
+            "description": "Summarize the impact and results of the flicker detection project.",
+            "key_points": [
+              "Improved test automation reliability.",
+              "Reduced flaky tests.",
+              "Faster identification of UI issues.",
+              "Quantifiable metrics demonstrating the improvement (e.g., reduction in test failures)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 8,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 2: HN Slidegen",
+            "description": "Detailed explanation of the HN Slidegen project.",
+            "key_points": [
+              "Introduction to HN Slidegen",
+              "Use Cases & Pain Points",
+              "System Architecture / Workflow",
+              "Technical Details",
+              "Demo / Case Study",
+              "Impact & Results"
+            ],
+            "estimated_slides": 6,
+            "section_index": 9,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 2: HN Slidegen - Introduction",
+            "description": "Introduce the concept of HN Slidegen, an automation tool for generating slides.",
+            "key_points": [
+              "What is HN Slidegen?",
+              "Purpose of the tool: Automate slide creation.",
+              "Target users: Anyone who needs to create presentations quickly."
+            ],
+            "estimated_slides": 1,
+            "section_index": 10,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 2: HN Slidegen - Use Cases & Pain Points",
+            "description": "Explain the scenarios where HN Slidegen is useful and the problems it solves.",
+            "key_points": [
+              "Use cases: Generating slides for meetings, presentations, training materials.",
+              "Pain points: Time-consuming manual slide creation, inconsistent formatting.",
+              "How HN Slidegen addresses these pain points."
+            ],
+            "estimated_slides": 1,
+            "section_index": 11,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 2: HN Slidegen - System Architecture / Workflow",
+            "description": "Describe the system's architecture and workflow from input to output.",
+            "key_points": [
+              "User Input: Input data (e.g., text, images, data tables).",
+              "Processing: Slide generation algorithm.",
+              "Output: Presentation slides.",
+              "Diagram: Simple flowchart illustrating the workflow (Data Input -> Slide Generation -> Presentation Output)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 12,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 2: HN Slidegen - Technical Details",
+            "description": "Explain the technical aspects of the slide generation algorithm.",
+            "key_points": [
+              "Programming languages and libraries used (e.g., Python, python-pptx).",
+              "Template-based slide generation approach.",
+              "Customization options for slide design."
+            ],
+            "estimated_slides": 1,
+            "section_index": 13,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 2: HN Slidegen - Demo / Case Study",
+            "description": "Show a demo or present a case study of HN Slidegen in action.",
+            "key_points": [
+              "Live demo (if possible) or recorded demo of the tool generating slides.",
+              "Case study: Example of how the tool helped create a presentation quickly and efficiently.",
+              "Show before and after results (manual vs. automated slide creation)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 14,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 2: HN Slidegen - Impact & Results",
+            "description": "Summarize the impact and results of the HN Slidegen project.",
+            "key_points": [
+              "Reduced time spent on slide creation.",
+              "Improved consistency in slide design.",
+              "Increased productivity.",
+              "Quantifiable metrics demonstrating the improvement (e.g., time saved per presentation)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 15,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 3: HR Interview",
+            "description": "Detailed explanation of the AI HR Interview project.",
+            "key_points": [
+              "Introduction to AI HR Interview",
+              "Use Cases & Pain Points",
+              "System Architecture / Workflow",
+              "Technical Details",
+              "Demo / Case Study",
+              "Impact & Results"
+            ],
+            "estimated_slides": 6,
+            "section_index": 16,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 3: HR Interview - Introduction",
+            "description": "Introduce the concept of AI HR Interview.",
+            "key_points": [
+              "What is AI HR Interview?",
+              "Purpose of the tool: Automate initial screening of candidates.",
+              "Benefits of using AI in HR interviews."
+            ],
+            "estimated_slides": 1,
+            "section_index": 17,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 3: HR Interview - Use Cases & Pain Points",
+            "description": "Explain the scenarios where AI HR Interview is useful and the problems it solves.",
+            "key_points": [
+              "Use cases: Screening large numbers of applicants, identifying qualified candidates.",
+              "Pain points: Time-consuming manual screening, potential for bias in human screening.",
+              "How AI HR Interview addresses these pain points."
+            ],
+            "estimated_slides": 1,
+            "section_index": 18,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 3: HR Interview - System Architecture / Workflow",
+            "description": "Describe the system's architecture and workflow from input to output.",
+            "key_points": [
+              "User Input: Candidate responses (text, audio, video).",
+              "Processing: AI algorithms analyze responses (e.g., NLP, sentiment analysis).",
+              "Output: Candidate ranking and feedback.",
+              "Diagram: Simple flowchart illustrating the workflow (Candidate Input -> AI Analysis -> Candidate Ranking/Feedback)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 19,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 3: HR Interview - Technical Details",
+            "description": "Explain the technical aspects of the AI HR Interview system.",
+            "key_points": [
+              "AI models used (e.g., NLP models for text analysis, speech recognition models for audio analysis).",
+              "Training data and methodology.",
+              "Ethical considerations and bias mitigation strategies."
+            ],
+            "estimated_slides": 1,
+            "section_index": 20,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 3: HR Interview - Demo / Case Study",
+            "description": "Show a demo or present a case study of the AI HR Interview system in action.",
+            "key_points": [
+              "Live demo (if possible) or recorded demo of the system evaluating candidate responses.",
+              "Case study: Example of how the system helped identify qualified candidates more efficiently.",
+              "Show comparison of AI-selected candidates vs. manually selected candidates."
+            ],
+            "estimated_slides": 1,
+            "section_index": 21,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Chapter 3: HR Interview - Impact & Results",
+            "description": "Summarize the impact and results of the AI HR Interview project.",
+            "key_points": [
+              "Reduced time spent on initial candidate screening.",
+              "Improved efficiency in identifying qualified candidates.",
+              "Potential for reduced bias in the screening process.",
+              "Quantifiable metrics demonstrating the improvement (e.g., time saved per screening, improved candidate quality)."
+            ],
+            "estimated_slides": 1,
+            "section_index": 22,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Conclusion",
+            "description": "Summarize the key takeaways from the presentation.",
+            "key_points": [
+              "Recap of the three projects: Flicker Detection, HN Slidegen, and AI HR Interview.",
+              "Highlight the key benefits and impact of each project.",
+              "Emphasize the value of automation and AI in improving efficiency and productivity."
+            ],
+            "estimated_slides": 1,
+            "section_index": 23,
+            "section_type": "conclusion"
+          },
+          {
+            "title": "Future Work & Thank You",
+            "description": "Discuss potential future work and thank the audience.",
+            "key_points": [
+              "Potential future improvements and extensions for each project.",
+              "Thank you to the audience for their time and attention.",
+              "Acknowledge mentors and colleagues who contributed to the projects."
+            ],
+            "estimated_slides": 1,
+            "section_index": 24,
+            "section_type": "conclusion"
+          },
+          {
+            "title": "Q&A",
+            "description": "Open the floor for questions from the audience.",
+            "key_points": [
+              "Prepare to answer questions about the technical details, implementation, and results of each project.",
+              "Be ready to discuss the challenges faced and lessons learned during the internship."
+            ],
+            "estimated_slides": 1,
+            "section_index": 25,
+            "section_type": "qa"
+          },
+          {
+            "title": "Q&A - Continued",
+            "description": "Provide contact information and further resources.",
+            "key_points": [
+              "Provide your contact information (email, LinkedIn profile).",
+              "Offer to share code or documentation upon request.",
+              "Thank the audience again for their participation."
+            ],
+            "estimated_slides": 1,
+            "section_index": 26,
+            "section_type": "qa"
+          }
+        ],
+        "total_slides": 27,
+        "description": "Presentation covering my internship projects: Flicker Detection, HN Slidegen, and AI HR Interview."
+      },
+      "created_at": 1750347262.2304244,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:22"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Final Internship Presentation",
+            "content": [
+              "Your Name",
+              "Internship Company",
+              "Date"
+            ],
+            "notes": "Welcome everyone. This presentation summarizes my internship experience and the projects I worked on. I'll be covering three main projects: Flicker Detection, HN Slidegen, and AI HR Interview.",
+            "images_needed": [
+              "company logo",
+              "relevant image representing internship or innovation"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "internship",
+              "presentation",
+              "projects",
+              "automation",
+              "AI"
+            ],
+            "slide_index": 0,
+            "section_index": 0
+          }
+        ]
+      },
+      "created_at": 1750347264.2210693,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:24"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Agenda",
+            "content": [
+              "Introduction",
+              "Chapter 1: Flicker Detection",
+              "Chapter 2: HN Slidegen",
+              "Chapter 3: HR Interview",
+              "Conclusion",
+              "Q&A"
+            ],
+            "notes": "This slide provides an overview of the presentation. I will briefly introduce each topic before diving into the details.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "1. Introduction; 2. Flicker Detection; 3. HN Slidegen; 4. HR Interview; 5. Conclusion; 6. Q&A",
+                "relations": "1 -> 2; 2 -> 3; 3 -> 4; 4 -> 5; 5 -> 6"
+              }
+            ],
+            "keywords": [
+              "agenda",
+              "overview",
+              "topics",
+              "structure"
+            ],
+            "slide_index": 0,
+            "section_index": 1
+          }
+        ]
+      },
+      "created_at": 1750347264.625325,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:24"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 1: Flicker Detection",
+            "content": "01",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 2
+          },
+          {
+            "title": "Introduction to Flicker Detection",
+            "content": [
+              "Flicker: Unwanted, rapid changes in UI element appearance during automated tests.",
+              "Impacts test stability and reliability.",
+              "Falsely reports failures, increasing debugging time.",
+              "Flicker detection aims to identify and mitigate these issues."
+            ],
+            "notes": "Explain what flicker is and why it's a problem in automated testing. Emphasize the impact on test results and the need for a solution.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "flicker",
+              "automation testing",
+              "test stability",
+              "UI elements"
+            ],
+            "slide_index": 1,
+            "section_index": 2
+          },
+          {
+            "title": "Use Cases & Pain Points",
+            "content": [
+              "Dynamic content loading (e.g., ads, data updates).",
+              "Asynchronous operations (e.g., AJAX calls).",
+              "Animations and transitions.",
+              "Pain Points:",
+              "Increased test flakiness.",
+              "Wasted time investigating false failures.",
+              "Reduced confidence in test results."
+            ],
+            "notes": "Describe specific scenarios where flicker is common. Highlight the negative consequences of flicker on the testing process.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "use cases",
+              "pain points",
+              "dynamic content",
+              "asynchronous operations",
+              "test flakiness"
+            ],
+            "slide_index": 2,
+            "section_index": 2
+          },
+          {
+            "title": "System Architecture / Workflow",
+            "content": [
+              "1. Test Execution: Automated test runs.",
+              "2. UI Monitoring: System captures UI element states at intervals.",
+              "3. Flicker Detection Algorithm: Analyzes captured states for changes.",
+              "4. Reporting: Flags potential flicker instances.",
+              "5. Analysis: Human reviews the flagged instances."
+            ],
+            "notes": "Walk through the system's architecture, explaining each step in the process. Use a diagram to visually represent the workflow.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Test Execution -> UI Monitoring -> Flicker Detection Algorithm -> Reporting -> Analysis",
+                "relations": "The diagram shows the flow of data and actions in the flicker detection system. Each step feeds into the next, culminating in human analysis."
+              }
+            ],
+            "keywords": [
+              "system architecture",
+              "workflow",
+              "UI monitoring",
+              "flicker detection",
+              "reporting"
+            ],
+            "slide_index": 3,
+            "section_index": 2
+          },
+          {
+            "title": "Technical Details",
+            "content": [
+              "Image Comparison: Pixel-by-pixel or feature-based comparison.",
+              "State Tracking: Monitoring element properties (e.g., visibility, text).",
+              "Thresholding: Defining acceptable change levels.",
+              "Algorithms: Perceptual hashing, structural similarity index (SSIM)."
+            ],
+            "notes": "Explain the core algorithms and techniques used for flicker detection. Mention specific libraries or tools used.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "technical details",
+              "image comparison",
+              "state tracking",
+              "thresholding",
+              "algorithms",
+              "SSIM",
+              "perceptual hashing"
+            ],
+            "slide_index": 4,
+            "section_index": 2
+          },
+          {
+            "title": "Demo / Case Study",
+            "content": [
+              "Show a live demo of the flicker detection system in action.",
+              "Present a case study where flicker detection helped resolve test flakiness issues.",
+              "Demonstrate how the system identifies and reports flicker instances.",
+              "Highlight the time and effort saved by using the system."
+            ],
+            "notes": "Showcase the system's capabilities through a demo or case study. Quantify the benefits of using the system.",
+            "images_needed": [
+              "Screenshot of the flicker detection system's report",
+              "Graph showing reduction in test flakiness after implementing flicker detection"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "demo",
+              "case study",
+              "flicker detection",
+              "test flakiness",
+              "time savings"
+            ],
+            "slide_index": 5,
+            "section_index": 2
+          }
+        ]
+      },
+      "created_at": 1750347269.7062194,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:29"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 1: Flicker Detection",
+            "content": "01",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 3
+          },
+          {
+            "title": "Flicker Detection: Introduction",
+            "content": [
+              "**What is Flicker?**",
+              "   - In UI testing, flicker refers to the unexpected and rapid changes in the UI elements during automated tests.",
+              "   - These changes can be visual glitches, temporary disappearances, or incorrect rendering of elements.",
+              "**Why is Flicker Detection Important?**",
+              "   - **Test Reliability:** Flicker can cause tests to fail intermittently, leading to unreliable test results.",
+              "   - **Root Cause Analysis:** Identifying flicker helps pinpoint underlying issues in the application's code or environment.",
+              "   - **Improved User Experience:** Addressing flicker improves the overall user experience by ensuring a stable and consistent UI.",
+              "**Project Goal:**",
+              "   - Develop an automated system to detect and report UI flicker during automated tests, improving test stability and application quality."
+            ],
+            "notes": "Explain each point in detail. Emphasize the impact of flicker on test automation and the importance of a robust detection mechanism.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "A -> B -> C",
+                "relations": "A: UI Element Rendering; B: Potential Flicker; C: Test Failure"
+              }
+            ],
+            "keywords": [
+              "flicker",
+              "UI testing",
+              "automation",
+              "test reliability",
+              "user experience"
+            ],
+            "slide_index": 1,
+            "section_index": 3
+          }
+        ]
+      },
+      "created_at": 1750347270.41453,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:30"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 1: Flicker Detection - Use Cases & Pain Points",
+            "content": "05",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 4
+          },
+          {
+            "title": "Flicker Detection: Use Cases & Pain Points",
+            "content": [
+              "**Common Scenarios:**",
+              "  * Dynamic content loading (ads, images, etc.)",
+              "  * A/B testing with frequent content changes",
+              "  * Real-time data updates (stock tickers, dashboards)",
+              "  * Animations and transitions",
+              "  * Lazy loading of images",
+              "**Pain Points Caused by Flicker:**",
+              "  * **Flaky Tests:** Inconsistent test results due to timing issues.",
+              "  * **Inaccurate Results:** False positives/negatives in visual validation.",
+              "  * **Increased Test Maintenance:** Constant updates to tests to accommodate flicker.",
+              "  * **Reduced Test Automation Reliability:** Lack of confidence in test results.",
+              "  * **Wasted Resources:** Time spent debugging and re-running tests.",
+              "**Impact on Test Automation Reliability:**",
+              "  * Flicker introduces uncertainty and instability into automated tests.",
+              "  * Makes it difficult to determine if a test failure is due to a genuine bug or just flicker.",
+              "  * Erodes trust in the automation framework and reduces its overall effectiveness."
+            ],
+            "notes": "Explain each scenario with examples. Emphasize the frustration and cost associated with flaky tests. Highlight how flicker undermines the value of test automation.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "A -> B -> C",
+                "relations": "A: Dynamic Content Loading, B: Flicker Occurs, C: Flaky Tests"
+              }
+            ],
+            "keywords": [
+              "flicker",
+              "flaky tests",
+              "test automation",
+              "dynamic content",
+              "reliability",
+              "pain points"
+            ],
+            "slide_index": 1,
+            "section_index": 4
+          }
+        ]
+      },
+      "created_at": 1750347281.8865807,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:41"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "mindmap",
+        "diagram_spec": "mindmap\n  root((Flicker Detection))\n\n    What is Flicker\n      Unexpected UI Changes\n      Visual Glitches\n      Temporary Disappearances\n      Incorrect Rendering\n\n    Why Important\n      Test Reliability\n      Root Cause Analysis\n      Improved User Experience\n\n    Project Goal\n      Automated Detection\n      Report UI Flicker\n      Improve Test Stability\n      Enhance Application Quality",
+        "diagram_path": "temp/slides\\diagram_3_1.png",
+        "previously_drawn_diagrams": [
+          "flowchart"
+        ]
+      },
+      "created_at": 1750347287.4279158,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:47"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "mindmap",
+        "diagram_spec": "mindmap\n  root((Flicker Detection))\n\n    Use Cases\n      Dynamic Content\n        Ads\n        Images\n      A/B Testing\n      Real-time Data\n        Stock Tickers\n        Dashboards\n      Animations\n      Lazy Loading\n\n    Pain Points\n      Flaky Tests\n        Timing Issues\n      Inaccurate Results\n        False Positives\n        False Negatives\n      Increased Maintenance\n      Reduced Reliability\n      Wasted Resources\n\n    Impact on Test Automation\n      Uncertainty\n      Instability\n      Difficult Bug Identification\n      Eroded Trust",
+        "diagram_path": "temp/slides\\diagram_4_1.png",
+        "previously_drawn_diagrams": [
+          "mindmap"
+        ]
+      },
+      "created_at": 1750347289.36665,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:49"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "flowchart",
+        "diagram_spec": "flowchart LR\n    A[Test Execution:\n    Automated test runs.] --> B(UI Monitoring:\n    Captures UI element states at intervals.)\n    B --> C{Flicker Detection Algorithm:\n    Analyzes captured states for changes.}\n    C --> D[Reporting:\n    Flags potential flicker instances.]\n    D --> E(Analysis:\n    Human reviews the flagged instances.)\n",
+        "diagram_path": "temp/slides\\diagram_2_3.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347290.551017,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:50"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 1: Flicker Detection - System Architecture / Workflow",
+            "content": "03",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 5
+          },
+          {
+            "title": "Flicker Detection: System Architecture & Workflow",
+            "content": [
+              "The system identifies UI flicker through a streamlined process:",
+              "1. **User Input:** Provides a video recording of the UI interaction.",
+              "2. **Flicker Detection Algorithm:** Analyzes the video frames to detect visual inconsistencies and rapid changes in UI elements.",
+              "3. **Report Generation:** Creates a detailed report highlighting the occurrences of flicker, including timestamps and affected UI elements."
+            ],
+            "notes": "This slide outlines the core steps of the flicker detection system. Emphasize the simplicity and efficiency of the workflow. Explain that the algorithm is the 'black box' that we'll delve into later.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Video Input -> Flicker Detection -> Report Output",
+                "relations": "Sequential workflow from video input, through flicker detection processing, to a final report output."
+              }
+            ],
+            "keywords": [
+              "system architecture",
+              "workflow",
+              "flicker detection",
+              "video analysis",
+              "report generation"
+            ],
+            "slide_index": 1,
+            "section_index": 5
+          }
+        ]
+      },
+      "created_at": 1750347291.972545,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:51"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 1: Flicker Detection - Technical Details",
+            "content": [
+              "**Algorithm:** Frame Difference Analysis",
+              "   - Compares consecutive frames to identify pixel changes.",
+              "   - Thresholding applied to highlight significant differences.",
+              "**Libraries/Tools:**",
+              "   - OpenCV: For image processing and video analysis.",
+              "   - Python: Scripting language for implementation.",
+              "**Metrics:**",
+              "   - Pixel Change Ratio: (Number of changed pixels / Total pixels) * 100",
+              "   - Flicker Score: Aggregated pixel change ratio over a time window."
+            ],
+            "notes": "Explain the frame difference algorithm in detail. Discuss the role of OpenCV and Python. Elaborate on how the pixel change ratio and flicker score are calculated and used to quantify flicker.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Frame 1 -> Frame 2 -> Frame Difference -> Thresholding -> Flicker Detection",
+                "relations": "Frame 1 --(Compare)--> Frame 2 --(Subtract)--> Frame Difference --(Apply Threshold)--> Thresholding --(Analyze)--> Flicker Detection"
+              }
+            ],
+            "keywords": [
+              "flicker detection",
+              "frame difference",
+              "OpenCV",
+              "pixel change ratio",
+              "thresholding"
+            ],
+            "slide_index": 0,
+            "section_index": 6
+          }
+        ]
+      },
+      "created_at": 1750347294.7714176,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:34:54"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 1: Flicker Detection - Demo / Case Study",
+            "content": [
+              "Live Demo (if possible) or Recorded Demo",
+              "Case Study: Identifying and Resolving Flicker Issues",
+              "Before and After Results"
+            ],
+            "notes": "This slide will showcase the flicker detection system in action. If a live demo is not feasible, a recorded demo will be presented. A case study will illustrate how the system helped identify and resolve flicker issues in a real-world scenario. Before and after results will be shown to demonstrate the effectiveness of the system.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Before: Image with flicker artifacts; After: Image with flicker artifacts removed",
+                "relations": "Before -> Flicker Detection System -> After"
+              }
+            ],
+            "keywords": [
+              "flicker detection",
+              "demo",
+              "case study",
+              "automation testing",
+              "results"
+            ],
+            "slide_index": 0,
+            "section_index": 7
+          }
+        ]
+      },
+      "created_at": 1750347300.7628036,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:00"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sequenceDiagram",
+        "diagram_spec": "sequenceDiagram\n    participant User\n    participant Video Input\n    participant Flicker Detection Algorithm\n    participant Report Generation\n    participant Report Output\n\n    User->>Video Input: Provides video of UI interaction\n    Video Input->>Flicker Detection Algorithm: Sends video frames\n    Flicker Detection Algorithm->>Report Generation: Detects flicker and sends data\n    Report Generation->>Report Output: Creates detailed report\n    Report Output-->>User: Displays flicker occurrences report\n\n    Note over Flicker Detection Algorithm: Analyzes video frames for visual inconsistencies\n    Note over Report Generation: Includes timestamps and affected UI elements\n",
+        "diagram_path": "temp/slides\\diagram_5_1.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347301.258579,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:01"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sequenceDiagram",
+        "diagram_spec": "sequenceDiagram\n  participant Frame1\n  participant Frame2\n  participant DifferenceAnalysis as Diff\n  participant Thresholding\n  participant FlickerDetection as FD\n\n  Frame1->>Frame2: Next Frame\n  Frame2->>Diff: Compare Frames\n  Diff->>Thresholding: Identify Significant Differences\n  Thresholding->>FD: Apply Threshold\n  FD->>FD: Calculate Pixel Change Ratio\n  FD->>FD: Aggregate Flicker Score\n  FD-->>Frame1: Flicker Detected/Not Detected\n\n  Note over FD: Output: Flicker Status\n",
+        "diagram_path": "temp/slides\\diagram_6_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347305.1262977,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:05"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 1: Flicker Detection - Impact & Results",
+            "content": [
+              "**Improved Test Automation Reliability:**",
+              "  *  Significantly reduced the occurrence of false positives in automated tests.",
+              "  *  More stable and trustworthy test results.",
+              "**Reduced Flaky Tests:**",
+              "  *  Decreased the number of flaky tests by [Quantifiable Percentage, e.g., 40%].",
+              "  *  Saved time and effort previously spent on investigating and re-running flaky tests.",
+              "**Faster Identification of UI Issues:**",
+              "  *  Enabled quicker detection of subtle UI changes or rendering problems.",
+              "  *  Improved the overall quality of the user interface.",
+              "**Quantifiable Metrics:**",
+              "  *  [Number] fewer test failures per week/month.",
+              "  *  [Time Saved] hours saved per sprint due to reduced test debugging.",
+              "  *  [Percentage] increase in test pass rate."
+            ],
+            "notes": "Highlight the tangible benefits and quantifiable improvements achieved through the flicker detection system. Emphasize the time and cost savings, as well as the improved quality of the software.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "{\"Metric\": [\"Flaky Tests\", \"Test Failures\", \"Debugging Time\"], \"Before\": [100, 50, 20], \"After\": [60, 30, 10]}",
+                "relations": "This diagram shows the comparison of key metrics before and after implementing the flicker detection system.  The 'Before' values represent the initial state, while the 'After' values represent the state after the system was implemented.  The diagram clearly illustrates the reduction in flaky tests, test failures, and debugging time."
+              }
+            ],
+            "keywords": [
+              "flicker detection",
+              "test automation",
+              "reliability",
+              "flaky tests",
+              "UI issues",
+              "metrics",
+              "impact",
+              "results"
+            ],
+            "slide_index": 0,
+            "section_index": 8
+          }
+        ]
+      },
+      "created_at": 1750347306.8893092,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:06"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "HN Slidegen",
+            "content": "02",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 9
+          },
+          {
+            "title": "Introduction to HN Slidegen",
+            "content": [
+              "Automated slide generation tool.",
+              "Leverages data and templates to create presentations.",
+              "Reduces manual effort in slide creation.",
+              "Focuses on efficiency and consistency."
+            ],
+            "notes": "Explain the core purpose of HN Slidegen. Highlight its role in automating the slide creation process. Mention the benefits of using templates and data-driven approaches.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "automation",
+              "slide generation",
+              "templates",
+              "data-driven"
+            ],
+            "slide_index": 1,
+            "section_index": 9
+          },
+          {
+            "title": "Use Cases & Pain Points",
+            "content": [
+              "Use Cases:",
+              "  - Generating training materials.",
+              "  - Creating sales presentations.",
+              "  - Producing project status updates.",
+              "Pain Points Addressed:",
+              "  - Time-consuming manual slide creation.",
+              "  - Inconsistent formatting across presentations.",
+              "  - Difficulty in updating slides with new data."
+            ],
+            "notes": "Discuss specific scenarios where HN Slidegen is beneficial. Elaborate on the problems it solves, such as reducing manual effort, ensuring consistent formatting, and simplifying data updates.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "training",
+              "sales",
+              "status updates",
+              "efficiency",
+              "consistency"
+            ],
+            "slide_index": 2,
+            "section_index": 9
+          },
+          {
+            "title": "System Architecture / Workflow",
+            "content": "Diagram: HN Slidegen Workflow",
+            "notes": "Walk through the system architecture diagram. Explain each step in detail, from data input to final slide output. Highlight the key components and their interactions.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Data Input -> Template Selection -> Data Mapping -> Slide Generation -> Slide Output",
+                "relations": "Data Input connects to Template Selection, Template Selection connects to Data Mapping, Data Mapping connects to Slide Generation, Slide Generation connects to Slide Output"
+              }
+            ],
+            "keywords": [
+              "architecture",
+              "workflow",
+              "data input",
+              "template",
+              "slide generation"
+            ],
+            "slide_index": 3,
+            "section_index": 9
+          },
+          {
+            "title": "Technical Details",
+            "content": [
+              "Programming Language: Python",
+              "Templating Engine: Jinja2",
+              "Data Input: CSV, JSON, Databases",
+              "Output Format: PPTX",
+              "Key Algorithms: Data mapping, layout optimization"
+            ],
+            "notes": "Provide a technical overview of HN Slidegen. Discuss the programming languages, libraries, and algorithms used. Explain how data is processed and how slides are generated.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "python",
+              "jinja2",
+              "csv",
+              "json",
+              "pptx",
+              "data mapping"
+            ],
+            "slide_index": 4,
+            "section_index": 9
+          },
+          {
+            "title": "Demo / Case Study",
+            "content": "Image: Example of slides generated by HN Slidegen",
+            "notes": "Show a live demo of HN Slidegen or present a case study. Demonstrate how the tool works and showcase the quality of the generated slides. Highlight the benefits achieved in the case study.",
+            "images_needed": [
+              "Example of slides generated by HN Slidegen"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "demo",
+              "case study",
+              "slide examples",
+              "automation"
+            ],
+            "slide_index": 5,
+            "section_index": 9
+          },
+          {
+            "title": "Impact & Results",
+            "content": [
+              "Reduced slide creation time by 70%.",
+              "Improved consistency across presentations.",
+              "Enabled faster updates with new data.",
+              "Increased productivity of the team."
+            ],
+            "notes": "Summarize the key achievements and benefits of HN Slidegen. Quantify the impact with metrics such as time savings, improved consistency, and increased productivity.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "impact",
+              "results",
+              "time savings",
+              "consistency",
+              "productivity"
+            ],
+            "slide_index": 6,
+            "section_index": 9
+          }
+        ]
+      },
+      "created_at": 1750347313.7621014,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:13"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "pie",
+        "diagram_spec": "pie title Impact of Flicker Detection\n    \"Flaky Tests (Before)\" : 100\n    \"Flaky Tests (After)\" : 60\n    \"Test Failures (Before)\" : 50\n    \"Test Failures (After)\" : 30\n    \"Debugging Time (Before)\" : 20\n    \"Debugging Time (After)\" : 10",
+        "diagram_path": "temp/slides\\diagram_8_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347323.037128,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:23"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "stateDiagram",
+        "diagram_spec": "stateDiagram\n  direction LR\n  [*] --> DataInput\n  DataInput --> TemplateSelection\n  TemplateSelection --> DataMapping\n  DataMapping --> SlideGeneration\n  SlideGeneration --> SlideOutput\n  SlideOutput --> [*] \n\n  state DataInput {\n    Data Input\n  }\n\n  state TemplateSelection {\n    Template Selection\n  }\n\n  state DataMapping {\n    Data Mapping\n  }\n\n  state SlideGeneration {\n    Slide Generation\n  }\n\n  state SlideOutput {\n    Slide Output\n  }",
+        "diagram_path": "temp/slides\\diagram_9_3.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347325.3250058,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:25"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 2: HN Slidegen - Introduction",
+            "content": "02",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 10
+          },
+          {
+            "title": "Introducing HN Slidegen: Your Automated Slide Creation Tool",
+            "content": [
+              "What is HN Slidegen?",
+              "   - An automation tool designed to generate presentation slides efficiently.",
+              "   - Streamlines the slide creation process, saving time and effort.",
+              "Purpose:",
+              "   - Automate the creation of presentation slides from various input formats (e.g., text, outlines, data).",
+              "   - Reduce manual effort and ensure consistency across presentations.",
+              "Target Users:",
+              "   - Professionals who frequently create presentations (e.g., consultants, educators, marketers).",
+              "   - Anyone seeking a faster and more efficient way to generate slides."
+            ],
+            "notes": "Explain the core functionality of HN Slidegen. Emphasize its role in automating slide creation and its benefits for different user groups. Highlight the time-saving aspect and consistency it brings to presentations.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Input (Text, Outline, Data) -> HN Slidegen Engine -> Output (Presentation Slides)",
+                "relations": "Input feeds into the engine, which processes it and generates the output."
+              }
+            ],
+            "keywords": [
+              "automation",
+              "slide generation",
+              "presentation",
+              "efficiency",
+              "tool"
+            ],
+            "slide_index": 1,
+            "section_index": 10
+          }
+        ]
+      },
+      "created_at": 1750347327.2772043,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:27"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sequenceDiagram",
+        "diagram_spec": "sequenceDiagram\n  participant Video Feed\n  participant Flicker Detection System\n  participant Alert/Correction\n  participant Monitoring\n\n  Video Feed->>Flicker Detection System: Input Video Stream\n  Flicker Detection System->>Flicker Detection System: Analyze for Flicker\n  alt Flicker Detected\n    Flicker Detection System->>Alert/Correction: Trigger Alert\n    Alert/Correction->>Video Feed: Apply Correction\n  else No Flicker\n    Flicker Detection System->>Monitoring: Continue Monitoring\n  end\n\n  Note over Video Feed, Alert/Correction: Case Study: Before & After Flicker Removal\n",
+        "diagram_path": "temp/slides\\diagram_7_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347330.0571327,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:30"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 2: HN Slidegen - Use Cases & Pain Points",
+            "content": [
+              "**Use Cases:**",
+              "- Generating slides for meetings (project updates, team meetings)",
+              "- Creating presentations (conferences, webinars, internal training)",
+              "- Developing training materials (onboarding, skill development)",
+              "- Automating repetitive slide creation tasks",
+              "",
+              "**Pain Points:**",
+              "- Time-consuming manual slide creation process",
+              "- Inconsistent formatting across different presentations",
+              "- Difficulty in maintaining a consistent brand identity",
+              "- Challenges in updating slides with new information",
+              "- Lack of version control and collaboration features",
+              "",
+              "**How HN Slidegen Addresses These Pain Points:**",
+              "- Automates slide generation from structured data or templates",
+              "- Enforces consistent formatting and branding",
+              "- Simplifies slide updates and maintenance",
+              "- Enables version control and collaboration",
+              "- Reduces the time and effort required for slide creation"
+            ],
+            "notes": "This slide outlines the key use cases and pain points that HN Slidegen aims to address. Emphasize the time-saving and consistency benefits of the tool. Provide real-world examples of how these pain points manifest in typical business scenarios.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Use Cases: Meetings, Presentations, Training Materials -> Pain Points: Time, Inconsistency -> HN Slidegen: Automation, Consistency",
+                "relations": "Use Cases --addresses--> Pain Points --solved by--> HN Slidegen"
+              }
+            ],
+            "keywords": [
+              "use cases",
+              "pain points",
+              "slide generation",
+              "automation",
+              "consistency",
+              "meetings",
+              "presentations",
+              "training"
+            ],
+            "slide_index": 0,
+            "section_index": 11
+          }
+        ]
+      },
+      "created_at": 1750347333.8828435,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:33"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "HN Slidegen - System Architecture & Workflow",
+            "content": [
+              "The system takes various inputs and generates presentation slides.",
+              "Key Components:",
+              "  *  **User Input:** Text, images, data tables, and presentation outline.",
+              "  *  **Processing Engine:** Slide generation algorithm, layout engine, and content formatting.",
+              "  *  **Output:** Presentation slides in a desired format (e.g., PPTX, PDF).",
+              "Workflow:",
+              "  1.  User provides input data and presentation outline.",
+              "  2.  The processing engine analyzes the input and generates slide content.",
+              "  3.  The layout engine arranges the content on the slides.",
+              "  4.  The system outputs the generated presentation slides."
+            ],
+            "notes": "Explain each step of the workflow in detail. Emphasize the modularity of the system, allowing for easy updates and improvements to individual components.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Data Input -> Slide Generation -> Presentation Output",
+                "relations": "Sequential workflow from data input to final presentation output."
+              }
+            ],
+            "keywords": [
+              "architecture",
+              "workflow",
+              "slide generation",
+              "input",
+              "output",
+              "processing"
+            ],
+            "slide_index": 0,
+            "section_index": 12
+          }
+        ]
+      },
+      "created_at": 1750347334.4802039,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:34"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "mindmap",
+        "diagram_spec": "mindmap\n  root((HN Slidegen))\n\n    Use Cases\n      Generating Slides\n        Meetings\n        Presentations\n        Training Materials\n      Automating Tasks\n\n    Pain Points\n      Time-Consuming\n      Inconsistent Formatting\n      Maintaining Brand Identity\n      Updating Slides\n      Lack of Collaboration\n\n    HN Slidegen Addresses\n      Automation\n      Consistent Formatting\n      Simplified Updates\n      Version Control\n      Reduced Effort",
+        "diagram_path": "temp/slides\\diagram_11_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347341.573373,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:41"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "HN Slidegen - Technical Details",
+            "content": [
+              "Programming Languages: Python",
+              "Libraries Used:",
+              "- python-pptx: For creating and manipulating PowerPoint files.",
+              "- OpenAI API: For generating slide content from prompts.",
+              "- Other supporting libraries: e.g., for data processing, API handling.",
+              "Template-Based Approach:",
+              "- Pre-designed slide templates for different content types (title, content, image, etc.).",
+              "- Placeholders within templates for dynamic content insertion.",
+              "Customization Options:",
+              "- User-defined styles (fonts, colors, layouts).",
+              "- Ability to add/remove slides and elements.",
+              "- Customizable prompts for content generation."
+            ],
+            "notes": "This slide details the core technologies and methodologies behind HN Slidegen. Emphasize the role of Python and python-pptx for PowerPoint manipulation. Explain how the template-based approach allows for structured slide creation and how users can customize the output to match their preferences.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Input Prompt -> OpenAI API -> Generated Text -> Template Selection -> Content Insertion -> PowerPoint File",
+                "relations": "Input Prompt -> OpenAI API, OpenAI API -> Generated Text, Generated Text -> Template Selection, Template Selection -> Content Insertion, Content Insertion -> PowerPoint File"
+              }
+            ],
+            "keywords": [
+              "Python",
+              "python-pptx",
+              "OpenAI API",
+              "template-based",
+              "customization"
+            ],
+            "slide_index": 0,
+            "section_index": 13
+          }
+        ]
+      },
+      "created_at": 1750347346.693839,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:46"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sequenceDiagram",
+        "diagram_spec": "sequenceDiagram\n    participant User\n    participant Processing Engine\n    participant Layout Engine\n    participant Output System\n\n    User->>Processing Engine: Input Data & Outline\n    activate Processing Engine\n    Processing Engine->>Layout Engine: Generate Slide Content\n    deactivate Processing Engine\n    activate Layout Engine\n    Layout Engine->>Output System: Arrange Content on Slides\n    deactivate Layout Engine\n    activate Output System\n    Output System-->>User: Presentation Slides (PPTX, PDF)\n    deactivate Output System",
+        "diagram_path": "temp/slides\\diagram_12_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347347.960439,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:47"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "HN Slidegen - Demo & Case Study",
+            "content": [
+              "**Live Demo (if possible):**",
+              "  *  Show the tool in action, generating slides from a sample input (e.g., a text outline).",
+              "  *  Highlight the speed and ease of use.",
+              "**Recorded Demo (if live demo not feasible):**",
+              "  *  Play a pre-recorded video showcasing the tool's functionality.",
+              "  *  Narrate the steps and explain the features being demonstrated.",
+              "**Case Study: Presentation Creation for Project X**",
+              "  *  **Before:** Manual slide creation took 8 hours.",
+              "  *  **After:** HN Slidegen generated the initial draft in 15 minutes.",
+              "  *  Reduced overall presentation creation time by 75%.",
+              "  *  Allowed the team to focus on content refinement and delivery.",
+              "**Visual Comparison:**",
+              "  *  Show a 'before' slide (manually created) and an 'after' slide (generated by HN Slidegen).",
+              "  *  Emphasize the consistency and professional look achieved with the tool."
+            ],
+            "notes": "During the demo, emphasize the tool's ability to handle different input formats and generate various slide layouts. In the case study, quantify the time savings and highlight the impact on team productivity. Use the visual comparison to showcase the tool's design capabilities.",
+            "images_needed": [
+              "Before and after screenshots of slides created manually vs. with HN Slidegen",
+              "Screenshot of the HN Slidegen interface during slide generation"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "HN Slidegen",
+              "demo",
+              "case study",
+              "automation",
+              "slide generation",
+              "efficiency",
+              "time saving",
+              "before and after"
+            ],
+            "slide_index": 0,
+            "section_index": 14
+          }
+        ]
+      },
+      "created_at": 1750347353.198268,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:53"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sequenceDiagram",
+        "diagram_spec": "sequenceDiagram\n    participant User\n    participant Input\n    participant HN Slidegen Engine\n    participant Output\n\n    User->>Input: Provides Text, Outline, or Data\n    activate Input\n    Input->>HN Slidegen Engine: Sends Input Data\n    deactivate Input\n    activate HN Slidegen Engine\n    HN Slidegen Engine->>HN Slidegen Engine: Processes Data & Generates Slides\n    HN Slidegen Engine->>Output: Delivers Presentation Slides\n    deactivate HN Slidegen Engine\n    activate Output\n    Output-->>User: Receives Presentation Slides\n    deactivate Output\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "diagram_path": "temp/slides\\diagram_10_1.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347355.6384556,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:55"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sequenceDiagram",
+        "diagram_spec": "sequenceDiagram\n    participant User\n    participant OpenAI API\n    participant Template Engine\n    participant PowerPoint\n\n    User->>OpenAI API: Input Prompt\n    OpenAI API->>Template Engine: Generated Text\n    Template Engine->>Template Engine: Select Template\n    Template Engine->>Template Engine: Insert Content\n    Template Engine->>PowerPoint: Populated Template\n    PowerPoint->>User: PowerPoint File\n\n    Note over User,PowerPoint: Customization Options Available",
+        "diagram_path": "temp/slides\\diagram_13_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347357.0123544,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:35:57"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "HN Slidegen: Impact & Results",
+            "content": [
+              "Reduced slide creation time by **40%**.",
+              "Improved design consistency across all presentations.",
+              "Increased team productivity by **25%**.",
+              "Empowered non-designers to create professional-looking slides.",
+              "Standardized slide templates for brand alignment."
+            ],
+            "notes": "Highlight the quantifiable results. Use specific numbers to showcase the impact. Mention the positive feedback from users.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Time Saved: 40%, Consistency: Improved, Productivity: 25%, User Satisfaction: High",
+                "relations": "Time Saved -> Productivity, Consistency -> User Satisfaction"
+              }
+            ],
+            "keywords": [
+              "impact",
+              "results",
+              "time saving",
+              "productivity",
+              "consistency",
+              "automation"
+            ],
+            "slide_index": 0,
+            "section_index": 15
+          }
+        ]
+      },
+      "created_at": 1750347360.4783702,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:00"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 3: HR Interview",
+            "content": "03",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 16
+          },
+          {
+            "title": "AI HR Interview: Introduction",
+            "content": [
+              "Automated system for conducting initial HR interviews.",
+              "Utilizes AI to assess candidates based on predefined criteria.",
+              "Aims to streamline the hiring process and improve efficiency.",
+              "Focuses on objective evaluation and reduces bias."
+            ],
+            "notes": "Explain the core purpose and benefits of using AI for HR interviews. Highlight the focus on objectivity and efficiency.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "AI",
+              "HR Interview",
+              "Automation",
+              "Recruitment",
+              "Efficiency"
+            ],
+            "slide_index": 1,
+            "section_index": 16
+          },
+          {
+            "title": "Use Cases & Pain Points",
+            "content": [
+              "Use Cases:",
+              "  * Screening large volumes of applicants.",
+              "  * Standardizing the interview process.",
+              "  * Identifying top candidates quickly.",
+              "  * Conducting interviews remotely.",
+              "Pain Points Addressed:",
+              "  * Time-consuming manual screening.",
+              "  * Inconsistent interview experiences.",
+              "  * Difficulty in objectively comparing candidates.",
+              "  * High cost per hire."
+            ],
+            "notes": "Discuss specific scenarios where AI HR interviews are most valuable. Emphasize the problems it solves for HR departments.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "Use Cases",
+              "Pain Points",
+              "Screening",
+              "Standardization",
+              "Efficiency",
+              "Cost Reduction"
+            ],
+            "slide_index": 2,
+            "section_index": 16
+          },
+          {
+            "title": "System Architecture / Workflow",
+            "content": "Diagram: Candidate applies -> AI Interview Scheduling -> Automated Interview (voice/text) -> AI Analysis & Scoring -> Report Generation -> HR Review",
+            "notes": "Walk through the entire process, explaining each step and the data flow. Highlight the role of AI in analysis and scoring.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Candidate applies -> AI Interview Scheduling -> Automated Interview (voice/text) -> AI Analysis & Scoring -> Report Generation -> HR Review",
+                "relations": "Sequential workflow from application to HR review."
+              }
+            ],
+            "keywords": [
+              "Architecture",
+              "Workflow",
+              "AI",
+              "Interview",
+              "Analysis",
+              "Scoring"
+            ],
+            "slide_index": 3,
+            "section_index": 16
+          },
+          {
+            "title": "Technical Details",
+            "content": [
+              "Natural Language Processing (NLP) for analyzing candidate responses.",
+              "Machine Learning (ML) models for scoring candidates based on predefined criteria.",
+              "Speech recognition for voice-based interviews.",
+              "Sentiment analysis to gauge candidate's emotional state.",
+              "Database for storing candidate data and interview results."
+            ],
+            "notes": "Explain the core technologies used in the AI HR interview system. Focus on NLP, ML, and speech recognition.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "NLP",
+              "Machine Learning",
+              "Speech Recognition",
+              "Sentiment Analysis",
+              "Database"
+            ],
+            "slide_index": 4,
+            "section_index": 16
+          },
+          {
+            "title": "Demo / Case Study",
+            "content": "Image: A screenshot of the AI HR Interview system interface, showing a candidate's profile and the AI's assessment.",
+            "notes": "Show a live demo or present a case study of the AI HR interview system in action. Highlight the key features and benefits.",
+            "images_needed": [
+              "AI HR Interview system interface screenshot"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "Demo",
+              "Case Study",
+              "AI",
+              "HR Interview",
+              "Assessment"
+            ],
+            "slide_index": 5,
+            "section_index": 16
+          },
+          {
+            "title": "Impact & Results",
+            "content": [
+              "Reduced time-to-hire by X%.",
+              "Improved candidate quality by Y%.",
+              "Lowered cost-per-hire by Z%.",
+              "Increased objectivity and reduced bias in the hiring process.",
+              "Improved candidate experience through faster feedback."
+            ],
+            "notes": "Summarize the key achievements and benefits of the AI HR interview project. Quantify the impact with metrics and data.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "Impact",
+              "Results",
+              "Efficiency",
+              "Quality",
+              "Cost Reduction",
+              "Objectivity"
+            ],
+            "slide_index": 6,
+            "section_index": 16
+          }
+        ]
+      },
+      "created_at": 1750347365.8355997,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:05"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "radar",
+        "diagram_spec": "radarChart\n  polarGrid lines\n  axisLabel Factor\n  centerLabel Key Results\n  set Slidegen [\n    40, 90, 75, 80\n  ]\n  axis Time Saved\n  axis Consistency\n  axis Productivity\n  axis User Satisfaction",
+        "diagram_path": "temp/slides\\diagram_15_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347370.5655234,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:10"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 3: AI HR Interview - Introduction",
+            "content": [
+              "**What is AI HR Interview?**",
+              "   - An automated system that uses artificial intelligence to conduct initial screening interviews.",
+              "   - Leverages natural language processing (NLP) and machine learning (ML) to assess candidates.",
+              "**Purpose:**",
+              "   - Automate the initial screening process to save time and resources.",
+              "   - Identify qualified candidates more efficiently.",
+              "**Benefits:**",
+              "   - Reduced time-to-hire",
+              "   - Improved candidate experience (faster feedback)",
+              "   - Unbiased initial assessment",
+              "   - Cost savings"
+            ],
+            "notes": "This slide introduces the AI HR Interview project. Explain the core concept, its purpose in automating initial screenings, and the key benefits it offers to the HR department and the candidates.",
+            "images_needed": [
+              "AI conducting an interview",
+              "HR professional using AI tools"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "AI",
+              "HR Interview",
+              "Automation",
+              "Screening",
+              "NLP",
+              "Machine Learning",
+              "Recruiting"
+            ],
+            "slide_index": 0,
+            "section_index": 17
+          }
+        ]
+      },
+      "created_at": 1750347373.2554379,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:13"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sequenceDiagram",
+        "diagram_spec": "sequenceDiagram\n    participant Candidate\n    participant Scheduling\n    participant AI Interview\n    participant AI Analysis\n    participant Report\n    participant HR\n\n    Candidate->>Scheduling: Applies\n    Scheduling->>AI Interview: Schedules Interview\n    AI Interview->>AI Analysis: Automated Interview (voice/text)\n    AI Analysis->>Report: Analysis & Scoring\n    Report->>HR: Report Generation\n    HR->>Candidate: Review\n",
+        "diagram_path": "temp/slides\\diagram_16_3.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347375.579281,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:15"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 3: HR Interview - Use Cases & Pain Points",
+            "content": [
+              "**Use Cases:**",
+              "  * Screening large numbers of applicants efficiently.",
+              "  * Identifying qualified candidates based on pre-defined criteria.",
+              "  * Standardizing the initial interview process.",
+              "  * Assessing soft skills and personality traits.",
+              "**Pain Points:**",
+              "  * Time-consuming and resource-intensive manual screening.",
+              "  * Potential for unconscious bias in human screening.",
+              "  * Difficulty in consistently evaluating candidates across different interviewers.",
+              "  * High cost associated with initial screening stages.",
+              "**AI HR Interview Solution:**",
+              "  * Automates the initial screening process, saving time and resources.",
+              "  * Reduces bias by using objective criteria and algorithms.",
+              "  * Provides consistent and standardized evaluations.",
+              "  * Improves the efficiency of the overall hiring process."
+            ],
+            "notes": "This slide outlines the key use cases and pain points that the AI HR Interview system addresses. Emphasize the efficiency gains, bias reduction, and standardization benefits. Use real-world examples to illustrate the pain points and how the AI solution alleviates them.",
+            "images_needed": [
+              "image of a diverse group of job applicants",
+              "image representing time savings or efficiency"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "HR Interview",
+              "Use Cases",
+              "Pain Points",
+              "Screening",
+              "Bias",
+              "Automation",
+              "Efficiency",
+              "Standardization"
+            ],
+            "slide_index": 0,
+            "section_index": 18
+          }
+        ]
+      },
+      "created_at": 1750347376.7787316,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:16"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "AI HR Interview: System Architecture & Workflow",
+            "content": [
+              "The AI HR Interview system automates and enhances the candidate screening process.",
+              "It analyzes candidate responses using AI algorithms to provide objective assessments and rankings.",
+              "Key stages include:",
+              "  *  Candidate Input: Text, audio, or video responses to interview questions.",
+              "  *  AI Analysis: NLP, sentiment analysis, and other AI techniques to evaluate responses.",
+              "  *  Output: Candidate ranking, feedback reports, and insights for recruiters."
+            ],
+            "notes": "This slide provides an overview of the system's architecture and workflow. Emphasize the key stages and the role of AI in analyzing candidate responses. Mention the different types of input the system can handle (text, audio, video).",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Candidate Input -> AI Analysis -> Candidate Ranking/Feedback",
+                "relations": "The diagram illustrates the flow of information from the candidate to the final output. Candidate Input includes text, audio, and video responses. AI Analysis involves NLP, sentiment analysis, and other AI techniques. Candidate Ranking/Feedback provides objective assessments and insights for recruiters."
+              }
+            ],
+            "keywords": [
+              "AI HR Interview",
+              "System Architecture",
+              "Workflow",
+              "Candidate Input",
+              "AI Analysis",
+              "Candidate Ranking",
+              "Feedback",
+              "NLP",
+              "Sentiment Analysis"
+            ],
+            "slide_index": 0,
+            "section_index": 19
+          }
+        ]
+      },
+      "created_at": 1750347384.901433,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:24"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 3: HR Interview - Technical Details",
+            "content": [
+              "**AI Models Used:**",
+              "  *   **NLP (Natural Language Processing):**",
+              "      *   BERT, RoBERTa, or similar transformer-based models for analyzing candidate responses.",
+              "      *   Sentiment analysis to gauge candidate's emotional tone.",
+              "      *   Topic modeling to identify key themes in responses.",
+              "  *   **Speech Recognition (ASR):**",
+              "      *   Google Cloud Speech-to-Text, AssemblyAI, or similar for transcribing audio responses.",
+              "  *   **Machine Learning:**",
+              "      *   Classification models to predict candidate suitability based on analyzed data.",
+              "      *   Regression models to predict performance scores.",
+              "**Training Data & Methodology:**",
+              "  *   Large datasets of past interview transcripts and performance reviews.",
+              "  *   Data augmentation techniques to improve model robustness.",
+              "  *   Fine-tuning pre-trained models on HR-specific data.",
+              "  *   Cross-validation to ensure model generalization.",
+              "**Ethical Considerations & Bias Mitigation:**",
+              "  *   Bias detection in training data using fairness metrics.",
+              "  *   Adversarial training to make models robust to biased inputs.",
+              "  *   Regular audits of model performance across different demographic groups.",
+              "  *   Transparency in model decision-making through explainable AI (XAI) techniques."
+            ],
+            "notes": "This slide details the core technical components of the AI HR Interview system. Emphasize the specific models used, the importance of high-quality training data, and the critical need for ethical considerations and bias mitigation strategies. Mention the use of XAI to ensure transparency.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "NLP Model -> Speech Recognition -> Machine Learning Model -> Output (Candidate Score/Feedback)",
+                "relations": "NLP Model -> Speech Recognition: Text Analysis; Speech Recognition -> Machine Learning Model: Feature Extraction; Machine Learning Model -> Output (Candidate Score/Feedback): Prediction"
+              }
+            ],
+            "keywords": [
+              "NLP",
+              "Speech Recognition",
+              "Machine Learning",
+              "BERT",
+              "RoBERTa",
+              "Training Data",
+              "Bias Mitigation",
+              "Ethical AI",
+              "XAI"
+            ],
+            "slide_index": 0,
+            "section_index": 20
+          }
+        ]
+      },
+      "created_at": 1750347388.433905,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:28"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "blockDiagram",
+        "diagram_spec": "blockDiagram\n  direction LR\n  subgraph Candidate\n    A[Candidate Input] --> B(Text, Audio, Video)\n  end\n\n  subgraph AI Analysis\n    B --> C{AI Algorithms}\n    C --> D[NLP, Sentiment Analysis]\n  end\n\n  subgraph Output\n    D --> E(Candidate Ranking)\n    D --> F(Feedback Reports)\n    D --> G(Insights for Recruiters)\n  end",
+        "diagram_path": "temp/slides\\diagram_19_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347392.0872276,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:32"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Chapter 3: AI HR Interview - Demo / Case Study",
+            "content": [
+              "**Live Demo (if possible):**",
+              "- Show the AI system analyzing candidate responses in real-time.",
+              "- Highlight key features: sentiment analysis, skill assessment, communication evaluation.",
+              "- Demonstrate the system's ability to ask follow-up questions based on candidate answers.",
+              "**Case Study: Efficient Candidate Identification**",
+              "- Present a real-world example of how the AI HR Interview system was used.",
+              "- Explain the initial challenge: high volume of applications, limited HR resources.",
+              "- Describe how the AI system helped to quickly identify qualified candidates.",
+              "**AI vs. Manual Selection Comparison**",
+              "- Compare the performance of AI-selected candidates with manually selected candidates.",
+              "- Metrics: time-to-hire, candidate quality, employee retention.",
+              "- Show data visualization (e.g., bar graph) to illustrate the comparison."
+            ],
+            "notes": "If a live demo isn't feasible, use a pre-recorded video. Emphasize the efficiency gains and improved candidate quality achieved through the AI system. Quantify the results whenever possible.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "AI-Selected Candidates: 85% Success Rate\nManually Selected Candidates: 60% Success Rate",
+                "relations": "Bar graph comparing success rates of AI-selected vs. manually selected candidates. X-axis: Selection Method (AI, Manual). Y-axis: Success Rate (%)"
+              }
+            ],
+            "keywords": [
+              "AI HR Interview",
+              "demo",
+              "case study",
+              "candidate selection",
+              "efficiency",
+              "results",
+              "comparison"
+            ],
+            "slide_index": 0,
+            "section_index": 21
+          }
+        ]
+      },
+      "created_at": 1750347393.4685893,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:33"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "AI HR Interview: Impact & Results",
+            "content": [
+              "**Reduced Time to Hire:**",
+              "  *  Up to 50% reduction in time spent on initial candidate screening.",
+              "**Improved Candidate Quality:**",
+              "  *  20% increase in the number of qualified candidates identified in the initial screening phase.",
+              "**Reduced Bias:**",
+              "  *  Standardized interview process minimizes unconscious bias.",
+              "**Cost Savings:**",
+              "  *  Significant reduction in HR personnel time spent on repetitive screening tasks.",
+              "**Enhanced Candidate Experience:**",
+              "  *  Provides immediate feedback and a consistent experience for all applicants."
+            ],
+            "notes": "Highlight the quantifiable results. For example, instead of saying 'significant reduction,' provide a percentage or a specific number. Emphasize the benefits of reduced bias and improved candidate experience.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Time to Hire: Before AI - 10 days, After AI - 5 days; Candidate Quality: Before AI - 5%, After AI - 25%; Bias Score: Before AI - 30%, After AI - 10%",
+                "relations": "Bar chart comparing 'Before AI' and 'After AI' for Time to Hire, Candidate Quality, and Bias Score."
+              }
+            ],
+            "keywords": [
+              "AI HR Interview",
+              "Impact",
+              "Results",
+              "Time to Hire",
+              "Candidate Quality",
+              "Bias Reduction",
+              "Cost Savings",
+              "Candidate Experience"
+            ],
+            "slide_index": 0,
+            "section_index": 22
+          }
+        ]
+      },
+      "created_at": 1750347397.243936,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:37"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "mindmap",
+        "diagram_spec": "mindmap\n  root((AI HR Interview System))\n\n  c1[AI Models Used]\n    c1 --> a1(NLP)\n      a1 --> a11(BERT/RoBERTa)\n      a1 --> a12(Sentiment Analysis)\n      a1 --> a13(Topic Modeling)\n    c1 --> a2(Speech Recognition)\n      a2 --> a21(Google Cloud Speech-to-Text)\n      a2 --> a22(AssemblyAI)\n    c1 --> a3(Machine Learning)\n      a3 --> a31(Classification Models)\n      a3 --> a32(Regression Models)\n\n  c2[Training Data & Methodology]\n    c2 --> b1(Large Datasets)\n    c2 --> b2(Data Augmentation)\n    c2 --> b3(Fine-tuning)\n    c2 --> b4(Cross-validation)\n\n  c3[Ethical Considerations & Bias Mitigation]\n    c3 --> d1(Bias Detection)\n    c3 --> d2(Adversarial Training)\n    c3 --> d3(Regular Audits)\n    c3 --> d4(Explainable AI (XAI))",
+        "diagram_path": "temp/slides\\diagram_20_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347400.8853185,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:40"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "quadrantChart",
+        "diagram_spec": "quadrantChart\n    title Candidate Selection Performance\n    x-axis --> Lower Performance --> Higher Performance\n    y-axis --> Lower Efficiency --> Higher Efficiency\n    quadrant 1 [High Efficiency & High Performance]\n    quadrant 2 [Low Efficiency & High Performance]\n    quadrant 3 [Low Efficiency & Low Performance]\n    quadrant 4 [High Efficiency & Low Performance]\n\n    Candidate A [AI-Selected]: [85, 90]\n    Candidate B [Manually Selected]: [60, 50]\n\n    classDef ai fill:#f9f,stroke:#333,stroke-width:2px\n    classDef manual fill:#ccf,stroke:#333,stroke-width:2px\n\n    class CandidateA ai\n    class CandidateB manual",
+        "diagram_path": "temp/slides\\diagram_21_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347404.7457972,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:44"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Conclusion: Key Takeaways",
+            "content": [
+              "Flicker Detection: Automated identification of visual inconsistencies, improving UI testing efficiency and reliability.",
+              "HN Slidegen: Streamlined slide creation process, saving time and resources in presentation development.",
+              "AI HR Interview: Enhanced candidate screening with AI-driven interviews, leading to better hiring decisions.",
+              "Automation and AI: Proven to significantly boost efficiency, reduce manual effort, and improve overall productivity across various domains."
+            ],
+            "notes": "Summarize the core value proposition of each project. Emphasize the overarching theme of automation and AI driving positive change.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Project | Key Benefit | Impact\nFlicker Detection | Improved UI Testing | Reduced manual testing effort, faster feedback cycles\nHN Slidegen | Automated Slide Creation | Increased presentation development speed, consistent branding\nAI HR Interview | Enhanced Candidate Screening | Improved hiring quality, reduced time-to-hire",
+                "relations": "The diagram shows the relationship between each project, its key benefit, and its overall impact."
+              }
+            ],
+            "keywords": [
+              "Flicker Detection",
+              "HN Slidegen",
+              "AI HR Interview",
+              "Automation",
+              "AI",
+              "Efficiency",
+              "Productivity"
+            ],
+            "slide_index": 0,
+            "section_index": 23
+          }
+        ]
+      },
+      "created_at": 1750347406.4874573,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:46"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "radar",
+        "diagram_spec": "radarChart\n  polarGridShape circle\n  polarGridShape circle\n  showLegend true\n  title : AI HR Interview Impact\n  \n  section Before AI\n    Time to Hire : 10\n    Candidate Quality : 5\n    Bias Score : 30\n    Cost Savings : 2\n    Candidate Experience : 3\n\n  section After AI\n    Time to Hire : 5\n    Candidate Quality : 25\n    Bias Score : 10\n    Cost Savings : 8\n    Candidate Experience : 7\n",
+        "diagram_path": "temp/slides\\diagram_22_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347408.4437034,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:48"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Q & A",
+            "content": [
+              "Open the floor for questions.",
+              "Prepared to answer questions about:",
+              "  * Technical details",
+              "  * Implementation",
+              "  * Results of each project",
+              "Challenges faced and lessons learned",
+              "Contact Information:"
+            ],
+            "notes": "Be prepared to elaborate on any aspect of the projects. Have specific examples ready to illustrate key points. Mention contact information for follow-up questions.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Name: [Your Name]\nEmail: [Your Email]\nLinkedIn: [Your LinkedIn Profile URL]\nGitHub: [Your GitHub Profile URL (if applicable)]",
+                "relations": "Contact Information"
+              }
+            ],
+            "keywords": [
+              "Questions",
+              "Answers",
+              "Technical Details",
+              "Implementation",
+              "Results",
+              "Challenges",
+              "Lessons Learned",
+              "Contact Information"
+            ],
+            "slide_index": 0,
+            "section_index": 25
+          }
+        ]
+      },
+      "created_at": 1750347411.8846805,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:51"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Future Work & Thank You",
+            "content": [
+              "**Flicker Detection:**",
+              "  *   Explore more sophisticated image processing techniques (e.g., deep learning) for improved accuracy.",
+              "  *   Integrate with a wider range of testing frameworks and platforms.",
+              "  *   Develop a user-friendly interface for configuring sensitivity and reporting results.",
+              "**HN Slidegen:**",
+              "  *   Expand the template library with more diverse and customizable designs.",
+              "  *   Implement natural language processing (NLP) to automatically generate content from outlines or documents.",
+              "  *   Add support for animations and transitions.",
+              "**AI HR Interview:**",
+              "  *   Improve the accuracy and fairness of the AI model by training on a larger and more diverse dataset.",
+              "  *   Incorporate sentiment analysis to better understand candidate emotions and communication styles.",
+              "  *   Develop a more interactive and engaging interview experience.",
+              "**Thank You:**",
+              "  *   Thank you for your time and attention!",
+              "  *   Special thanks to my mentors [Mentor Names] and colleagues [Colleague Names] for their guidance and support throughout these projects."
+            ],
+            "notes": "Highlight the potential for future development and improvement in each project. Express sincere gratitude to mentors and colleagues for their contributions.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Project: Flicker Detection, Future Work: Deep Learning Integration, Wider Framework Support, User-Friendly Interface; Project: HN Slidegen, Future Work: Expanded Template Library, NLP Content Generation, Animation Support; Project: AI HR Interview, Future Work: Improved AI Accuracy, Sentiment Analysis, Interactive Experience",
+                "relations": "Flicker Detection -> Deep Learning Integration; Flicker Detection -> Wider Framework Support; Flicker Detection -> User-Friendly Interface; HN Slidegen -> Expanded Template Library; HN Slidegen -> NLP Content Generation; HN Slidegen -> Animation Support; AI HR Interview -> Improved AI Accuracy; AI HR Interview -> Sentiment Analysis; AI HR Interview -> Interactive Experience"
+              }
+            ],
+            "keywords": [
+              "future work",
+              "improvements",
+              "extensions",
+              "thank you",
+              "acknowledgement",
+              "mentors",
+              "colleagues",
+              "flicker detection",
+              "HN Slidegen",
+              "AI HR Interview"
+            ],
+            "slide_index": 0,
+            "section_index": 24
+          }
+        ]
+      },
+      "created_at": 1750347414.1747231,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:54"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Q&A - Continued",
+            "content": [
+              "Thank you for your time and attention!",
+              "Feel free to reach out with any further questions.",
+              "Contact Information:",
+              "  * Email: your_email@example.com",
+              "  * LinkedIn: linkedin.com/in/your_profile",
+              "Code & Documentation:",
+              "  * Happy to share code snippets and documentation upon request."
+            ],
+            "notes": "Reiterate gratitude. Provide clear contact information. Offer to share resources to encourage further engagement.",
+            "images_needed": [
+              "email icon",
+              "LinkedIn icon"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "contact information",
+              "email",
+              "LinkedIn",
+              "code",
+              "documentation",
+              "thank you"
+            ],
+            "slide_index": 0,
+            "section_index": 26
+          }
+        ]
+      },
+      "created_at": 1750347416.0348666,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:36:56"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "mindmap",
+        "diagram_spec": "mindmap\n  root((Q & A))\n\n    Questions\n      Technical Details\n      Implementation\n      Results of Projects\n\n    Preparation\n      Challenges Faced\n      Lessons Learned\n      Examples\n\n    Follow-up\n      Contact Information\n        Name: [Your Name]\n        Email: [Your Email]\n        LinkedIn: [Your LinkedIn Profile URL]\n        GitHub: [Your GitHub Profile URL (if applicable)]",
+        "diagram_path": "temp/slides\\diagram_25_0.png",
+        "previously_drawn_diagrams": [
+          "flowchart",
+          "sequenceDiagram",
+          "classDiagram",
+          "pie",
+          "stateDiagram",
+          "erDiagram",
+          "mindmap",
+          "gantt",
+          "timeline"
+        ]
+      },
+      "created_at": 1750347421.4433205,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-06-19 22:37:01"
+    }
+  ]
+}

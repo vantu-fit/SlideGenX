@@ -6,31 +6,27 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_0_0.pptx",
       "content": {
-        "title": "Final Internship Presentation",
+        "title": "Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
         "content": [
-          "Your Name",
-          "Internship Company",
-          "Date"
+          "Presenter: [Your Name]",
+          "[Your Title]",
+          "Date: [Date]"
         ],
         "layout": "",
-        "notes": "Welcome everyone. This presentation summarizes my internship experience and the projects I worked on. I'll be covering three main projects: Flicker Detection, HN Slidegen, and AI HR Interview.",
+        "notes": "Welcome everyone. This presentation will explore how small businesses can leverage big data analytics to improve their decision-making processes.",
         "keywords": [
-          "internship",
-          "presentation",
-          "projects",
-          "automation",
-          "AI"
+          "Big Data",
+          "Analytics",
+          "Small Business",
+          "Decision-Making",
+          "Rapid Decision-Making"
         ],
         "layout_type": ""
       },
       "images": [
         {
           "path": "temp/slides\\image_0_0.png",
-          "content": "company logo"
-        },
-        {
-          "path": "temp/slides\\image_0_0.png",
-          "content": "relevant image representing internship or innovation"
+          "content": "Abstract image representing data analysis and business growth"
         }
       ],
       "diagrams": []
@@ -42,20 +38,22 @@
       "content": {
         "title": "Agenda",
         "content": [
-          "Introduction",
-          "Chapter 1: Flicker Detection",
-          "Chapter 2: HN Slidegen",
-          "Chapter 3: HR Interview",
-          "Conclusion",
+          "Introduction to Big Data and its Relevance to SMBs",
+          "Identifying Key Decision-Making Areas for Improvement",
+          "Practical Applications of Big Data Analytics",
+          "Overcoming Challenges and Getting Started",
           "Q&A"
         ],
         "layout": "",
-        "notes": "This slide provides an overview of the presentation. I will briefly introduce each topic before diving into the details.",
+        "notes": "This slide outlines the topics we'll be covering today. We'll start with an introduction to big data and its relevance to small and medium-sized businesses, then move on to identifying key decision-making areas for improvement. Next, we'll explore practical applications of big data analytics, followed by a discussion of the challenges and how to get started. Finally, we'll open the floor for questions.",
         "keywords": [
           "agenda",
-          "overview",
-          "topics",
-          "structure"
+          "big data",
+          "SMBs",
+          "decision-making",
+          "analytics",
+          "challenges",
+          "Q&A"
         ],
         "layout_type": ""
       },
@@ -63,7 +61,7 @@
       "diagrams": [
         {
           "path": "temp/slides\\diagram_1_0.png",
-          "content": "1. Introduction; 2. Flicker Detection; 3. HN Slidegen; 4. HR Interview; 5. Conclusion; 6. Q&A"
+          "content": "Topic 1: Introduction to Big Data\nTopic 2: Decision-Making Areas\nTopic 3: Practical Applications\nTopic 4: Overcoming Challenges\nTopic 5: Q&A"
         }
       ]
     },
@@ -72,8 +70,8 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_2_0.pptx",
       "content": {
-        "title": "Chapter 1: Flicker Detection",
-        "content": "01",
+        "title": "Introduction to Big Data and its Relevance to SMBs",
+        "content": "03",
         "layout": "",
         "notes": null,
         "keywords": [],
@@ -87,146 +85,69 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_2_1.pptx",
       "content": {
-        "title": "Introduction to Flicker Detection",
+        "title": "What is Big Data?",
         "content": [
-          "Flicker: Unwanted, rapid changes in UI element appearance during automated tests.",
-          "Impacts test stability and reliability.",
-          "Falsely reports failures, increasing debugging time.",
-          "Flicker detection aims to identify and mitigate these issues."
+          "The 5 V's of Big Data:",
+          "  * Volume: Massive amounts of data",
+          "  * Velocity: Data arriving at high speed",
+          "  * Variety: Data in different forms (structured, unstructured)",
+          "  * Veracity: Data accuracy and reliability",
+          "  * Value: The insights and benefits derived from the data"
         ],
         "layout": "",
-        "notes": "Explain what flicker is and why it's a problem in automated testing. Emphasize the impact on test results and the need for a solution.",
+        "notes": "Explain each 'V' in detail. Emphasize that it's not just about the size of the data, but also the speed, variety, and accuracy.",
         "keywords": [
-          "flicker",
-          "automation testing",
-          "test stability",
-          "UI elements"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 2,
-      "slide_index": 2,
-      "path": "temp/slides\\slide_2_2.pptx",
-      "content": {
-        "title": "Use Cases & Pain Points",
-        "content": [
-          "Dynamic content loading (e.g., ads, data updates).",
-          "Asynchronous operations (e.g., AJAX calls).",
-          "Animations and transitions.",
-          "Pain Points:",
-          "Increased test flakiness.",
-          "Wasted time investigating false failures.",
-          "Reduced confidence in test results."
-        ],
-        "layout": "",
-        "notes": "Describe specific scenarios where flicker is common. Highlight the negative consequences of flicker on the testing process.",
-        "keywords": [
-          "use cases",
-          "pain points",
-          "dynamic content",
-          "asynchronous operations",
-          "test flakiness"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 2,
-      "slide_index": 3,
-      "path": "temp/slides\\slide_2_3.pptx",
-      "content": {
-        "title": "System Architecture / Workflow",
-        "content": [
-          "1. Test Execution: Automated test runs.",
-          "2. UI Monitoring: System captures UI element states at intervals.",
-          "3. Flicker Detection Algorithm: Analyzes captured states for changes.",
-          "4. Reporting: Flags potential flicker instances.",
-          "5. Analysis: Human reviews the flagged instances."
-        ],
-        "layout": "",
-        "notes": "Walk through the system's architecture, explaining each step in the process. Use a diagram to visually represent the workflow.",
-        "keywords": [
-          "system architecture",
-          "workflow",
-          "UI monitoring",
-          "flicker detection",
-          "reporting"
+          "Big Data",
+          "Volume",
+          "Velocity",
+          "Variety",
+          "Veracity",
+          "Value"
         ],
         "layout_type": ""
       },
       "images": [],
       "diagrams": [
         {
-          "path": "temp/slides\\diagram_2_3.png",
-          "content": "blockDiagram\n  direction LR\n\n  node TestExecution[Test Execution:\n  Automated test runs.]\n  node UIMonitoring[UI Monitoring:\n  Captures UI element states at intervals.]\n  node FlickerDetection[Flicker Detection Algorithm:\n  Analyzes captured states for changes.]\n  node Reporting[Reporting:\n  Flags potential flicker instances.]\n  node Analysis[Analysis:\n  Human reviews the flagged instances.]\n\n  TestExecution --> UIMonitoring\n  UIMonitoring --> FlickerDetection\n  FlickerDetection --> Reporting\n  Reporting --> Analysis"
+          "path": "temp/slides\\diagram_2_1.png",
+          "content": "radarChart\n  polarGrid lines\n  label top Volume\n  label right Velocity\n  label bottom Variety\n  label left Veracity\n  label center Value\n  set gridColor #C0C0C0\n  set axisColor #333\n  set textColor #333\n  Volume[Terabytes, Petabytes, Exabytes]\n  Velocity[Real-time streaming, Batch processing]\n  Variety[Text, Images, Video, Sensor data]\n  Veracity[Data quality, Accuracy, Reliability]\n  Value[Business insights, Competitive advantage]"
         }
       ]
     },
     {
       "section_index": 2,
-      "slide_index": 4,
-      "path": "temp/slides\\slide_2_4.pptx",
+      "slide_index": 2,
+      "path": "temp/slides\\slide_2_2.pptx",
       "content": {
-        "title": "Technical Details",
+        "title": "Debunking the Myth: Big Data is for Everyone",
         "content": [
-          "Image Comparison: Pixel-by-pixel or feature-based comparison.",
-          "State Tracking: Monitoring element properties (e.g., visibility, text).",
-          "Thresholding: Defining acceptable change levels.",
-          "Algorithms: Perceptual hashing, structural similarity index (SSIM)."
+          "Historically, Big Data was associated with large corporations.",
+          "Now, affordable tools and cloud computing make it accessible to SMBs.",
+          "SMBs can leverage data to:",
+          "  * Understand customer behavior",
+          "  * Optimize marketing campaigns",
+          "  * Improve operational efficiency",
+          "  * Make better-informed decisions"
         ],
         "layout": "",
-        "notes": "Explain the core algorithms and techniques used for flicker detection. Mention specific libraries or tools used.",
+        "notes": "Highlight the shift in accessibility. Provide examples of how SMBs can use data in different areas of their business.",
         "keywords": [
-          "technical details",
-          "image comparison",
-          "state tracking",
-          "thresholding",
-          "algorithms",
-          "SSIM",
-          "perceptual hashing"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 2,
-      "slide_index": 5,
-      "path": "temp/slides\\slide_2_5.pptx",
-      "content": {
-        "title": "Demo / Case Study",
-        "content": [
-          "Show a live demo of the flicker detection system in action.",
-          "Present a case study where flicker detection helped resolve test flakiness issues.",
-          "Demonstrate how the system identifies and reports flicker instances.",
-          "Highlight the time and effort saved by using the system."
-        ],
-        "layout": "",
-        "notes": "Showcase the system's capabilities through a demo or case study. Quantify the benefits of using the system.",
-        "keywords": [
-          "demo",
-          "case study",
-          "flicker detection",
-          "test flakiness",
-          "time savings"
+          "SMBs",
+          "Accessibility",
+          "Cloud Computing",
+          "Data Analysis",
+          "Decision Making"
         ],
         "layout_type": ""
       },
       "images": [
         {
-          "path": "temp/slides\\image_2_5.png",
-          "content": "Screenshot of the flicker detection system's report"
+          "path": "temp/slides\\image_2_2.png",
+          "content": "image of small business owner analyzing data on a laptop"
         },
         {
-          "path": "temp/slides\\image_2_5.png",
-          "content": "Graph showing reduction in test flakiness after implementing flicker detection"
+          "path": "temp/slides\\image_2_2.png",
+          "content": "image of cloud computing infrastructure"
         }
       ],
       "diagrams": []
@@ -236,8 +157,8 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_3_0.pptx",
       "content": {
-        "title": "Chapter 1: Flicker Detection",
-        "content": "01",
+        "title": "Identifying Key Decision-Making Areas for Improvement",
+        "content": "04",
         "layout": "",
         "notes": null,
         "keywords": [],
@@ -251,43 +172,101 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_3_1.pptx",
       "content": {
-        "title": "Flicker Detection: Introduction",
+        "title": "Common Decision-Making Challenges Faced by SMBs",
         "content": [
-          "**What is Flicker?**",
-          "   - In UI testing, flicker refers to the unexpected and rapid changes in the UI elements during automated tests.",
-          "   - These changes can be visual glitches, temporary disappearances, or incorrect rendering of elements.",
-          "**Why is Flicker Detection Important?**",
-          "   - **Test Reliability:** Flicker can cause tests to fail intermittently, leading to unreliable test results.",
-          "   - **Root Cause Analysis:** Identifying flicker helps pinpoint underlying issues in the application's code or environment.",
-          "   - **Improved User Experience:** Addressing flicker improves the overall user experience by ensuring a stable and consistent UI.",
-          "**Project Goal:**",
-          "   - Develop an automated system to detect and report UI flicker during automated tests, improving test stability and application quality."
+          "Limited Resources: Time, budget, and expertise constraints.",
+          "Lack of Data Visibility: Difficulty accessing and understanding relevant data.",
+          "Intuition-Based Decisions: Relying on gut feelings rather than data-driven insights.",
+          "Inefficient Processes: Slow and cumbersome decision-making workflows.",
+          "Competitive Pressure: Difficulty adapting to rapidly changing market conditions."
         ],
         "layout": "",
-        "notes": "Explain each point in detail. Emphasize the impact of flicker on test automation and the importance of a robust detection mechanism.",
+        "notes": "Discuss each challenge in detail, providing real-world examples. Emphasize the impact of these challenges on SMB growth and profitability.",
         "keywords": [
-          "flicker",
-          "UI testing",
-          "automation",
-          "test reliability",
-          "user experience"
+          "challenges",
+          "SMBs",
+          "decision-making",
+          "resources",
+          "data visibility"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 3,
+      "slide_index": 2,
+      "path": "temp/slides\\slide_3_2.pptx",
+      "content": {
+        "title": "Identifying Key Performance Indicators (KPIs)",
+        "content": [
+          "Define KPIs: Measurable values that demonstrate how effectively a company is achieving key business objectives.",
+          "Align KPIs with Goals: Ensure KPIs directly reflect strategic goals (e.g., increased sales, improved customer satisfaction).",
+          "Focus on Actionable Metrics: Select KPIs that provide insights and drive specific actions.",
+          "Regularly Monitor and Review: Track KPIs over time and adjust strategies as needed."
+        ],
+        "layout": "",
+        "notes": "Explain the importance of selecting the right KPIs. Provide a framework for identifying relevant KPIs based on business goals. Emphasize the need for continuous monitoring and adjustment.",
+        "keywords": [
+          "KPIs",
+          "metrics",
+          "business objectives",
+          "actionable insights",
+          "monitoring"
         ],
         "layout_type": ""
       },
       "images": [],
       "diagrams": [
         {
-          "path": "temp/slides\\diagram_3_1.png",
-          "content": "mindmap\n  root((Flicker Detection))\n\n    What is Flicker\n      Unexpected UI Changes\n      Visual Glitches\n      Temporary Disappearances\n      Incorrect Rendering\n\n    Why Important\n      Test Reliability\n      Root Cause Analysis\n      Improved User Experience\n\n    Project Goal\n      Automated Detection\n      Report UI Flicker\n      Improve Test Stability\n      Enhance Application Quality"
+          "path": "temp/slides\\diagram_3_2.png",
+          "content": "Sales Revenue, Customer Acquisition Cost, Customer Retention Rate, Website Traffic, Conversion Rate"
         }
       ]
+    },
+    {
+      "section_index": 3,
+      "slide_index": 3,
+      "path": "temp/slides\\slide_3_3.pptx",
+      "content": {
+        "title": "Practical Applications of Big Data Analytics for SMBs",
+        "content": [
+          "Sales Forecasting: Predict future sales trends and optimize inventory levels.",
+          "Customer Segmentation: Identify distinct customer groups and tailor marketing efforts.",
+          "Marketing Campaign Optimization: Track campaign performance and improve ROI.",
+          "Inventory Management: Reduce stockouts and minimize holding costs.",
+          "Customer Behavior Analysis: Understand customer preferences and personalize experiences."
+        ],
+        "layout": "",
+        "notes": "Provide specific examples of how big data analytics can be applied to each area. Showcase success stories of SMBs that have leveraged data-driven insights to improve their performance. For example, a local bakery using sales data to predict demand for different types of pastries.",
+        "keywords": [
+          "sales forecasting",
+          "customer segmentation",
+          "marketing optimization",
+          "inventory management",
+          "customer behavior"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides\\image_3_3.png",
+          "content": "image of sales forecast graph"
+        },
+        {
+          "path": "temp/slides\\image_3_3.png",
+          "content": "image of customer segmentation chart"
+        }
+      ],
+      "diagrams": []
     },
     {
       "section_index": 4,
       "slide_index": 0,
       "path": "temp/slides\\slide_4_0.pptx",
       "content": {
-        "title": "Chapter 1: Flicker Detection - Use Cases & Pain Points",
+        "title": "Practical Applications of Big Data Analytics",
         "content": "05",
         "layout": "",
         "notes": null,
@@ -302,52 +281,174 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_4_1.pptx",
       "content": {
-        "title": "Flicker Detection: Use Cases & Pain Points",
+        "title": "User-Friendly Analytics Tools for SMBs",
         "content": [
-          "**Common Scenarios:**",
-          "  * Dynamic content loading (ads, images, etc.)",
-          "  * A/B testing with frequent content changes",
-          "  * Real-time data updates (stock tickers, dashboards)",
-          "  * Animations and transitions",
-          "  * Lazy loading of images",
-          "**Pain Points Caused by Flicker:**",
-          "  * **Flaky Tests:** Inconsistent test results due to timing issues.",
-          "  * **Inaccurate Results:** False positives/negatives in visual validation.",
-          "  * **Increased Test Maintenance:** Constant updates to tests to accommodate flicker.",
-          "  * **Reduced Test Automation Reliability:** Lack of confidence in test results.",
-          "  * **Wasted Resources:** Time spent debugging and re-running tests.",
-          "**Impact on Test Automation Reliability:**",
-          "  * Flicker introduces uncertainty and instability into automated tests.",
-          "  * Makes it difficult to determine if a test failure is due to a genuine bug or just flicker.",
-          "  * Erodes trust in the automation framework and reduces its overall effectiveness."
+          "Google Analytics: Website traffic analysis, user behavior tracking.",
+          "CRM Analytics (Salesforce, HubSpot): Sales performance, customer segmentation.",
+          "Cloud-Based Solutions (Tableau, Power BI): Data visualization, reporting.",
+          "Zoho Analytics: Business intelligence and reporting tool.",
+          "Looker: Data exploration and business intelligence platform."
         ],
         "layout": "",
-        "notes": "Explain each scenario with examples. Emphasize the frustration and cost associated with flaky tests. Highlight how flicker undermines the value of test automation.",
+        "notes": "Discuss the benefits of each tool and how they can be used to gain insights. Emphasize the ease of use and affordability for SMBs. Mention free tiers or trials where available.",
         "keywords": [
-          "flicker",
-          "flaky tests",
-          "test automation",
-          "dynamic content",
-          "reliability",
-          "pain points"
+          "Google Analytics",
+          "CRM Analytics",
+          "Tableau",
+          "Power BI",
+          "Zoho Analytics",
+          "Looker",
+          "Data Visualization",
+          "Reporting"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 4,
+      "slide_index": 2,
+      "path": "temp/slides\\slide_4_2.pptx",
+      "content": {
+        "title": "Data Visualization: Making Sense of Your Data",
+        "content": [
+          "Charts: Bar charts, pie charts, line graphs for comparing data.",
+          "Graphs: Scatter plots, histograms for showing distributions.",
+          "Dashboards: Real-time overview of key performance indicators (KPIs).",
+          "Heatmaps: Visualizing data density and patterns.",
+          "Geographic Maps: Displaying data based on location."
+        ],
+        "layout": "",
+        "notes": "Explain how different types of visualizations can be used to communicate data effectively. Provide examples of how SMBs can use visualizations to track sales, marketing performance, and customer satisfaction. Show examples of effective dashboards.",
+        "keywords": [
+          "Charts",
+          "Graphs",
+          "Dashboards",
+          "Data Visualization",
+          "KPIs",
+          "Heatmaps",
+          "Geographic Maps"
         ],
         "layout_type": ""
       },
       "images": [],
       "diagrams": [
         {
-          "path": "temp/slides\\diagram_4_1.png",
-          "content": "mindmap\n  root((Flicker Detection))\n\n    Use Cases\n      Dynamic Content\n        Ads\n        Images\n      A/B Testing\n      Real-time Data\n        Stock Tickers\n        Dashboards\n      Animations\n      Lazy Loading\n\n    Pain Points\n      Flaky Tests\n        Timing Issues\n      Inaccurate Results\n        False Positives\n        False Negatives\n      Increased Maintenance\n      Reduced Reliability\n      Wasted Resources\n\n    Impact on Test Automation\n      Uncertainty\n      Instability\n      Difficult Bug Identification\n      Eroded Trust"
+          "path": "temp/slides\\diagram_4_2.png",
+          "content": "graph LR\nA[Raw Data] --> B(Data Cleaning)\nB --> C{Data Analysis}\nC --> D[Visualization]\nD --> E(Insights)\nE --> F((Decision Making))"
         }
       ]
+    },
+    {
+      "section_index": 4,
+      "slide_index": 3,
+      "path": "temp/slides\\slide_4_3.pptx",
+      "content": {
+        "title": "Predictive Analytics: Forecasting the Future",
+        "content": [
+          "Trend Analysis: Identifying patterns in historical data to predict future trends.",
+          "Sales Forecasting: Predicting future sales based on past performance.",
+          "Demand Planning: Anticipating customer demand to optimize inventory.",
+          "Risk Assessment: Identifying potential risks and opportunities.",
+          "Customer Churn Prediction: Identifying customers at risk of leaving."
+        ],
+        "layout": "",
+        "notes": "Explain how predictive analytics can help SMBs make proactive decisions. Provide examples of how SMBs can use predictive analytics to optimize marketing campaigns, manage inventory, and reduce customer churn. Mention tools that offer predictive analytics capabilities.",
+        "keywords": [
+          "Predictive Analytics",
+          "Trend Analysis",
+          "Sales Forecasting",
+          "Demand Planning",
+          "Risk Assessment",
+          "Customer Churn"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides\\image_4_3.png",
+          "content": "predictive analytics forecasting trends"
+        }
+      ],
+      "diagrams": []
+    },
+    {
+      "section_index": 4,
+      "slide_index": 4,
+      "path": "temp/slides\\slide_4_4.pptx",
+      "content": {
+        "title": "A/B Testing: Data-Driven Marketing",
+        "content": [
+          "Experimentation: Testing different versions of marketing materials to see which performs best.",
+          "Website Optimization: Testing different website layouts and content.",
+          "Email Marketing: Testing different subject lines and email content.",
+          "Ad Campaigns: Testing different ad creatives and targeting options.",
+          "Landing Page Optimization: Testing different landing page designs."
+        ],
+        "layout": "",
+        "notes": "Explain how A/B testing can help SMBs optimize their marketing efforts and improve ROI. Provide examples of how SMBs can use A/B testing to improve website conversion rates, email open rates, and ad click-through rates. Mention tools that offer A/B testing capabilities (e.g., Google Optimize, Optimizely).",
+        "keywords": [
+          "A/B Testing",
+          "Experimentation",
+          "Website Optimization",
+          "Email Marketing",
+          "Ad Campaigns",
+          "Landing Page Optimization"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides\\image_4_4.png",
+          "content": "A/B testing marketing"
+        }
+      ],
+      "diagrams": []
+    },
+    {
+      "section_index": 6,
+      "slide_index": 0,
+      "path": "temp/slides\\slide_6_0.pptx",
+      "content": {
+        "title": "Conclusion: Embrace Data-Driven Decision-Making",
+        "content": [
+          "Recap of Key Benefits:",
+          "  * Faster Decisions: React swiftly to market changes.",
+          "  * Improved Accuracy: Minimize errors and maximize success.",
+          "  * Increased Efficiency: Optimize processes and reduce waste.",
+          "The Future of SMBs: Data-Driven and Competitive",
+          "  * Data is no longer a luxury, it's a necessity.",
+          "  * Embrace data analytics to thrive in the modern business landscape."
+        ],
+        "layout": "",
+        "notes": "Summarize the presentation's key takeaways. Emphasize that data-driven decision-making is crucial for SMBs to remain competitive. Encourage the audience to take action and implement the strategies discussed.",
+        "keywords": [
+          "data-driven",
+          "decision-making",
+          "SMBs",
+          "competitive advantage",
+          "efficiency",
+          "accuracy",
+          "future of business"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides\\image_6_0.png",
+          "content": "image of a small business owner confidently making a decision based on data insights"
+        }
+      ],
+      "diagrams": []
     },
     {
       "section_index": 5,
       "slide_index": 0,
       "path": "temp/slides\\slide_5_0.pptx",
       "content": {
-        "title": "Chapter 1: Flicker Detection - System Architecture / Workflow",
-        "content": "03",
+        "title": "Overcoming Challenges and Getting Started",
+        "content": "06",
         "layout": "",
         "notes": null,
         "keywords": [],
@@ -361,21 +462,22 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_5_1.pptx",
       "content": {
-        "title": "Flicker Detection: System Architecture & Workflow",
+        "title": "Addressing Common Concerns",
         "content": [
-          "The system identifies UI flicker through a streamlined process:",
-          "1. **User Input:** Provides a video recording of the UI interaction.",
-          "2. **Flicker Detection Algorithm:** Analyzes the video frames to detect visual inconsistencies and rapid changes in UI elements.",
-          "3. **Report Generation:** Creates a detailed report highlighting the occurrences of flicker, including timestamps and affected UI elements."
+          "Data Security: Implement robust security measures (encryption, access controls).",
+          "Privacy: Comply with data privacy regulations (GDPR, CCPA).",
+          "Cost: Start small, leverage open-source tools, and scale as needed."
         ],
         "layout": "",
-        "notes": "This slide outlines the core steps of the flicker detection system. Emphasize the simplicity and efficiency of the workflow. Explain that the algorithm is the 'black box' that we'll delve into later.",
+        "notes": "Discuss the importance of addressing these concerns upfront to build trust and ensure successful implementation. Emphasize that security and privacy are not just legal requirements but also ethical responsibilities.",
         "keywords": [
-          "system architecture",
-          "workflow",
-          "flicker detection",
-          "video analysis",
-          "report generation"
+          "data security",
+          "privacy",
+          "cost",
+          "GDPR",
+          "CCPA",
+          "encryption",
+          "access controls"
         ],
         "layout_type": ""
       },
@@ -383,43 +485,79 @@
       "diagrams": [
         {
           "path": "temp/slides\\diagram_5_1.png",
-          "content": "blockDiagram\n  direction LR\n  User_Input[User Input: Video of UI interaction] --> Flicker_Detection(Flicker Detection Algorithm) --> Report_Output[Report Output: Flicker Occurrences]\n  style Flicker_Detection fill:#f9f,stroke:#333,stroke-width:2px"
+          "content": "Data Security -> Privacy -> Cost"
         }
       ]
     },
     {
-      "section_index": 6,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_6_0.pptx",
+      "section_index": 5,
+      "slide_index": 2,
+      "path": "temp/slides\\slide_5_2.pptx",
       "content": {
-        "title": "Chapter 1: Flicker Detection - Technical Details",
+        "title": "Building a Data-Driven Culture & Getting Started",
         "content": [
-          "**Algorithm:** Frame Difference Analysis",
-          "   - Compares consecutive frames to identify pixel changes.",
-          "   - Thresholding applied to highlight significant differences.",
-          "**Libraries/Tools:**",
-          "   - OpenCV: For image processing and video analysis.",
-          "   - Python: Scripting language for implementation.",
-          "**Metrics:**",
-          "   - Pixel Change Ratio: (Number of changed pixels / Total pixels) * 100",
-          "   - Flicker Score: Aggregated pixel change ratio over a time window."
+          "Foster a culture of curiosity and experimentation.",
+          "Encourage employees to ask questions and use data to inform their decisions.",
+          "Start with a specific business problem.",
+          "Identify relevant data sources.",
+          "Choose appropriate tools and techniques.",
+          "Collect, store, and analyze data."
         ],
         "layout": "",
-        "notes": "Explain the frame difference algorithm in detail. Discuss the role of OpenCV and Python. Elaborate on how the pixel change ratio and flicker score are calculated and used to quantify flicker.",
+        "notes": "Explain how to create a data-driven culture by promoting data literacy and providing employees with the necessary training and resources. Emphasize the importance of starting with a clear business objective and focusing on actionable insights.",
         "keywords": [
-          "flicker detection",
-          "frame difference",
-          "OpenCV",
-          "pixel change ratio",
-          "thresholding"
+          "data-driven culture",
+          "data literacy",
+          "experimentation",
+          "data sources",
+          "data collection",
+          "data storage",
+          "data analysis"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides\\image_5_2.png",
+          "content": "team collaborating on data analysis"
+        }
+      ],
+      "diagrams": []
+    },
+    {
+      "section_index": 5,
+      "slide_index": 3,
+      "path": "temp/slides\\slide_5_3.pptx",
+      "content": {
+        "title": "Talent, Partnerships & Ethical Considerations",
+        "content": [
+          "Assess your internal capabilities.",
+          "Consider hiring data scientists or analysts.",
+          "Partner with a data analytics firm.",
+          "Ensure data is collected and used ethically.",
+          "Obtain informed consent from individuals.",
+          "Be transparent about data practices.",
+          "Avoid bias and discrimination."
+        ],
+        "layout": "",
+        "notes": "Discuss the different options for acquiring the necessary expertise, including hiring, outsourcing, and training. Highlight the importance of ethical considerations in data collection and usage, emphasizing the need for transparency, fairness, and accountability.",
+        "keywords": [
+          "data scientists",
+          "data analysts",
+          "data analytics firm",
+          "ethical considerations",
+          "informed consent",
+          "transparency",
+          "bias",
+          "discrimination"
         ],
         "layout_type": ""
       },
       "images": [],
       "diagrams": [
         {
-          "path": "temp/slides\\diagram_6_0.png",
-          "content": "blockDiagram\n  direction LR\n  subgraph Input\n    Frame1[Frame 1] --> Frame2[Frame 2]\n  end\n\n  subgraph Processing\n    Frame2 --> Diff(Frame Difference Analysis)\n    Diff --> Threshold(Thresholding)\n  end\n\n  subgraph Output\n    Threshold --> FlickerDetection[Flicker Detection]\n  end\n\n  style Input fill:#f9f,stroke:#333,stroke-width:2px\n  style Processing fill:#ccf,stroke:#333,stroke-width:2px\n  style Output fill:#fcf,stroke:#333,stroke-width:2px"
+          "path": "temp/slides\\diagram_5_3.png",
+          "content": "Internal Skills -> Hiring -> Partnership"
         }
       ]
     },
@@ -428,1120 +566,106 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_7_0.pptx",
       "content": {
-        "title": "Chapter 1: Flicker Detection - Demo / Case Study",
+        "title": "Next Steps & Resources",
         "content": [
-          "Live Demo (if possible) or Recorded Demo",
-          "Case Study: Identifying and Resolving Flicker Issues",
-          "Before and After Results"
+          "**Actionable Steps:**",
+          "  *   **Identify Key Areas:** Pinpoint decision-making areas ripe for data-driven improvement.",
+          "  *   **Choose Tools:** Select user-friendly, cost-effective analytics solutions.",
+          "  *   **Start Small:** Begin with a pilot project to demonstrate value and build confidence.",
+          "**Recommended Resources:**",
+          "  *   **Online Courses:** Explore platforms like Coursera, Udemy, and edX for data analytics training.",
+          "  *   **Industry Reports:** Stay informed about the latest trends and best practices in your sector.",
+          "  *   **Consulting Services:** Consider engaging a consultant for tailored guidance and support."
         ],
         "layout": "",
-        "notes": "This slide will showcase the flicker detection system in action. If a live demo is not feasible, a recorded demo will be presented. A case study will illustrate how the system helped identify and resolve flicker issues in a real-world scenario. Before and after results will be shown to demonstrate the effectiveness of the system.",
+        "notes": "Summarize the key takeaways from the presentation. Emphasize the importance of taking action and provide concrete steps that SMBs can take to get started. Highlight the available resources to support their journey. End with a clear closing message, reiterating the value of data-driven decision-making.",
         "keywords": [
-          "flicker detection",
-          "demo",
-          "case study",
-          "automation testing",
-          "results"
+          "actionable steps",
+          "resources",
+          "online courses",
+          "industry reports",
+          "consulting services",
+          "data analytics",
+          "SMBs"
         ],
         "layout_type": ""
       },
-      "images": [],
-      "diagrams": [
+      "images": [
         {
-          "path": "temp/slides\\diagram_7_0.png",
-          "content": "blockDiagram\n  direction LR\n  subgraph Input\n    A[Video Feed] --> B(Flicker Detection System)\n  end\n\n  subgraph Processing\n    B --> C{Flicker Detected?}\n  end\n\n  subgraph Output\n    C -- Yes --> D[Alert / Correction]\n    C -- No --> E[Continue Monitoring]\n  end\n\n  subgraph Case Study\n    F[Before: Flicker Artifacts] --> G[After: Flicker Removed]\n  end\n\n  style A fill:#f9f,stroke:#333,stroke-width:2px\n  style B fill:#ccf,stroke:#333,stroke-width:2px\n  style C fill:#f99,stroke:#333,stroke-width:2px\n  style D fill:#9f9,stroke:#333,stroke-width:2px\n  style E fill:#eee,stroke:#333,stroke-width:2px\n  style F fill:#eee,stroke:#333,stroke-width:2px\n  style G fill:#eee,stroke:#333,stroke-width:2px"
+          "path": "temp/slides\\image_7_0.png",
+          "content": "business people working together"
+        },
+        {
+          "path": "temp/slides\\image_7_0.png",
+          "content": "data analytics dashboard"
         }
-      ]
+      ],
+      "diagrams": []
     },
     {
       "section_index": 8,
       "slide_index": 0,
       "path": "temp/slides\\slide_8_0.pptx",
       "content": {
-        "title": "Chapter 1: Flicker Detection - Impact & Results",
+        "title": "Q & A",
         "content": [
-          "**Improved Test Automation Reliability:**",
-          "  *  Significantly reduced the occurrence of false positives in automated tests.",
-          "  *  More stable and trustworthy test results.",
-          "**Reduced Flaky Tests:**",
-          "  *  Decreased the number of flaky tests by [Quantifiable Percentage, e.g., 40%].",
-          "  *  Saved time and effort previously spent on investigating and re-running flaky tests.",
-          "**Faster Identification of UI Issues:**",
-          "  *  Enabled quicker detection of subtle UI changes or rendering problems.",
-          "  *  Improved the overall quality of the user interface.",
-          "**Quantifiable Metrics:**",
-          "  *  [Number] fewer test failures per week/month.",
-          "  *  [Time Saved] hours saved per sprint due to reduced test debugging.",
-          "  *  [Percentage] increase in test pass rate."
+          "Your Questions?",
+          "We're here to help you understand how big data analytics can benefit your small business."
         ],
         "layout": "",
-        "notes": "Highlight the tangible benefits and quantifiable improvements achieved through the flicker detection system. Emphasize the time and cost savings, as well as the improved quality of the software.",
+        "notes": "Thank you for your attention. Now, I'd be happy to answer any questions you may have. I'll do my best to provide clear and concise answers. If we don't have time to address all questions, please feel free to reach out to me directly using the contact information provided on the next slide.",
         "keywords": [
-          "flicker detection",
-          "test automation",
-          "reliability",
-          "flaky tests",
-          "UI issues",
-          "metrics",
-          "impact",
-          "results"
+          "questions",
+          "answers",
+          "big data analytics",
+          "small business"
         ],
         "layout_type": ""
       },
       "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_8_0.png",
-          "content": "radarChart\n  polarGrid true\n  title Flicker Detection Impact\n  subsection Before\n    Flaky Tests : 100\n    Test Failures : 50\n    Debugging Time : 20\n  subsection After\n    Flaky Tests : 60\n    Test Failures : 30\n    Debugging Time : 10\n"
-        }
-      ]
+      "diagrams": []
     },
     {
       "section_index": 9,
       "slide_index": 0,
       "path": "temp/slides\\slide_9_0.pptx",
       "content": {
-        "title": "HN Slidegen",
-        "content": "02",
-        "layout": "",
-        "notes": null,
-        "keywords": [],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 9,
-      "slide_index": 1,
-      "path": "temp/slides\\slide_9_1.pptx",
-      "content": {
-        "title": "Introduction to HN Slidegen",
-        "content": [
-          "Automated slide generation tool.",
-          "Leverages data and templates to create presentations.",
-          "Reduces manual effort in slide creation.",
-          "Focuses on efficiency and consistency."
-        ],
-        "layout": "",
-        "notes": "Explain the core purpose of HN Slidegen. Highlight its role in automating the slide creation process. Mention the benefits of using templates and data-driven approaches.",
-        "keywords": [
-          "automation",
-          "slide generation",
-          "templates",
-          "data-driven"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 9,
-      "slide_index": 2,
-      "path": "temp/slides\\slide_9_2.pptx",
-      "content": {
-        "title": "Use Cases & Pain Points",
-        "content": [
-          "Use Cases:",
-          "  - Generating training materials.",
-          "  - Creating sales presentations.",
-          "  - Producing project status updates.",
-          "Pain Points Addressed:",
-          "  - Time-consuming manual slide creation.",
-          "  - Inconsistent formatting across presentations.",
-          "  - Difficulty in updating slides with new data."
-        ],
-        "layout": "",
-        "notes": "Discuss specific scenarios where HN Slidegen is beneficial. Elaborate on the problems it solves, such as reducing manual effort, ensuring consistent formatting, and simplifying data updates.",
-        "keywords": [
-          "training",
-          "sales",
-          "status updates",
-          "efficiency",
-          "consistency"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 9,
-      "slide_index": 3,
-      "path": "temp/slides\\slide_9_3.pptx",
-      "content": {
-        "title": "System Architecture / Workflow",
-        "content": "Diagram: HN Slidegen Workflow",
-        "layout": "",
-        "notes": "Walk through the system architecture diagram. Explain each step in detail, from data input to final slide output. Highlight the key components and their interactions.",
-        "keywords": [
-          "architecture",
-          "workflow",
-          "data input",
-          "template",
-          "slide generation"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_9_3.png",
-          "content": "blockDiagram\n  direction LR\n  [Data Input] --> [Template Selection]\n  [Template Selection] --> [Data Mapping]\n  [Data Mapping] --> [Slide Generation]\n  [Slide Generation] --> [Slide Output]"
-        }
-      ]
-    },
-    {
-      "section_index": 9,
-      "slide_index": 4,
-      "path": "temp/slides\\slide_9_4.pptx",
-      "content": {
-        "title": "Technical Details",
-        "content": [
-          "Programming Language: Python",
-          "Templating Engine: Jinja2",
-          "Data Input: CSV, JSON, Databases",
-          "Output Format: PPTX",
-          "Key Algorithms: Data mapping, layout optimization"
-        ],
-        "layout": "",
-        "notes": "Provide a technical overview of HN Slidegen. Discuss the programming languages, libraries, and algorithms used. Explain how data is processed and how slides are generated.",
-        "keywords": [
-          "python",
-          "jinja2",
-          "csv",
-          "json",
-          "pptx",
-          "data mapping"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 9,
-      "slide_index": 5,
-      "path": "temp/slides\\slide_9_5.pptx",
-      "content": {
-        "title": "Demo / Case Study",
-        "content": "Image: Example of slides generated by HN Slidegen",
-        "layout": "",
-        "notes": "Show a live demo of HN Slidegen or present a case study. Demonstrate how the tool works and showcase the quality of the generated slides. Highlight the benefits achieved in the case study.",
-        "keywords": [
-          "demo",
-          "case study",
-          "slide examples",
-          "automation"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_9_5.png",
-          "content": "Example of slides generated by HN Slidegen"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 9,
-      "slide_index": 6,
-      "path": "temp/slides\\slide_9_6.pptx",
-      "content": {
-        "title": "Impact & Results",
-        "content": [
-          "Reduced slide creation time by 70%.",
-          "Improved consistency across presentations.",
-          "Enabled faster updates with new data.",
-          "Increased productivity of the team."
-        ],
-        "layout": "",
-        "notes": "Summarize the key achievements and benefits of HN Slidegen. Quantify the impact with metrics such as time savings, improved consistency, and increased productivity.",
-        "keywords": [
-          "impact",
-          "results",
-          "time savings",
-          "consistency",
-          "productivity"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 10,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_10_0.pptx",
-      "content": {
-        "title": "Chapter 2: HN Slidegen - Introduction",
-        "content": "02",
-        "layout": "",
-        "notes": null,
-        "keywords": [],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 10,
-      "slide_index": 1,
-      "path": "temp/slides\\slide_10_1.pptx",
-      "content": {
-        "title": "Introducing HN Slidegen: Your Automated Slide Creation Tool",
-        "content": [
-          "What is HN Slidegen?",
-          "   - An automation tool designed to generate presentation slides efficiently.",
-          "   - Streamlines the slide creation process, saving time and effort.",
-          "Purpose:",
-          "   - Automate the creation of presentation slides from various input formats (e.g., text, outlines, data).",
-          "   - Reduce manual effort and ensure consistency across presentations.",
-          "Target Users:",
-          "   - Professionals who frequently create presentations (e.g., consultants, educators, marketers).",
-          "   - Anyone seeking a faster and more efficient way to generate slides."
-        ],
-        "layout": "",
-        "notes": "Explain the core functionality of HN Slidegen. Emphasize its role in automating slide creation and its benefits for different user groups. Highlight the time-saving aspect and consistency it brings to presentations.",
-        "keywords": [
-          "automation",
-          "slide generation",
-          "presentation",
-          "efficiency",
-          "tool"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_10_1.png",
-          "content": "blockDiagram\n  direction LR\n  subgraph Input\n    A[Text, Outline, Data]\n  end\n  B[HN Slidegen Engine]\n  C[Presentation Slides]\n  A --> B\n  B --> C\n  subgraph Output\n    C\n  end"
-        }
-      ]
-    },
-    {
-      "section_index": 11,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_11_0.pptx",
-      "content": {
-        "title": "Chapter 2: HN Slidegen - Use Cases & Pain Points",
-        "content": [
-          "**Use Cases:**",
-          "- Generating slides for meetings (project updates, team meetings)",
-          "- Creating presentations (conferences, webinars, internal training)",
-          "- Developing training materials (onboarding, skill development)",
-          "- Automating repetitive slide creation tasks",
-          "",
-          "**Pain Points:**",
-          "- Time-consuming manual slide creation process",
-          "- Inconsistent formatting across different presentations",
-          "- Difficulty in maintaining a consistent brand identity",
-          "- Challenges in updating slides with new information",
-          "- Lack of version control and collaboration features",
-          "",
-          "**How HN Slidegen Addresses These Pain Points:**",
-          "- Automates slide generation from structured data or templates",
-          "- Enforces consistent formatting and branding",
-          "- Simplifies slide updates and maintenance",
-          "- Enables version control and collaboration",
-          "- Reduces the time and effort required for slide creation"
-        ],
-        "layout": "",
-        "notes": "This slide outlines the key use cases and pain points that HN Slidegen aims to address. Emphasize the time-saving and consistency benefits of the tool. Provide real-world examples of how these pain points manifest in typical business scenarios.",
-        "keywords": [
-          "use cases",
-          "pain points",
-          "slide generation",
-          "automation",
-          "consistency",
-          "meetings",
-          "presentations",
-          "training"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_11_0.png",
-          "content": "mindmap\n  root((HN Slidegen))\n\n    Use Cases\n      Generating Slides\n        Meetings\n        Presentations\n        Training Materials\n      Automating Tasks\n\n    Pain Points\n      Time-Consuming\n      Inconsistent Formatting\n      Maintaining Brand Identity\n      Updating Slides\n      Lack of Collaboration\n\n    HN Slidegen Addresses\n      Automation\n      Consistent Formatting\n      Simplified Updates\n      Version Control\n      Reduced Effort"
-        }
-      ]
-    },
-    {
-      "section_index": 12,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_12_0.pptx",
-      "content": {
-        "title": "HN Slidegen - System Architecture & Workflow",
-        "content": [
-          "The system takes various inputs and generates presentation slides.",
-          "Key Components:",
-          "  *  **User Input:** Text, images, data tables, and presentation outline.",
-          "  *  **Processing Engine:** Slide generation algorithm, layout engine, and content formatting.",
-          "  *  **Output:** Presentation slides in a desired format (e.g., PPTX, PDF).",
-          "Workflow:",
-          "  1.  User provides input data and presentation outline.",
-          "  2.  The processing engine analyzes the input and generates slide content.",
-          "  3.  The layout engine arranges the content on the slides.",
-          "  4.  The system outputs the generated presentation slides."
-        ],
-        "layout": "",
-        "notes": "Explain each step of the workflow in detail. Emphasize the modularity of the system, allowing for easy updates and improvements to individual components.",
-        "keywords": [
-          "architecture",
-          "workflow",
-          "slide generation",
-          "input",
-          "output",
-          "processing"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_12_0.png",
-          "content": "blockDiagram\n  direction LR\n  subgraph User Input\n    A[Text, Images, Data Tables, Outline]\n  end\n\n  subgraph Processing Engine\n    B[Slide Generation Algorithm]\n    C[Layout Engine]\n    D[Content Formatting]\n  end\n\n  subgraph Output\n    E[Presentation Slides (PPTX, PDF)]\n  end\n\n  A --> B\n  B --> C\n  C --> D\n  D --> E"
-        }
-      ]
-    },
-    {
-      "section_index": 13,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_13_0.pptx",
-      "content": {
-        "title": "HN Slidegen - Technical Details",
-        "content": [
-          "Programming Languages: Python",
-          "Libraries Used:",
-          "- python-pptx: For creating and manipulating PowerPoint files.",
-          "- OpenAI API: For generating slide content from prompts.",
-          "- Other supporting libraries: e.g., for data processing, API handling.",
-          "Template-Based Approach:",
-          "- Pre-designed slide templates for different content types (title, content, image, etc.).",
-          "- Placeholders within templates for dynamic content insertion.",
-          "Customization Options:",
-          "- User-defined styles (fonts, colors, layouts).",
-          "- Ability to add/remove slides and elements.",
-          "- Customizable prompts for content generation."
-        ],
-        "layout": "",
-        "notes": "This slide details the core technologies and methodologies behind HN Slidegen. Emphasize the role of Python and python-pptx for PowerPoint manipulation. Explain how the template-based approach allows for structured slide creation and how users can customize the output to match their preferences.",
-        "keywords": [
-          "Python",
-          "python-pptx",
-          "OpenAI API",
-          "template-based",
-          "customization"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_13_0.png",
-          "content": "blockDiagram\n  direction LR\n  subgraph Input\n    A[Input Prompt]\n  end\n\n  subgraph Processing\n    B[OpenAI API] --> C(Generated Text)\n    C --> D{Template Selection}\n    D --> E[Content Insertion]\n  end\n\n  subgraph Output\n    E --> F[PowerPoint File]\n  end\n\n  style A fill:#f9f,stroke:#333,stroke-width:2px\n  style F fill:#ccf,stroke:#333,stroke-width:2px"
-        }
-      ]
-    },
-    {
-      "section_index": 14,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_14_0.pptx",
-      "content": {
-        "title": "HN Slidegen - Demo & Case Study",
-        "content": [
-          "**Live Demo (if possible):**",
-          "  *  Show the tool in action, generating slides from a sample input (e.g., a text outline).",
-          "  *  Highlight the speed and ease of use.",
-          "**Recorded Demo (if live demo not feasible):**",
-          "  *  Play a pre-recorded video showcasing the tool's functionality.",
-          "  *  Narrate the steps and explain the features being demonstrated.",
-          "**Case Study: Presentation Creation for Project X**",
-          "  *  **Before:** Manual slide creation took 8 hours.",
-          "  *  **After:** HN Slidegen generated the initial draft in 15 minutes.",
-          "  *  Reduced overall presentation creation time by 75%.",
-          "  *  Allowed the team to focus on content refinement and delivery.",
-          "**Visual Comparison:**",
-          "  *  Show a 'before' slide (manually created) and an 'after' slide (generated by HN Slidegen).",
-          "  *  Emphasize the consistency and professional look achieved with the tool."
-        ],
-        "layout": "",
-        "notes": "During the demo, emphasize the tool's ability to handle different input formats and generate various slide layouts. In the case study, quantify the time savings and highlight the impact on team productivity. Use the visual comparison to showcase the tool's design capabilities.",
-        "keywords": [
-          "HN Slidegen",
-          "demo",
-          "case study",
-          "automation",
-          "slide generation",
-          "efficiency",
-          "time saving",
-          "before and after"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_14_0.png",
-          "content": "Before and after screenshots of slides created manually vs. with HN Slidegen"
-        },
-        {
-          "path": "temp/slides\\image_14_0.png",
-          "content": "Screenshot of the HN Slidegen interface during slide generation"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 15,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_15_0.pptx",
-      "content": {
-        "title": "HN Slidegen: Impact & Results",
-        "content": [
-          "Reduced slide creation time by **40%**.",
-          "Improved design consistency across all presentations.",
-          "Increased team productivity by **25%**.",
-          "Empowered non-designers to create professional-looking slides.",
-          "Standardized slide templates for brand alignment."
-        ],
-        "layout": "",
-        "notes": "Highlight the quantifiable results. Use specific numbers to showcase the impact. Mention the positive feedback from users.",
-        "keywords": [
-          "impact",
-          "results",
-          "time saving",
-          "productivity",
-          "consistency",
-          "automation"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_15_0.png",
-          "content": "radarChart\n  polarGrid lines\n  axisLabel Factor\n  centerLabel Key Results\n  set Slidegen [\n    40, 90, 75, 80\n  ]\n  axis Time Saved\n  axis Consistency\n  axis Productivity\n  axis User Satisfaction"
-        }
-      ]
-    },
-    {
-      "section_index": 16,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_16_0.pptx",
-      "content": {
-        "title": "Chapter 3: HR Interview",
-        "content": "03",
-        "layout": "",
-        "notes": null,
-        "keywords": [],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 16,
-      "slide_index": 1,
-      "path": "temp/slides\\slide_16_1.pptx",
-      "content": {
-        "title": "AI HR Interview: Introduction",
-        "content": [
-          "Automated system for conducting initial HR interviews.",
-          "Utilizes AI to assess candidates based on predefined criteria.",
-          "Aims to streamline the hiring process and improve efficiency.",
-          "Focuses on objective evaluation and reduces bias."
-        ],
-        "layout": "",
-        "notes": "Explain the core purpose and benefits of using AI for HR interviews. Highlight the focus on objectivity and efficiency.",
-        "keywords": [
-          "AI",
-          "HR Interview",
-          "Automation",
-          "Recruitment",
-          "Efficiency"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 16,
-      "slide_index": 2,
-      "path": "temp/slides\\slide_16_2.pptx",
-      "content": {
-        "title": "Use Cases & Pain Points",
-        "content": [
-          "Use Cases:",
-          "  * Screening large volumes of applicants.",
-          "  * Standardizing the interview process.",
-          "  * Identifying top candidates quickly.",
-          "  * Conducting interviews remotely.",
-          "Pain Points Addressed:",
-          "  * Time-consuming manual screening.",
-          "  * Inconsistent interview experiences.",
-          "  * Difficulty in objectively comparing candidates.",
-          "  * High cost per hire."
-        ],
-        "layout": "",
-        "notes": "Discuss specific scenarios where AI HR interviews are most valuable. Emphasize the problems it solves for HR departments.",
-        "keywords": [
-          "Use Cases",
-          "Pain Points",
-          "Screening",
-          "Standardization",
-          "Efficiency",
-          "Cost Reduction"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 16,
-      "slide_index": 3,
-      "path": "temp/slides\\slide_16_3.pptx",
-      "content": {
-        "title": "System Architecture / Workflow",
-        "content": "Diagram: Candidate applies -> AI Interview Scheduling -> Automated Interview (voice/text) -> AI Analysis & Scoring -> Report Generation -> HR Review",
-        "layout": "",
-        "notes": "Walk through the entire process, explaining each step and the data flow. Highlight the role of AI in analysis and scoring.",
-        "keywords": [
-          "Architecture",
-          "Workflow",
-          "AI",
-          "Interview",
-          "Analysis",
-          "Scoring"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_16_3.png",
-          "content": "sequenceDiagram\n    participant Candidate\n    participant Scheduling\n    participant AI Interview\n    participant AI Analysis\n    participant Report\n    participant HR\n\n    Candidate->>Scheduling: Applies\n    Scheduling->>AI Interview: Schedules Interview\n    AI Interview->>AI Analysis: Automated Interview (voice/text)\n    AI Analysis->>Report: Analysis & Scoring\n    Report->>HR: Report Generation\n    HR->>Candidate: Review\n"
-        }
-      ]
-    },
-    {
-      "section_index": 16,
-      "slide_index": 4,
-      "path": "temp/slides\\slide_16_4.pptx",
-      "content": {
-        "title": "Technical Details",
-        "content": [
-          "Natural Language Processing (NLP) for analyzing candidate responses.",
-          "Machine Learning (ML) models for scoring candidates based on predefined criteria.",
-          "Speech recognition for voice-based interviews.",
-          "Sentiment analysis to gauge candidate's emotional state.",
-          "Database for storing candidate data and interview results."
-        ],
-        "layout": "",
-        "notes": "Explain the core technologies used in the AI HR interview system. Focus on NLP, ML, and speech recognition.",
-        "keywords": [
-          "NLP",
-          "Machine Learning",
-          "Speech Recognition",
-          "Sentiment Analysis",
-          "Database"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 16,
-      "slide_index": 5,
-      "path": "temp/slides\\slide_16_5.pptx",
-      "content": {
-        "title": "Demo / Case Study",
-        "content": "Image: A screenshot of the AI HR Interview system interface, showing a candidate's profile and the AI's assessment.",
-        "layout": "",
-        "notes": "Show a live demo or present a case study of the AI HR interview system in action. Highlight the key features and benefits.",
-        "keywords": [
-          "Demo",
-          "Case Study",
-          "AI",
-          "HR Interview",
-          "Assessment"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_16_5.png",
-          "content": "AI HR Interview system interface screenshot"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 16,
-      "slide_index": 6,
-      "path": "temp/slides\\slide_16_6.pptx",
-      "content": {
-        "title": "Impact & Results",
-        "content": [
-          "Reduced time-to-hire by X%.",
-          "Improved candidate quality by Y%.",
-          "Lowered cost-per-hire by Z%.",
-          "Increased objectivity and reduced bias in the hiring process.",
-          "Improved candidate experience through faster feedback."
-        ],
-        "layout": "",
-        "notes": "Summarize the key achievements and benefits of the AI HR interview project. Quantify the impact with metrics and data.",
-        "keywords": [
-          "Impact",
-          "Results",
-          "Efficiency",
-          "Quality",
-          "Cost Reduction",
-          "Objectivity"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 17,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_17_0.pptx",
-      "content": {
-        "title": "Chapter 3: AI HR Interview - Introduction",
-        "content": [
-          "**What is AI HR Interview?**",
-          "   - An automated system that uses artificial intelligence to conduct initial screening interviews.",
-          "   - Leverages natural language processing (NLP) and machine learning (ML) to assess candidates.",
-          "**Purpose:**",
-          "   - Automate the initial screening process to save time and resources.",
-          "   - Identify qualified candidates more efficiently.",
-          "**Benefits:**",
-          "   - Reduced time-to-hire",
-          "   - Improved candidate experience (faster feedback)",
-          "   - Unbiased initial assessment",
-          "   - Cost savings"
-        ],
-        "layout": "",
-        "notes": "This slide introduces the AI HR Interview project. Explain the core concept, its purpose in automating initial screenings, and the key benefits it offers to the HR department and the candidates.",
-        "keywords": [
-          "AI",
-          "HR Interview",
-          "Automation",
-          "Screening",
-          "NLP",
-          "Machine Learning",
-          "Recruiting"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_17_0.png",
-          "content": "AI conducting an interview"
-        },
-        {
-          "path": "temp/slides\\image_17_0.png",
-          "content": "HR professional using AI tools"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 18,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_18_0.pptx",
-      "content": {
-        "title": "Chapter 3: HR Interview - Use Cases & Pain Points",
-        "content": [
-          "**Use Cases:**",
-          "  * Screening large numbers of applicants efficiently.",
-          "  * Identifying qualified candidates based on pre-defined criteria.",
-          "  * Standardizing the initial interview process.",
-          "  * Assessing soft skills and personality traits.",
-          "**Pain Points:**",
-          "  * Time-consuming and resource-intensive manual screening.",
-          "  * Potential for unconscious bias in human screening.",
-          "  * Difficulty in consistently evaluating candidates across different interviewers.",
-          "  * High cost associated with initial screening stages.",
-          "**AI HR Interview Solution:**",
-          "  * Automates the initial screening process, saving time and resources.",
-          "  * Reduces bias by using objective criteria and algorithms.",
-          "  * Provides consistent and standardized evaluations.",
-          "  * Improves the efficiency of the overall hiring process."
-        ],
-        "layout": "",
-        "notes": "This slide outlines the key use cases and pain points that the AI HR Interview system addresses. Emphasize the efficiency gains, bias reduction, and standardization benefits. Use real-world examples to illustrate the pain points and how the AI solution alleviates them.",
-        "keywords": [
-          "HR Interview",
-          "Use Cases",
-          "Pain Points",
-          "Screening",
-          "Bias",
-          "Automation",
-          "Efficiency",
-          "Standardization"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_18_0.png",
-          "content": "image of a diverse group of job applicants"
-        },
-        {
-          "path": "temp/slides\\image_18_0.png",
-          "content": "image representing time savings or efficiency"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 19,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_19_0.pptx",
-      "content": {
-        "title": "AI HR Interview: System Architecture & Workflow",
-        "content": [
-          "The AI HR Interview system automates and enhances the candidate screening process.",
-          "It analyzes candidate responses using AI algorithms to provide objective assessments and rankings.",
-          "Key stages include:",
-          "  *  Candidate Input: Text, audio, or video responses to interview questions.",
-          "  *  AI Analysis: NLP, sentiment analysis, and other AI techniques to evaluate responses.",
-          "  *  Output: Candidate ranking, feedback reports, and insights for recruiters."
-        ],
-        "layout": "",
-        "notes": "This slide provides an overview of the system's architecture and workflow. Emphasize the key stages and the role of AI in analyzing candidate responses. Mention the different types of input the system can handle (text, audio, video).",
-        "keywords": [
-          "AI HR Interview",
-          "System Architecture",
-          "Workflow",
-          "Candidate Input",
-          "AI Analysis",
-          "Candidate Ranking",
-          "Feedback",
-          "NLP",
-          "Sentiment Analysis"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_19_0.png",
-          "content": "blockDiagram\n  direction LR\n  subgraph Candidate\n    A[Candidate Input] --> B(Text, Audio, Video)\n  end\n\n  subgraph AI Analysis\n    B --> C{AI Algorithms}\n    C --> D[NLP, Sentiment Analysis]\n  end\n\n  subgraph Output\n    D --> E(Candidate Ranking)\n    D --> F(Feedback Reports)\n    D --> G(Insights for Recruiters)\n  end"
-        }
-      ]
-    },
-    {
-      "section_index": 20,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_20_0.pptx",
-      "content": {
-        "title": "Chapter 3: HR Interview - Technical Details",
-        "content": [
-          "**AI Models Used:**",
-          "  *   **NLP (Natural Language Processing):**",
-          "      *   BERT, RoBERTa, or similar transformer-based models for analyzing candidate responses.",
-          "      *   Sentiment analysis to gauge candidate's emotional tone.",
-          "      *   Topic modeling to identify key themes in responses.",
-          "  *   **Speech Recognition (ASR):**",
-          "      *   Google Cloud Speech-to-Text, AssemblyAI, or similar for transcribing audio responses.",
-          "  *   **Machine Learning:**",
-          "      *   Classification models to predict candidate suitability based on analyzed data.",
-          "      *   Regression models to predict performance scores.",
-          "**Training Data & Methodology:**",
-          "  *   Large datasets of past interview transcripts and performance reviews.",
-          "  *   Data augmentation techniques to improve model robustness.",
-          "  *   Fine-tuning pre-trained models on HR-specific data.",
-          "  *   Cross-validation to ensure model generalization.",
-          "**Ethical Considerations & Bias Mitigation:**",
-          "  *   Bias detection in training data using fairness metrics.",
-          "  *   Adversarial training to make models robust to biased inputs.",
-          "  *   Regular audits of model performance across different demographic groups.",
-          "  *   Transparency in model decision-making through explainable AI (XAI) techniques."
-        ],
-        "layout": "",
-        "notes": "This slide details the core technical components of the AI HR Interview system. Emphasize the specific models used, the importance of high-quality training data, and the critical need for ethical considerations and bias mitigation strategies. Mention the use of XAI to ensure transparency.",
-        "keywords": [
-          "NLP",
-          "Speech Recognition",
-          "Machine Learning",
-          "BERT",
-          "RoBERTa",
-          "Training Data",
-          "Bias Mitigation",
-          "Ethical AI",
-          "XAI"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_20_0.png",
-          "content": "mindmap\n  root((AI HR Interview System))\n\n  c1[AI Models Used]\n    c1 --> a1(NLP)\n      a1 --> a11(BERT/RoBERTa)\n      a1 --> a12(Sentiment Analysis)\n      a1 --> a13(Topic Modeling)\n    c1 --> a2(Speech Recognition)\n      a2 --> a21(Google Cloud Speech-to-Text)\n      a2 --> a22(AssemblyAI)\n    c1 --> a3(Machine Learning)\n      a3 --> a31(Classification Models)\n      a3 --> a32(Regression Models)\n\n  c2[Training Data & Methodology]\n    c2 --> b1(Large Datasets)\n    c2 --> b2(Data Augmentation)\n    c2 --> b3(Fine-tuning)\n    c2 --> b4(Cross-validation)\n\n  c3[Ethical Considerations & Bias Mitigation]\n    c3 --> d1(Bias Detection)\n    c3 --> d2(Adversarial Training)\n    c3 --> d3(Regular Audits)\n    c3 --> d4(Explainable AI (XAI))"
-        }
-      ]
-    },
-    {
-      "section_index": 21,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_21_0.pptx",
-      "content": {
-        "title": "Chapter 3: AI HR Interview - Demo / Case Study",
-        "content": [
-          "**Live Demo (if possible):**",
-          "- Show the AI system analyzing candidate responses in real-time.",
-          "- Highlight key features: sentiment analysis, skill assessment, communication evaluation.",
-          "- Demonstrate the system's ability to ask follow-up questions based on candidate answers.",
-          "**Case Study: Efficient Candidate Identification**",
-          "- Present a real-world example of how the AI HR Interview system was used.",
-          "- Explain the initial challenge: high volume of applications, limited HR resources.",
-          "- Describe how the AI system helped to quickly identify qualified candidates.",
-          "**AI vs. Manual Selection Comparison**",
-          "- Compare the performance of AI-selected candidates with manually selected candidates.",
-          "- Metrics: time-to-hire, candidate quality, employee retention.",
-          "- Show data visualization (e.g., bar graph) to illustrate the comparison."
-        ],
-        "layout": "",
-        "notes": "If a live demo isn't feasible, use a pre-recorded video. Emphasize the efficiency gains and improved candidate quality achieved through the AI system. Quantify the results whenever possible.",
-        "keywords": [
-          "AI HR Interview",
-          "demo",
-          "case study",
-          "candidate selection",
-          "efficiency",
-          "results",
-          "comparison"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_21_0.png",
-          "content": "quadrantChart\n    title Candidate Selection Performance\n    x-axis --> Lower Performance --> Higher Performance\n    y-axis --> Lower Efficiency --> Higher Efficiency\n    quadrant 1 [High Efficiency & High Performance]\n    quadrant 2 [Low Efficiency & High Performance]\n    quadrant 3 [Low Efficiency & Low Performance]\n    quadrant 4 [High Efficiency & Low Performance]\n\n    Candidate A [AI-Selected]: [85, 90]\n    Candidate B [Manually Selected]: [60, 50]\n\n    classDef ai fill:#f9f,stroke:#333,stroke-width:2px\n    classDef manual fill:#ccf,stroke:#333,stroke-width:2px\n\n    class CandidateA ai\n    class CandidateB manual"
-        }
-      ]
-    },
-    {
-      "section_index": 22,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_22_0.pptx",
-      "content": {
-        "title": "AI HR Interview: Impact & Results",
-        "content": [
-          "**Reduced Time to Hire:**",
-          "  *  Up to 50% reduction in time spent on initial candidate screening.",
-          "**Improved Candidate Quality:**",
-          "  *  20% increase in the number of qualified candidates identified in the initial screening phase.",
-          "**Reduced Bias:**",
-          "  *  Standardized interview process minimizes unconscious bias.",
-          "**Cost Savings:**",
-          "  *  Significant reduction in HR personnel time spent on repetitive screening tasks.",
-          "**Enhanced Candidate Experience:**",
-          "  *  Provides immediate feedback and a consistent experience for all applicants."
-        ],
-        "layout": "",
-        "notes": "Highlight the quantifiable results. For example, instead of saying 'significant reduction,' provide a percentage or a specific number. Emphasize the benefits of reduced bias and improved candidate experience.",
-        "keywords": [
-          "AI HR Interview",
-          "Impact",
-          "Results",
-          "Time to Hire",
-          "Candidate Quality",
-          "Bias Reduction",
-          "Cost Savings",
-          "Candidate Experience"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_22_0.png",
-          "content": "radarChart\n  polarGridShape circle\n  polarGridShape circle\n  showLegend true\n  title : AI HR Interview Impact\n  \n  section Before AI\n    Time to Hire : 10\n    Candidate Quality : 5\n    Bias Score : 30\n    Cost Savings : 2\n    Candidate Experience : 3\n\n  section After AI\n    Time to Hire : 5\n    Candidate Quality : 25\n    Bias Score : 10\n    Cost Savings : 8\n    Candidate Experience : 7\n"
-        }
-      ]
-    },
-    {
-      "section_index": 23,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_23_0.pptx",
-      "content": {
-        "title": "Conclusion: Key Takeaways",
-        "content": [
-          "Flicker Detection: Automated identification of visual inconsistencies, improving UI testing efficiency and reliability.",
-          "HN Slidegen: Streamlined slide creation process, saving time and resources in presentation development.",
-          "AI HR Interview: Enhanced candidate screening with AI-driven interviews, leading to better hiring decisions.",
-          "Automation and AI: Proven to significantly boost efficiency, reduce manual effort, and improve overall productivity across various domains."
-        ],
-        "layout": "",
-        "notes": "Summarize the core value proposition of each project. Emphasize the overarching theme of automation and AI driving positive change.",
-        "keywords": [
-          "Flicker Detection",
-          "HN Slidegen",
-          "AI HR Interview",
-          "Automation",
-          "AI",
-          "Efficiency",
-          "Productivity"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_23_0.png",
-          "content": "Project | Key Benefit | Impact\nFlicker Detection | Improved UI Testing | Reduced manual testing effort, faster feedback cycles\nHN Slidegen | Automated Slide Creation | Increased presentation development speed, consistent branding\nAI HR Interview | Enhanced Candidate Screening | Improved hiring quality, reduced time-to-hire"
-        }
-      ]
-    },
-    {
-      "section_index": 25,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_25_0.pptx",
-      "content": {
-        "title": "Q & A",
-        "content": [
-          "Open the floor for questions.",
-          "Prepared to answer questions about:",
-          "  * Technical details",
-          "  * Implementation",
-          "  * Results of each project",
-          "Challenges faced and lessons learned",
-          "Contact Information:"
-        ],
-        "layout": "",
-        "notes": "Be prepared to elaborate on any aspect of the projects. Have specific examples ready to illustrate key points. Mention contact information for follow-up questions.",
-        "keywords": [
-          "Questions",
-          "Answers",
-          "Technical Details",
-          "Implementation",
-          "Results",
-          "Challenges",
-          "Lessons Learned",
-          "Contact Information"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_25_0.png",
-          "content": "Name: [Your Name]\nEmail: [Your Email]\nLinkedIn: [Your LinkedIn Profile URL]\nGitHub: [Your GitHub Profile URL (if applicable)]"
-        }
-      ]
-    },
-    {
-      "section_index": 24,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_24_0.pptx",
-      "content": {
-        "title": "Future Work & Thank You",
-        "content": [
-          "**Flicker Detection:**",
-          "  *   Explore more sophisticated image processing techniques (e.g., deep learning) for improved accuracy.",
-          "  *   Integrate with a wider range of testing frameworks and platforms.",
-          "  *   Develop a user-friendly interface for configuring sensitivity and reporting results.",
-          "**HN Slidegen:**",
-          "  *   Expand the template library with more diverse and customizable designs.",
-          "  *   Implement natural language processing (NLP) to automatically generate content from outlines or documents.",
-          "  *   Add support for animations and transitions.",
-          "**AI HR Interview:**",
-          "  *   Improve the accuracy and fairness of the AI model by training on a larger and more diverse dataset.",
-          "  *   Incorporate sentiment analysis to better understand candidate emotions and communication styles.",
-          "  *   Develop a more interactive and engaging interview experience.",
-          "**Thank You:**",
-          "  *   Thank you for your time and attention!",
-          "  *   Special thanks to my mentors [Mentor Names] and colleagues [Colleague Names] for their guidance and support throughout these projects."
-        ],
-        "layout": "",
-        "notes": "Highlight the potential for future development and improvement in each project. Express sincere gratitude to mentors and colleagues for their contributions.",
-        "keywords": [
-          "future work",
-          "improvements",
-          "extensions",
-          "thank you",
-          "acknowledgement",
-          "mentors",
-          "colleagues",
-          "flicker detection",
-          "HN Slidegen",
-          "AI HR Interview"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_24_0.png",
-          "content": "Project: Flicker Detection, Future Work: Deep Learning Integration, Wider Framework Support, User-Friendly Interface; Project: HN Slidegen, Future Work: Expanded Template Library, NLP Content Generation, Animation Support; Project: AI HR Interview, Future Work: Improved AI Accuracy, Sentiment Analysis, Interactive Experience"
-        }
-      ]
-    },
-    {
-      "section_index": 26,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_26_0.pptx",
-      "content": {
-        "title": "Q&A - Continued",
+        "title": "Thank You!",
         "content": [
           "Thank you for your time and attention!",
-          "Feel free to reach out with any further questions.",
-          "Contact Information:",
-          "  * Email: your_email@example.com",
-          "  * LinkedIn: linkedin.com/in/your_profile",
-          "Code & Documentation:",
-          "  * Happy to share code snippets and documentation upon request."
+          "We hope this presentation has provided valuable insights into leveraging big data analytics for your small business."
         ],
         "layout": "",
-        "notes": "Reiterate gratitude. Provide clear contact information. Offer to share resources to encourage further engagement.",
+        "notes": "Reiterate gratitude and express hope that the presentation was helpful. Encourage audience members to reach out with further questions.",
         "keywords": [
-          "contact information",
-          "email",
-          "LinkedIn",
-          "code",
-          "documentation",
-          "thank you"
+          "thank you",
+          "gratitude",
+          "big data",
+          "small business",
+          "insights"
         ],
         "layout_type": ""
       },
       "images": [
         {
-          "path": "temp/slides\\image_26_0.png",
-          "content": "email icon"
-        },
-        {
-          "path": "temp/slides\\image_26_0.png",
-          "content": "LinkedIn icon"
+          "path": "temp/slides\\image_9_0.png",
+          "content": "image of a diverse group of people smiling and applauding"
         }
       ],
       "diagrams": []
     }
   ],
   "outline": {
-    "topic": "Final Internship Presentation",
-    "num_sections": 27,
-    "num_slides": 27,
+    "topic": "Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
+    "num_sections": 10,
+    "num_slides": 21,
     "sections": [
       {
         "title": "Title Slide",
-        "description": "Presentation title, your name, internship company, and date.",
+        "description": "Presentation title, presenter name, and date.",
         "key_points": [
-          "Presentation Title: Final Internship Presentation",
-          "Your Name",
-          "Internship Company",
+          "Presentation Title: Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
+          "Presenter Name and Title",
           "Date"
         ],
         "estimated_slides": 1,
@@ -1550,13 +674,12 @@
       },
       {
         "title": "Agenda",
-        "description": "Overview of the presentation topics and structure.",
+        "description": "Overview of the presentation topics and timeline.",
         "key_points": [
-          "Introduction",
-          "Chapter 1: Flicker Detection",
-          "Chapter 2: HN Slidegen",
-          "Chapter 3: HR Interview",
-          "Conclusion",
+          "Introduction to Big Data and its Relevance to SMBs",
+          "Identifying Key Decision-Making Areas for Improvement",
+          "Practical Applications of Big Data Analytics",
+          "Overcoming Challenges and Getting Started",
           "Q&A"
         ],
         "estimated_slides": 1,
@@ -1564,326 +687,110 @@
         "section_type": "agenda"
       },
       {
-        "title": "Chapter 1: Flicker Detection",
-        "description": "Detailed explanation of the flicker detection project.",
+        "title": "Introduction to Big Data and its Relevance to SMBs",
+        "description": "Defining big data and explaining why it's no longer just for large corporations. Focus on accessibility and affordability for small businesses.",
         "key_points": [
-          "Introduction to Flicker Detection",
-          "Use Cases & Pain Points",
-          "System Architecture / Workflow",
-          "Technical Details",
-          "Demo / Case Study",
-          "Impact & Results"
+          "What is Big Data? (Volume, Velocity, Variety, Veracity, Value)",
+          "Debunking the Myth: Big Data is for Everyone",
+          "The Growing Accessibility and Affordability of Big Data Tools",
+          "Real-World Examples of SMBs Benefiting from Big Data"
         ],
-        "estimated_slides": 6,
+        "estimated_slides": 3,
         "section_index": 2,
         "section_type": "chapter"
       },
       {
-        "title": "Chapter 1: Flicker Detection - Introduction",
-        "description": "Introduce the concept of flicker detection in automation testing.",
+        "title": "Identifying Key Decision-Making Areas for Improvement",
+        "description": "Helping SMBs identify specific areas where data-driven insights can significantly improve decision-making speed and accuracy.",
         "key_points": [
-          "What is flicker in the context of UI testing?",
-          "Why is flicker detection important?",
-          "Brief overview of the project's goal."
+          "Common Decision-Making Challenges Faced by SMBs",
+          "Identifying Key Performance Indicators (KPIs) Relevant to Your Business",
+          "Examples: Sales Forecasting, Customer Segmentation, Marketing Campaign Optimization, Inventory Management",
+          "Using Data to Understand Customer Behavior and Preferences"
         ],
-        "estimated_slides": 1,
+        "estimated_slides": 4,
         "section_index": 3,
         "section_type": "chapter"
       },
       {
-        "title": "Chapter 1: Flicker Detection - Use Cases & Pain Points",
-        "description": "Explain the scenarios where flicker detection is useful and the problems it solves.",
+        "title": "Practical Applications of Big Data Analytics",
+        "description": "Showcasing specific tools and techniques that SMBs can use to analyze their data and gain actionable insights. Focus on user-friendly and cost-effective solutions.",
         "key_points": [
-          "Common scenarios where flicker occurs (e.g., dynamic content loading).",
-          "Pain points caused by flicker (e.g., flaky tests, inaccurate results).",
-          "How flicker impacts test automation reliability."
+          "Overview of User-Friendly Analytics Tools (e.g., Google Analytics, CRM Analytics, Cloud-Based Solutions)",
+          "Data Visualization Techniques for Easy Understanding (Charts, Graphs, Dashboards)",
+          "Predictive Analytics: Forecasting Trends and Anticipating Future Needs",
+          "A/B Testing and Experimentation for Data-Driven Marketing",
+          "Mermaid Diagram: Data Flow for Decision Making"
         ],
-        "estimated_slides": 1,
+        "estimated_slides": 5,
         "section_index": 4,
         "section_type": "chapter"
       },
       {
-        "title": "Chapter 1: Flicker Detection - System Architecture / Workflow",
-        "description": "Describe the system's architecture and workflow from input to output.",
+        "title": "Overcoming Challenges and Getting Started",
+        "description": "Addressing common concerns and providing practical steps for SMBs to implement big data analytics. Focus on data security, privacy, and ethical considerations.",
         "key_points": [
-          "User Input: Video of UI interaction.",
-          "Processing: Flicker detection algorithm.",
-          "Output: Report indicating flicker occurrences.",
-          "Diagram: Simple flowchart illustrating the workflow (Video Input -> Flicker Detection -> Report Output)."
+          "Addressing Common Concerns: Data Security, Privacy, and Cost",
+          "Building a Data-Driven Culture Within Your Organization",
+          "Steps to Get Started: Data Collection, Storage, and Analysis",
+          "Finding the Right Talent or Partner for Your Big Data Needs",
+          "Ethical Considerations in Data Collection and Usage"
         ],
-        "estimated_slides": 1,
+        "estimated_slides": 4,
         "section_index": 5,
         "section_type": "chapter"
       },
       {
-        "title": "Chapter 1: Flicker Detection - Technical Details",
-        "description": "Explain the technical aspects of the flicker detection algorithm.",
+        "title": "Conclusion: Embrace Data-Driven Decision-Making",
+        "description": "Summarizing the key benefits of leveraging big data analytics and reiterating the call to action.",
         "key_points": [
-          "Algorithm used for flicker detection (e.g., frame difference analysis).",
-          "Libraries and tools used (e.g., OpenCV).",
-          "Metrics used to quantify flicker (e.g., pixel change ratio)."
+          "Recap of Key Benefits: Faster Decisions, Improved Accuracy, Increased Efficiency",
+          "The Future of SMBs: Data-Driven and Competitive"
         ],
         "estimated_slides": 1,
         "section_index": 6,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 1: Flicker Detection - Demo / Case Study",
-        "description": "Show a demo or present a case study of the flicker detection system in action.",
-        "key_points": [
-          "Live demo (if possible) or recorded demo of the system detecting flicker.",
-          "Case study: Example of how the system helped identify and resolve flicker issues in a real-world scenario.",
-          "Show before and after results."
-        ],
-        "estimated_slides": 1,
-        "section_index": 7,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 1: Flicker Detection - Impact & Results",
-        "description": "Summarize the impact and results of the flicker detection project.",
-        "key_points": [
-          "Improved test automation reliability.",
-          "Reduced flaky tests.",
-          "Faster identification of UI issues.",
-          "Quantifiable metrics demonstrating the improvement (e.g., reduction in test failures)."
-        ],
-        "estimated_slides": 1,
-        "section_index": 8,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 2: HN Slidegen",
-        "description": "Detailed explanation of the HN Slidegen project.",
-        "key_points": [
-          "Introduction to HN Slidegen",
-          "Use Cases & Pain Points",
-          "System Architecture / Workflow",
-          "Technical Details",
-          "Demo / Case Study",
-          "Impact & Results"
-        ],
-        "estimated_slides": 6,
-        "section_index": 9,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 2: HN Slidegen - Introduction",
-        "description": "Introduce the concept of HN Slidegen, an automation tool for generating slides.",
-        "key_points": [
-          "What is HN Slidegen?",
-          "Purpose of the tool: Automate slide creation.",
-          "Target users: Anyone who needs to create presentations quickly."
-        ],
-        "estimated_slides": 1,
-        "section_index": 10,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 2: HN Slidegen - Use Cases & Pain Points",
-        "description": "Explain the scenarios where HN Slidegen is useful and the problems it solves.",
-        "key_points": [
-          "Use cases: Generating slides for meetings, presentations, training materials.",
-          "Pain points: Time-consuming manual slide creation, inconsistent formatting.",
-          "How HN Slidegen addresses these pain points."
-        ],
-        "estimated_slides": 1,
-        "section_index": 11,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 2: HN Slidegen - System Architecture / Workflow",
-        "description": "Describe the system's architecture and workflow from input to output.",
-        "key_points": [
-          "User Input: Input data (e.g., text, images, data tables).",
-          "Processing: Slide generation algorithm.",
-          "Output: Presentation slides.",
-          "Diagram: Simple flowchart illustrating the workflow (Data Input -> Slide Generation -> Presentation Output)."
-        ],
-        "estimated_slides": 1,
-        "section_index": 12,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 2: HN Slidegen - Technical Details",
-        "description": "Explain the technical aspects of the slide generation algorithm.",
-        "key_points": [
-          "Programming languages and libraries used (e.g., Python, python-pptx).",
-          "Template-based slide generation approach.",
-          "Customization options for slide design."
-        ],
-        "estimated_slides": 1,
-        "section_index": 13,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 2: HN Slidegen - Demo / Case Study",
-        "description": "Show a demo or present a case study of HN Slidegen in action.",
-        "key_points": [
-          "Live demo (if possible) or recorded demo of the tool generating slides.",
-          "Case study: Example of how the tool helped create a presentation quickly and efficiently.",
-          "Show before and after results (manual vs. automated slide creation)."
-        ],
-        "estimated_slides": 1,
-        "section_index": 14,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 2: HN Slidegen - Impact & Results",
-        "description": "Summarize the impact and results of the HN Slidegen project.",
-        "key_points": [
-          "Reduced time spent on slide creation.",
-          "Improved consistency in slide design.",
-          "Increased productivity.",
-          "Quantifiable metrics demonstrating the improvement (e.g., time saved per presentation)."
-        ],
-        "estimated_slides": 1,
-        "section_index": 15,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 3: HR Interview",
-        "description": "Detailed explanation of the AI HR Interview project.",
-        "key_points": [
-          "Introduction to AI HR Interview",
-          "Use Cases & Pain Points",
-          "System Architecture / Workflow",
-          "Technical Details",
-          "Demo / Case Study",
-          "Impact & Results"
-        ],
-        "estimated_slides": 6,
-        "section_index": 16,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 3: HR Interview - Introduction",
-        "description": "Introduce the concept of AI HR Interview.",
-        "key_points": [
-          "What is AI HR Interview?",
-          "Purpose of the tool: Automate initial screening of candidates.",
-          "Benefits of using AI in HR interviews."
-        ],
-        "estimated_slides": 1,
-        "section_index": 17,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 3: HR Interview - Use Cases & Pain Points",
-        "description": "Explain the scenarios where AI HR Interview is useful and the problems it solves.",
-        "key_points": [
-          "Use cases: Screening large numbers of applicants, identifying qualified candidates.",
-          "Pain points: Time-consuming manual screening, potential for bias in human screening.",
-          "How AI HR Interview addresses these pain points."
-        ],
-        "estimated_slides": 1,
-        "section_index": 18,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 3: HR Interview - System Architecture / Workflow",
-        "description": "Describe the system's architecture and workflow from input to output.",
-        "key_points": [
-          "User Input: Candidate responses (text, audio, video).",
-          "Processing: AI algorithms analyze responses (e.g., NLP, sentiment analysis).",
-          "Output: Candidate ranking and feedback.",
-          "Diagram: Simple flowchart illustrating the workflow (Candidate Input -> AI Analysis -> Candidate Ranking/Feedback)."
-        ],
-        "estimated_slides": 1,
-        "section_index": 19,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 3: HR Interview - Technical Details",
-        "description": "Explain the technical aspects of the AI HR Interview system.",
-        "key_points": [
-          "AI models used (e.g., NLP models for text analysis, speech recognition models for audio analysis).",
-          "Training data and methodology.",
-          "Ethical considerations and bias mitigation strategies."
-        ],
-        "estimated_slides": 1,
-        "section_index": 20,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 3: HR Interview - Demo / Case Study",
-        "description": "Show a demo or present a case study of the AI HR Interview system in action.",
-        "key_points": [
-          "Live demo (if possible) or recorded demo of the system evaluating candidate responses.",
-          "Case study: Example of how the system helped identify qualified candidates more efficiently.",
-          "Show comparison of AI-selected candidates vs. manually selected candidates."
-        ],
-        "estimated_slides": 1,
-        "section_index": 21,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Chapter 3: HR Interview - Impact & Results",
-        "description": "Summarize the impact and results of the AI HR Interview project.",
-        "key_points": [
-          "Reduced time spent on initial candidate screening.",
-          "Improved efficiency in identifying qualified candidates.",
-          "Potential for reduced bias in the screening process.",
-          "Quantifiable metrics demonstrating the improvement (e.g., time saved per screening, improved candidate quality)."
-        ],
-        "estimated_slides": 1,
-        "section_index": 22,
-        "section_type": "chapter"
-      },
-      {
-        "title": "Conclusion",
-        "description": "Summarize the key takeaways from the presentation.",
-        "key_points": [
-          "Recap of the three projects: Flicker Detection, HN Slidegen, and AI HR Interview.",
-          "Highlight the key benefits and impact of each project.",
-          "Emphasize the value of automation and AI in improving efficiency and productivity."
-        ],
-        "estimated_slides": 1,
-        "section_index": 23,
         "section_type": "conclusion"
       },
       {
-        "title": "Future Work & Thank You",
-        "description": "Discuss potential future work and thank the audience.",
+        "title": "Next Steps and Resources",
+        "description": "Providing actionable next steps and resources for SMBs to begin their big data journey.",
         "key_points": [
-          "Potential future improvements and extensions for each project.",
-          "Thank you to the audience for their time and attention.",
-          "Acknowledge mentors and colleagues who contributed to the projects."
+          "Actionable Steps: Identify Key Areas, Choose Tools, Start Small",
+          "Recommended Resources: Online Courses, Industry Reports, Consulting Services"
         ],
         "estimated_slides": 1,
-        "section_index": 24,
+        "section_index": 7,
         "section_type": "conclusion"
       },
       {
         "title": "Q&A",
         "description": "Open the floor for questions from the audience.",
         "key_points": [
-          "Prepare to answer questions about the technical details, implementation, and results of each project.",
-          "Be ready to discuss the challenges faced and lessons learned during the internship."
+          "Address audience questions regarding big data analytics.",
+          "Provide clear and concise answers."
         ],
         "estimated_slides": 1,
-        "section_index": 25,
+        "section_index": 8,
         "section_type": "qa"
       },
       {
-        "title": "Q&A - Continued",
-        "description": "Provide contact information and further resources.",
+        "title": "Thank You & Contact Information",
+        "description": "Thank the audience for their time and provide contact information for follow-up questions.",
         "key_points": [
-          "Provide your contact information (email, LinkedIn profile).",
-          "Offer to share code or documentation upon request.",
-          "Thank the audience again for their participation."
+          "Thank you for your time!",
+          "Contact Information (Email, Phone, Website)"
         ],
         "estimated_slides": 1,
-        "section_index": 26,
+        "section_index": 9,
         "section_type": "qa"
       }
     ]
   },
   "user_input": {
-    "topic": "Create a slide to for my presentation on topic: Final present intership\r\n- FLicker detection: detection flicker on screen on automaion testing\r\n- HN Slidegen: Automation tool to generate slides\r\n- HR Interview: Interview with AI\r\n\r\nWith 3 chapters:\r\nchaper 1. FLicker\r\n    Introduction\r\n    Use Cases & Pain Points\r\n    System Architecture / Workflow: User: Input video -> Processing ->  Output report\r\n    Bonus: Sơ đồ kiến trúc hoặc flow chart đơn giản (dễ hiểu với người không chuyên sâu kỹ thuật).\r\n    Technical Details\r\n    Demo / Case Study\r\n    Impact & Result\r\n\r\nchaper 2. HN Slidegen\r\n    Introduction\r\n    Use Cases & Pain Points\r\n    System Architecture / Workflow: User: Input video -> Processing ->  Output report\r\n    Bonus: Sơ đồ kiến trúc hoặc flow chart đơn giản (dễ hiểu với người không chuyên sâu kỹ thuật).\r\n    Technical Details\r\n    Demo / Case Study\r\n    Impact & Result\r\n\r\nchapter 3. HR Interview\r\n    Introduction\r\n    Use Cases & Pain Points\r\n    System Architecture / Workflow: User: Input video -> Processing ->  Output report\r\n    Bonus: Sơ đồ kiến trúc hoặc flow chart đơn giản (dễ hiểu với người không chuyên sâu kỹ thuật).\r\n    Technical Details\r\n    Demo / Case Study\r\n    Impact & Result\r\n\r\nJust have 3 chapter for content",
+    "topic": "New Topic: \"Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses\"  Explanation: This topic retains the core idea of using big data to improve decision-making speed for small businesses but is rephrased to sound more engaging and professional in English. It emphasizes \"leveraging\" (strategic use), \"analytics\" (data-driven insights), and \"rapid decision-making\" (speed and efficiency), making it suitable for a presentation slide while aligning with the original focus.",
     "audience": "Small and medium businesses",
     "purpose": "Education and persuasion",
-    "presentation_title": "Final Internship Presentation",
+    "presentation_title": "Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
     "details": null,
     "template_path": "pptx_templates/Geometric.pptx"
   },
@@ -1913,7 +820,7 @@
       4
     ],
     "qa": [
-      4
+      6
     ]
   },
   "slide_layout_txt": "INFORMATION ABOUT LAYOUTS:\nLayout Index 0: Title 1\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\nLayout Index 1: Agenda 1\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 26, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 42\n  - Placeholder index: 25, type: DATE (16), name: Date Placeholder 41\nLayout Index 2: Section Title\n  - Placeholder index: 13, type: PICTURE (18), name: Freeform: Shape 3\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\nLayout Index 3: Title 2\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 12, type: PICTURE (18), name: Picture Placeholder 5\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\nLayout Index 4: Summary 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 22, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 7\n  - Placeholder index: 21, type: DATE (16), name: Date Placeholder 4\nLayout Index 5: Title\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\nLayout Index 6: Title and Two Content 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 15, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 16, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 7: Title and Content \n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 15, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 8: Title Content and Picture\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 16, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 15, type: PICTURE (18), name: Picture Placeholder 11\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 9: Title Content and Table\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 10: Title and Two Content\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\nLayout Index 11: Table 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 10, type: TABLE (12), name: Table Placeholder 2\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 12: Title 3\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\n"

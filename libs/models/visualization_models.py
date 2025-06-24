@@ -90,6 +90,29 @@ class DiagramSpec(BaseModel):
         ..., 
         description="The Mermaid code for the diagram (without the triple backticks and without the mermaid keyword)"
     )
+
+class SVGDiagramSpec(BaseModel):
+    """Specification for SVG diagrams to create."""
+
+    diagram_type: str = Field(
+        ..., 
+        description="The type of SVG diagram (flowchart, hierarchy, etc.)"
+    )
+    title: str = Field(
+        ..., 
+        description="A descriptive title for the diagram"
+    )
+    svg_code: str = Field(
+        ..., 
+        description="The generated SVG code for the diagram"
+    )
+    chart_data: Dict[str, Any] = Field(
+        default_factory=dict,
+        description="Data structure for the diagram (labels, values, series)"
+    )
+    width: Optional[int] = Field(default=800, description="Diagram width")
+    height: Optional[int] = Field(default=600, description="Diagram height")
+    explanation: Optional[str] = Field(default=None, description="Explanation for diagram type choice")
     
 
 class DataPoint(BaseModel):

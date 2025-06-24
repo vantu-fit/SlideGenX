@@ -83,6 +83,12 @@ class DiagramAgentConfig(AgentConfig):
     # Whether to include descriptions
     include_descriptions: bool = True
 
+class SVGDiagramAgentConfig(AgentConfig):
+    """Configuration for SVG diagram agents."""
+    
+    preferred_svg_types: List[str] = Field(default_factory=lambda: ["bar", "line", "pie"])
+    include_animation: bool = False
+    
 
 class DataVisualizationAgentConfig(AgentConfig):
     """Configuration for data visualization agents."""

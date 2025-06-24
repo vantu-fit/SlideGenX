@@ -25,6 +25,9 @@ from libs.agents.image_agent.evaluation import evaluate_image_responses
 from libs.agents.diagram_agent.agent import DiagramAgent
 from libs.agents.diagram_agent.evaluation import evaluate_diagram_responses
 
+from libs.agents.svg_diagram_agent import SVGDdiagramAgent
+from libs.agents.svg_diagram_agent.evaluation import evaluate_svg_responses
+
 from libs.agents.slide_generator_agent.agent import SlideGeneratorAgent
 from libs.agents.slide_generator_agent.evaluation import (
     evaluate_slide_generator_responses,
@@ -87,6 +90,7 @@ class TreeOfThoughtOrchestrator:
             "image": ImageAgent,
             "diagram": DiagramAgent,
             "master_slide_generator": SlideGeneratorAgent,
+            "svg_diagram": SVGDdiagramAgent,
         }
 
         # Evaluation function mapping
@@ -96,11 +100,41 @@ class TreeOfThoughtOrchestrator:
             "image": evaluate_image_responses,
             "diagram": evaluate_diagram_responses,
             "master_slide_generator": evaluate_slide_generator_responses,
+            "svg_diagram": evaluate_svg_responses,
         }
 
         logger.info(
             f"Initialized TreeOfThoughtOrchestrator with {self.config.num_agents_per_task} agents per task"
         )
+
+    def _determine_diagram_agent_type(self, diagrams_needed: List[str]) -> str:  
+        """  
+        Determine which diagram agent to use based on diagram types needed.  
+        
+        Args:  
+            diagrams_needed: List of diagram descriptions  
+            
+        Returns:  
+            "diagram" for Mermaid-based diagrams, "svg_diagram" for SVG-based diagrams  
+        """  
+        # Keywords that indicate Mermaid diagrams  
+        mermaid_keywords = ["flowchart", "flow", "class diagram", "sequence", "state", "process"]  
+        
+        # Keywords that indicate SVG diagrams    
+        svg_keywords = ["chart", "graph", "bar", "line", "pie", "scatter", "histogram"]  
+        
+        diagrams_text = " ".join(diagrams_needed).lower()  
+        
+        # Check for Mermaid keywords first  
+        if any(keyword in diagrams_text for keyword in mermaid_keywords):  
+            return "diagram"  
+        
+        # Check for SVG keywords  
+        if any(keyword in diagrams_text for keyword in svg_keywords):  
+            return "svg_diagram"  
+        
+        # Default
+        return "diagram"
 
     def create_agents(self, agent_type: str, count: int) -> List[BaseAgent]:
         """
@@ -360,9 +394,14 @@ class TreeOfThoughtOrchestrator:
                 self.session.output_message.add(
                     f"Generating diagram specifications...", level="info"
                 )
+            
+                diagram_agent_type = self._determine_diagram_agent_type(
+                    slide_content.get("diagrams_needed", [])
+                )
+                # diagram_agent_type = "svg_diagram"  
 
                 diagram_agents = self.create_agents(
-                    "diagram", self.config.num_agents_per_task
+                    diagram_agent_type, self.config.num_agents_per_task
                 )
                 diagram_run_args = []
 
@@ -380,7 +419,7 @@ class TreeOfThoughtOrchestrator:
 
                 diagram_responses = self.run_parallel(diagram_agents, diagram_run_args)
                 slide_content["diagram"] = self.evaluate_responses(
-                    diagram_responses, "diagram"
+                    diagram_responses, diagram_agent_type
                 )
 
                 if slide_content["diagram"]:

@@ -57,7 +57,7 @@ class SVGExportTool(BaseTool):
             output_path_obj = Path(output_path)
             output_path_obj.parent.mkdir(parents=True, exist_ok=True)
             
-            command = f"{svgexport_path} {temp_file_path} {output_path} png"
+            command = f'"{svgexport_path}" "{temp_file_path}" "{output_path}" png'
             logger.info(f"Executing command: {command}")
             
             process = subprocess.Popen(

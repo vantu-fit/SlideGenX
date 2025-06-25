@@ -6,27 +6,26 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_0_0.pptx",
       "content": {
-        "title": "Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
+        "title": "Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
         "content": [
-          "Presenter: [Your Name]",
-          "[Your Title]",
+          "Presenter: [Your Name/Company]",
           "Date: [Date]"
         ],
         "layout": "",
-        "notes": "Welcome everyone. This presentation will explore how small businesses can leverage big data analytics to improve their decision-making processes.",
+        "notes": "Welcome the audience. Briefly introduce yourself and your company. Highlight the importance of AI and sustainability in today's business environment.",
         "keywords": [
-          "Big Data",
-          "Analytics",
-          "Small Business",
-          "Decision-Making",
-          "Rapid Decision-Making"
+          "Artificial Intelligence",
+          "Sustainable Growth",
+          "Enterprises",
+          "Innovation",
+          "Efficiency"
         ],
         "layout_type": ""
       },
       "images": [
         {
           "path": "temp/slides\\image_0_0.png",
-          "content": "Abstract image representing data analysis and business growth"
+          "content": "Abstract image representing AI and sustainability"
         }
       ],
       "diagrams": []
@@ -38,21 +37,23 @@
       "content": {
         "title": "Agenda",
         "content": [
-          "Introduction to Big Data and its Relevance to SMBs",
-          "Identifying Key Decision-Making Areas for Improvement",
-          "Practical Applications of Big Data Analytics",
-          "Overcoming Challenges and Getting Started",
+          "Introduction: The Imperative of Sustainable Growth",
+          "Chapter 1: Understanding AI and its Potential for SMBs",
+          "Chapter 2: AI-Powered Efficiency and Innovation",
+          "Chapter 3: AI for Environmental Responsibility",
+          "Conclusion: Embracing AI for a Sustainable Future",
           "Q&A"
         ],
         "layout": "",
-        "notes": "This slide outlines the topics we'll be covering today. We'll start with an introduction to big data and its relevance to small and medium-sized businesses, then move on to identifying key decision-making areas for improvement. Next, we'll explore practical applications of big data analytics, followed by a discussion of the challenges and how to get started. Finally, we'll open the floor for questions.",
+        "notes": "This presentation will cover the following key areas. We'll start by discussing the importance of sustainable growth, then delve into how AI can be a powerful tool for SMBs. We'll explore specific applications of AI for efficiency, innovation, and environmental responsibility, and finally, we'll wrap up with actionable steps and a Q&A session.",
         "keywords": [
           "agenda",
-          "big data",
+          "sustainable growth",
+          "AI",
           "SMBs",
-          "decision-making",
-          "analytics",
-          "challenges",
+          "efficiency",
+          "innovation",
+          "environmental responsibility",
           "Q&A"
         ],
         "layout_type": ""
@@ -61,7 +62,7 @@
       "diagrams": [
         {
           "path": "temp/slides\\diagram_1_0.png",
-          "content": "Topic 1: Introduction to Big Data\nTopic 2: Decision-Making Areas\nTopic 3: Practical Applications\nTopic 4: Overcoming Challenges\nTopic 5: Q&A"
+          "content": "mindmap\n  root((Agenda))\n    Introduction\n      The Imperative of Sustainable Growth\n    Chapter 1\n      Understanding AI and its Potential for SMBs\n    Chapter 2\n      AI-Powered Efficiency and Innovation\n    Chapter 3\n      AI for Environmental Responsibility\n    Conclusion\n      Embracing AI for a Sustainable Future\n    Q&A"
         }
       ]
     },
@@ -70,8 +71,8 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_2_0.pptx",
       "content": {
-        "title": "Introduction to Big Data and its Relevance to SMBs",
-        "content": "03",
+        "title": "Introduction: The Imperative of Sustainable Growth",
+        "content": "01",
         "layout": "",
         "notes": null,
         "keywords": [],
@@ -85,24 +86,22 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_2_1.pptx",
       "content": {
-        "title": "What is Big Data?",
+        "title": "What is Sustainable Growth?",
         "content": [
-          "The 5 V's of Big Data:",
-          "  * Volume: Massive amounts of data",
-          "  * Velocity: Data arriving at high speed",
-          "  * Variety: Data in different forms (structured, unstructured)",
-          "  * Veracity: Data accuracy and reliability",
-          "  * Value: The insights and benefits derived from the data"
+          "Meeting the needs of the present without compromising the ability of future generations to meet their own needs.",
+          "Three Pillars:",
+          "  *  **Economic:** Profitability, innovation, and efficient resource use.",
+          "  *  **Social:** Fair labor practices, community engagement, and ethical sourcing.",
+          "  *  **Environmental:** Reducing carbon footprint, conserving resources, and minimizing waste."
         ],
         "layout": "",
-        "notes": "Explain each 'V' in detail. Emphasize that it's not just about the size of the data, but also the speed, variety, and accuracy.",
+        "notes": "Explain each pillar in detail. Provide examples of each. Emphasize the interconnectedness of the three pillars.",
         "keywords": [
-          "Big Data",
-          "Volume",
-          "Velocity",
-          "Variety",
-          "Veracity",
-          "Value"
+          "sustainable growth",
+          "economic",
+          "social",
+          "environmental",
+          "triple bottom line"
         ],
         "layout_type": ""
       },
@@ -110,7 +109,7 @@
       "diagrams": [
         {
           "path": "temp/slides\\diagram_2_1.png",
-          "content": "radarChart\n  polarGrid lines\n  label top Volume\n  label right Velocity\n  label bottom Variety\n  label left Veracity\n  label center Value\n  set gridColor #C0C0C0\n  set axisColor #333\n  set textColor #333\n  Volume[Terabytes, Petabytes, Exabytes]\n  Velocity[Real-time streaming, Batch processing]\n  Variety[Text, Images, Video, Sensor data]\n  Veracity[Data quality, Accuracy, Reliability]\n  Value[Business insights, Competitive advantage]"
+          "content": "mindmap\n  root((Sustainable Growth))\n    Economic\n      Profitability\n      Innovation\n      Efficient Resource Use\n    Social\n      Fair Labor Practices\n      Community Engagement\n      Ethical Sourcing\n    Environmental\n      Reducing Carbon Footprint\n      Conserving Resources\n      Minimizing Waste"
         }
       ]
     },
@@ -119,35 +118,34 @@
       "slide_index": 2,
       "path": "temp/slides\\slide_2_2.pptx",
       "content": {
-        "title": "Debunking the Myth: Big Data is for Everyone",
+        "title": "Why Sustainable Growth Matters for SMBs",
         "content": [
-          "Historically, Big Data was associated with large corporations.",
-          "Now, affordable tools and cloud computing make it accessible to SMBs.",
-          "SMBs can leverage data to:",
-          "  * Understand customer behavior",
-          "  * Optimize marketing campaigns",
-          "  * Improve operational efficiency",
-          "  * Make better-informed decisions"
+          "**Long-Term Viability:** Ensures resilience and adaptability in a changing world.",
+          "**Enhanced Brand Reputation:** Attracts customers who value ethical and responsible businesses.",
+          "**Attracting and Retaining Talent:** Employees are increasingly seeking purpose-driven organizations.",
+          "**Improved Efficiency:** Sustainable practices often lead to cost savings and resource optimization.",
+          "**Access to Funding:** Investors are increasingly prioritizing ESG (Environmental, Social, and Governance) factors."
         ],
         "layout": "",
-        "notes": "Highlight the shift in accessibility. Provide examples of how SMBs can use data in different areas of their business.",
+        "notes": "Provide statistics on consumer preferences for sustainable brands. Discuss the benefits of attracting top talent. Highlight the growing importance of ESG investing.",
         "keywords": [
           "SMBs",
-          "Accessibility",
-          "Cloud Computing",
-          "Data Analysis",
-          "Decision Making"
+          "sustainable growth",
+          "brand reputation",
+          "talent acquisition",
+          "ESG",
+          "long-term viability"
         ],
         "layout_type": ""
       },
       "images": [
         {
           "path": "temp/slides\\image_2_2.png",
-          "content": "image of small business owner analyzing data on a laptop"
+          "content": "image of diverse employees working together in a modern office"
         },
         {
           "path": "temp/slides\\image_2_2.png",
-          "content": "image of cloud computing infrastructure"
+          "content": "image of a small business owner interacting with customers"
         }
       ],
       "diagrams": []
@@ -157,8 +155,8 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_3_0.pptx",
       "content": {
-        "title": "Identifying Key Decision-Making Areas for Improvement",
-        "content": "04",
+        "title": "Understanding AI and its Potential for SMBs",
+        "content": "01",
         "layout": "",
         "notes": null,
         "keywords": [],
@@ -172,91 +170,62 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_3_1.pptx",
       "content": {
-        "title": "Common Decision-Making Challenges Faced by SMBs",
+        "title": "What is Artificial Intelligence?",
         "content": [
-          "Limited Resources: Time, budget, and expertise constraints.",
-          "Lack of Data Visibility: Difficulty accessing and understanding relevant data.",
-          "Intuition-Based Decisions: Relying on gut feelings rather than data-driven insights.",
-          "Inefficient Processes: Slow and cumbersome decision-making workflows.",
-          "Competitive Pressure: Difficulty adapting to rapidly changing market conditions."
+          "AI: Enabling computers to perform tasks that typically require human intelligence.",
+          "Machine Learning (ML): Algorithms that learn from data without explicit programming.",
+          "Deep Learning (DL): A subset of ML using artificial neural networks with multiple layers.",
+          "Key Concepts: Data, Algorithms, Models, Predictions"
         ],
         "layout": "",
-        "notes": "Discuss each challenge in detail, providing real-world examples. Emphasize the impact of these challenges on SMB growth and profitability.",
+        "notes": "Explain the core concepts of AI in simple terms. Use analogies to make it relatable. Emphasize that AI is about making predictions and decisions based on data.",
         "keywords": [
-          "challenges",
-          "SMBs",
-          "decision-making",
-          "resources",
-          "data visibility"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 3,
-      "slide_index": 2,
-      "path": "temp/slides\\slide_3_2.pptx",
-      "content": {
-        "title": "Identifying Key Performance Indicators (KPIs)",
-        "content": [
-          "Define KPIs: Measurable values that demonstrate how effectively a company is achieving key business objectives.",
-          "Align KPIs with Goals: Ensure KPIs directly reflect strategic goals (e.g., increased sales, improved customer satisfaction).",
-          "Focus on Actionable Metrics: Select KPIs that provide insights and drive specific actions.",
-          "Regularly Monitor and Review: Track KPIs over time and adjust strategies as needed."
-        ],
-        "layout": "",
-        "notes": "Explain the importance of selecting the right KPIs. Provide a framework for identifying relevant KPIs based on business goals. Emphasize the need for continuous monitoring and adjustment.",
-        "keywords": [
-          "KPIs",
-          "metrics",
-          "business objectives",
-          "actionable insights",
-          "monitoring"
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Deep Learning",
+          "Algorithms",
+          "Models",
+          "Predictions"
         ],
         "layout_type": ""
       },
       "images": [],
       "diagrams": [
         {
-          "path": "temp/slides\\diagram_3_2.png",
-          "content": "Sales Revenue, Customer Acquisition Cost, Customer Retention Rate, Website Traffic, Conversion Rate"
+          "path": "temp/slides\\diagram_3_1.png",
+          "content": "blockDiagram\n  direction LR\n  Data --> Algorithm\n  Algorithm --> Model\n  Model --> Prediction\n  subgraph AI Components\n    Data\n    Algorithm\n    Model\n  end\n  classDef internal fill:#f9f,stroke:#333,stroke-width:2px;\n  class Data,Algorithm,Model internal;"
         }
       ]
     },
     {
       "section_index": 3,
-      "slide_index": 3,
-      "path": "temp/slides\\slide_3_3.pptx",
+      "slide_index": 2,
+      "path": "temp/slides\\slide_3_2.pptx",
       "content": {
-        "title": "Practical Applications of Big Data Analytics for SMBs",
+        "title": "AI: Accessible to SMBs",
         "content": [
-          "Sales Forecasting: Predict future sales trends and optimize inventory levels.",
-          "Customer Segmentation: Identify distinct customer groups and tailor marketing efforts.",
-          "Marketing Campaign Optimization: Track campaign performance and improve ROI.",
-          "Inventory Management: Reduce stockouts and minimize holding costs.",
-          "Customer Behavior Analysis: Understand customer preferences and personalize experiences."
+          "AI is no longer just for big corporations!",
+          "Cloud-based AI services offer affordable solutions.",
+          "Pre-trained models reduce development time and costs.",
+          "Open-source AI tools provide accessible resources.",
+          "Focus on specific business needs for targeted AI implementation."
         ],
         "layout": "",
-        "notes": "Provide specific examples of how big data analytics can be applied to each area. Showcase success stories of SMBs that have leveraged data-driven insights to improve their performance. For example, a local bakery using sales data to predict demand for different types of pastries.",
+        "notes": "Highlight the affordability and accessibility of AI for SMBs. Mention cloud platforms like AWS, Google Cloud, and Azure. Emphasize the importance of focusing on specific business problems to avoid overspending.",
         "keywords": [
-          "sales forecasting",
-          "customer segmentation",
-          "marketing optimization",
-          "inventory management",
-          "customer behavior"
+          "SMBs",
+          "Accessibility",
+          "Affordable AI",
+          "Cloud AI",
+          "Open-source AI",
+          "Pre-trained models"
         ],
         "layout_type": ""
       },
       "images": [
         {
-          "path": "temp/slides\\image_3_3.png",
-          "content": "image of sales forecast graph"
-        },
-        {
-          "path": "temp/slides\\image_3_3.png",
-          "content": "image of customer segmentation chart"
+          "path": "temp/slides\\image_3_2.png",
+          "content": "Image of a small business owner using a laptop with an AI interface on the screen"
         }
       ],
       "diagrams": []
@@ -266,7 +235,7 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_4_0.pptx",
       "content": {
-        "title": "Practical Applications of Big Data Analytics",
+        "title": "Chapter 2: AI-Powered Efficiency and Innovation",
         "content": "05",
         "layout": "",
         "notes": null,
@@ -281,163 +250,71 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_4_1.pptx",
       "content": {
-        "title": "User-Friendly Analytics Tools for SMBs",
+        "title": "AI for Operational Efficiency & Improved Decision-Making",
         "content": [
-          "Google Analytics: Website traffic analysis, user behavior tracking.",
-          "CRM Analytics (Salesforce, HubSpot): Sales performance, customer segmentation.",
-          "Cloud-Based Solutions (Tableau, Power BI): Data visualization, reporting.",
-          "Zoho Analytics: Business intelligence and reporting tool.",
-          "Looker: Data exploration and business intelligence platform."
+          "**Operational Efficiency:**",
+          "  * Automate repetitive tasks: Data entry, invoice processing, customer service inquiries.",
+          "  * Reduce manual errors and free up human capital for strategic initiatives.",
+          "  * Streamline workflows and optimize resource allocation.",
+          "**Improved Decision-Making:**",
+          "  * Predictive analytics for demand forecasting, pricing optimization, and inventory management.",
+          "  * Data-driven insights for better resource allocation and risk management.",
+          "  * Identify trends and patterns to inform strategic decisions."
         ],
         "layout": "",
-        "notes": "Discuss the benefits of each tool and how they can be used to gain insights. Emphasize the ease of use and affordability for SMBs. Mention free tiers or trials where available.",
+        "notes": "Highlight examples of successful AI implementations in operational efficiency and decision-making. Emphasize the ROI and competitive advantages.",
         "keywords": [
-          "Google Analytics",
-          "CRM Analytics",
-          "Tableau",
-          "Power BI",
-          "Zoho Analytics",
-          "Looker",
-          "Data Visualization",
-          "Reporting"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
-      "diagrams": []
-    },
-    {
-      "section_index": 4,
-      "slide_index": 2,
-      "path": "temp/slides\\slide_4_2.pptx",
-      "content": {
-        "title": "Data Visualization: Making Sense of Your Data",
-        "content": [
-          "Charts: Bar charts, pie charts, line graphs for comparing data.",
-          "Graphs: Scatter plots, histograms for showing distributions.",
-          "Dashboards: Real-time overview of key performance indicators (KPIs).",
-          "Heatmaps: Visualizing data density and patterns.",
-          "Geographic Maps: Displaying data based on location."
-        ],
-        "layout": "",
-        "notes": "Explain how different types of visualizations can be used to communicate data effectively. Provide examples of how SMBs can use visualizations to track sales, marketing performance, and customer satisfaction. Show examples of effective dashboards.",
-        "keywords": [
-          "Charts",
-          "Graphs",
-          "Dashboards",
-          "Data Visualization",
-          "KPIs",
-          "Heatmaps",
-          "Geographic Maps"
+          "automation",
+          "predictive analytics",
+          "efficiency",
+          "decision-making",
+          "ROI"
         ],
         "layout_type": ""
       },
       "images": [],
       "diagrams": [
         {
-          "path": "temp/slides\\diagram_4_2.png",
-          "content": "graph LR\nA[Raw Data] --> B(Data Cleaning)\nB --> C{Data Analysis}\nC --> D[Visualization]\nD --> E(Insights)\nE --> F((Decision Making))"
+          "path": "temp/slides\\diagram_4_1.png",
+          "content": "blockDiagram\n  direction LR\n  block [AI]\n  block1 [Operational Efficiency]\n  block2 [Improved Decision-Making]\n\n  block -- Automate Repetitive Tasks --> block1\n  block -- Reduce Manual Errors --> block1\n  block -- Streamline Workflows --> block1\n\n  block -- Predictive Analytics --> block2\n  block -- Data-Driven Insights --> block2\n  block -- Identify Trends --> block2"
         }
       ]
     },
     {
       "section_index": 4,
-      "slide_index": 3,
-      "path": "temp/slides\\slide_4_3.pptx",
+      "slide_index": 2,
+      "path": "temp/slides\\slide_4_2.pptx",
       "content": {
-        "title": "Predictive Analytics: Forecasting the Future",
+        "title": "AI for Enhanced Customer Experience & Product Innovation",
         "content": [
-          "Trend Analysis: Identifying patterns in historical data to predict future trends.",
-          "Sales Forecasting: Predicting future sales based on past performance.",
-          "Demand Planning: Anticipating customer demand to optimize inventory.",
-          "Risk Assessment: Identifying potential risks and opportunities.",
-          "Customer Churn Prediction: Identifying customers at risk of leaving."
+          "**Enhanced Customer Experience:**",
+          "  * Personalized marketing campaigns based on customer preferences and behavior.",
+          "  * AI-powered chatbots for instant customer support and issue resolution.",
+          "  * Sentiment analysis to understand customer feedback and improve service quality.",
+          "**Product & Service Innovation:**",
+          "  * Identify unmet customer needs and new market opportunities.",
+          "  * Develop AI-powered products and services that offer unique value.",
+          "  * Accelerate the innovation cycle and stay ahead of the competition."
         ],
         "layout": "",
-        "notes": "Explain how predictive analytics can help SMBs make proactive decisions. Provide examples of how SMBs can use predictive analytics to optimize marketing campaigns, manage inventory, and reduce customer churn. Mention tools that offer predictive analytics capabilities.",
+        "notes": "Provide examples of how AI is transforming customer experience and driving product innovation. Discuss the importance of ethical considerations and data privacy.",
         "keywords": [
-          "Predictive Analytics",
-          "Trend Analysis",
-          "Sales Forecasting",
-          "Demand Planning",
-          "Risk Assessment",
-          "Customer Churn"
+          "personalization",
+          "chatbots",
+          "sentiment analysis",
+          "innovation",
+          "market opportunities"
         ],
         "layout_type": ""
       },
       "images": [
         {
-          "path": "temp/slides\\image_4_3.png",
-          "content": "predictive analytics forecasting trends"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 4,
-      "slide_index": 4,
-      "path": "temp/slides\\slide_4_4.pptx",
-      "content": {
-        "title": "A/B Testing: Data-Driven Marketing",
-        "content": [
-          "Experimentation: Testing different versions of marketing materials to see which performs best.",
-          "Website Optimization: Testing different website layouts and content.",
-          "Email Marketing: Testing different subject lines and email content.",
-          "Ad Campaigns: Testing different ad creatives and targeting options.",
-          "Landing Page Optimization: Testing different landing page designs."
-        ],
-        "layout": "",
-        "notes": "Explain how A/B testing can help SMBs optimize their marketing efforts and improve ROI. Provide examples of how SMBs can use A/B testing to improve website conversion rates, email open rates, and ad click-through rates. Mention tools that offer A/B testing capabilities (e.g., Google Optimize, Optimizely).",
-        "keywords": [
-          "A/B Testing",
-          "Experimentation",
-          "Website Optimization",
-          "Email Marketing",
-          "Ad Campaigns",
-          "Landing Page Optimization"
-        ],
-        "layout_type": ""
-      },
-      "images": [
+          "path": "temp/slides\\image_4_2.png",
+          "content": "AI powered chatbot interacting with customer"
+        },
         {
-          "path": "temp/slides\\image_4_4.png",
-          "content": "A/B testing marketing"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 6,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_6_0.pptx",
-      "content": {
-        "title": "Conclusion: Embrace Data-Driven Decision-Making",
-        "content": [
-          "Recap of Key Benefits:",
-          "  * Faster Decisions: React swiftly to market changes.",
-          "  * Improved Accuracy: Minimize errors and maximize success.",
-          "  * Increased Efficiency: Optimize processes and reduce waste.",
-          "The Future of SMBs: Data-Driven and Competitive",
-          "  * Data is no longer a luxury, it's a necessity.",
-          "  * Embrace data analytics to thrive in the modern business landscape."
-        ],
-        "layout": "",
-        "notes": "Summarize the presentation's key takeaways. Emphasize that data-driven decision-making is crucial for SMBs to remain competitive. Encourage the audience to take action and implement the strategies discussed.",
-        "keywords": [
-          "data-driven",
-          "decision-making",
-          "SMBs",
-          "competitive advantage",
-          "efficiency",
-          "accuracy",
-          "future of business"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_6_0.png",
-          "content": "image of a small business owner confidently making a decision based on data insights"
+          "path": "temp/slides\\image_4_2.png",
+          "content": "Personalized marketing campaign example"
         }
       ],
       "diagrams": []
@@ -447,7 +324,7 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_5_0.pptx",
       "content": {
-        "title": "Overcoming Challenges and Getting Started",
+        "title": "Chapter 3: AI for Environmental Responsibility",
         "content": "06",
         "layout": "",
         "notes": null,
@@ -462,142 +339,120 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_5_1.pptx",
       "content": {
-        "title": "Addressing Common Concerns",
+        "title": "AI: A Green Ally",
         "content": [
-          "Data Security: Implement robust security measures (encryption, access controls).",
-          "Privacy: Comply with data privacy regulations (GDPR, CCPA).",
-          "Cost: Start small, leverage open-source tools, and scale as needed."
+          "AI is not just about efficiency; it's a powerful tool for environmental sustainability.",
+          "Key Areas:",
+          "  * Energy Efficiency",
+          "  * Waste Reduction",
+          "  * Supply Chain Optimization",
+          "  * Sustainable Product Design"
         ],
         "layout": "",
-        "notes": "Discuss the importance of addressing these concerns upfront to build trust and ensure successful implementation. Emphasize that security and privacy are not just legal requirements but also ethical responsibilities.",
+        "notes": "This slide introduces the core concept of AI's role in environmental responsibility. Briefly touch upon each key area, setting the stage for the following slides.",
         "keywords": [
-          "data security",
-          "privacy",
-          "cost",
-          "GDPR",
-          "CCPA",
-          "encryption",
-          "access controls"
+          "AI",
+          "environmental sustainability",
+          "energy efficiency",
+          "waste reduction",
+          "supply chain",
+          "product design"
         ],
         "layout_type": ""
       },
       "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_5_1.png",
-          "content": "Data Security -> Privacy -> Cost"
-        }
-      ]
+      "diagrams": []
     },
     {
       "section_index": 5,
       "slide_index": 2,
       "path": "temp/slides\\slide_5_2.pptx",
       "content": {
-        "title": "Building a Data-Driven Culture & Getting Started",
-        "content": [
-          "Foster a culture of curiosity and experimentation.",
-          "Encourage employees to ask questions and use data to inform their decisions.",
-          "Start with a specific business problem.",
-          "Identify relevant data sources.",
-          "Choose appropriate tools and techniques.",
-          "Collect, store, and analyze data."
-        ],
+        "title": "AI-Driven Sustainability Loop",
+        "content": "AI creates a continuous cycle of improvement for environmental sustainability.",
         "layout": "",
-        "notes": "Explain how to create a data-driven culture by promoting data literacy and providing employees with the necessary training and resources. Emphasize the importance of starting with a clear business objective and focusing on actionable insights.",
+        "notes": "Explain how the AI-driven sustainability loop works. Emphasize the iterative nature of the process and how continuous data analysis leads to ongoing improvements.",
         "keywords": [
-          "data-driven culture",
-          "data literacy",
-          "experimentation",
-          "data sources",
-          "data collection",
-          "data storage",
-          "data analysis"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_5_2.png",
-          "content": "team collaborating on data analysis"
-        }
-      ],
-      "diagrams": []
-    },
-    {
-      "section_index": 5,
-      "slide_index": 3,
-      "path": "temp/slides\\slide_5_3.pptx",
-      "content": {
-        "title": "Talent, Partnerships & Ethical Considerations",
-        "content": [
-          "Assess your internal capabilities.",
-          "Consider hiring data scientists or analysts.",
-          "Partner with a data analytics firm.",
-          "Ensure data is collected and used ethically.",
-          "Obtain informed consent from individuals.",
-          "Be transparent about data practices.",
-          "Avoid bias and discrimination."
-        ],
-        "layout": "",
-        "notes": "Discuss the different options for acquiring the necessary expertise, including hiring, outsourcing, and training. Highlight the importance of ethical considerations in data collection and usage, emphasizing the need for transparency, fairness, and accountability.",
-        "keywords": [
-          "data scientists",
-          "data analysts",
-          "data analytics firm",
-          "ethical considerations",
-          "informed consent",
-          "transparency",
-          "bias",
-          "discrimination"
+          "AI",
+          "sustainability",
+          "data analysis",
+          "optimization",
+          "waste reduction",
+          "emissions reduction"
         ],
         "layout_type": ""
       },
       "images": [],
       "diagrams": [
         {
-          "path": "temp/slides\\diagram_5_3.png",
-          "content": "Internal Skills -> Hiring -> Partnership"
+          "path": "temp/slides\\diagram_5_2.png",
+          "content": "graph LR\n    A[Data Collection & Analysis] --> B(Identify Areas for Improvement)\n    B --> C{AI-Powered Optimization}\n    C --> D[Reduced Waste, Emissions, & Resource Use]\n    D --> A\n    style A fill:#f9f,stroke:#333,stroke-width:2px\n    style B fill:#ccf,stroke:#333,stroke-width:2px\n    style C fill:#ccf,stroke:#333,stroke-width:2px\n    style D fill:#f9f,stroke:#333,stroke-width:2px"
         }
       ]
     },
     {
-      "section_index": 7,
+      "section_index": 6,
       "slide_index": 0,
-      "path": "temp/slides\\slide_7_0.pptx",
+      "path": "temp/slides\\slide_6_0.pptx",
       "content": {
-        "title": "Next Steps & Resources",
+        "title": "AI: A Sustainable Future for SMBs",
         "content": [
-          "**Actionable Steps:**",
-          "  *   **Identify Key Areas:** Pinpoint decision-making areas ripe for data-driven improvement.",
-          "  *   **Choose Tools:** Select user-friendly, cost-effective analytics solutions.",
-          "  *   **Start Small:** Begin with a pilot project to demonstrate value and build confidence.",
-          "**Recommended Resources:**",
-          "  *   **Online Courses:** Explore platforms like Coursera, Udemy, and edX for data analytics training.",
-          "  *   **Industry Reports:** Stay informed about the latest trends and best practices in your sector.",
-          "  *   **Consulting Services:** Consider engaging a consultant for tailored guidance and support."
+          "Recap of AI Benefits:",
+          "  * Efficiency: Streamlined operations, reduced costs",
+          "  * Innovation: New products, services, and business models",
+          "  * Environmental Responsibility: Reduced carbon footprint, resource optimization"
         ],
         "layout": "",
-        "notes": "Summarize the key takeaways from the presentation. Emphasize the importance of taking action and provide concrete steps that SMBs can take to get started. Highlight the available resources to support their journey. End with a clear closing message, reiterating the value of data-driven decision-making.",
+        "notes": "Remind the audience of the key benefits discussed throughout the presentation. Emphasize the interconnectedness of these benefits – efficiency gains can lead to innovation, which can then contribute to environmental responsibility.",
         "keywords": [
-          "actionable steps",
+          "AI",
+          "sustainability",
+          "efficiency",
+          "innovation",
+          "environment"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides\\diagram_6_0.png",
+          "content": "blockDiagram\n  direction LR\n  A[Efficiency: Streamlined operations, reduced costs] --> B(Innovation: New products, services, and business models)\n  B --> C{Environmental Responsibility: Reduced carbon footprint, resource optimization}\n  style A fill:#f9f,stroke:#333,stroke-width:2px\n  style B fill:#ccf,stroke:#333,stroke-width:2px\n  style C fill:#9f9,stroke:#333,stroke-width:2px"
+        }
+      ]
+    },
+    {
+      "section_index": 6,
+      "slide_index": 1,
+      "path": "temp/slides\\slide_6_1.pptx",
+      "content": {
+        "title": "Your AI Journey: Start Today!",
+        "content": [
+          "Call to Action:",
+          "  * Start Small: Identify a specific problem or opportunity.",
+          "  * Experiment: Try different AI tools and approaches.",
+          "  * Iterate: Continuously improve and refine your AI strategy.",
+          "Resources:",
+          "  * Online courses and tutorials",
+          "  * AI consulting services",
+          "  * Sustainable business organizations",
+          "The Future is Bright: AI empowers a more sustainable and prosperous future for all SMBs."
+        ],
+        "layout": "",
+        "notes": "Encourage the audience to take action. Provide concrete steps they can take to get started with AI. Highlight available resources and emphasize the positive outlook for AI and sustainable growth.",
+        "keywords": [
+          "AI",
+          "sustainability",
+          "action",
           "resources",
-          "online courses",
-          "industry reports",
-          "consulting services",
-          "data analytics",
-          "SMBs"
+          "future"
         ],
         "layout_type": ""
       },
       "images": [
         {
-          "path": "temp/slides\\image_7_0.png",
-          "content": "business people working together"
-        },
-        {
-          "path": "temp/slides\\image_7_0.png",
-          "content": "data analytics dashboard"
+          "path": "temp/slides\\image_6_1.png",
+          "content": "Image of a diverse team collaborating on an AI project, with a focus on sustainability."
         }
       ],
       "diagrams": []
@@ -607,18 +462,21 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_8_0.pptx",
       "content": {
-        "title": "Q & A",
+        "title": "Q&A",
         "content": [
-          "Your Questions?",
-          "We're here to help you understand how big data analytics can benefit your small business."
+          "Open the floor for questions",
+          "We're here to discuss AI, sustainability, and implementation strategies",
+          "Let's explore how AI can drive sustainable growth in your enterprise"
         ],
         "layout": "",
-        "notes": "Thank you for your attention. Now, I'd be happy to answer any questions you may have. I'll do my best to provide clear and concise answers. If we don't have time to address all questions, please feel free to reach out to me directly using the contact information provided on the next slide.",
+        "notes": "Thank you for your attention. I'm now happy to answer any questions you may have. Please feel free to ask about specific AI technologies, sustainability initiatives, or implementation challenges.",
         "keywords": [
           "questions",
           "answers",
-          "big data analytics",
-          "small business"
+          "AI",
+          "sustainability",
+          "implementation",
+          "growth"
         ],
         "layout_type": ""
       },
@@ -626,47 +484,86 @@
       "diagrams": []
     },
     {
-      "section_index": 9,
+      "section_index": 7,
       "slide_index": 0,
-      "path": "temp/slides\\slide_9_0.pptx",
+      "path": "temp/slides\\slide_7_0.pptx",
       "content": {
-        "title": "Thank You!",
+        "title": "Thank You & Next Steps",
         "content": [
           "Thank you for your time and attention!",
-          "We hope this presentation has provided valuable insights into leveraging big data analytics for your small business."
+          "Key Takeaways:",
+          "  * AI is accessible and relevant for SMBs.",
+          "  * AI drives efficiency, innovation, and environmental responsibility.",
+          "  * Embracing AI is crucial for sustainable growth.",
+          "Next Steps:",
+          "  * Schedule a free consultation or demo.",
+          "  * Explore AI solutions tailored to your business needs.",
+          "  * Contact us with any questions."
         ],
         "layout": "",
-        "notes": "Reiterate gratitude and express hope that the presentation was helpful. Encourage audience members to reach out with further questions.",
+        "notes": "Reiterate the main points of the presentation. Encourage the audience to take action and offer assistance. Provide clear contact information.",
         "keywords": [
           "thank you",
-          "gratitude",
-          "big data",
-          "small business",
-          "insights"
+          "next steps",
+          "consultation",
+          "demo",
+          "contact information",
+          "AI solutions",
+          "sustainable growth"
         ],
         "layout_type": ""
       },
       "images": [
         {
-          "path": "temp/slides\\image_9_0.png",
-          "content": "image of a diverse group of people smiling and applauding"
+          "path": "temp/slides\\image_7_0.png",
+          "content": "Image of a diverse team collaborating on a project with AI integration"
         }
       ],
+      "diagrams": []
+    },
+    {
+      "section_index": 9,
+      "slide_index": 0,
+      "path": "temp/slides\\slide_9_0.pptx",
+      "content": {
+        "title": "Q&A - Let's Continue the Conversation",
+        "content": [
+          "Still have questions? We're here to help!",
+          "No question is too big or too small.",
+          "If we don't have the answer immediately, we'll find it for you.",
+          "Additional Resources:",
+          "   - Company Website: [Your Company Website]",
+          "   - AI Sustainability Report: [Link to Report (if applicable)]",
+          "   - Contact us directly: [Your Email Address]"
+        ],
+        "layout": "",
+        "notes": "Reiterate willingness to answer questions. Highlight the availability of additional resources and contact information for follow-up inquiries. Mention specific resources like a company website or a relevant report.",
+        "keywords": [
+          "Q&A",
+          "questions",
+          "resources",
+          "contact information",
+          "sustainability",
+          "AI"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
       "diagrams": []
     }
   ],
   "outline": {
-    "topic": "Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
+    "topic": "Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
     "num_sections": 10,
-    "num_slides": 21,
+    "num_slides": 15,
     "sections": [
       {
         "title": "Title Slide",
         "description": "Presentation title, presenter name, and date.",
         "key_points": [
-          "Presentation Title: Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
-          "Presenter Name and Title",
-          "Date"
+          "Presentation Title: Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
+          "Presenter: [Your Name/Company]",
+          "Date: [Date]"
         ],
         "estimated_slides": 1,
         "section_index": 0,
@@ -674,12 +571,13 @@
       },
       {
         "title": "Agenda",
-        "description": "Overview of the presentation topics and timeline.",
+        "description": "Overview of the presentation topics.",
         "key_points": [
-          "Introduction to Big Data and its Relevance to SMBs",
-          "Identifying Key Decision-Making Areas for Improvement",
-          "Practical Applications of Big Data Analytics",
-          "Overcoming Challenges and Getting Started",
+          "Introduction: The Imperative of Sustainable Growth",
+          "Chapter 1: Understanding AI and its Potential for SMBs",
+          "Chapter 2: AI-Powered Efficiency and Innovation",
+          "Chapter 3: AI for Environmental Responsibility",
+          "Conclusion: Embracing AI for a Sustainable Future",
           "Q&A"
         ],
         "estimated_slides": 1,
@@ -687,76 +585,80 @@
         "section_type": "agenda"
       },
       {
-        "title": "Introduction to Big Data and its Relevance to SMBs",
-        "description": "Defining big data and explaining why it's no longer just for large corporations. Focus on accessibility and affordability for small businesses.",
+        "title": "Introduction: The Imperative of Sustainable Growth",
+        "description": "Setting the stage by highlighting the importance of sustainable growth for modern businesses.",
         "key_points": [
-          "What is Big Data? (Volume, Velocity, Variety, Veracity, Value)",
-          "Debunking the Myth: Big Data is for Everyone",
-          "The Growing Accessibility and Affordability of Big Data Tools",
-          "Real-World Examples of SMBs Benefiting from Big Data"
+          "What is Sustainable Growth? (Economic, Social, Environmental)",
+          "Why is it important for SMBs? (Long-term viability, brand reputation, attracting talent)",
+          "The role of technology in achieving sustainable growth",
+          "Briefly introduce AI as a key enabler"
         ],
         "estimated_slides": 3,
         "section_index": 2,
         "section_type": "chapter"
       },
       {
-        "title": "Identifying Key Decision-Making Areas for Improvement",
-        "description": "Helping SMBs identify specific areas where data-driven insights can significantly improve decision-making speed and accuracy.",
+        "title": "Chapter 1: Understanding AI and its Potential for SMBs",
+        "description": "Demystifying AI and showcasing its accessibility and relevance for small and medium businesses.",
         "key_points": [
-          "Common Decision-Making Challenges Faced by SMBs",
-          "Identifying Key Performance Indicators (KPIs) Relevant to Your Business",
-          "Examples: Sales Forecasting, Customer Segmentation, Marketing Campaign Optimization, Inventory Management",
-          "Using Data to Understand Customer Behavior and Preferences"
+          "What is Artificial Intelligence? (Simple definition, key concepts like machine learning and deep learning)",
+          "AI is not just for big corporations: Affordable and accessible AI solutions for SMBs",
+          "Examples of AI applications relevant to SMBs (e.g., chatbots, predictive analytics, automation)",
+          "Addressing common misconceptions about AI (e.g., cost, complexity, job displacement)"
         ],
-        "estimated_slides": 4,
+        "estimated_slides": 3,
         "section_index": 3,
         "section_type": "chapter"
       },
       {
-        "title": "Practical Applications of Big Data Analytics",
-        "description": "Showcasing specific tools and techniques that SMBs can use to analyze their data and gain actionable insights. Focus on user-friendly and cost-effective solutions.",
+        "title": "Chapter 2: AI-Powered Efficiency and Innovation",
+        "description": "Exploring how AI can drive efficiency and innovation in various business functions.",
         "key_points": [
-          "Overview of User-Friendly Analytics Tools (e.g., Google Analytics, CRM Analytics, Cloud-Based Solutions)",
-          "Data Visualization Techniques for Easy Understanding (Charts, Graphs, Dashboards)",
-          "Predictive Analytics: Forecasting Trends and Anticipating Future Needs",
-          "A/B Testing and Experimentation for Data-Driven Marketing",
-          "Mermaid Diagram: Data Flow for Decision Making"
+          "AI for Operational Efficiency: Automating repetitive tasks (e.g., data entry, customer service)",
+          "AI for Improved Decision-Making: Predictive analytics for forecasting demand, optimizing pricing, and managing inventory",
+          "AI for Enhanced Customer Experience: Personalized marketing, chatbots for instant support, sentiment analysis for feedback",
+          "AI for Product and Service Innovation: Identifying new market opportunities, developing AI-powered products/services"
         ],
-        "estimated_slides": 5,
+        "estimated_slides": 3,
         "section_index": 4,
         "section_type": "chapter"
       },
       {
-        "title": "Overcoming Challenges and Getting Started",
-        "description": "Addressing common concerns and providing practical steps for SMBs to implement big data analytics. Focus on data security, privacy, and ethical considerations.",
+        "title": "Chapter 3: AI for Environmental Responsibility",
+        "description": "Focusing on the environmental benefits of AI and how businesses can use it to reduce their carbon footprint.",
         "key_points": [
-          "Addressing Common Concerns: Data Security, Privacy, and Cost",
-          "Building a Data-Driven Culture Within Your Organization",
-          "Steps to Get Started: Data Collection, Storage, and Analysis",
-          "Finding the Right Talent or Partner for Your Big Data Needs",
-          "Ethical Considerations in Data Collection and Usage"
+          "AI for Energy Efficiency: Optimizing energy consumption in buildings and operations",
+          "AI for Waste Reduction: Improving waste management and recycling processes",
+          "AI for Supply Chain Optimization: Reducing transportation costs and emissions",
+          "AI for Sustainable Product Design: Developing eco-friendly products and packaging",
+          "Mermaid Diagram: Illustrating the AI-driven sustainability loop",
+          "```mermaid\ngraph LR\n    A[Data Collection & Analysis] --> B(Identify Areas for Improvement)\n    B --> C{AI-Powered Optimization}\n    C --> D[Reduced Waste, Emissions, & Resource Use]\n    D --> A\n    style A fill:#f9f,stroke:#333,stroke-width:2px\n    style B fill:#ccf,stroke:#333,stroke-width:2px\n    style C fill:#ccf,stroke:#333,stroke-width:2px\n    style D fill:#f9f,stroke:#333,stroke-width:2px\n```"
         ],
-        "estimated_slides": 4,
+        "estimated_slides": 3,
         "section_index": 5,
         "section_type": "chapter"
       },
       {
-        "title": "Conclusion: Embrace Data-Driven Decision-Making",
-        "description": "Summarizing the key benefits of leveraging big data analytics and reiterating the call to action.",
+        "title": "Conclusion: Embracing AI for a Sustainable Future",
+        "description": "Summarizing the key benefits of AI for sustainable growth and providing actionable steps for businesses to get started.",
         "key_points": [
-          "Recap of Key Benefits: Faster Decisions, Improved Accuracy, Increased Efficiency",
-          "The Future of SMBs: Data-Driven and Competitive"
+          "Recap of the benefits of AI for SMBs (efficiency, innovation, environmental responsibility)",
+          "Call to action: Start small, experiment, and iterate",
+          "Resources for learning more about AI and sustainable business practices",
+          "The future of AI and sustainable growth: A positive outlook"
         ],
-        "estimated_slides": 1,
+        "estimated_slides": 2,
         "section_index": 6,
         "section_type": "conclusion"
       },
       {
-        "title": "Next Steps and Resources",
-        "description": "Providing actionable next steps and resources for SMBs to begin their big data journey.",
+        "title": "Thank You & Next Steps",
+        "description": "Expressing gratitude and outlining potential next steps for the audience.",
         "key_points": [
-          "Actionable Steps: Identify Key Areas, Choose Tools, Start Small",
-          "Recommended Resources: Online Courses, Industry Reports, Consulting Services"
+          "Thank you for your time!",
+          "Offer a free consultation or demo",
+          "Provide contact information for follow-up questions",
+          "Encourage audience to explore AI solutions relevant to their business"
         ],
         "estimated_slides": 1,
         "section_index": 7,
@@ -766,19 +668,19 @@
         "title": "Q&A",
         "description": "Open the floor for questions from the audience.",
         "key_points": [
-          "Address audience questions regarding big data analytics.",
-          "Provide clear and concise answers."
+          "Open the floor for questions",
+          "Be prepared to answer questions about AI, sustainability, and implementation strategies"
         ],
         "estimated_slides": 1,
         "section_index": 8,
         "section_type": "qa"
       },
       {
-        "title": "Thank You & Contact Information",
-        "description": "Thank the audience for their time and provide contact information for follow-up questions.",
+        "title": "Backup Q&A Slide",
+        "description": "A second Q&A slide in case the first one is not enough.",
         "key_points": [
-          "Thank you for your time!",
-          "Contact Information (Email, Phone, Website)"
+          "Continue answering questions",
+          "Provide additional resources if needed"
         ],
         "estimated_slides": 1,
         "section_index": 9,
@@ -787,28 +689,29 @@
     ]
   },
   "user_input": {
-    "topic": "New Topic: \"Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses\"  Explanation: This topic retains the core idea of using big data to improve decision-making speed for small businesses but is rephrased to sound more engaging and professional in English. It emphasizes \"leveraging\" (strategic use), \"analytics\" (data-driven insights), and \"rapid decision-making\" (speed and efficiency), making it suitable for a presentation slide while aligning with the original focus.",
+    "topic": "New Topic: \"Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises\"  Explanation: This topic focuses on how businesses can utilize AI technologies to drive sustainable development and long-term success. It highlights the strategic integration of AI for innovation, efficiency, and environmental responsibility, making it suitable for a professional",
     "audience": "Small and medium businesses",
     "purpose": "Education and persuasion",
-    "presentation_title": "Leveraging Big Data Analytics to Enhance Rapid Decision-Making in Small Businesses",
+    "presentation_title": "Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
     "details": null,
-    "template_path": "pptx_templates/Geometric.pptx"
+    "template_path": "pptx_templates/Fission-presentation.pptx"
   },
   "slide_layouts": {
     "title": [
       0,
-      5,
-      12
+      12,
+      13
     ],
     "agenda": [
       1
     ],
     "chapter_title": [
-      2
+      4
     ],
     "chapter": [
+      2,
       3,
-      4,
+      5,
       6,
       7,
       8,
@@ -817,11 +720,13 @@
       11
     ],
     "conclusion": [
-      4
+      0,
+      12
     ],
     "qa": [
-      6
+      5,
+      7
     ]
   },
-  "slide_layout_txt": "INFORMATION ABOUT LAYOUTS:\nLayout Index 0: Title 1\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\nLayout Index 1: Agenda 1\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 26, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 42\n  - Placeholder index: 25, type: DATE (16), name: Date Placeholder 41\nLayout Index 2: Section Title\n  - Placeholder index: 13, type: PICTURE (18), name: Freeform: Shape 3\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\nLayout Index 3: Title 2\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 12, type: PICTURE (18), name: Picture Placeholder 5\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\nLayout Index 4: Summary 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 22, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 7\n  - Placeholder index: 21, type: DATE (16), name: Date Placeholder 4\nLayout Index 5: Title\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\nLayout Index 6: Title and Two Content 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 15, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 16, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 7: Title and Content \n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 15, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 8: Title Content and Picture\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 16, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 15, type: PICTURE (18), name: Picture Placeholder 11\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 9: Title Content and Table\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 10: Title and Two Content\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\nLayout Index 11: Table 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 10, type: TABLE (12), name: Table Placeholder 2\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 12: Title 3\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\n"
+  "slide_layout_txt": "INFORMATION ABOUT LAYOUTS:\nLayout Index 0: Title Only\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 1: Agenda\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 2, type: BODY (2), name: Text Placeholder 3\n  - Placeholder index: 11, type: PICTURE (18), name: Picture Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 10, type: DATE (16), name: Date Placeholder 3\nLayout Index 2: Title + Subtitle\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 1, type: BODY (2), name: Text Placeholder 2\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 3: Introduction 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 10, type: OBJECT (7), name: Content Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 4: Section Title\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 1, type: BODY (2), name: Text Placeholder 2\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 5: Two Content 1\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 4, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 2, type: OBJECT (7), name: Content Placeholder 3\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 13, type: DATE (16), name: Date Placeholder 3\nLayout Index 6: Title + Content + Picture 1\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 12, type: OBJECT (7), name: Content Placeholder 10\n  - Placeholder index: 11, type: PICTURE (18), name: Picture Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 10, type: DATE (16), name: Date Placeholder 3\nLayout Index 7: Two Columns 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 4, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 2, type: OBJECT (7), name: Content Placeholder 3\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 13, type: DATE (16), name: Date Placeholder 3\nLayout Index 8: Content + Table\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 15, type: BODY (2), name: Text Placeholder 3\n  - Placeholder index: 16, type: TABLE (12), name: Table Placeholder 6\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 9: Table\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 15, type: TABLE (12), name: Table Placeholder 5\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 10: Title + Picture\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 10, type: PICTURE (18), name: Picture Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 11: Two Content 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 2, type: OBJECT (7), name: Content Placeholder 3\n  - Placeholder index: 4, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 13, type: DATE (16), name: Date Placeholder 3\nLayout Index 12: Closing\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 1, type: SUBTITLE (4), name: Subtitle 2\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 13: Blank\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\n"
 }

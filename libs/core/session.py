@@ -242,6 +242,14 @@ class Memory(BaseModel):
                 slide.diagrams[0].content = mermaid_code
                 return True
 
+    def update_svg_code_by_index(self, section_index: int, slide_index: int, svg_code: str):  
+        """Update the SVG code for a specific slide"""  
+        for slide in self.slides:  
+            if slide.section_index == section_index and slide.slide_index == slide_index:  
+                slide.diagrams[0].content = svg_code  
+                return True
+
+
     def user_input_from_json(self, user_input: Dict[str, Any]):
         """Set the user input from JSON"""
         self.user_input.topic = user_input.get("topic", "")

@@ -62,48 +62,67 @@ def evaluate_svg_completeness(svg_spec: Dict[str, Any]) -> float:
     # Normalize score to be between 0 and 1
     return min(1.0, score / max_score)
 
-def evaluate_svg_coherence(svg_spec: Dict[str, Any]) -> float:
-    """
-    Evaluate the coherence of an SVG diagram specification.
-    
-    Args:
-        svg_spec: The SVG diagram specification to evaluate
-        
-    Returns:
-        A score between 0 and 1 indicating coherence
-    """
-    svg_code = svg_spec.get("svg_code", "")
-    if not svg_code:
-        return 0.0
-    
-    try:
-        root = ET.fromstring(svg_code)
-        # Extract IDs of elements
-        elements_with_id = root.findall(".//*[@id]")
-        element_ids = [elem.get("id") for elem in elements_with_id if elem.get("id")]
-        
-        if not element_ids:
-            return 0.0
+def evaluate_svg_coherence(svg_spec: Dict[str, Any]) -> float:  
+    """  
+    Evaluate the coherence of an SVG diagram specification.  
+      
+    Args:  
+        svg_spec: The SVG diagram specification to evaluate  
+          
+    Returns:  
+        A score between 0 and 1 indicating coherence  
+    """  
+    svg_code = svg_spec.get("svg_code", "")  
+    if not svg_code:  
+        return 0.0  
+      
+    try:  
+        root = ET.fromstring(svg_code)  
+        # Extract IDs of elements  
+        elements_with_id = root.findall(".//*[@id]")  
+        element_ids = [elem.get("id") for elem in elements_with_id if elem.get("id")]  
+          
+        if not element_ids:  
+            return 0.0  
         
         # Check for connections (lines or paths referencing elements)
         connections = root.findall(".//{http://www.w3.org/2000/svg}line") + \
                      root.findall(".//{http://www.w3.org/2000/svg}path")
         
-        valid_connections = 0
-        for conn in connections:
-            # Simple heuristic: assume lines/paths indicate relationships
-            if conn.get("x1") and conn.get("y1") and conn.get("x2") and conn.get("y2"):
-                valid_connections += 1
-        
-        # Calculate coherence based on valid connections and elements
-        if not connections:
-            return 0.0
-        
-        coherence_score = min(1.0, valid_connections / max(1, len(elements_with_id)))
-        return coherence_score
-    
-    except ET.ParseError:
-        logger.warning("Invalid SVG code detected during coherence evaluation")
+        valid_connections = 0  
+        for conn in connections:  
+            # Simple heuristic: assume lines/paths indicate relationships  
+            if conn.get("x1") and conn.get("y1") and conn.get("x2") and conn.get("y2"):  
+                valid_connections += 1  
+          
+        # Calculate base coherence based on valid connections and elements  
+        if not connections:  
+            base_coherence_score = 0.0  
+        else:  
+            base_coherence_score = valid_connections / max(1, len(elements_with_id))  
+          
+        # Check for SVG quality indicators  
+        has_proper_viewbox = 'viewBox' in svg_code    
+        has_proper_namespace = 'xmlns' in svg_code      
+        uses_groups = '<g' in svg_code  # Indicates organized structure    
+        has_gradients = 'linearGradient' in svg_code or 'radialGradient' in svg_code  
+  
+        quality_bonus = 0.0    
+        if has_proper_viewbox:    
+            quality_bonus += 0.1    
+        if has_proper_namespace:    
+            quality_bonus += 0.1    
+        if uses_groups:    
+            quality_bonus += 0.1    
+        if has_gradients:    
+            quality_bonus += 0.1    
+          
+        # Combine base score with quality bonus  
+        coherence_score = min(1.0, base_coherence_score + quality_bonus)  
+        return coherence_score  
+      
+    except ET.ParseError:  
+        logger.warning("Invalid SVG code detected during coherence evaluation")  
         return 0.0
 
 def evaluate_svg_complexity(svg_spec: Dict[str, Any]) -> float:
@@ -194,6 +213,10 @@ def evaluate_svg_appropriateness(svg_spec: Dict[str, Any], slide_title: str, sli
     # Check for timeline-related keywords
     timeline_keywords = ["timeline", "history", "chronology", "sequence", "event"]
     is_timeline_related = any(keyword in slide_text for keyword in timeline_keywords)
+
+    # Check for data visualization-related keywords
+    data_viz_keywords = ["chart", "graph", "data", "metrics", "performance", "statistics", "analytics"]  
+    is_data_viz_related = any(keyword in slide_text for keyword in data_viz_keywords) 
     
     # Score based on matching diagram type to content
     score = 0.5  # Default score
@@ -235,6 +258,35 @@ def evaluate_svg_appropriateness(svg_spec: Dict[str, Any], slide_title: str, sli
             score = 0.7
         else:
             score = 0.5
+    
+    # Data visualization types  
+    elif diagram_type in ["bar", "line", "scatter", "gauge", "donut"]:  
+        if is_data_viz_related:  
+            score = 1.0  
+        else:  
+            score = 0.6  
+    
+    # Specialized types    
+    elif diagram_type in ["radar", "sankey", "network"]:  
+        if diagram_type == "radar" and any(keyword in slide_text for keyword in ["multi", "variable", "comparison", "analysis"]):  
+            score = 1.0  
+        elif diagram_type == "sankey" and any(keyword in slide_text for keyword in ["flow", "quantity", "transfer"]):  
+            score = 1.0  
+        elif diagram_type == "network" and is_relationship_related:  
+            score = 1.0  
+        else:  
+            score = 0.7  
+    
+    # Mixed types  
+    elif diagram_type in ["pie", "mindmap", "quadrant"]:  
+        if diagram_type == "pie" and any(keyword in slide_text for keyword in ["proportion", "percentage", "share", "distribution"]):  
+            score = 1.0  
+        elif diagram_type == "mindmap" and is_hierarchy_related:  
+            score = 1.0  
+        elif diagram_type == "quadrant" and is_comparison_related:  
+            score = 1.0  
+        else:  
+            score = 0.7
     
     return score
 

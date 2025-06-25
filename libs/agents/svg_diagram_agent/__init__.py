@@ -1,3 +1,3 @@
-from .agent import SVGDdiagramAgent
+from .agent import SVGDiagramAgent
 
-__all__ = ["SVGDdiagramAgent"]
+__all__ = ["SVGDiagramAgent"]

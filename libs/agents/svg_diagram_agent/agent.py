@@ -25,7 +25,7 @@ from .tools import create_svg_export_tool
 
 logger = logging.getLogger(__name__)
 
-class SVGDdiagramAgent(BaseAgent):
+class SVGDiagramAgent(BaseAgent):
     """Agent responsible for creating SVG diagram specifications for slides."""
     
     agent_name = "svg_diagram_agent"
@@ -100,7 +100,7 @@ class SVGDdiagramAgent(BaseAgent):
             inputs = {
                 "section": json.dumps(section_data, indent=2),
                 "slide": json.dumps(slide_data, indent=2),
-                "previously_used_diagram_types": previously_used_diagram_types_str,
+                "previously_used_diagram_types": previously_used_diagram_types_str
             }
             formatted_prompt = self.svg_avoid_type_prompt.partial(
                 format_instructions=format_instructions
@@ -136,6 +136,7 @@ class SVGDdiagramAgent(BaseAgent):
         inputs = {
             "section": json.dumps(section_data, indent=2),
             "slide": json.dumps(slide_data, indent=2),
+            "previously_used_diagram_types": ""
         }
         formatted_prompt = self.general_prompt.partial(
             format_instructions=format_instructions
@@ -195,7 +196,10 @@ class SVGDdiagramAgent(BaseAgent):
             
             if result.startswith("Error"):
                 response_data["diagram_error"] = result
-                all_diagram_types = ["flowchart", "hierarchy", "relationship", "timeline", "comparison"]
+                all_diagram_types = ["bar", "line", "scatter", "gauge", "donut", "comparison",   
+                    "radar", "sankey", "network", "hierarchy", "relationship",   
+                    "quadrant", "pie", "timeline", "mindmap", "flowchart"]
+
                 current_type = svg_spec.diagram_type
                 alternative_types = [t for t in all_diagram_types if t != current_type and t not in previously_drawn_diagrams]
                 

@@ -952,3 +952,79 @@ class Session:
             "created_at": self.created_at,
             "updated_at": self.updated_at,
         }
+    
+    def get_slide_by_indices(self, section_index: int, slide_index: int):
+        """
+        Get a specific slide by section and slide indices.
+        
+        Args:
+            section_index: Index of the section
+            slide_index: Index of the slide within the section
+            
+        Returns:
+            Slide object or None if not found
+        """
+        try:
+            section_slides = self.memory.get_slides_by_section_index(section_index)
+            if section_slides and slide_index < len(section_slides):
+                return section_slides[slide_index]
+            return None
+        except Exception as e:
+            logger.error(f"Error getting slide by indices: {str(e)}")
+            return None
+        
+    def load_from_json(self, file_path: str) -> bool:
+        """
+        Load memory from a JSON file.
+        
+        Args:
+            file_path: Path to the JSON file
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        if not os.path.exists(file_path):
+            logger.error(f"Memory file not found: {file_path}")
+            return False
+        
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            
+            # Debug: Print loaded data structure
+            print(f"DEBUG: Loading data keys: {list(data.keys())}")
+            
+            # Update memory fields from loaded data
+            if "slide_temp_path" in data:
+                self.memory.slide_temp_path = data["slide_temp_path"]
+            
+            if "slides" in data:
+                self.memory.slides = [Slide(**slide_data) for slide_data in data["slides"]]
+                print(f"DEBUG: Loaded {len(self.memory.slides)} slides")
+            
+            if "outline" in data:
+                self.memory.outline = Outline(**data["outline"])
+                print(f"DEBUG: Loaded outline with {self.memory.outline.num_sections} sections")
+            else:
+                print("DEBUG: No 'outline' key found in data")
+            
+            if "user_input" in data:
+                self.memory.user_input = UserInput(**data["user_input"])
+            
+            if "slide_layouts" in data and data["slide_layouts"]:
+                self.memory.slide_layouts = CLassifyLayout(**data["slide_layouts"])
+            
+            if "slide_layout_txt" in data:
+                self.memory.slide_layout_txt = data["slide_layout_txt"]
+            
+            logger.info(f"Successfully loaded memory from {file_path}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error loading memory from {file_path}: {str(e)}")
+            print(f"DEBUG: Error details: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            return False
+            
+        

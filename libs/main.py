@@ -7,10 +7,11 @@ import sys
 import logging
 import argparse
 import json
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 
 from libs.core.session import Session
 from libs.orchestration.orchestrator import TreeOfThoughtOrchestrator
+from libs.orchestration.slide_edit_orchestrator import SlideEditOrchestrator
 from libs.config import load_config, TreeOfThoughtConfig
 
 # Configure logging
@@ -35,7 +36,7 @@ def setup_parser() -> argparse.ArgumentParser:
     """
     parser = argparse.ArgumentParser(description='Generate presentation slides using Tree of Thought.')
     
-    parser.add_argument('--topic', '-t', type=str, required=True,
+    parser.add_argument('--topic', '-t', type=str,
                       help='The main topic of the presentation')
     
     parser.add_argument('--audience', '-a', type=str, default='General audience',
@@ -62,6 +63,25 @@ def setup_parser() -> argparse.ArgumentParser:
     parser.add_argument('--verbose', '-v', action='store_true',
                       help='Enable verbose output')
     
+    # Add additional arguments for slide editing
+    parser.add_argument('--edit', action='store_true',
+                      help='Enable edit mode for existing presentation')
+    
+    parser.add_argument('--session-path', type=str,
+                      help='Path to existing session file for editing')
+    
+    parser.add_argument('--section-index', type=int,
+                      help='Section index of slide to edit (0-based)')
+    
+    parser.add_argument('--slide-index', type=int,
+                      help='Slide index within section to edit (0-based)')
+    
+    parser.add_argument('--edit-prompt', type=str,
+                      help='Instructions for editing the slide')
+    
+    parser.add_argument('--merge-output-path', type=str, default=None,
+                      help='Path to save merged output after editing slides')
+    
     return parser
 
 
@@ -85,6 +105,49 @@ def save_presentation(presentation: Dict[str, Any], output_path: str) -> bool:
         logger.error(f"Failed to save presentation: {e}")
         return False
 
+def edit_slide(session_path: str, 
+               section_index: int, 
+               slide_index: int, 
+               edit_prompt: str, 
+               merge_output_path: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Edit a specific slide in an existing presentation.
+    
+    Args:
+        session_path: Path to the session file
+        section_index: Index of section containing the slide
+        slide_index: Index of slide within the section
+        edit_prompt: User's edit instructions
+        
+    Returns:
+        Edit result dictionary
+    """
+    try:
+        session = Session()
+        if not session.load_from_json(session_path):
+            return {
+                "status": "error",
+                "message": "Failed to load session",
+                "data": {}
+            }
+        
+        config = load_config()
+        edit_orchestrator = SlideEditOrchestrator(session, config)
+        result = edit_orchestrator.edit_slide(section_index=section_index, 
+                                              slide_index=slide_index, 
+                                              edit_prompt=edit_prompt,
+                                              merge_output_path=merge_output_path)
+
+        return result
+    
+    except Exception as e:
+        logger.error(f"Error editing slide: {str(e)}")
+        return {
+            "status": "error",
+            "message": f"Error editing slide: {str(e)}",
+            "data": {}
+        }
+
 
 def main():
     """Main function."""
@@ -103,6 +166,44 @@ def main():
     if args.num_agents:
         config.num_agents_per_task = args.num_agents
     
+    if args.edit:
+        if not all([args.session_path, args.section_index is not None,
+                    args.slide_index is not None, args.edit_prompt]):
+            logger.error("Edit mode requires --session-path, --section-index, --slide-index, and --edit-prompt arguments.")
+            return 1
+        
+        result = edit_slide(
+            session_path=args.session_path,
+            section_index=args.section_index,
+            slide_index=args.slide_index,
+            edit_prompt=args.edit_prompt,
+            merge_output_path=args.merge_output_path
+        )
+
+        if result.get("status") == "success":
+            print(f"\n=== Slide Edit Successful ===")
+            print(f"Section: {args.section_index}")
+            print(f"Slide: {args.slide_index}")
+            print(f"Edit: {args.edit_prompt}")
+            print("============================\n")
+
+            if args.merge_output_path:
+                merged_path = result.get("data", {}).get("merged_presentation_path")
+                if merged_path:
+                    print(f"Merged presentation saved to: {merged_path}")
+            else:
+                print("Warning: Merge was requested but failed")
+            print("============================\n")
+            return 0
+        else:
+            logger.error(f"Failed to edit slide: {result.get('message')}")
+            return 1
+    
+    # Regular generation mode - validate required arguments
+    if not args.topic:
+        logger.error("Generation mode requires --topic argument.")
+        return 1
+        
     # Create session
     session = Session()
     

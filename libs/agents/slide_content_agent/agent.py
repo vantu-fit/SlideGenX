@@ -152,6 +152,114 @@ class SlideContentAgent(BaseAgent):
                 data={"error": str(e)}
             )
         
+    def edit_slide_content(self, section, current_slide, edit_prompt: str) -> AgentResponse:
+        """
+        Edit existing slide content based on user prompt.
+        
+        Args:
+            section: Section information
+            current_slide: Current slide to be edited
+            edit_prompt: User's edit instructions
+            
+        Returns:
+            AgentResponse with edited slide content
+        """
+        try:
+            formatted_prompt = self._get_edit_prompt(section, current_slide, edit_prompt)
+            self.session.save_prompt(
+                key=f"edit_{current_slide.section_index}_{current_slide.slide_index}", 
+                type="slide_edit", 
+                prompt=formatted_prompt
+            )
+            response = self.llm.invoke(formatted_prompt)
+            parsed_content = self.output_parser.invoke(response)
+            edited_slide = parsed_content.slides[0] if parsed_content.slides else None
+
+            if not edited_slide:
+                return AgentResponse(
+                    status=AgentStatus.ERROR,
+                    message="Failed to generate edited slide content",
+                    data={"error": "No slides generated from edit prompt"}
+                )
+            
+            edited_data = {
+                "title": edited_slide.title,
+                "content": edited_slide.content,
+                "notes": edited_slide.notes,
+                "keywords": edited_slide.keywords,
+                "section_index": current_slide.section_index,
+                "slide_index": current_slide.slide_index
+            }
+
+            logger.info(f"Successfully edited slide content for slide {current_slide.slide_index} in section {current_slide.section_index}")
+
+            return AgentResponse(
+                status=AgentStatus.SUCCESS,
+                message=f"Successfully edited slide content",
+                data=edited_data
+            )
+        except Exception as e:
+            logger.error(f"Failed to edit slide content: {str(e)}")
+            return AgentResponse(
+                status=AgentStatus.ERROR,
+                message=f"Failed to edit slide content: {str(e)}",
+                data={"error": str(e)}
+            )
+        
+    def _get_edit_prompt(self, section, current_slide, edit_prompt: str) -> str:
+        """
+        Create edit-specific prompt.
+        
+        Args:
+            section: Section information
+            current_slide: Current slide data
+            edit_prompt: User's edit instructions
+            
+        Returns:
+            Formatted prompt for editing
+        """
+        format_instructions = self.output_parser.get_format_instructions()
+        edit_template = """
+You are an expert presentation content editor. Your task is to modify an existing slide based on user instructions.
+
+**CURRENT SLIDE INFORMATION:**
+Section Title: {section_title}
+Section Type: {section_type}
+Current Slide Title: {current_title}
+Current Slide Content: {current_content}
+Current Speaker Notes: {current_notes}
+Current Keywords: {current_keywords}
+
+**EDIT INSTRUCTIONS:**
+{edit_prompt}
+
+**TASK:**
+Modify the slide content based on the edit instructions while maintaining:
+1. Consistency with the overall presentation theme
+2. Appropriate content structure for the section type
+3. Professional presentation style
+
+Generate exactly 1 slide with the requested modifications.
+
+**OUTPUT FORMAT:**
+Follow the same format as regular slide generation but ensure the modifications requested are applied.
+
+{format_instructions}
+"""
+        
+        formatted_prompt = edit_template.format(
+            section_title=section.title,
+            section_type=section.section_type,
+            current_title=current_slide.content.get("title", ""),
+            current_content=current_slide.content.get("content", ""),
+            current_notes=current_slide.content.get("notes", ""),
+            current_keywords=current_slide.content.get("keywords", []),
+            edit_prompt=edit_prompt,
+            format_instructions=format_instructions
+        )
+        
+        return formatted_prompt
+
 if __name__ == "__main__":
     # Example usage of the SlideContentAgent
     session = Session()

@@ -2,77 +2,42 @@
   "slide_temp_path": "temp/slides",
   "slides": [
     {
-      "section_index": 0,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_0_0.pptx",
-      "content": {
-        "title": "Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
-        "content": [
-          "Presenter: [Your Name/Company]",
-          "Date: [Date]"
-        ],
-        "layout": "",
-        "notes": "Welcome the audience. Briefly introduce yourself and your company. Highlight the importance of AI and sustainability in today's business environment.",
-        "keywords": [
-          "Artificial Intelligence",
-          "Sustainable Growth",
-          "Enterprises",
-          "Innovation",
-          "Efficiency"
-        ],
-        "layout_type": ""
-      },
-      "images": [
-        {
-          "path": "temp/slides\\image_0_0.png",
-          "content": "Abstract image representing AI and sustainability"
-        }
-      ],
-      "diagrams": []
-    },
-    {
       "section_index": 1,
       "slide_index": 0,
       "path": "temp/slides\\slide_1_0.pptx",
       "content": {
         "title": "Agenda",
         "content": [
-          "Introduction: The Imperative of Sustainable Growth",
-          "Chapter 1: Understanding AI and its Potential for SMBs",
-          "Chapter 2: AI-Powered Efficiency and Innovation",
-          "Chapter 3: AI for Environmental Responsibility",
-          "Conclusion: Embracing AI for a Sustainable Future",
+          "Introduction to AI, Machine Learning, and Deep Learning",
+          "Key Differences and Relationships",
+          "Practical Applications for SMBs",
+          "Getting Started with AI",
           "Q&A"
         ],
         "layout": "",
-        "notes": "This presentation will cover the following key areas. We'll start by discussing the importance of sustainable growth, then delve into how AI can be a powerful tool for SMBs. We'll explore specific applications of AI for efficiency, innovation, and environmental responsibility, and finally, we'll wrap up with actionable steps and a Q&A session.",
+        "notes": "This slide outlines the topics we'll be covering today. We'll start with the basics of AI, ML, and DL, then move on to the key differences between them. Next, we'll explore practical applications for SMBs, followed by actionable steps to get started. Finally, we'll have a Q&A session to address any questions you may have.",
         "keywords": [
           "agenda",
-          "sustainable growth",
           "AI",
+          "Machine Learning",
+          "Deep Learning",
           "SMBs",
-          "efficiency",
-          "innovation",
-          "environmental responsibility",
+          "applications",
+          "getting started",
           "Q&A"
         ],
         "layout_type": ""
       },
       "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_1_0.png",
-          "content": "mindmap\n  root((Agenda))\n    Introduction\n      The Imperative of Sustainable Growth\n    Chapter 1\n      Understanding AI and its Potential for SMBs\n    Chapter 2\n      AI-Powered Efficiency and Innovation\n    Chapter 3\n      AI for Environmental Responsibility\n    Conclusion\n      Embracing AI for a Sustainable Future\n    Q&A"
-        }
-      ]
+      "diagrams": []
     },
     {
       "section_index": 2,
       "slide_index": 0,
       "path": "temp/slides\\slide_2_0.pptx",
       "content": {
-        "title": "Introduction: The Imperative of Sustainable Growth",
-        "content": "01",
+        "title": "Understanding AI, Machine Learning, and Deep Learning",
+        "content": "03",
         "layout": "",
         "notes": null,
         "keywords": [],
@@ -86,77 +51,65 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_2_1.pptx",
       "content": {
-        "title": "What is Sustainable Growth?",
+        "title": "Artificial Intelligence (AI)",
         "content": [
-          "Meeting the needs of the present without compromising the ability of future generations to meet their own needs.",
-          "Three Pillars:",
-          "  *  **Economic:** Profitability, innovation, and efficient resource use.",
-          "  *  **Social:** Fair labor practices, community engagement, and ethical sourcing.",
-          "  *  **Environmental:** Reducing carbon footprint, conserving resources, and minimizing waste."
+          "Definition: The broad concept of creating intelligent agents, which are systems that can reason, learn, and act autonomously.",
+          "Goal: To develop machines that can perform tasks that typically require human intelligence.",
+          "Examples: Problem-solving, decision-making, speech recognition, visual perception."
         ],
         "layout": "",
-        "notes": "Explain each pillar in detail. Provide examples of each. Emphasize the interconnectedness of the three pillars.",
+        "notes": "AI is the overarching field. Emphasize the goal of creating intelligent machines. Provide examples to make it relatable.",
         "keywords": [
-          "sustainable growth",
-          "economic",
-          "social",
-          "environmental",
-          "triple bottom line"
+          "Artificial Intelligence",
+          "AI",
+          "Intelligent Agents",
+          "Reasoning",
+          "Learning",
+          "Autonomy"
         ],
         "layout_type": ""
       },
       "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_2_1.png",
-          "content": "mindmap\n  root((Sustainable Growth))\n    Economic\n      Profitability\n      Innovation\n      Efficient Resource Use\n    Social\n      Fair Labor Practices\n      Community Engagement\n      Ethical Sourcing\n    Environmental\n      Reducing Carbon Footprint\n      Conserving Resources\n      Minimizing Waste"
-        }
-      ]
+      "diagrams": []
     },
     {
       "section_index": 2,
       "slide_index": 2,
       "path": "temp/slides\\slide_2_2.pptx",
       "content": {
-        "title": "Why Sustainable Growth Matters for SMBs",
+        "title": "The AI -> ML -> DL Hierarchy",
         "content": [
-          "**Long-Term Viability:** Ensures resilience and adaptability in a changing world.",
-          "**Enhanced Brand Reputation:** Attracts customers who value ethical and responsible businesses.",
-          "**Attracting and Retaining Talent:** Employees are increasingly seeking purpose-driven organizations.",
-          "**Improved Efficiency:** Sustainable practices often lead to cost savings and resource optimization.",
-          "**Access to Funding:** Investors are increasingly prioritizing ESG (Environmental, Social, and Governance) factors."
+          "Machine Learning (ML): A subset of AI that enables systems to learn from data without explicit programming.",
+          "Deep Learning (DL): A subset of ML that uses artificial neural networks with multiple layers to analyze data.",
+          "The Hierarchy: AI is the broadest concept, ML is a subset of AI, and DL is a subset of ML."
         ],
         "layout": "",
-        "notes": "Provide statistics on consumer preferences for sustainable brands. Discuss the benefits of attracting top talent. Highlight the growing importance of ESG investing.",
+        "notes": "Use the visual to clearly illustrate the relationship between AI, ML, and DL. Explain that ML automates model building, and DL uses deep neural networks.",
         "keywords": [
-          "SMBs",
-          "sustainable growth",
-          "brand reputation",
-          "talent acquisition",
-          "ESG",
-          "long-term viability"
+          "Machine Learning",
+          "ML",
+          "Deep Learning",
+          "DL",
+          "Hierarchy",
+          "Relationship"
         ],
         "layout_type": ""
       },
-      "images": [
+      "images": [],
+      "diagrams": [
         {
-          "path": "temp/slides\\image_2_2.png",
-          "content": "image of diverse employees working together in a modern office"
-        },
-        {
-          "path": "temp/slides\\image_2_2.png",
-          "content": "image of a small business owner interacting with customers"
+          "path": "temp/slides\\diagram_2_2.png",
+          "content": "mindmap\n  root((Artificial Intelligence (AI)))\n    Machine Learning (ML)\n      Deep Learning (DL)\n\n    note for Machine Learning (ML)\n      A subset of AI\n      Learns from data\n      without explicit programming\n    end note\n\n    note for Deep Learning (DL)\n      A subset of ML\n      Uses artificial neural networks\n      with multiple layers\n    end note"
         }
-      ],
-      "diagrams": []
+      ]
     },
     {
       "section_index": 3,
       "slide_index": 0,
       "path": "temp/slides\\slide_3_0.pptx",
       "content": {
-        "title": "Understanding AI and its Potential for SMBs",
-        "content": "01",
+        "title": "Key Differences and Relationships",
+        "content": "04",
         "layout": "",
         "notes": null,
         "keywords": [],
@@ -170,72 +123,104 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_3_1.pptx",
       "content": {
-        "title": "What is Artificial Intelligence?",
+        "title": "Traditional Programming vs. Machine Learning",
         "content": [
-          "AI: Enabling computers to perform tasks that typically require human intelligence.",
-          "Machine Learning (ML): Algorithms that learn from data without explicit programming.",
-          "Deep Learning (DL): A subset of ML using artificial neural networks with multiple layers.",
-          "Key Concepts: Data, Algorithms, Models, Predictions"
+          "**Traditional Programming:**",
+          "  * Requires explicit, pre-defined rules.",
+          "  * Programmer defines *how* to solve the problem.",
+          "  * Limited adaptability to new situations.",
+          "**Machine Learning:**",
+          "  * Learns rules and patterns from data.",
+          "  * Algorithm figures out *how* to solve the problem.",
+          "  * Adapts and improves with more data."
         ],
         "layout": "",
-        "notes": "Explain the core concepts of AI in simple terms. Use analogies to make it relatable. Emphasize that AI is about making predictions and decisions based on data.",
+        "notes": "Emphasize the shift from explicitly programming rules to allowing the machine to learn them. Use a simple example like spam filtering to illustrate the difference.",
         "keywords": [
-          "Artificial Intelligence",
-          "Machine Learning",
-          "Deep Learning",
-          "Algorithms",
-          "Models",
-          "Predictions"
+          "traditional programming",
+          "machine learning",
+          "explicit rules",
+          "data-driven",
+          "adaptability"
         ],
         "layout_type": ""
       },
       "images": [],
-      "diagrams": [
-        {
-          "path": "temp/slides\\diagram_3_1.png",
-          "content": "blockDiagram\n  direction LR\n  Data --> Algorithm\n  Algorithm --> Model\n  Model --> Prediction\n  subgraph AI Components\n    Data\n    Algorithm\n    Model\n  end\n  classDef internal fill:#f9f,stroke:#333,stroke-width:2px;\n  class Data,Algorithm,Model internal;"
-        }
-      ]
+      "diagrams": []
     },
     {
       "section_index": 3,
       "slide_index": 2,
       "path": "temp/slides\\slide_3_2.pptx",
       "content": {
-        "title": "AI: Accessible to SMBs",
+        "title": "Machine Learning vs. Deep Learning",
         "content": [
-          "AI is no longer just for big corporations!",
-          "Cloud-based AI services offer affordable solutions.",
-          "Pre-trained models reduce development time and costs.",
-          "Open-source AI tools provide accessible resources.",
-          "Focus on specific business needs for targeted AI implementation."
+          "**Machine Learning:**",
+          "  * Requires manual feature engineering.",
+          "  * Simpler models, less computationally intensive.",
+          "  * Examples: Linear Regression, Decision Trees, Support Vector Machines.",
+          "**Deep Learning:**",
+          "  * Automatic feature extraction.",
+          "  * Complex, multi-layered neural networks.",
+          "  * Requires significant computational resources.",
+          "  * Examples: Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs)."
         ],
         "layout": "",
-        "notes": "Highlight the affordability and accessibility of AI for SMBs. Mention cloud platforms like AWS, Google Cloud, and Azure. Emphasize the importance of focusing on specific business problems to avoid overspending.",
+        "notes": "Explain feature engineering and why it's a bottleneck in traditional ML. Highlight the 'black box' nature of deep learning and the trade-off between accuracy and interpretability.",
         "keywords": [
-          "SMBs",
-          "Accessibility",
-          "Affordable AI",
-          "Cloud AI",
-          "Open-source AI",
-          "Pre-trained models"
+          "machine learning",
+          "deep learning",
+          "feature engineering",
+          "neural networks",
+          "complexity",
+          "CNN",
+          "RNN"
         ],
         "layout_type": ""
       },
-      "images": [
-        {
-          "path": "temp/slides\\image_3_2.png",
-          "content": "Image of a small business owner using a laptop with an AI interface on the screen"
-        }
-      ],
+      "images": [],
       "diagrams": []
+    },
+    {
+      "section_index": 3,
+      "slide_index": 3,
+      "path": "temp/slides\\slide_3_3.pptx",
+      "content": {
+        "title": "Data Requirements & ML Model",
+        "content": [
+          "**Data Requirements:**",
+          "  * Machine Learning: Can work with smaller datasets.",
+          "  * Deep Learning: Requires massive datasets for effective training.",
+          "  * Data quality is crucial for both!",
+          "**Simple ML Model Data Flow**"
+        ],
+        "layout": "",
+        "notes": "Stress the importance of data quality. Explain why deep learning needs so much data (to learn complex patterns).",
+        "keywords": [
+          "data requirements",
+          "machine learning",
+          "deep learning",
+          "data quality",
+          "data flow",
+          "model training",
+          "feature extraction"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides\\diagram_3_3.png",
+          "content": "blockDiagram\n  direction LR\n  block [Data] --> block2[Feature Extraction]\n  block2 --> block3[Model Training]\n  block3 --> block4[Model Evaluation]\n  block4 --> block5{Is Accurate?}\n  block5 -- Yes --> block6[Deploy Model]\n  block5 -- No --> block2\n  style Data fill:#f9f,stroke:#333,stroke-width:2px\n  style \"Is Accurate?\" fill:#ccf,stroke:#333,stroke-width:2px\n"
+        }
+      ]
     },
     {
       "section_index": 4,
       "slide_index": 0,
       "path": "temp/slides\\slide_4_0.pptx",
       "content": {
-        "title": "Chapter 2: AI-Powered Efficiency and Innovation",
+        "title": "Practical Applications for SMBs",
         "content": "05",
         "layout": "",
         "notes": null,
@@ -250,25 +235,21 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_4_1.pptx",
       "content": {
-        "title": "AI for Operational Efficiency & Improved Decision-Making",
+        "title": "AI-Powered Customer Service",
         "content": [
-          "**Operational Efficiency:**",
-          "  * Automate repetitive tasks: Data entry, invoice processing, customer service inquiries.",
-          "  * Reduce manual errors and free up human capital for strategic initiatives.",
-          "  * Streamline workflows and optimize resource allocation.",
-          "**Improved Decision-Making:**",
-          "  * Predictive analytics for demand forecasting, pricing optimization, and inventory management.",
-          "  * Data-driven insights for better resource allocation and risk management.",
-          "  * Identify trends and patterns to inform strategic decisions."
+          "Chatbots for 24/7 automated support",
+          "Answer FAQs, resolve simple issues, and escalate complex cases",
+          "Sentiment analysis to understand customer feedback",
+          "Identify frustrated customers and prioritize responses",
+          "Improve customer satisfaction and reduce support costs"
         ],
         "layout": "",
-        "notes": "Highlight examples of successful AI implementations in operational efficiency and decision-making. Emphasize the ROI and competitive advantages.",
+        "notes": "Discuss the benefits of chatbots for SMBs, focusing on cost savings and improved customer experience. Explain how sentiment analysis can help identify and address customer pain points.",
         "keywords": [
-          "automation",
-          "predictive analytics",
-          "efficiency",
-          "decision-making",
-          "ROI"
+          "customer service",
+          "chatbots",
+          "sentiment analysis",
+          "automation"
         ],
         "layout_type": ""
       },
@@ -276,7 +257,7 @@
       "diagrams": [
         {
           "path": "temp/slides\\diagram_4_1.png",
-          "content": "blockDiagram\n  direction LR\n  block [AI]\n  block1 [Operational Efficiency]\n  block2 [Improved Decision-Making]\n\n  block -- Automate Repetitive Tasks --> block1\n  block -- Reduce Manual Errors --> block1\n  block -- Streamline Workflows --> block1\n\n  block -- Predictive Analytics --> block2\n  block -- Data-Driven Insights --> block2\n  block -- Identify Trends --> block2"
+          "content": "sequenceDiagram\n    participant Customer\n    participant Chatbot\n    participant Knowledge Base\n    participant Human Agent\n\n    Customer->>Chatbot: Customer Input (e.g., Question, Issue)\n    activate Chatbot\n    Chatbot->>Knowledge Base: Search for Answer\n    activate Knowledge Base\n    Knowledge Base-->>Chatbot: Answer Found (or Not Found)\n    deactivate Knowledge Base\n\n    alt Answer Found\n        Chatbot-->>Customer: Response\n    else Answer Not Found\n        Chatbot->>Human Agent: Escalate Case\n        activate Human Agent\n        Human Agent-->>Customer: Response\n        deactivate Human Agent\n    end\n    deactivate Chatbot\n"
         }
       ]
     },
@@ -285,46 +266,74 @@
       "slide_index": 2,
       "path": "temp/slides\\slide_4_2.pptx",
       "content": {
-        "title": "AI for Enhanced Customer Experience & Product Innovation",
+        "title": "AI Transforming Medical Healthcare",
         "content": [
-          "**Enhanced Customer Experience:**",
-          "  * Personalized marketing campaigns based on customer preferences and behavior.",
-          "  * AI-powered chatbots for instant customer support and issue resolution.",
-          "  * Sentiment analysis to understand customer feedback and improve service quality.",
-          "**Product & Service Innovation:**",
-          "  * Identify unmet customer needs and new market opportunities.",
-          "  * Develop AI-powered products and services that offer unique value.",
-          "  * Accelerate the innovation cycle and stay ahead of the competition."
+          "AI-powered diagnostics for faster, more accurate results",
+          "Personalized treatment plans based on patient data and AI models",
+          "Drug discovery and development accelerated through AI analysis",
+          "Robotic surgery with enhanced precision and minimally invasive techniques",
+          "Remote patient monitoring and telehealth powered by AI algorithms"
         ],
         "layout": "",
-        "notes": "Provide examples of how AI is transforming customer experience and driving product innovation. Discuss the importance of ethical considerations and data privacy.",
+        "notes": "Discuss how AI is improving diagnostics, personalizing treatment, and accelerating drug discovery. Highlight the role of AI in robotic surgery and remote patient monitoring.",
         "keywords": [
-          "personalization",
-          "chatbots",
-          "sentiment analysis",
-          "innovation",
-          "market opportunities"
+          "AI",
+          "healthcare",
+          "diagnostics",
+          "treatment",
+          "drug discovery",
+          "robotic surgery",
+          "telehealth"
         ],
         "layout_type": ""
       },
       "images": [
         {
           "path": "temp/slides\\image_4_2.png",
-          "content": "AI powered chatbot interacting with customer"
-        },
-        {
-          "path": "temp/slides\\image_4_2.png",
-          "content": "Personalized marketing campaign example"
+          "content": "personalized marketing campaign example"
         }
       ],
       "diagrams": []
+    },
+    {
+      "section_index": 4,
+      "slide_index": 3,
+      "path": "temp/slides\\slide_4_3.pptx",
+      "content": {
+        "title": "Streamlining Operations with AI",
+        "content": [
+          "Predictive maintenance to prevent equipment failures",
+          "Reduce downtime and maintenance costs",
+          "Fraud detection to protect your business",
+          "Identify and prevent fraudulent transactions",
+          "Process automation to improve efficiency",
+          "Automate repetitive tasks and free up employees for more strategic work"
+        ],
+        "layout": "",
+        "notes": "Discuss the benefits of predictive maintenance for SMBs. Explain how fraud detection can protect businesses from financial losses. Highlight the importance of process automation for improving efficiency and reducing costs.",
+        "keywords": [
+          "operations",
+          "predictive maintenance",
+          "fraud detection",
+          "process automation",
+          "efficiency"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides\\diagram_4_3.png",
+          "content": "mindmap\n  root((Streamlining Operations with AI))\n    Predictive Maintenance\n      Reduce Downtime & Costs\n    Fraud Detection\n      Prevent Fraudulent Transactions\n    Process Automation\n      Improve Efficiency\n      Free up Employees"
+        }
+      ]
     },
     {
       "section_index": 5,
       "slide_index": 0,
       "path": "temp/slides\\slide_5_0.pptx",
       "content": {
-        "title": "Chapter 3: AI for Environmental Responsibility",
+        "title": "Getting Started with AI",
         "content": "06",
         "layout": "",
         "notes": null,
@@ -339,46 +348,56 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_5_1.pptx",
       "content": {
-        "title": "AI: A Green Ally",
+        "title": "Step 1: Identify Business Needs",
         "content": [
-          "AI is not just about efficiency; it's a powerful tool for environmental sustainability.",
-          "Key Areas:",
-          "  * Energy Efficiency",
-          "  * Waste Reduction",
-          "  * Supply Chain Optimization",
-          "  * Sustainable Product Design"
+          "Focus on specific, well-defined problems.",
+          "Think about areas where automation or prediction could improve efficiency or decision-making.",
+          "Examples:",
+          "  * Reducing customer churn",
+          "  * Optimizing inventory management",
+          "  * Improving fraud detection"
         ],
         "layout": "",
-        "notes": "This slide introduces the core concept of AI's role in environmental responsibility. Briefly touch upon each key area, setting the stage for the following slides.",
+        "notes": "Start by brainstorming potential use cases. What are the pain points in your business? Where are you losing money or time? Frame these problems as questions that AI might be able to answer.",
         "keywords": [
-          "AI",
-          "environmental sustainability",
-          "energy efficiency",
-          "waste reduction",
-          "supply chain",
-          "product design"
+          "business needs",
+          "problem identification",
+          "AI applications",
+          "use cases"
         ],
         "layout_type": ""
       },
       "images": [],
-      "diagrams": []
+      "diagrams": [
+        {
+          "path": "temp/slides\\diagram_5_1.png",
+          "content": "Business Problem -> AI Solution -> Improved Outcome"
+        }
+      ]
     },
     {
       "section_index": 5,
       "slide_index": 2,
       "path": "temp/slides\\slide_5_2.pptx",
       "content": {
-        "title": "AI-Driven Sustainability Loop",
-        "content": "AI creates a continuous cycle of improvement for environmental sustainability.",
+        "title": "Step 2: Data Assessment & Step 3: Start Small",
+        "content": [
+          "**Data Assessment:**",
+          "  * Evaluate the availability, quality, and relevance of your data.",
+          "  * Is the data clean, structured, and sufficient for training ML models?",
+          "**Start Small:**",
+          "  * Begin with pilot projects and simple ML models.",
+          "  * Focus on achieving quick wins and demonstrating value.",
+          "  * Avoid complex projects initially."
+        ],
         "layout": "",
-        "notes": "Explain how the AI-driven sustainability loop works. Emphasize the iterative nature of the process and how continuous data analysis leads to ongoing improvements.",
+        "notes": "Data is the fuel for AI. Assess what data you have and whether it's suitable for your chosen problem. Starting small allows you to learn and iterate without significant risk. A simple model might be a linear regression or a basic classification algorithm.",
         "keywords": [
-          "AI",
-          "sustainability",
-          "data analysis",
-          "optimization",
-          "waste reduction",
-          "emissions reduction"
+          "data assessment",
+          "data quality",
+          "pilot projects",
+          "simple models",
+          "machine learning"
         ],
         "layout_type": ""
       },
@@ -386,30 +405,69 @@
       "diagrams": [
         {
           "path": "temp/slides\\diagram_5_2.png",
-          "content": "graph LR\n    A[Data Collection & Analysis] --> B(Identify Areas for Improvement)\n    B --> C{AI-Powered Optimization}\n    C --> D[Reduced Waste, Emissions, & Resource Use]\n    D --> A\n    style A fill:#f9f,stroke:#333,stroke-width:2px\n    style B fill:#ccf,stroke:#333,stroke-width:2px\n    style C fill:#ccf,stroke:#333,stroke-width:2px\n    style D fill:#f9f,stroke:#333,stroke-width:2px"
+          "content": "Data -> Preprocessing -> Model Training -> Evaluation -> Deployment"
         }
       ]
+    },
+    {
+      "section_index": 5,
+      "slide_index": 3,
+      "path": "temp/slides\\slide_5_3.pptx",
+      "content": {
+        "title": "Step 4 & 5: Leverage Cloud Platforms & Seek Expert Advice",
+        "content": [
+          "**Leverage Cloud Platforms:**",
+          "  * Explore cloud-based ML services (AWS, Azure, Google Cloud).",
+          "  * Benefit from ease of use, scalability, and pre-built models.",
+          "**Seek Expert Advice:**",
+          "  * Consider consulting with AI experts or data scientists.",
+          "  * Get guidance on model selection, data preparation, and deployment.",
+          "  * Can be a cost-effective way to accelerate your AI journey."
+        ],
+        "layout": "",
+        "notes": "Cloud platforms offer a low-barrier entry point to AI. They provide the infrastructure and tools you need without requiring significant upfront investment. Don't hesitate to seek expert help, especially in the early stages. A consultant can help you avoid common pitfalls and ensure you're on the right track.",
+        "keywords": [
+          "cloud platforms",
+          "AWS",
+          "Azure",
+          "Google Cloud",
+          "AI experts",
+          "data scientists",
+          "consulting"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides\\image_5_3.png",
+          "content": "cloud computing services logo"
+        }
+      ],
+      "diagrams": []
     },
     {
       "section_index": 6,
       "slide_index": 0,
       "path": "temp/slides\\slide_6_0.pptx",
       "content": {
-        "title": "AI: A Sustainable Future for SMBs",
+        "title": "Conclusion: Key Takeaways",
         "content": [
-          "Recap of AI Benefits:",
-          "  * Efficiency: Streamlined operations, reduced costs",
-          "  * Innovation: New products, services, and business models",
-          "  * Environmental Responsibility: Reduced carbon footprint, resource optimization"
+          "AI, ML, and DL are powerful tools for SMBs.",
+          "Machine Learning enables systems to learn from data without explicit programming.",
+          "Deep Learning, a subset of ML, uses neural networks for complex tasks.",
+          "AI adoption can lead to increased efficiency, better decisions, and improved customer experiences."
         ],
         "layout": "",
-        "notes": "Remind the audience of the key benefits discussed throughout the presentation. Emphasize the interconnectedness of these benefits – efficiency gains can lead to innovation, which can then contribute to environmental responsibility.",
+        "notes": "Remind the audience of the core definitions and benefits discussed throughout the presentation. Emphasize that AI is not just for large corporations.",
         "keywords": [
           "AI",
-          "sustainability",
-          "efficiency",
-          "innovation",
-          "environment"
+          "Machine Learning",
+          "Deep Learning",
+          "SMBs",
+          "Benefits",
+          "Efficiency",
+          "Decision-making",
+          "Customer Experience"
         ],
         "layout_type": ""
       },
@@ -417,7 +475,7 @@
       "diagrams": [
         {
           "path": "temp/slides\\diagram_6_0.png",
-          "content": "blockDiagram\n  direction LR\n  A[Efficiency: Streamlined operations, reduced costs] --> B(Innovation: New products, services, and business models)\n  B --> C{Environmental Responsibility: Reduced carbon footprint, resource optimization}\n  style A fill:#f9f,stroke:#333,stroke-width:2px\n  style B fill:#ccf,stroke:#333,stroke-width:2px\n  style C fill:#9f9,stroke:#333,stroke-width:2px"
+          "content": "mindmap\n  root((AI for SMBs))\n    Central Ideas\n      AI is powerful\n      ML learns from data\n      DL uses neural networks\n    Benefits\n      Increased Efficiency\n      Better Decisions\n      Improved Customer Experience"
         }
       ]
     },
@@ -426,61 +484,32 @@
       "slide_index": 1,
       "path": "temp/slides\\slide_6_1.pptx",
       "content": {
-        "title": "Your AI Journey: Start Today!",
+        "title": "The Future is Intelligent: Embrace the Opportunity",
         "content": [
-          "Call to Action:",
-          "  * Start Small: Identify a specific problem or opportunity.",
-          "  * Experiment: Try different AI tools and approaches.",
-          "  * Iterate: Continuously improve and refine your AI strategy.",
-          "Resources:",
-          "  * Online courses and tutorials",
-          "  * AI consulting services",
-          "  * Sustainable business organizations",
-          "The Future is Bright: AI empowers a more sustainable and prosperous future for all SMBs."
+          "Explore AI opportunities relevant to your business.",
+          "Start small: Experiment with pilot projects and readily available AI tools.",
+          "Stay informed about emerging trends like Explainable AI (XAI) and Edge AI.",
+          "Don't be left behind: AI is transforming industries, and early adopters will gain a competitive advantage."
         ],
         "layout": "",
-        "notes": "Encourage the audience to take action. Provide concrete steps they can take to get started with AI. Highlight available resources and emphasize the positive outlook for AI and sustainable growth.",
+        "notes": "Encourage the audience to take action and begin their AI journey. Highlight the importance of staying informed about future trends and the potential consequences of inaction.",
         "keywords": [
           "AI",
-          "sustainability",
-          "action",
-          "resources",
-          "future"
+          "Future",
+          "Opportunity",
+          "Experimentation",
+          "Explainable AI",
+          "Edge AI",
+          "Competitive Advantage"
         ],
         "layout_type": ""
       },
       "images": [
         {
           "path": "temp/slides\\image_6_1.png",
-          "content": "Image of a diverse team collaborating on an AI project, with a focus on sustainability."
+          "content": "futuristic cityscape with AI integration"
         }
       ],
-      "diagrams": []
-    },
-    {
-      "section_index": 8,
-      "slide_index": 0,
-      "path": "temp/slides\\slide_8_0.pptx",
-      "content": {
-        "title": "Q&A",
-        "content": [
-          "Open the floor for questions",
-          "We're here to discuss AI, sustainability, and implementation strategies",
-          "Let's explore how AI can drive sustainable growth in your enterprise"
-        ],
-        "layout": "",
-        "notes": "Thank you for your attention. I'm now happy to answer any questions you may have. Please feel free to ask about specific AI technologies, sustainability initiatives, or implementation challenges.",
-        "keywords": [
-          "questions",
-          "answers",
-          "AI",
-          "sustainability",
-          "implementation",
-          "growth"
-        ],
-        "layout_type": ""
-      },
-      "images": [],
       "diagrams": []
     },
     {
@@ -491,34 +520,60 @@
         "title": "Thank You & Next Steps",
         "content": [
           "Thank you for your time and attention!",
+          "We hope this presentation has provided valuable insights into the world of AI, Machine Learning, and Deep Learning.",
           "Key Takeaways:",
-          "  * AI is accessible and relevant for SMBs.",
-          "  * AI drives efficiency, innovation, and environmental responsibility.",
-          "  * Embracing AI is crucial for sustainable growth.",
-          "Next Steps:",
-          "  * Schedule a free consultation or demo.",
-          "  * Explore AI solutions tailored to your business needs.",
-          "  * Contact us with any questions."
+          "  * AI is transforming industries, and SMBs can benefit significantly.",
+          "  * Machine Learning and Deep Learning are powerful tools within the AI landscape.",
+          "  * Getting started with AI doesn't have to be daunting; small steps can lead to big results."
         ],
         "layout": "",
-        "notes": "Reiterate the main points of the presentation. Encourage the audience to take action and offer assistance. Provide clear contact information.",
+        "notes": "Reiterate gratitude. Briefly recap the main points of the presentation. Emphasize the accessibility of AI for SMBs.",
         "keywords": [
           "thank you",
-          "next steps",
-          "consultation",
-          "demo",
+          "AI adoption",
           "contact information",
-          "AI solutions",
-          "sustainable growth"
+          "follow up"
         ],
         "layout_type": ""
       },
-      "images": [
+      "images": [],
+      "diagrams": [
         {
-          "path": "temp/slides\\image_7_0.png",
-          "content": "Image of a diverse team collaborating on a project with AI integration"
+          "path": "temp/slides\\diagram_7_0.png",
+          "content": "Contact Information: Email: info@example.com, Phone: (555) 123-4567, Website: www.example.com"
         }
-      ],
+      ]
+    },
+    {
+      "section_index": 8,
+      "slide_index": 0,
+      "path": "temp/slides\\slide_8_0.pptx",
+      "content": {
+        "title": "Q & A",
+        "content": [
+          "We're now happy to answer any questions you may have.",
+          "Common questions we can address:",
+          "- Cost of implementation",
+          "- Data privacy and security",
+          "- Integration with existing systems",
+          "- Specific use cases for your business",
+          "Don't hesitate to ask!",
+          "Contact us for follow-up discussions:"
+        ],
+        "layout": "",
+        "notes": "Encourage audience participation. Be prepared to provide specific examples and resources. Offer contact information for follow-up discussions.",
+        "keywords": [
+          "Q&A",
+          "Questions",
+          "Answers",
+          "Cost",
+          "Implementation",
+          "Data Privacy",
+          "Contact Information"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
       "diagrams": []
     },
     {
@@ -526,44 +581,63 @@
       "slide_index": 0,
       "path": "temp/slides\\slide_9_0.pptx",
       "content": {
-        "title": "Q&A - Let's Continue the Conversation",
+        "title": "Backup Slides: Deep Dive & Further Considerations",
         "content": [
-          "Still have questions? We're here to help!",
-          "No question is too big or too small.",
-          "If we don't have the answer immediately, we'll find it for you.",
-          "Additional Resources:",
-          "   - Company Website: [Your Company Website]",
-          "   - AI Sustainability Report: [Link to Report (if applicable)]",
-          "   - Contact us directly: [Your Email Address]"
+          "Detailed Explanation of Specific ML Algorithms:",
+          "   - Linear Regression: Predicting continuous values based on linear relationships.",
+          "   - Logistic Regression: Predicting categorical outcomes (e.g., yes/no).",
+          "   - Support Vector Machines (SVM): Effective for classification and regression tasks.",
+          "   - Decision Trees: Easy-to-understand models for classification and regression.",
+          "   - Random Forests: Ensemble of decision trees for improved accuracy.",
+          "   - K-Nearest Neighbors (KNN): Classifying data points based on proximity.",
+          "In-depth Case Studies:",
+          "   - Detailed examples of AI implementation in various SMB sectors (e.g., retail, healthcare, finance).",
+          "Data Privacy and Security Considerations:",
+          "   - GDPR, CCPA compliance.",
+          "   - Data encryption and anonymization techniques.",
+          "   - Secure data storage and access controls.",
+          "Cost Breakdown of AI Implementation:",
+          "   - Software and hardware costs.",
+          "   - Data acquisition and preparation costs.",
+          "   - Training and consulting fees.",
+          "   - Ongoing maintenance and support costs."
         ],
         "layout": "",
-        "notes": "Reiterate willingness to answer questions. Highlight the availability of additional resources and contact information for follow-up inquiries. Mention specific resources like a company website or a relevant report.",
+        "notes": "This slide provides additional information that may be useful in answering audience questions. Be prepared to elaborate on each point with specific examples and details. Emphasize the importance of data privacy and security, and provide realistic cost estimates for AI implementation.",
         "keywords": [
-          "Q&A",
-          "questions",
-          "resources",
-          "contact information",
-          "sustainability",
-          "AI"
+          "ML algorithms",
+          "case studies",
+          "data privacy",
+          "security",
+          "cost breakdown",
+          "GDPR",
+          "CCPA",
+          "encryption",
+          "anonymization"
         ],
         "layout_type": ""
       },
       "images": [],
-      "diagrams": []
+      "diagrams": [
+        {
+          "path": "temp/slides\\diagram_9_0.png",
+          "content": "Algorithm: Linear Regression, Logistic Regression, SVM, Decision Trees, Random Forests, KNN; Application: Prediction, Classification, Regression, Anomaly Detection; Data Requirements: Varies by algorithm; Complexity: Varies by algorithm"
+        }
+      ]
     }
   ],
   "outline": {
-    "topic": "Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
+    "topic": "Machine Learning, Deep Learning, and the Evolution of Modern AI: A Practical Guide for SMBs",
     "num_sections": 10,
-    "num_slides": 15,
+    "num_slides": 20,
     "sections": [
       {
         "title": "Title Slide",
-        "description": "Presentation title, presenter name, and date.",
+        "description": "Introduce the presentation and speaker.",
         "key_points": [
-          "Presentation Title: Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
-          "Presenter: [Your Name/Company]",
-          "Date: [Date]"
+          "Presentation Title: Machine Learning, Deep Learning, and the Evolution of Modern AI",
+          "Speaker Name and Title",
+          "Company Logo"
         ],
         "estimated_slides": 1,
         "section_index": 0,
@@ -571,13 +645,12 @@
       },
       {
         "title": "Agenda",
-        "description": "Overview of the presentation topics.",
+        "description": "Outline the topics to be covered in the presentation.",
         "key_points": [
-          "Introduction: The Imperative of Sustainable Growth",
-          "Chapter 1: Understanding AI and its Potential for SMBs",
-          "Chapter 2: AI-Powered Efficiency and Innovation",
-          "Chapter 3: AI for Environmental Responsibility",
-          "Conclusion: Embracing AI for a Sustainable Future",
+          "Introduction to AI, Machine Learning, and Deep Learning",
+          "Key Differences and Relationships",
+          "Practical Applications for SMBs",
+          "Getting Started with AI",
           "Q&A"
         ],
         "estimated_slides": 1,
@@ -585,67 +658,70 @@
         "section_type": "agenda"
       },
       {
-        "title": "Introduction: The Imperative of Sustainable Growth",
-        "description": "Setting the stage by highlighting the importance of sustainable growth for modern businesses.",
+        "title": "Understanding AI, Machine Learning, and Deep Learning",
+        "description": "Define AI, Machine Learning, and Deep Learning and explain their relationship.",
         "key_points": [
-          "What is Sustainable Growth? (Economic, Social, Environmental)",
-          "Why is it important for SMBs? (Long-term viability, brand reputation, attracting talent)",
-          "The role of technology in achieving sustainable growth",
-          "Briefly introduce AI as a key enabler"
+          "Artificial Intelligence (AI): Definition and goals (creating intelligent agents)",
+          "Machine Learning (ML): A subset of AI that enables systems to learn from data without explicit programming.",
+          "Deep Learning (DL): A subset of ML that uses artificial neural networks with multiple layers to analyze data.",
+          "The AI -> ML -> DL Hierarchy: Visual representation of the relationship (AI is the broadest, ML is a subset, DL is a subset of ML).",
+          "Brief history of AI and its evolution leading to ML and DL."
         ],
         "estimated_slides": 3,
         "section_index": 2,
         "section_type": "chapter"
       },
       {
-        "title": "Chapter 1: Understanding AI and its Potential for SMBs",
-        "description": "Demystifying AI and showcasing its accessibility and relevance for small and medium businesses.",
+        "title": "Key Differences and Relationships",
+        "description": "Explain the differences between traditional programming, machine learning, and deep learning.",
         "key_points": [
-          "What is Artificial Intelligence? (Simple definition, key concepts like machine learning and deep learning)",
-          "AI is not just for big corporations: Affordable and accessible AI solutions for SMBs",
-          "Examples of AI applications relevant to SMBs (e.g., chatbots, predictive analytics, automation)",
-          "Addressing common misconceptions about AI (e.g., cost, complexity, job displacement)"
+          "Traditional Programming vs. Machine Learning: Explain how traditional programming requires explicit rules, while ML learns from data.",
+          "Machine Learning vs. Deep Learning: Discuss feature engineering (manual vs. automatic) and the complexity of models.",
+          "Data Requirements: Highlight the different data needs of ML and DL (DL typically requires much larger datasets).",
+          "Algorithm Examples: Provide simple examples of ML algorithms (e.g., linear regression, decision trees) and DL architectures (e.g., convolutional neural networks, recurrent neural networks).",
+          "Mermaid Diagram: Illustrate the data flow in a simple machine learning model. ```mermaid\ngraph LR\nA[Data] --> B(Feature Extraction)\nB --> C(Model Training)\nC --> D(Model Evaluation)\nD --> E{Is Accurate?}\nE -- Yes --> F(Deploy Model)\nE -- No --> B\n```"
         ],
-        "estimated_slides": 3,
+        "estimated_slides": 4,
         "section_index": 3,
         "section_type": "chapter"
       },
       {
-        "title": "Chapter 2: AI-Powered Efficiency and Innovation",
-        "description": "Exploring how AI can drive efficiency and innovation in various business functions.",
+        "title": "Practical Applications for SMBs",
+        "description": "Showcase real-world examples of how SMBs can leverage ML and DL.",
         "key_points": [
-          "AI for Operational Efficiency: Automating repetitive tasks (e.g., data entry, customer service)",
-          "AI for Improved Decision-Making: Predictive analytics for forecasting demand, optimizing pricing, and managing inventory",
-          "AI for Enhanced Customer Experience: Personalized marketing, chatbots for instant support, sentiment analysis for feedback",
-          "AI for Product and Service Innovation: Identifying new market opportunities, developing AI-powered products/services"
+          "Customer Service: Chatbots for automated support, sentiment analysis for understanding customer feedback.",
+          "Marketing: Personalized recommendations, targeted advertising, lead scoring.",
+          "Sales: Sales forecasting, customer churn prediction.",
+          "Operations: Predictive maintenance, fraud detection, process automation.",
+          "Case Studies: Briefly present 2-3 examples of SMBs successfully using ML/DL (e.g., personalized email marketing, fraud detection in e-commerce)."
         ],
-        "estimated_slides": 3,
+        "estimated_slides": 4,
         "section_index": 4,
         "section_type": "chapter"
       },
       {
-        "title": "Chapter 3: AI for Environmental Responsibility",
-        "description": "Focusing on the environmental benefits of AI and how businesses can use it to reduce their carbon footprint.",
+        "title": "Getting Started with AI",
+        "description": "Provide actionable steps for SMBs to begin exploring and implementing AI solutions.",
         "key_points": [
-          "AI for Energy Efficiency: Optimizing energy consumption in buildings and operations",
-          "AI for Waste Reduction: Improving waste management and recycling processes",
-          "AI for Supply Chain Optimization: Reducing transportation costs and emissions",
-          "AI for Sustainable Product Design: Developing eco-friendly products and packaging",
-          "Mermaid Diagram: Illustrating the AI-driven sustainability loop",
-          "```mermaid\ngraph LR\n    A[Data Collection & Analysis] --> B(Identify Areas for Improvement)\n    B --> C{AI-Powered Optimization}\n    C --> D[Reduced Waste, Emissions, & Resource Use]\n    D --> A\n    style A fill:#f9f,stroke:#333,stroke-width:2px\n    style B fill:#ccf,stroke:#333,stroke-width:2px\n    style C fill:#ccf,stroke:#333,stroke-width:2px\n    style D fill:#f9f,stroke:#333,stroke-width:2px\n```"
+          "Identify Business Needs: Focus on specific problems that AI can solve.",
+          "Data Assessment: Evaluate the availability and quality of relevant data.",
+          "Start Small: Begin with pilot projects and simple ML models.",
+          "Leverage Cloud Platforms: Explore cloud-based ML services (e.g., AWS, Azure, Google Cloud) for ease of use and scalability.",
+          "Seek Expert Advice: Consider consulting with AI experts or data scientists.",
+          "Training and Resources: Highlight online courses, workshops, and other resources for learning about AI."
         ],
-        "estimated_slides": 3,
+        "estimated_slides": 4,
         "section_index": 5,
         "section_type": "chapter"
       },
       {
-        "title": "Conclusion: Embracing AI for a Sustainable Future",
-        "description": "Summarizing the key benefits of AI for sustainable growth and providing actionable steps for businesses to get started.",
+        "title": "Conclusion: The Future is Intelligent",
+        "description": "Summarize the key takeaways and emphasize the importance of AI adoption.",
         "key_points": [
-          "Recap of the benefits of AI for SMBs (efficiency, innovation, environmental responsibility)",
-          "Call to action: Start small, experiment, and iterate",
-          "Resources for learning more about AI and sustainable business practices",
-          "The future of AI and sustainable growth: A positive outlook"
+          "Recap of Key Concepts: Briefly reiterate the definitions of AI, ML, and DL.",
+          "Benefits of AI for SMBs: Summarize the potential advantages (e.g., increased efficiency, improved decision-making, enhanced customer experience).",
+          "Call to Action: Encourage SMBs to explore AI opportunities and start experimenting.",
+          "Future Trends: Briefly mention emerging trends in AI (e.g., explainable AI, edge AI)."
         ],
         "estimated_slides": 2,
         "section_index": 6,
@@ -653,12 +729,11 @@
       },
       {
         "title": "Thank You & Next Steps",
-        "description": "Expressing gratitude and outlining potential next steps for the audience.",
+        "description": "Express gratitude and provide contact information.",
         "key_points": [
-          "Thank you for your time!",
-          "Offer a free consultation or demo",
-          "Provide contact information for follow-up questions",
-          "Encourage audience to explore AI solutions relevant to their business"
+          "Thank you message",
+          "Contact information (email, phone, website)",
+          "Offer for follow-up consultation or resources"
         ],
         "estimated_slides": 1,
         "section_index": 7,
@@ -668,19 +743,22 @@
         "title": "Q&A",
         "description": "Open the floor for questions from the audience.",
         "key_points": [
-          "Open the floor for questions",
-          "Be prepared to answer questions about AI, sustainability, and implementation strategies"
+          "Prepare for common questions about cost, implementation, and data privacy.",
+          "Be ready to provide specific examples and resources.",
+          "Encourage audience participation."
         ],
         "estimated_slides": 1,
         "section_index": 8,
         "section_type": "qa"
       },
       {
-        "title": "Backup Q&A Slide",
-        "description": "A second Q&A slide in case the first one is not enough.",
+        "title": "Backup Slides (if needed)",
+        "description": "Additional slides to address potential questions or provide more detailed information.",
         "key_points": [
-          "Continue answering questions",
-          "Provide additional resources if needed"
+          "Detailed explanation of specific ML algorithms.",
+          "More in-depth case studies.",
+          "Information on data privacy and security considerations.",
+          "Cost breakdown of AI implementation."
         ],
         "estimated_slides": 1,
         "section_index": 9,
@@ -689,29 +767,28 @@
     ]
   },
   "user_input": {
-    "topic": "New Topic: \"Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises\"  Explanation: This topic focuses on how businesses can utilize AI technologies to drive sustainable development and long-term success. It highlights the strategic integration of AI for innovation, efficiency, and environmental responsibility, making it suitable for a professional",
+    "topic": "Machine learning, Deep learning and the evolution of modern AI",
     "audience": "Small and medium businesses",
     "purpose": "Education and persuasion",
-    "presentation_title": "Harnessing Artificial Intelligence for Sustainable Growth in Modern Enterprises",
+    "presentation_title": "Machine Learning, Deep Learning, and the Evolution of Modern AI: A Practical Guide for SMBs",
     "details": null,
-    "template_path": "pptx_templates/Fission-presentation.pptx"
+    "template_path": "pptx_templates/Geometric.pptx"
   },
   "slide_layouts": {
     "title": [
       0,
-      12,
-      13
+      5,
+      12
     ],
     "agenda": [
       1
     ],
     "chapter_title": [
-      4
+      2
     ],
     "chapter": [
-      2,
       3,
-      5,
+      4,
       6,
       7,
       8,
@@ -720,13 +797,11 @@
       11
     ],
     "conclusion": [
-      0,
-      12
+      4
     ],
     "qa": [
-      5,
-      7
+      6
     ]
   },
-  "slide_layout_txt": "INFORMATION ABOUT LAYOUTS:\nLayout Index 0: Title Only\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 1: Agenda\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 2, type: BODY (2), name: Text Placeholder 3\n  - Placeholder index: 11, type: PICTURE (18), name: Picture Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 10, type: DATE (16), name: Date Placeholder 3\nLayout Index 2: Title + Subtitle\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 1, type: BODY (2), name: Text Placeholder 2\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 3: Introduction 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 10, type: OBJECT (7), name: Content Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 4: Section Title\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 1, type: BODY (2), name: Text Placeholder 2\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 5: Two Content 1\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 4, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 2, type: OBJECT (7), name: Content Placeholder 3\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 13, type: DATE (16), name: Date Placeholder 3\nLayout Index 6: Title + Content + Picture 1\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 12, type: OBJECT (7), name: Content Placeholder 10\n  - Placeholder index: 11, type: PICTURE (18), name: Picture Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 10, type: DATE (16), name: Date Placeholder 3\nLayout Index 7: Two Columns 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 4, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 2, type: OBJECT (7), name: Content Placeholder 3\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 13, type: DATE (16), name: Date Placeholder 3\nLayout Index 8: Content + Table\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 15, type: BODY (2), name: Text Placeholder 3\n  - Placeholder index: 16, type: TABLE (12), name: Table Placeholder 6\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 9: Table\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 15, type: TABLE (12), name: Table Placeholder 5\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 10: Title + Picture\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 10, type: PICTURE (18), name: Picture Placeholder 7\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 11: Two Content 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 2, type: OBJECT (7), name: Content Placeholder 3\n  - Placeholder index: 4, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 13, type: DATE (16), name: Date Placeholder 3\nLayout Index 12: Closing\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 1, type: SUBTITLE (4), name: Subtitle 2\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\nLayout Index 13: Blank\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 4, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 5\n  - Placeholder index: 3, type: FOOTER (15), name: Footer Placeholder 4\n  - Placeholder index: 2, type: DATE (16), name: Date Placeholder 3\n"
+  "slide_layout_txt": "INFORMATION ABOUT LAYOUTS:\nLayout Index 0: Title 1\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\nLayout Index 1: Agenda 1\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 26, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 42\n  - Placeholder index: 25, type: DATE (16), name: Date Placeholder 41\nLayout Index 2: Section Title\n  - Placeholder index: 13, type: PICTURE (18), name: Freeform: Shape 3\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\nLayout Index 3: Title 2\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 12, type: PICTURE (18), name: Picture Placeholder 5\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\nLayout Index 4: Summary 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 22, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 7\n  - Placeholder index: 21, type: DATE (16), name: Date Placeholder 4\nLayout Index 5: Title\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\nLayout Index 6: Title and Two Content 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 15, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 16, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 7: Title and Content \n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 15, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 8: Title Content and Picture\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 16, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 15, type: PICTURE (18), name: Picture Placeholder 11\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 9: Title Content and Table\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 10: Title and Two Content\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 13, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 14, type: OBJECT (7), name: Content Placeholder 5\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\nLayout Index 11: Table 2\n  - Placeholder index: 0, type: TITLE (1), name: Title 1\n  - Placeholder index: 10, type: TABLE (12), name: Table Placeholder 2\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Slide Number Placeholder 9\n  - Placeholder index: 11, type: DATE (16), name: Date Placeholder 7\nLayout Index 12: Title 3\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Title 1\n  - Placeholder index: 11, type: BODY (2), name: Text Placeholder 29\n"
 }

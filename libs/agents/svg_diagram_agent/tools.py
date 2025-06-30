@@ -132,7 +132,7 @@ if __name__ == "__main__":
         </defs>
         <rect x="10" y="10" width="280" height="180" rx="20" fill="url(#grad1)"/>
         <path d="M100,160 L120,120 L140,160 L160,120 L180,160" fill="none" stroke="white" stroke-width="4"/>
-        <text x="150" y="80" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Creative SVG</text>
+        <text x="150" y="80" text-anchor="middle" fill="white" font-family="Arial">Creative SVG</text>
     </svg>"""
     output_path = "output/svg_diagram.png"
     result = tool._run(svg_code=svg_code, output_path=output_path)

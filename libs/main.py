@@ -233,10 +233,7 @@ def main():
             print(f"Total Slides: {len(presentation['data']['slides'])}")
             print(f"Output: {args.output}")
             print("===========================\n")
-
             orchestrator.session.save_artifact()
-
-            
             return 0
         else:
             logger.error(f"Failed to generate presentation: {presentation.get('message')}")

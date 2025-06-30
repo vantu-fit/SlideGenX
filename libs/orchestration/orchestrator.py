@@ -517,117 +517,136 @@ class TreeOfThoughtOrchestrator:
         Returns: 
             A complete presentation with all slides and elements 
         """ 
-        if "diagram_drawed" not in self.session.state.requirements: 
-            self.session.state.requirements["diagram_drawed"] = [] 
-        # if self.session.memory.slide_temp_path then delete 
-        if os.path.exists(self.session.memory.slide_temp_path):
-            shutil.rmtree(self.session.memory.slide_temp_path)
-
-        if os.path.exists(self.session.state.save_prompt_folder):
-            shutil.rmtree(self.session.state.save_prompt_folder)
-        os.makedirs(self.session.state.save_prompt_folder, exist_ok=True)
-        start_time = time.time() 
-        self.session.output_message.add( 
-            f"Starting presentation generation on '{topic}'...", level="info" 
-        ) 
-        # Create template slide
-        remove_all_slides(template_path, template_path)
- 
-        # Init requiremnets for this session 
-        requirements = { 
-            "topic": topic, 
-            "audiencs": audience, 
-            "duration": duration, 
-            "purpose": purpose, 
-            # "template": "pptx_templates/Bosch-WeeklyReport.pptx", 
-        } 
- 
-        self.session.init_requirements(requirements) 
- 
-        self.session.memory.user_input_from_json({ 
-            "topic": topic, 
-            "audience": audience, 
-            "purpose": purpose, 
-            "template_path": template_path, 
-        }) 
- 
-        # Level 1: Generate presentation outline 
-        outline_response = self.generate_presentation_outline( 
-            topic, audience, duration, purpose 
-        ) 
-        if not outline_response: 
-            return { 
-                "status": "error", 
-                "message": "Failed to generate presentation outline", 
-                "data": {}, 
-            } 
- 
-        outline = outline_response.data 
-        self.session.memory.outline.from_outline_agent(outline) 
-        self.session.memory.user_input.presentation_title = outline.get("title", topic) 
-        logger.info(f"Generated outline with {len(outline['sections'])} sections") 
- 
-        def process_section(section_index: int) -> Optional[Dict[str, Any]]: 
-            section_content = self.generate_slide_content(section_index=section_index) 
-            self.session.memory.save_to_json("memory.json") 
-            if section_content: 
-                final_section_slide = self.generate_final_slide(section_index=section_index) 
-                return final_section_slide.data if final_section_slide else None 
-            return None 
-        
-        slides = []
-        
-        # Choose between parallel and sequential processing based on the parallel parameter
-        if parallel:
-            # Parallel processing using ThreadPoolExecutor
-            with concurrent.futures.ThreadPoolExecutor(
-                max_workers=self.config.max_workers
-            ) as executor:
-                futures = {
-                    executor.submit(process_section, section_index): section_index
-                    for section_index in range(self.session.memory.outline.num_sections)
-                }
-                slides = [
-                    future.result()
-                    for future in concurrent.futures.as_completed(futures)
-                    if future.result() is not None
-                ]
-        else:
-            # Sequential processing
-            for section_index in range(self.session.memory.outline.num_sections):
-                result = process_section(section_index)
-                if result is not None:
-                    slides.append(result)
-                    logger.info(f"Completed processing section {section_index + 1}/{self.session.memory.outline.num_sections}")
-
-        # Log the execution time 
-        end_time = time.time() 
-        execution_time = end_time - start_time 
-        logger.info( 
-            f"Presentation generation completed in {execution_time:.2f} seconds" 
-        ) 
-
-        # Merge  file
         try:
-            merge_pptx_files(input_dir=self.session.memory.slide_temp_path, output_path=output_path)
+            if "diagram_drawed" not in self.session.state.requirements: 
+                self.session.state.requirements["diagram_drawed"] = [] 
+            # if self.session.memory.slide_temp_path then delete 
+            if os.path.exists(self.session.memory.slide_temp_path):
+                shutil.rmtree(self.session.memory.slide_temp_path)
 
-            logger.info("Successfully merged pptx files")
-        except Exception as e:
-            logger.error(f"Error merging pptx files: {str(e)}")
- 
-        return { 
-            "status": "success", 
-            "message": f"Successfully generated presentation with {len(slides)} slides", 
-            "data": { 
-                "outline": outline, 
-                "slides": slides, 
-                "metadata": { 
-                    "topic": topic, 
-                    "audience": audience, 
-                    "duration": duration, 
-                    "purpose": purpose, 
-                    "total_slides": len(slides), 
-                    "parallel_processing": parallel,
+            if os.path.exists(self.session.state.save_prompt_folder):
+                shutil.rmtree(self.session.state.save_prompt_folder)
+            os.makedirs(self.session.state.save_prompt_folder, exist_ok=True)
+            start_time = time.time() 
+            self.session.output_message.add( 
+                f"Starting presentation generation on '{topic}'...", level="info" 
+            ) 
+            # Create template slide
+            remove_all_slides(template_path, template_path)
+    
+            # Init requiremnets for this session 
+            requirements = { 
+                "topic": topic, 
+                "audiencs": audience, 
+                "duration": duration, 
+                "purpose": purpose, 
+                # "template": "pptx_templates/Bosch-WeeklyReport.pptx", 
+            } 
+    
+            self.session.init_requirements(requirements) 
+    
+            self.session.memory.user_input_from_json({ 
+                "topic": topic, 
+                "audience": audience, 
+                "purpose": purpose, 
+                "template_path": template_path, 
+            }) 
+    
+            # Level 1: Generate presentation outline 
+            outline_response = self.generate_presentation_outline( 
+                topic, audience, duration, purpose 
+            ) 
+            if not outline_response: 
+                return { 
+                    "status": "error", 
+                    "message": "Failed to generate presentation outline", 
+                    "data": {}, 
+                } 
+    
+            outline = outline_response.data 
+            self.session.memory.outline.from_outline_agent(outline) 
+            self.session.memory.user_input.presentation_title = outline.get("title", topic) 
+            logger.info(f"Generated outline with {len(outline['sections'])} sections") 
+    
+            def process_section(section_index: int) -> Optional[Dict[str, Any]]: 
+                section_content = self.generate_slide_content(section_index=section_index) 
+                self.session.memory.save_to_json("memory.json") 
+                if section_content: 
+                    final_section_slide = self.generate_final_slide(section_index=section_index) 
+                    return final_section_slide.data if final_section_slide else None 
+                return None 
+            
+            slides = []
+            
+            # Choose between parallel and sequential processing based on the parallel parameter
+            if parallel:
+                # Parallel processing using ThreadPoolExecutor
+                with concurrent.futures.ThreadPoolExecutor(
+                    max_workers=self.config.max_workers
+                ) as executor:
+                    futures = {
+                        executor.submit(process_section, section_index): section_index
+                        for section_index in range(self.session.memory.outline.num_sections)
+                    }
+                    slides = [
+                        future.result()
+                        for future in concurrent.futures.as_completed(futures)
+                        if future.result() is not None
+                    ]
+            else:
+                # Sequential processing
+                for section_index in range(self.session.memory.outline.num_sections):
+                    result = process_section(section_index)
+                    if result is not None:
+                        slides.append(result)
+                        logger.info(f"Completed processing section {section_index + 1}/{self.session.memory.outline.num_sections}")
+
+            # Log the execution time 
+            end_time = time.time() 
+            execution_time = end_time - start_time 
+            logger.info( 
+                f"Presentation generation completed in {execution_time:.2f} seconds" 
+            )
+            if not slides:
+                return {
+                    "status": "error",
+                    "message": "Failed to generate any valid slides",
+                    "data": {}
+                } 
+
+            # Merge  file
+            try:
+                merge_pptx_files(input_dir=self.session.memory.slide_temp_path, output_path=output_path)
+                logger.info("Successfully merged pptx files")
+            except Exception as e:
+                logger.error(f"Error merging pptx files: {str(e)}")
+                return {
+                    "status": "error",
+                    "message": f"Failed to merge presentation slides: {str(e)}",
+                    "data": {},
+                }
+                
+    
+            return { 
+                "status": "success", 
+                "message": f"Successfully generated presentation with {len(slides)} slides", 
+                "data": { 
+                    "outline": outline, 
+                    "slides": slides, 
+                    "metadata": { 
+                        "topic": topic, 
+                        "audience": audience, 
+                        "duration": duration, 
+                        "purpose": purpose, 
+                        "total_slides": len(slides), 
+                        "parallel_processing": parallel,
+                    }, 
                 }, 
-            }, 
-        }
+            }
+        except Exception as e:
+            logger.error(f"Error during presentation generation: {str(e)}")
+            return {
+                "status": "error",
+                "message": f"Failed to generate presentation: {str(e)}",
+                "data": {},
+            }

@@ -1,0 +1,94 @@
+doi_resolvers:
+  oadoi.org: 'https://oadoi.org/'
+  doi.org: 'https://doi.org/'
+  doai.io: 'https://dissem.in/'
+  sci-hub.se: 'https://sci-hub.se/'
+  sci-hub.st: 'https://sci-hub.st/'
+  sci-hub.ru: 'https://sci-hub.ru/'
+
+default_doi_resolver: 'oadoi.org'
+
+general:
+  instance_name: "SearXNG Image Search"
+  debug: false
+  
+search:
+  safe_search: 0
+  autocomplete: "google"
+  default_lang: "vi"
+  default_doi_resolver: "oadoi.org"  # Thêm thiết lập này
+  
+server:
+  secret_key: "change_me_with_a_random_key"  # Thay đổi giá trị này trong môi trường production
+  bind_address: "0.0.0.0"
+  port: 8080
+  
+ui:
+  default_theme: "simple"
+  default_locale: "vi"
+  
+# Cấu hình đúng dạng dictionary
+categories_as_tabs:
+  general: true
+  images: true 
+  videos: true
+
+engines:
+  - name: google images
+    shortcut: gis
+    engine: google_images
+    categories: images
+    timeout: 4.0
+    disabled: false
+    display_error_messages: true
+    
+  - name: bing images
+    shortcut: bis
+    engine: bing_images
+    categories: images
+    timeout: 4.0
+    disabled: false
+    display_error_messages: true
+    
+  # Xóa hoặc sửa đổi các công cụ không tồn tại
+  # - name: duckduckgo images
+  #   shortcut: ddgi
+  #   engine: duckduckgo_images
+  #   categories: images
+  #   timeout: 4.0
+  #   disabled: false
+  #   display_error_messages: true
+    
+  - name: unsplash
+    engine: unsplash
+    categories: images
+    disabled: false
+    
+  # - name: wikipedia images
+  #   engine: wikipedia_images
+  #   categories: images
+  #   disabled: false
+
+# Các engine khác cho tìm kiếm web thông thường
+  - name: google
+    shortcut: g
+    engine: google
+    categories: general
+    timeout: 4.0
+    disabled: false
+    
+  - name: duckduckgo
+    shortcut: ddg
+    engine: duckduckgo
+    categories: general
+    timeout: 3.0
+    disabled: false
+
+default_preferences:
+  categories: "images"  # Đặt mặc định là tìm kiếm hình ảnh
+  language: "vi"
+  image_proxy: true
+  method: "GET"
+  results_on_new_tab: false
+  safesearch: 0
+  theme: "simple"

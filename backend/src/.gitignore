@@ -3,3 +3,7 @@ temp/
 .env
 *.pyc
 __pycache__/
+slides/*
+artifacts/*
+logs/*
+*.log

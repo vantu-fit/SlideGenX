@@ -1,0 +1,945 @@
+{
+  "slide_temp_path": "temp/slides",
+  "slides": [
+    {
+      "section_index": 0,
+      "slide_index": 0,
+      "path": "temp/slides/slide_0_0.pptx",
+      "content": {
+        "title": "Deep Learning: An Introduction",
+        "content": [],
+        "layout": "",
+        "notes": "Welcome everyone. This presentation will provide an overview of deep learning, covering its fundamental concepts, architectures, training methods, and applications. Let's begin!",
+        "keywords": [
+          "Deep Learning",
+          "Introduction",
+          "Neural Networks",
+          "Machine Learning",
+          "Artificial Intelligence"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides/image_0_0.png",
+          "content": "Abstract image representing deep learning neural network"
+        }
+      ],
+      "diagrams": []
+    },
+    {
+      "section_index": 1,
+      "slide_index": 0,
+      "path": "temp/slides/slide_1_0.pptx",
+      "content": {
+        "title": "Agenda",
+        "content": [
+          "Introduction to Machine Learning and Deep Learning",
+          "Neural Networks: The Building Blocks",
+          "Deep Learning Architectures",
+          "Training Deep Learning Models",
+          "Applications of Deep Learning",
+          "Conclusion and Q&A"
+        ],
+        "layout": "",
+        "notes": "This slide outlines the topics we'll be covering today. We'll start with the basics of machine learning and deep learning, then dive into the core components of neural networks. Next, we'll explore different deep learning architectures and how to train them. Finally, we'll look at some real-world applications and wrap up with a conclusion and Q&A session.",
+        "keywords": [
+          "agenda",
+          "machine learning",
+          "deep learning",
+          "neural networks",
+          "architectures",
+          "training",
+          "applications",
+          "conclusion",
+          "Q&A"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_1_0.png",
+          "content": "1. Introduction to Machine Learning and Deep Learning\n2. Neural Networks: The Building Blocks\n3. Deep Learning Architectures\n4. Training Deep Learning Models\n5. Applications of Deep Learning\n6. Conclusion and Q&A"
+        }
+      ]
+    },
+    {
+      "section_index": 2,
+      "slide_index": 0,
+      "path": "temp/slides/slide_2_0.pptx",
+      "content": {
+        "title": "Introduction to Machine Learning and Deep Learning",
+        "content": "03",
+        "layout": "",
+        "notes": null,
+        "keywords": [],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 2,
+      "slide_index": 1,
+      "path": "temp/slides/slide_2_1.pptx",
+      "content": {
+        "title": "What is Machine Learning?",
+        "content": [
+          "Definition: Machine learning is a field of computer science that gives computer systems the ability to learn from data without being explicitly programmed.",
+          "Focuses on algorithms that learn patterns and make predictions or decisions.",
+          "Examples:",
+          "  * Spam filtering",
+          "  * Recommendation systems (Netflix, Amazon)",
+          "  * Fraud detection",
+          "  * Medical diagnosis"
+        ],
+        "layout": "",
+        "notes": "Emphasize the 'learning from data' aspect. Briefly explain how each example utilizes machine learning.",
+        "keywords": [
+          "Machine Learning",
+          "Definition",
+          "Algorithms",
+          "Predictions",
+          "Examples"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 2,
+      "slide_index": 2,
+      "path": "temp/slides/slide_2_2.pptx",
+      "content": {
+        "title": "Types of Machine Learning",
+        "content": [
+          "Supervised Learning: Learning from labeled data (input-output pairs).",
+          "  * Examples: Classification, Regression",
+          "Unsupervised Learning: Learning from unlabeled data to discover patterns.",
+          "  * Examples: Clustering, Dimensionality Reduction",
+          "Reinforcement Learning: Learning through trial and error to maximize a reward.",
+          "  * Examples: Game playing, Robotics"
+        ],
+        "layout": "",
+        "notes": "Explain the difference between labeled and unlabeled data. Provide simple examples for each type. Mention the concept of a 'reward' in reinforcement learning.",
+        "keywords": [
+          "Supervised Learning",
+          "Unsupervised Learning",
+          "Reinforcement Learning",
+          "Labeled Data",
+          "Unlabeled Data",
+          "Reward"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_2_2.png",
+          "content": "Supervised Learning -> Labeled Data -> Prediction; Unsupervised Learning -> Unlabeled Data -> Pattern Discovery; Reinforcement Learning -> Agent -> Environment -> Reward -> Policy"
+        }
+      ]
+    },
+    {
+      "section_index": 4,
+      "slide_index": 0,
+      "path": "temp/slides/slide_4_0.pptx",
+      "content": {
+        "title": "Deep Learning Architectures",
+        "content": "05",
+        "layout": "",
+        "notes": null,
+        "keywords": [],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 4,
+      "slide_index": 1,
+      "path": "temp/slides/slide_4_1.pptx",
+      "content": {
+        "title": "Multilayer Perceptron (MLP)",
+        "content": [
+          "Basic architecture of feedforward neural networks.",
+          "Consists of multiple layers of interconnected neurons.",
+          "Each neuron applies a weighted sum of its inputs and passes it through an activation function.",
+          "Applications:",
+          "   - Classification tasks",
+          "   - Regression tasks",
+          "   - Simple pattern recognition"
+        ],
+        "layout": "",
+        "notes": "Explain the basic structure of an MLP. Emphasize the role of activation functions in introducing non-linearity. Briefly mention common applications.",
+        "keywords": [
+          "MLP",
+          "Multilayer Perceptron",
+          "Neural Networks",
+          "Feedforward",
+          "Classification",
+          "Regression"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 4,
+      "slide_index": 2,
+      "path": "temp/slides/slide_4_2.pptx",
+      "content": {
+        "title": "Convolutional Neural Networks (CNNs)",
+        "content": [
+          "Designed for processing grid-like data (e.g., images).",
+          "Key components:",
+          "   - Convolutional layers: Extract features using filters.",
+          "   - Pooling layers: Reduce spatial dimensions and computational complexity.",
+          "Applications:",
+          "   - Image recognition",
+          "   - Object detection",
+          "   - Image segmentation"
+        ],
+        "layout": "",
+        "notes": "Explain the concept of convolution and pooling. Highlight the advantages of CNNs for image-related tasks. Briefly mention different applications.",
+        "keywords": [
+          "CNN",
+          "Convolutional Neural Networks",
+          "Convolution",
+          "Pooling",
+          "Image Recognition",
+          "Object Detection"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_4_2.png",
+          "content": "Input Image -> Convolutional Layer -> Pooling Layer -> Convolutional Layer -> Pooling Layer -> Fully Connected Layer -> Output"
+        }
+      ]
+    },
+    {
+      "section_index": 4,
+      "slide_index": 3,
+      "path": "temp/slides/slide_4_3.pptx",
+      "content": {
+        "title": "Recurrent Neural Networks (RNNs)",
+        "content": [
+          "Designed for processing sequential data (e.g., text, time series).",
+          "Key feature: Recurrent connections allow information to persist across time steps.",
+          "Applications:",
+          "   - Natural Language Processing (NLP)",
+          "   - Machine Translation",
+          "   - Speech Recognition"
+        ],
+        "layout": "",
+        "notes": "Explain the concept of recurrent connections and how they enable RNNs to handle sequential data. Briefly mention different applications in NLP and other domains.",
+        "keywords": [
+          "RNN",
+          "Recurrent Neural Networks",
+          "Sequential Data",
+          "NLP",
+          "Natural Language Processing",
+          "Machine Translation"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_4_3.png",
+          "content": "blockDiagram\n  direction LR\n  subgraph RNN Cell\n    xt[Input (xt)] --\"\"--> cell(RNN Cell)\n    ht_1[Previous Hidden State (ht-1)] --\"\"--> cell\n    cell --\"\"--> ht[Current Hidden State (ht)]\n    cell --\"\"--> yt[Output (yt)]\n  end\n"
+        }
+      ]
+    },
+    {
+      "section_index": 3,
+      "slide_index": 0,
+      "path": "temp/slides/slide_3_0.pptx",
+      "content": {
+        "title": "Neural Networks: The Building Blocks",
+        "content": "04",
+        "layout": "",
+        "notes": null,
+        "keywords": [],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 3,
+      "slide_index": 1,
+      "path": "temp/slides/slide_3_1.pptx",
+      "content": {
+        "title": "The Neuron: Biological Inspiration",
+        "content": [
+          "Inspired by biological neurons in the brain.",
+          "Receives inputs, processes them, and produces an output.",
+          "Mathematical Model:",
+          "  * Inputs (x1, x2, ..., xn)",
+          "  * Weights (w1, w2, ..., wn)",
+          "  * Summation: Σ (xi * wi)",
+          "  * Activation Function: f(Σ (xi * wi) + b)",
+          "  * Output: a = f(z)"
+        ],
+        "layout": "",
+        "notes": "Explain the analogy between biological neurons and artificial neurons. Emphasize the role of weights and the activation function in determining the neuron's output. Briefly introduce the bias term.",
+        "keywords": [
+          "neuron",
+          "biological neuron",
+          "artificial neuron",
+          "weights",
+          "activation function",
+          "bias"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_3_1.png",
+          "content": "blockDiagram\n  direction LR\n  subgraph Neuron\n    Inputs[Inputs (x1, x2, ..., xn)] --> Weights[Weights (w1, w2, ..., wn)]\n    Weights --> Summation[(Summation Σ)]\n    Summation --> Activation[Activation Function f(Σ(xi * wi) + b)]\n    Activation --> Output[Output (a)]\n  end"
+        }
+      ]
+    },
+    {
+      "section_index": 3,
+      "slide_index": 2,
+      "path": "temp/slides/slide_3_2.pptx",
+      "content": {
+        "title": "Layers: Input, Hidden, Output",
+        "content": [
+          "Input Layer: Receives the initial data.",
+          "Hidden Layers: Perform complex computations (one or more).",
+          "Output Layer: Produces the final result.",
+          "Deep Neural Networks: Networks with multiple hidden layers."
+        ],
+        "layout": "",
+        "notes": "Explain the purpose of each layer in a neural network. Emphasize the role of hidden layers in learning complex patterns. Define deep neural networks.",
+        "keywords": [
+          "input layer",
+          "hidden layer",
+          "output layer",
+          "deep neural network",
+          "layers"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_3_2.png",
+          "content": "blockDiagram\n  direction LR\n  subgraph Neural Network Layers\n    InputLayer[Input Layer: Receives initial data]\n    HiddenLayer1[Hidden Layer 1: Complex Computations]\n    HiddenLayerN[Hidden Layer N: Complex Computations]\n    OutputLayer[Output Layer: Produces final result]\n  end\n\n  InputLayer --> HiddenLayer1\n  HiddenLayer1 --> HiddenLayerN\n  HiddenLayerN --> OutputLayer\n\n  style InputLayer fill:#f9f,stroke:#333,stroke-width:2px\n  style HiddenLayer1 fill:#ccf,stroke:#333,stroke-width:2px\n  style HiddenLayerN fill:#ccf,stroke:#333,stroke-width:2px\n  style OutputLayer fill:#f9f,stroke:#333,stroke-width:2px"
+        }
+      ]
+    },
+    {
+      "section_index": 3,
+      "slide_index": 3,
+      "path": "temp/slides/slide_3_3.pptx",
+      "content": {
+        "title": "Weights, Biases, and Activation Functions",
+        "content": [
+          "Weights: Determine the strength of connections between neurons. Adjusted during training.",
+          "Biases: Allow neurons to activate even when the input is zero. Adjusted during training.",
+          "Activation Functions: Introduce non-linearity, enabling the network to learn complex patterns.",
+          "Examples:",
+          "  * Sigmoid: Output between 0 and 1 (for probabilities).",
+          "  * ReLU (Rectified Linear Unit): Output is x if x > 0, else 0 (common choice).",
+          "  * Tanh: Output between -1 and 1."
+        ],
+        "layout": "",
+        "notes": "Explain the role of weights and biases in learning. Describe the purpose of activation functions and provide examples of common activation functions. Show the formula and graph of each activation function.",
+        "keywords": [
+          "weights",
+          "biases",
+          "activation functions",
+          "sigmoid",
+          "ReLU",
+          "tanh",
+          "non-linearity"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_3_3.png",
+          "content": "Sigmoid: f(x) = 1 / (1 + e^-x)\nReLU: f(x) = max(0, x)\nTanh: f(x) = (e^x - e^-x) / (e^x + e^-x)"
+        }
+      ]
+    },
+    {
+      "section_index": 5,
+      "slide_index": 0,
+      "path": "temp/slides/slide_5_0.pptx",
+      "content": {
+        "title": "Training Deep Learning Models",
+        "content": "06",
+        "layout": "",
+        "notes": null,
+        "keywords": [],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 5,
+      "slide_index": 1,
+      "path": "temp/slides/slide_5_1.pptx",
+      "content": {
+        "title": "Loss Functions: Measuring Performance",
+        "content": [
+          "Quantify the difference between predicted and actual values.",
+          "Guide the optimization process by providing a measure of error.",
+          "Examples:",
+          "  - Mean Squared Error (MSE): For regression tasks.",
+          "  - Cross-Entropy: For classification tasks."
+        ],
+        "layout": "",
+        "notes": "Explain the role of loss functions in training. Emphasize that different tasks require different loss functions. Briefly explain MSE and Cross-Entropy.",
+        "keywords": [
+          "loss function",
+          "mean squared error",
+          "cross-entropy",
+          "optimization",
+          "performance measurement"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 5,
+      "slide_index": 2,
+      "path": "temp/slides/slide_5_2.pptx",
+      "content": {
+        "title": "Optimization Algorithms: Finding the Best Weights",
+        "content": [
+          "Iteratively adjust model parameters (weights and biases) to minimize the loss function.",
+          "Gradient Descent: Basic algorithm, updates parameters in the direction of the negative gradient.",
+          "Adam: Adaptive Moment Estimation, adjusts the learning rate for each parameter.",
+          "Other algorithms: SGD, RMSprop, etc."
+        ],
+        "layout": "",
+        "notes": "Explain the concept of optimization. Compare and contrast Gradient Descent and Adam. Mention other popular optimization algorithms.",
+        "keywords": [
+          "optimization",
+          "gradient descent",
+          "adam",
+          "weights",
+          "learning rate"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 5,
+      "slide_index": 3,
+      "path": "temp/slides/slide_5_3.pptx",
+      "content": {
+        "title": "Backpropagation: The Engine of Learning",
+        "content": [
+          "Calculates the gradients of the loss function with respect to the model's parameters.",
+          "Uses the chain rule to propagate gradients backward through the network.",
+          "These gradients are then used to update the weights during optimization.",
+          "Key steps: Forward pass, Loss calculation, Backward pass (gradient calculation), Weight update."
+        ],
+        "layout": "",
+        "notes": "Explain the backpropagation algorithm. Emphasize its role in calculating gradients and updating weights. Walk through the key steps.",
+        "keywords": [
+          "backpropagation",
+          "gradients",
+          "chain rule",
+          "forward pass",
+          "backward pass",
+          "weight update"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_5_3.png",
+          "content": "sequenceDiagram\n  participant Forward Pass\n  participant Loss Calculation\n  participant Backpropagation\n  participant Gradient Calculation\n  participant Weight Update\n\n  Forward Pass->>Loss Calculation: Data & Predictions\n  Loss Calculation->>Backpropagation: Loss Value\n  Backpropagation->>Gradient Calculation: Loss\n  Gradient Calculation->>Weight Update: Gradients\n  Weight Update->>Forward Pass: Updated Weights\n  loop Iteration\n  Forward Pass->>Loss Calculation: Data & Predictions\n  Loss Calculation->>Backpropagation: Loss Value\n  Backpropagation->>Gradient Calculation: Loss\n  Gradient Calculation->>Weight Update: Gradients\n  Weight Update->>Forward Pass: Updated Weights\n  end"
+        }
+      ]
+    },
+    {
+      "section_index": 5,
+      "slide_index": 4,
+      "path": "temp/slides/slide_5_4.pptx",
+      "content": {
+        "title": "Overfitting and Regularization",
+        "content": [
+          "Overfitting: Model performs well on training data but poorly on unseen data.",
+          "Regularization: Techniques to prevent overfitting by adding a penalty to the loss function.",
+          "Examples:",
+          "  - L1 Regularization (Lasso): Adds the absolute value of the weights to the loss.",
+          "  - L2 Regularization (Ridge): Adds the squared value of the weights to the loss.",
+          "  - Dropout: Randomly drops out neurons during training."
+        ],
+        "layout": "",
+        "notes": "Explain the problem of overfitting. Introduce regularization techniques like L1, L2, and Dropout. Explain how they prevent overfitting.",
+        "keywords": [
+          "overfitting",
+          "regularization",
+          "L1 regularization",
+          "L2 regularization",
+          "dropout"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 6,
+      "slide_index": 0,
+      "path": "temp/slides/slide_6_0.pptx",
+      "content": {
+        "title": "Applications of Deep Learning",
+        "content": "07",
+        "layout": "",
+        "notes": null,
+        "keywords": [],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 6,
+      "slide_index": 1,
+      "path": "temp/slides/slide_6_1.pptx",
+      "content": {
+        "title": "Deep Learning in Action",
+        "content": [
+          "**Image Recognition:**",
+          "   * Object detection: Identifying objects within an image (e.g., cars, pedestrians).",
+          "   * Image classification: Categorizing images based on their content (e.g., cat vs. dog).",
+          "**Natural Language Processing:**",
+          "   * Machine translation: Translating text from one language to another.",
+          "   * Sentiment analysis: Determining the emotional tone of text (e.g., positive, negative, neutral)."
+        ],
+        "layout": "",
+        "notes": "Discuss specific examples of image recognition like self-driving cars and medical image analysis. For NLP, mention Google Translate and sentiment analysis in customer feedback.",
+        "keywords": [
+          "image recognition",
+          "object detection",
+          "image classification",
+          "natural language processing",
+          "machine translation",
+          "sentiment analysis"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_6_1.png",
+          "content": "Input Image -> Feature Extraction (Convolutional Layers) -> Classification (Fully Connected Layers) -> Output (Object Labels/Categories)"
+        }
+      ]
+    },
+    {
+      "section_index": 6,
+      "slide_index": 2,
+      "path": "temp/slides/slide_6_2.pptx",
+      "content": {
+        "title": "Deep Learning Across Industries",
+        "content": [
+          "**Speech Recognition:**",
+          "   * Voice assistants: Enabling voice-controlled devices (e.g., Siri, Alexa).",
+          "   * Transcription: Converting speech to text.",
+          "**Healthcare:**",
+          "   * Medical image analysis: Assisting in the diagnosis of diseases from medical images.",
+          "   * Drug discovery: Accelerating the identification of potential drug candidates.",
+          "**Finance:**",
+          "   * Fraud detection: Identifying fraudulent transactions.",
+          "   * Algorithmic trading: Automating trading strategies."
+        ],
+        "layout": "",
+        "notes": "Highlight the impact of deep learning in healthcare, such as early cancer detection. Discuss how deep learning is used to detect anomalies in financial transactions and automate trading decisions.",
+        "keywords": [
+          "speech recognition",
+          "voice assistants",
+          "transcription",
+          "healthcare",
+          "medical image analysis",
+          "drug discovery",
+          "finance",
+          "fraud detection",
+          "algorithmic trading"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_6_2.png",
+          "content": "Audio Input -> Feature Extraction -> Acoustic Modeling -> Language Modeling -> Text Output"
+        }
+      ]
+    },
+    {
+      "section_index": 8,
+      "slide_index": 0,
+      "path": "temp/slides/slide_8_0.pptx",
+      "content": {
+        "title": "Thank You & Further Learning",
+        "content": [
+          "Thank you for your attention!",
+          "Key Takeaways:",
+          "  * Deep learning is a powerful subset of machine learning.",
+          "  * Neural networks are the core building blocks.",
+          "  * Various architectures cater to different tasks.",
+          "  * Training involves optimization and backpropagation.",
+          "  * Deep learning has numerous real-world applications.",
+          "Recommended Resources:",
+          "  * Online Courses: Coursera, Udacity, deeplearning.ai",
+          "  * Books: 'Deep Learning' by Goodfellow et al., 'Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow' by Aurélien Géron",
+          "  * Research Papers: arXiv, NeurIPS, ICML",
+          "Contact: [Your Email/LinkedIn]"
+        ],
+        "layout": "",
+        "notes": "Summarize the main points covered in the presentation. Encourage audience to explore the provided resources for deeper understanding. Provide your contact information for follow-up questions.",
+        "keywords": [
+          "thank you",
+          "further learning",
+          "deep learning",
+          "resources",
+          "online courses",
+          "books",
+          "research papers",
+          "contact"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_8_0.png",
+          "content": "A simple directed graph showing the flow of information from 'Input' to 'Deep Learning Model' to 'Output'."
+        }
+      ]
+    },
+    {
+      "section_index": 7,
+      "slide_index": 0,
+      "path": "temp/slides/slide_7_0.pptx",
+      "content": {
+        "title": "Deep Learning: Key Takeaways",
+        "content": [
+          "Neural Networks: The fundamental building blocks, inspired by the human brain.",
+          "Deep Learning Architectures: CNNs, RNNs, Transformers – each suited for specific tasks.",
+          "Training Deep Learning Models: Loss functions, optimization, and backpropagation are crucial for model performance.",
+          "Impact: Revolutionizing industries from healthcare to finance."
+        ],
+        "layout": "",
+        "notes": "Remind the audience of the core concepts covered. Emphasize the versatility and power of deep learning.",
+        "keywords": [
+          "Neural Networks",
+          "CNNs",
+          "RNNs",
+          "Transformers",
+          "Training",
+          "Applications",
+          "Impact"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": [
+        {
+          "path": "temp/slides/diagram_7_0.png",
+          "content": "Neural Networks -> CNNs, RNNs, Transformers -> Training Process -> Applications"
+        }
+      ]
+    },
+    {
+      "section_index": 7,
+      "slide_index": 1,
+      "path": "temp/slides/slide_7_1.pptx",
+      "content": {
+        "title": "The Future of Deep Learning",
+        "content": [
+          "Explainable AI (XAI): Making deep learning models more transparent and understandable.",
+          "AutoML: Automating the process of building and deploying deep learning models.",
+          "Edge Computing: Deploying deep learning models on edge devices for real-time processing.",
+          "Continued Growth: Expect even more innovative applications and advancements in the years to come."
+        ],
+        "layout": "",
+        "notes": "Discuss emerging trends and the potential future impact of deep learning. Highlight the importance of ethical considerations and responsible development.",
+        "keywords": [
+          "Explainable AI",
+          "AutoML",
+          "Edge Computing",
+          "Future Trends",
+          "Innovation"
+        ],
+        "layout_type": ""
+      },
+      "images": [
+        {
+          "path": "temp/slides/image_7_1.png",
+          "content": "future trends in deep learning"
+        }
+      ],
+      "diagrams": []
+    },
+    {
+      "section_index": 9,
+      "slide_index": 0,
+      "path": "temp/slides/slide_9_0.pptx",
+      "content": {
+        "title": "Q & A",
+        "content": [
+          "Open the floor for questions.",
+          "We're here to clarify any doubts you may have.",
+          "No question is too simple or too complex!"
+        ],
+        "layout": "",
+        "notes": "Encourage audience participation. Briefly recap key topics if needed to prompt questions. Offer contact information for follow-up questions.",
+        "keywords": [
+          "questions",
+          "answers",
+          "deep learning",
+          "clarification",
+          "discussion"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    },
+    {
+      "section_index": 10,
+      "slide_index": 0,
+      "path": "temp/slides/slide_10_0.pptx",
+      "content": {
+        "title": "Backup Q&A",
+        "content": [
+          "We have time for a few more questions.",
+          "Thank you for your active participation and insightful questions!",
+          "If we don't have time to address your question now, please feel free to reach out to me via email or LinkedIn."
+        ],
+        "layout": "",
+        "notes": "This slide is a backup in case there are more questions than anticipated. Encourage further engagement and provide contact information for follow-up.",
+        "keywords": [
+          "Q&A",
+          "questions",
+          "engagement",
+          "contact information",
+          "follow-up"
+        ],
+        "layout_type": ""
+      },
+      "images": [],
+      "diagrams": []
+    }
+  ],
+  "outline": {
+    "topic": "Deep Learning: An Introduction",
+    "num_sections": 11,
+    "num_slides": 20,
+    "sections": [
+      {
+        "title": "Title Slide",
+        "description": "Presentation title, presenter name, date.",
+        "key_points": [
+          "Presentation Title: Deep Learning: An Introduction",
+          "Presenter: [Your Name]",
+          "Date: [Date]"
+        ],
+        "estimated_slides": 1,
+        "section_index": 0,
+        "section_type": "title"
+      },
+      {
+        "title": "Agenda",
+        "description": "Overview of the topics to be covered.",
+        "key_points": [
+          "Introduction to Machine Learning and Deep Learning",
+          "Neural Networks: The Building Blocks",
+          "Deep Learning Architectures",
+          "Training Deep Learning Models",
+          "Applications of Deep Learning",
+          "Conclusion and Q&A"
+        ],
+        "estimated_slides": 1,
+        "section_index": 1,
+        "section_type": "agenda"
+      },
+      {
+        "title": "Introduction to Machine Learning and Deep Learning",
+        "description": "Defining machine learning, its types, and the relationship between machine learning and deep learning.",
+        "key_points": [
+          "What is Machine Learning? (Definition, examples)",
+          "Types of Machine Learning: Supervised, Unsupervised, Reinforcement Learning",
+          "What is Deep Learning? (Definition, key characteristics)",
+          "Deep Learning as a subset of Machine Learning (Venn Diagram concept)",
+          "The rise of Deep Learning (factors contributing to its success)"
+        ],
+        "estimated_slides": 3,
+        "section_index": 2,
+        "section_type": "chapter"
+      },
+      {
+        "title": "Neural Networks: The Building Blocks",
+        "description": "Explaining the fundamental concepts of neural networks, including neurons, layers, activation functions, and weights.",
+        "key_points": [
+          "The Neuron: (Biological inspiration, mathematical model)",
+          "Layers: Input, Hidden, Output (Diagram of a simple neural network)",
+          "Weights and Biases: (Their role in learning)",
+          "Activation Functions: (Sigmoid, ReLU, Tanh - purpose and examples)",
+          "Forward Propagation: (How data flows through the network)"
+        ],
+        "estimated_slides": 4,
+        "section_index": 3,
+        "section_type": "chapter"
+      },
+      {
+        "title": "Deep Learning Architectures",
+        "description": "Introducing different types of deep learning architectures and their specific use cases.",
+        "key_points": [
+          "Multilayer Perceptron (MLP): (Basic architecture, applications)",
+          "Convolutional Neural Networks (CNNs): (Convolution, pooling, applications in image recognition)",
+          "Recurrent Neural Networks (RNNs): (Handling sequential data, applications in NLP)",
+          "Diagram: Simple CNN architecture showing convolution and pooling layers.",
+          "Diagram: Simple RNN architecture showing recurrent connections."
+        ],
+        "estimated_slides": 4,
+        "section_index": 4,
+        "section_type": "chapter"
+      },
+      {
+        "title": "Training Deep Learning Models",
+        "description": "Explaining the process of training deep learning models, including loss functions, optimization algorithms, and backpropagation.",
+        "key_points": [
+          "Loss Functions: (Measuring model performance, examples: Mean Squared Error, Cross-Entropy)",
+          "Optimization Algorithms: (Gradient Descent, Adam - finding the optimal weights)",
+          "Backpropagation: (Calculating gradients and updating weights)",
+          "Overfitting and Regularization: (Techniques to prevent overfitting)",
+          "Mermaid Diagram: Backpropagation process",
+          "```mermaid\ngraph LR\n    A[Forward Pass] --> B(Calculate Loss);\n    B --> C{Backpropagation};\n    C --> D[Calculate Gradients];\n    D --> E(Update Weights);\n    E --> A;\n```"
+        ],
+        "estimated_slides": 4,
+        "section_index": 5,
+        "section_type": "chapter"
+      },
+      {
+        "title": "Applications of Deep Learning",
+        "description": "Showcasing real-world applications of deep learning across various domains.",
+        "key_points": [
+          "Image Recognition: (Object detection, image classification)",
+          "Natural Language Processing: (Machine translation, sentiment analysis)",
+          "Speech Recognition: (Voice assistants, transcription)",
+          "Healthcare: (Medical image analysis, drug discovery)",
+          "Finance: (Fraud detection, algorithmic trading)"
+        ],
+        "estimated_slides": 2,
+        "section_index": 6,
+        "section_type": "chapter"
+      },
+      {
+        "title": "Conclusion",
+        "description": "Summarizing the key takeaways and highlighting the future of deep learning.",
+        "key_points": [
+          "Recap of key concepts: Neural Networks, Architectures, Training",
+          "The impact of Deep Learning on various industries",
+          "Future trends in Deep Learning (e.g., Explainable AI, AutoML)"
+        ],
+        "estimated_slides": 2,
+        "section_index": 7,
+        "section_type": "conclusion"
+      },
+      {
+        "title": "Thank You & Further Learning",
+        "description": "Expressing gratitude and providing resources for further learning.",
+        "key_points": [
+          "Thank you for your attention!",
+          "Recommended resources: Online courses, books, research papers",
+          "Contact information: [Your Email/LinkedIn]"
+        ],
+        "estimated_slides": 1,
+        "section_index": 8,
+        "section_type": "conclusion"
+      },
+      {
+        "title": "Q&A",
+        "description": "Open the floor for questions from the audience.",
+        "key_points": [
+          "Open the floor for questions",
+          "Be prepared to answer questions about the concepts covered"
+        ],
+        "estimated_slides": 1,
+        "section_index": 9,
+        "section_type": "qa"
+      },
+      {
+        "title": "Backup Q&A",
+        "description": "Backup slide in case there are more questions.",
+        "key_points": [
+          "Continue answering questions",
+          "Thank the audience for their engagement"
+        ],
+        "estimated_slides": 1,
+        "section_index": 10,
+        "section_type": "qa"
+      }
+    ]
+  },
+  "user_input": {
+    "topic": "Deep Learning",
+    "audience": "Deep learning is a subset of machine learning that uses neural networks with many layers.",
+    "purpose": "educate",
+    "presentation_title": "Deep Learning: An Introduction",
+    "details": null,
+    "template_path": "core_ai/pptx_templates/FIT-HCMUS_template.pptx"
+  },
+  "slide_layouts": {
+    "title": [
+      0
+    ],
+    "agenda": [
+      1
+    ],
+    "chapter_title": [
+      3
+    ],
+    "chapter": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "conclusion": [
+      1
+    ],
+    "qa": [
+      0
+    ]
+  },
+  "slide_layout_txt": "INFORMATION ABOUT LAYOUTS:\nLayout Index 0: Title horizontal \n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Google Shape;14;p2\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;15;p2\nLayout Index 1: Title vertical \n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Google Shape;20;p3\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;21;p3\nLayout Index 2: Chapter horizontal \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;25;p4\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Google Shape;27;p4\nLayout Index 3: Chapter vertical \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;30;p5\n  - Placeholder index: 0, type: CENTER_TITLE (3), name: Google Shape;32;p5\nLayout Index 4: Full picture without text \n  - Placeholder index: 2, type: PICTURE (18), name: Google Shape;35;p6\nLayout Index 5: Full picture with text \n  - Placeholder index: 2, type: PICTURE (18), name: Google Shape;38;p7\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;39;p7\nLayout Index 6: Split horizontal \n  - Placeholder index: 2, type: PICTURE (18), name: Google Shape;42;p8\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;43;p8\nLayout Index 7: Split vertical \n  - Placeholder index: 2, type: PICTURE (18), name: Google Shape;46;p9\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;47;p9\nLayout Index 8: White logo horizontal \n  - Placeholder index: 2, type: PICTURE (18), name: Google Shape;50;p10\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;51;p10\nLayout Index 9: White logo vertical \n  - Placeholder index: 2, type: PICTURE (18), name: Google Shape;54;p11\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;55;p11\nLayout Index 10: OBJECT\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;58;p12\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;59;p12\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;61;p12\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;62;p12\nLayout Index 11: TWO_OBJECTS\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;65;p13\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;66;p13\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;67;p13\n  - Placeholder index: 3, type: BODY (2), name: Google Shape;68;p13\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;70;p13\nLayout Index 12: OBJECT_WITH_CAPTION_TEXT\n  - Placeholder index: 1, type: BODY (2), name: Google Shape;73;p14\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;74;p14\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;75;p14\n  - Placeholder index: 3, type: BODY (2), name: Google Shape;76;p14\n  - Placeholder index: 4, type: BODY (2), name: Google Shape;77;p14\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;79;p14\nLayout Index 13: 4 Vertical contents \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;82;p15\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;83;p15\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;84;p15\n  - Placeholder index: 3, type: BODY (2), name: Google Shape;85;p15\n  - Placeholder index: 4, type: BODY (2), name: Google Shape;86;p15\n  - Placeholder index: 5, type: BODY (2), name: Google Shape;87;p15\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;89;p15\nLayout Index 14: 2 Horizontal contents \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;92;p16\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;93;p16\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;94;p16\n  - Placeholder index: 3, type: BODY (2), name: Google Shape;95;p16\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;97;p16\nLayout Index 15: 2 x 2 Contents \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;100;p17\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;101;p17\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;102;p17\n  - Placeholder index: 3, type: BODY (2), name: Google Shape;103;p17\n  - Placeholder index: 4, type: BODY (2), name: Google Shape;104;p17\n  - Placeholder index: 5, type: BODY (2), name: Google Shape;105;p17\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;107;p17\nLayout Index 16: 3 x 2 Contents \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;110;p18\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;111;p18\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;112;p18\n  - Placeholder index: 3, type: BODY (2), name: Google Shape;113;p18\n  - Placeholder index: 4, type: BODY (2), name: Google Shape;114;p18\n  - Placeholder index: 5, type: BODY (2), name: Google Shape;115;p18\n  - Placeholder index: 6, type: BODY (2), name: Google Shape;116;p18\n  - Placeholder index: 7, type: BODY (2), name: Google Shape;117;p18\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;119;p18\nLayout Index 17: 4 x 2 Contents \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;121;p19\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;122;p19\n  - Placeholder index: 2, type: BODY (2), name: Google Shape;123;p19\n  - Placeholder index: 3, type: BODY (2), name: Google Shape;124;p19\n  - Placeholder index: 4, type: BODY (2), name: Google Shape;125;p19\n  - Placeholder index: 5, type: BODY (2), name: Google Shape;126;p19\n  - Placeholder index: 6, type: BODY (2), name: Google Shape;127;p19\n  - Placeholder index: 7, type: BODY (2), name: Google Shape;128;p19\n  - Placeholder index: 8, type: BODY (2), name: Google Shape;129;p19\n  - Placeholder index: 9, type: BODY (2), name: Google Shape;130;p19\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;132;p19\nLayout Index 18: Headline only \n  - Placeholder index: 1, type: BODY (2), name: Google Shape;134;p20\n  - Placeholder index: 0, type: TITLE (1), name: Google Shape;136;p20\n  - Placeholder index: 12, type: SLIDE_NUMBER (13), name: Google Shape;137;p20\nLayout Index 19: BLANK\n"
+}

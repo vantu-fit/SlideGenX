@@ -1,0 +1,26 @@
+
+services:
+  searxng:
+    image: searxng/searxng:latest
+    container_name: searxng-image-search
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./searxng-data:/etc/searxng
+    environment:
+      - SEARXNG_BASE_URL=http://localhost:8080/
+      - INSTANCE_NAME=SearXNG Image Search
+      - SEARXNG_SETTINGS_PATH=/etc/searxng/settings.yml
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    restart: unless-stopped
+    networks:
+      - search_network
+
+networks:
+  search_network:
+    driver: bridge

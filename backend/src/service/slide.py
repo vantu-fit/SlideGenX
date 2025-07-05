@@ -6,11 +6,14 @@ class SlideService:
     Service for generating slides.
     """
 
-    def __init__(self):
+    def __init__(self, db_session=None):
         """
         Initialize the SlideService.
+
+        Args:
+            db_session: Database session, if needed.
         """
-        pass
+        self.db_session = db_session
 
     def get_template_path(self, template_name: str) -> str:
         """
@@ -52,20 +55,31 @@ class SlideService:
         Returns:
             bool: True if successful, False otherwise.
         """
+        import uuid
         template_path = self.get_template_path(template) if template else self.get_template_path("Blank")
-        output_path = f"slides/{output_file_name}.pptx"
-        result = gen_slide(title, content, duration, purpose, output_path, template_path)
-        return result
+        if not os.path.exists("slides"):
+            os.makedirs("slides", exist_ok=True)
+        session_id = str(uuid.uuid4())
+        os.makedirs(f"slides/{session_id}")
+        output_path = f"slides/{session_id}/{output_file_name}.pptx"
+        try:
+            result = gen_slide(title, content, duration, purpose, output_path, template_path)
+            return {
+                "output_path": output_path,
+                "session_id": session_id,
+            }
+        except Exception as e:
+            raise Exception(f"Error generating slide: {str(e)}")
     
 if __name__ == "__main__":
     # Example usage
     slide_service = SlideService()
     success = slide_service.generate_slide(
-        title="Deep Learning",
-        content="Deep learning is a subset of machine learning that uses neural networks with many layers.",
+        title="Machine Learning Deep Dive",
+        content="Machine learning deep dive for researchers and students",
         duration=45,
         purpose="educate",
-        output_file_name="deep_learning",
+        output_file_name="machine_learning_deep_dive",
         template="FIT-HCMUS_template"
     )
     print("Slide generated successfully:", success)

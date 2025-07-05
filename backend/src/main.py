@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from api.auth import router as auth_router
+from api.slide import router as slide_router
 import uvicorn
 from core.config import settings
 
@@ -17,6 +18,7 @@ app.add_middleware(
 )
 # Include routers
 app.include_router(auth_router, prefix="/api/auth", tags=["auth"])
+app.include_router(slide_router, prefix="/api/slide", tags=["slide"])
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Portfolio Management API"}

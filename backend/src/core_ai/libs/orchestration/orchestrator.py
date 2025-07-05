@@ -526,6 +526,8 @@ class TreeOfThoughtOrchestrator:
 
             if os.path.exists(self.session.state.save_prompt_folder):
                 shutil.rmtree(self.session.state.save_prompt_folder)
+            memory_json_path = output_path.split("/")[:-1] + ["memory.json"]
+            memory_json_path = "/".join(memory_json_path)
             os.makedirs(self.session.state.save_prompt_folder, exist_ok=True)
             start_time = time.time() 
             self.session.output_message.add( 
@@ -570,7 +572,7 @@ class TreeOfThoughtOrchestrator:
     
             def process_section(section_index: int) -> Optional[Dict[str, Any]]: 
                 section_content = self.generate_slide_content(section_index=section_index) 
-                self.session.memory.save_to_json("memory.json") 
+                self.session.memory.save_to_json(memory_json_path)
                 if section_content: 
                     final_section_slide = self.generate_final_slide(section_index=section_index) 
                     return final_section_slide.data if final_section_slide else None 

@@ -17,5 +17,6 @@ class Config(BaseSettings):
 
     ALGORITHM: str = "HS256"
     SECRET_KEY: str = "your_secret_key"
+    GEMINI_API_KEY: str = "your_gemini_api_key"
 
 settings = Config()

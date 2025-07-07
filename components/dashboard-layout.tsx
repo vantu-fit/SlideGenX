@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
-import type React from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import type React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
 import {
   Sidebar,
   SidebarContent,
@@ -13,23 +14,51 @@ import {
   SidebarMenuItem,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { Sparkles, FileSliders, Layout, Settings, LogOut, User, ChevronDown } from "lucide-react"
+} from "@/components/ui/sidebar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Sparkles,
+  FileSliders,
+  Layout,
+  Settings,
+  LogOut,
+  User,
+  ChevronDown,
+} from "lucide-react";
+import { useAuthContext } from "@/contexts/auth-context";
 
 interface DashboardLayoutProps {
-  children: React.ReactNode
-  activeTab: string
-  onTabChange: (tab: string) => void
+  children: React.ReactNode;
+  activeTab: string;
+  onTabChange: (tab: string) => void;
 }
 
-function AppSidebar({ activeTab, onTabChange }: { activeTab: string; onTabChange: (tab: string) => void }) {
+function AppSidebar({
+  activeTab,
+  onTabChange,
+}: {
+  activeTab: string;
+  onTabChange: (tab: string) => void;
+}) {
+  const router = useRouter();
+  const { user, logout } = useAuthContext();
+
   const menuItems = [
     { id: "slides", label: "Slides", icon: FileSliders },
     { id: "templates", label: "Templates", icon: Layout },
     { id: "settings", label: "Settings", icon: Settings },
-  ]
+  ];
+
+  const handleLogout = () => {
+    logout();
+    router.push("/sign-in");
+  };
 
   return (
     <Sidebar>
@@ -48,7 +77,10 @@ function AppSidebar({ activeTab, onTabChange }: { activeTab: string; onTabChange
         <SidebarMenu>
           {menuItems.map((item) => (
             <SidebarMenuItem key={item.id}>
-              <SidebarMenuButton onClick={() => onTabChange(item.id)} isActive={activeTab === item.id}>
+              <SidebarMenuButton
+                onClick={() => onTabChange(item.id)}
+                isActive={activeTab === item.id}
+              >
                 <item.icon className="w-4 h-4" />
                 <span>{item.label}</span>
               </SidebarMenuButton>
@@ -65,18 +97,23 @@ function AppSidebar({ activeTab, onTabChange }: { activeTab: string; onTabChange
                 <SidebarMenuButton>
                   <Avatar className="w-6 h-6">
                     <AvatarImage src="/placeholder.svg?height=24&width=24" />
-                    <AvatarFallback>JD</AvatarFallback>
+                    <AvatarFallback>
+                      {user?.username?.charAt(0).toUpperCase() || "U"}
+                    </AvatarFallback>
                   </Avatar>
-                  <span>John Doe</span>
+                  <span>{user?.full_name || user?.username || "User"}</span>
                   <ChevronDown className="ml-auto w-4 h-4" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
-              <DropdownMenuContent side="top" className="w-[--radix-popper-anchor-width]">
+              <DropdownMenuContent
+                side="top"
+                className="w-[--radix-popper-anchor-width]"
+              >
                 <DropdownMenuItem>
                   <User className="w-4 h-4 mr-2" />
                   Profile
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={handleLogout}>
                   <LogOut className="w-4 h-4 mr-2" />
                   Sign Out
                 </DropdownMenuItem>
@@ -86,10 +123,14 @@ function AppSidebar({ activeTab, onTabChange }: { activeTab: string; onTabChange
         </SidebarMenu>
       </SidebarFooter>
     </Sidebar>
-  )
+  );
 }
 
-export function DashboardLayout({ children, activeTab, onTabChange }: DashboardLayoutProps) {
+export function DashboardLayout({
+  children,
+  activeTab,
+  onTabChange,
+}: DashboardLayoutProps) {
   return (
     <SidebarProvider>
       <div className="flex min-h-screen w-full">
@@ -113,5 +154,5 @@ export function DashboardLayout({ children, activeTab, onTabChange }: DashboardL
         </div>
       </div>
     </SidebarProvider>
-  )
+  );
 }

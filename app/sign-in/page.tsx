@@ -1,63 +1,80 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Alert, AlertDescription } from "@/components/ui/alert"
-import { Sparkles, Eye, EyeOff } from "lucide-react"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Sparkles, Eye, EyeOff } from "lucide-react";
+import { useAuthContext } from "@/contexts/auth-context";
 
 export default function SignInPage() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [showPassword, setShowPassword] = useState(false)
-  const [errors, setErrors] = useState<{ email?: string; password?: string; general?: string }>({})
-  const [isLoading, setIsLoading] = useState(false)
-  const router = useRouter()
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [errors, setErrors] = useState<{
+    username?: string;
+    password?: string;
+    general?: string;
+  }>({});
+  const router = useRouter();
+
+  const { login, isLoading, error, isAuthenticated } = useAuthContext();
+
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (isAuthenticated) {
+      router.push("/dashboard");
+    }
+  }, [isAuthenticated, router]);
 
   const validateForm = () => {
-    const newErrors: { email?: string; password?: string } = {}
+    const newErrors: { username?: string; password?: string } = {};
 
-    if (!email) {
-      newErrors.email = "Email is required"
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Please enter a valid email"
+    if (!username) {
+      newErrors.username = "Username is required";
     }
 
     if (!password) {
-      newErrors.password = "Password is required"
+      newErrors.password = "Password is required";
     } else if (password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters"
+      newErrors.password = "Password must be at least 6 characters";
     }
 
-    setErrors(newErrors)
-    return Object.keys(newErrors).length === 0
-  }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    if (!validateForm()) return
+    if (!validateForm()) return;
 
-    setIsLoading(true)
-    setErrors({})
+    setErrors({});
 
-    // Simulate API call
-    setTimeout(() => {
-      // Mock authentication - in real app, this would be an API call
-      if (email === "demo@example.com" && password === "password") {
-        router.push("/dashboard")
-      } else {
-        setErrors({ general: "Invalid email or password" })
-      }
-      setIsLoading(false)
-    }, 1000)
-  }
+    try {
+      await login({
+        username: username,
+        password: password,
+      });
+
+      // Login successful, redirect will happen automatically via useEffect
+    } catch (err) {
+      // Error is already handled by the auth hook
+      console.error("Login failed:", err);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100 flex items-center justify-center p-4">
@@ -67,35 +84,39 @@ export default function SignInPage() {
           <div className="w-10 h-10 bg-gradient-to-br from-green-800 to-green-700 rounded-lg flex items-center justify-center">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
-          <span className="text-2xl font-bold bg-gradient-to-r from-green-800 to-green-700 bg-clip-text text-transparent">
+          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-green-800 to-green-700 bg-clip-text text-transparent">
             SlideGen
-          </span>
+          </Link>
         </div>
 
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Welcome Back</CardTitle>
-            <CardDescription>Sign in to your account to continue creating amazing slides</CardDescription>
+            <CardDescription>
+              Sign in to your account to continue creating amazing slides
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
-              {errors.general && (
+              {(errors.general || error) && (
                 <Alert variant="destructive">
-                  <AlertDescription>{errors.general}</AlertDescription>
+                  <AlertDescription>{errors.general || error}</AlertDescription>
                 </Alert>
               )}
 
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="username">Username</Label>
                 <Input
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className={errors.email ? "border-red-500" : ""}
+                  id="username"
+                  type="text"
+                  placeholder="Enter your username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className={errors.username ? "border-red-500" : ""}
                 />
-                {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
+                {errors.username && (
+                  <p className="text-sm text-red-500">{errors.username}</p>
+                )}
               </div>
 
               <div className="space-y-2">
@@ -107,7 +128,9 @@ export default function SignInPage() {
                     placeholder="Enter your password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className={errors.password ? "border-red-500 pr-10" : "pr-10"}
+                    className={
+                      errors.password ? "border-red-500 pr-10" : "pr-10"
+                    }
                   />
                   <Button
                     type="button"
@@ -123,7 +146,9 @@ export default function SignInPage() {
                     )}
                   </Button>
                 </div>
-                {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
+                {errors.password && (
+                  <p className="text-sm text-red-500">{errors.password}</p>
+                )}
               </div>
 
               <Button
@@ -138,24 +163,19 @@ export default function SignInPage() {
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 {"Don't have an account? "}
-                <Link href="/sign-up" className="text-green-800 hover:underline font-medium">
+                <Link
+                  href="/sign-up"
+                  className="text-green-800 hover:underline font-medium"
+                >
                   Sign up here
                 </Link>
               </p>
             </div>
 
-            <div className="mt-4 p-3 bg-green-50 rounded-lg">
-              <p className="text-xs text-green-800 text-center">
-                <strong>Demo credentials:</strong>
-                <br />
-                Email: demo@example.com
-                <br />
-                Password: password
-              </p>
-            </div>
+           
           </CardContent>
         </Card>
       </div>
     </div>
-  )
+  );
 }

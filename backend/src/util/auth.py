@@ -17,6 +17,7 @@ async def get_user_info_from_request(request: Request):
     try:
         async with httpx.AsyncClient() as client:
             response = await client.get(f"http://localhost:8000/api/auth/me", headers={"Authorization": f"Bearer {token}"})
+            print(f"Response: {response}")
             if response.status_code == 200:
                 return response.json()
             else:

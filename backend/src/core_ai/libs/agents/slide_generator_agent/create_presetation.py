@@ -120,7 +120,6 @@ def create_presentation(template_path: str, slide_plan: PresentationContent) -> 
                 if not shape:
                     print(f"Could not find shape for placeholder: {ph_name}")
                     continue
-                
                 print(f"Filling placeholder {ph_name} (idx: {ph_idx}) with content from {content_key}")
                 
                 # Mark this placeholder as filled

@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "session_id": "37a0a1fa-d91f-4349-a147-97362a81da53",
-    "created_at": 1751267190.151773,
-    "created_at_formatted": "2025-06-30 14:06:30",
-    "updated_at": 1751267190.151773,
-    "updated_at_formatted": "2025-06-30 14:06:30",
-    "draft_count": 13,
+    "session_id": "b07055cb-95c1-46df-aa2b-a3b866a2193b",
+    "created_at": 1751969964.0438917,
+    "created_at_formatted": "2025-07-08 17:19:24",
+    "updated_at": 1751969964.0438917,
+    "updated_at_formatted": "2025-07-08 17:19:24",
+    "draft_count": 15,
     "current_step": "init",
-    "export_timestamp": 1751267237.494219,
-    "export_timestamp_formatted": "2025-06-30 14:07:17"
+    "export_timestamp": 1751970057.4509504,
+    "export_timestamp_formatted": "2025-07-08 17:20:57"
   },
   "drafts": [
     {
       "agent_name": "outline_agent",
       "step": "outline",
       "content": {
-        "title": "Data Engineering: Building Strong Data Pipelines for Business Success",
+        "title": "Navigating the Big Tech Landscape: Opportunities and Challenges for SMBs",
         "sections": [
           {
             "title": "Title Slide",
-            "description": "Presentation title, presenter name, and company logo.",
+            "description": "Presentation title, presenter name, and date.",
             "key_points": [
-              "Presentation Title: Data Engineering: Building Strong Data Pipelines for Business Success",
-              "Presenter: [Your Name/Title]",
-              "[Your Company Logo]"
+              "Presentation Title: Navigating the Big Tech Landscape: Opportunities and Challenges for SMBs",
+              "Presenter: [Your Name/Company]",
+              "Date: [Date]"
             ],
             "estimated_slides": 1,
             "section_index": 0,
@@ -33,11 +33,11 @@
             "title": "Agenda",
             "description": "Overview of the topics to be covered in the presentation.",
             "key_points": [
-              "Introduction: Why Data Engineering Matters",
-              "Understanding Data Pipelines: The Foundation",
-              "Real-World Business Problems Solved by Data Pipelines",
-              "Building Your First Data Pipeline (Simplified)",
-              "Conclusion: Key Takeaways and Next Steps",
+              "Introduction: Why Big Tech Matters to SMBs",
+              "Understanding the Big Tech Players",
+              "Opportunities: Leveraging Big Tech for Growth",
+              "Challenges: Mitigating Risks and Competition",
+              "Strategies for Success",
               "Q&A"
             ],
             "estimated_slides": 1,
@@ -45,133 +45,139 @@
             "section_type": "agenda"
           },
           {
-            "title": "Introduction: Why Data Engineering Matters",
-            "description": "Explain the importance of data engineering for businesses, especially SMBs.",
+            "title": "Introduction: Why Big Tech Matters to SMBs",
+            "description": "Explain the pervasive influence of Big Tech companies and why SMBs need to understand their impact.",
             "key_points": [
-              "The explosion of data: Businesses are collecting more data than ever before.",
-              "Data is the new oil: But raw data is useless without processing.",
-              "Data Engineering defined: The discipline of designing, building, and maintaining data pipelines and infrastructure.",
-              "Why SMBs need data engineering: Improved decision-making, increased efficiency, better customer understanding.",
-              "Consequences of ignoring data engineering: Missed opportunities, inaccurate insights, wasted resources."
+              "Defining 'Big Tech': A brief overview of the major players (Google, Amazon, Meta, Apple, Microsoft).",
+              "The Reach of Big Tech: How they impact various aspects of business (marketing, sales, operations, customer service).",
+              "Why SMBs Can't Ignore Big Tech: Dependence on platforms, competition for customers, and evolving market dynamics.",
+              "The Double-Edged Sword: Opportunities and threats presented by Big Tech."
             ],
             "estimated_slides": 3,
             "section_index": 2,
             "section_type": "chapter"
           },
           {
-            "title": "Understanding Data Pipelines: The Foundation",
-            "description": "Explain what data pipelines are and their key components.",
+            "title": "Understanding the Big Tech Players",
+            "description": "A deeper dive into the core business models and key services offered by each major Big Tech company.",
             "key_points": [
-              "What is a data pipeline? A series of steps to move and transform data.",
-              "ETL (Extract, Transform, Load): The core process of a data pipeline.",
-              "Data Sources: Where data comes from (databases, APIs, files, etc.).",
-              "Data Transformation: Cleaning, filtering, aggregating, and enriching data.",
-              "Data Storage: Where processed data is stored (data warehouses, data lakes).",
-              "Data Pipeline Diagram (Simple): Source -> Extraction -> Transformation -> Loading -> Destination"
+              "Google: Search, advertising, cloud services (Google Workspace, Google Cloud Platform).",
+              "Amazon: E-commerce, cloud computing (AWS), digital advertising.",
+              "Meta: Social media (Facebook, Instagram, WhatsApp), advertising, metaverse.",
+              "Apple: Hardware, software, services (App Store, Apple Pay, iCloud).",
+              "Microsoft: Software, cloud services (Azure, Microsoft 365), hardware.",
+              "Diagram: A simple table comparing each company's core business areas and key services."
             ],
             "estimated_slides": 4,
             "section_index": 3,
             "section_type": "chapter"
           },
           {
-            "title": "Real-World Business Problems Solved by Data Pipelines",
-            "description": "Showcase practical examples of how data pipelines can solve business problems.",
+            "title": "Opportunities: Leveraging Big Tech for Growth",
+            "description": "Explore how SMBs can utilize Big Tech platforms and services to expand their reach, improve efficiency, and drive sales.",
             "key_points": [
-              "Example 1: Improving Sales Forecasting",
-              "   - Problem: Inaccurate sales forecasts leading to inventory issues.",
-              "   - Solution: Data pipeline integrating sales data, marketing data, and economic indicators.",
-              "   - Result: More accurate forecasts, reduced inventory costs.",
-              "Example 2: Enhancing Customer Experience",
-              "   - Problem: Lack of personalized customer experiences.",
-              "   - Solution: Data pipeline combining customer data from different sources (CRM, website, social media).",
-              "   - Result: Personalized marketing campaigns, improved customer satisfaction.",
-              "Example 3: Optimizing Marketing Spend",
-              "   - Problem: Difficulty tracking the ROI of marketing campaigns.",
-              "   - Solution: Data pipeline connecting marketing platform data with sales data.",
-              "   - Result: Better understanding of campaign performance, optimized marketing spend."
+              "Digital Marketing: Utilizing Google Ads, Facebook Ads, and other platforms for targeted advertising.",
+              "E-commerce: Selling products on Amazon Marketplace, Shopify (powered by AWS), or through social media shops.",
+              "Cloud Computing: Using AWS, Azure, or Google Cloud for data storage, application hosting, and scalability.",
+              "Customer Relationship Management (CRM): Integrating with Big Tech platforms for customer data and communication.",
+              "Example: A local bakery using Instagram for marketing and online ordering.",
+              "Mermaid Diagram:```mermaid\ngraph LR\nA[SMB] --> B(Google Ads)\nA --> C(Facebook Ads)\nA --> D(Amazon Marketplace)\nstyle A fill:#f9f,stroke:#333,stroke-width:2px\n```"
             ],
             "estimated_slides": 4,
             "section_index": 4,
             "section_type": "chapter"
           },
           {
-            "title": "Building Your First Data Pipeline (Simplified)",
-            "description": "Provide a simplified overview of how to build a basic data pipeline.",
+            "title": "Challenges: Mitigating Risks and Competition",
+            "description": "Discuss the potential downsides of relying on Big Tech and strategies for mitigating risks.",
             "key_points": [
-              "Start Small: Focus on a specific business problem.",
-              "Choose the Right Tools: Cloud-based solutions (e.g., AWS, Google Cloud, Azure) offer managed services.",
-              "Data Extraction: Identify your data sources and how to extract data from them.",
-              "Data Transformation: Use simple transformations to clean and prepare your data.",
-              "Data Loading: Load the transformed data into a data warehouse or data lake.",
-              "Monitoring and Maintenance: Regularly monitor your pipeline for errors and performance issues.",
-              "Mermaid Diagram: ```mermaid\ngraph LR\nA[Data Source] --> B(Extraction);\nB --> C{Transformation};\nC --> D[Data Warehouse];\n```"
+              "Data Privacy Concerns: GDPR, CCPA, and the importance of data security.",
+              "Platform Dependence: The risk of algorithm changes, policy updates, and account suspensions.",
+              "Competition: Competing with Big Tech's own products and services.",
+              "Cost: The expense of using Big Tech platforms and services.",
+              "Vendor Lock-in: Difficulty switching to alternative solutions.",
+              "Strategies: Diversifying marketing channels, building direct customer relationships, and investing in independent infrastructure."
             ],
-            "estimated_slides": 4,
+            "estimated_slides": 3,
             "section_index": 5,
             "section_type": "chapter"
           },
           {
-            "title": "Conclusion: Key Takeaways and Next Steps",
-            "description": "Summarize the key benefits of data engineering and provide actionable next steps.",
+            "title": "Strategies for Success",
+            "description": "Provide actionable advice for SMBs to thrive in the Big Tech landscape.",
             "key_points": [
-              "Data engineering is crucial for unlocking the value of your data.",
-              "Data pipelines enable better decision-making, increased efficiency, and improved customer experiences.",
-              "Start small and focus on solving specific business problems.",
-              "Consider cloud-based solutions for ease of use and scalability.",
-              "Invest in data engineering expertise to build and maintain your data pipelines."
+              "Embrace a Multi-Channel Approach: Don't rely solely on one platform.",
+              "Build a Strong Brand: Differentiate your business through unique value propositions.",
+              "Focus on Customer Experience: Provide excellent service and build loyalty.",
+              "Stay Informed: Keep up-to-date with Big Tech trends and policy changes.",
+              "Seek Expert Advice: Consult with marketing agencies, IT consultants, and legal professionals.",
+              "Invest in Data Analytics: Track your performance and make data-driven decisions."
             ],
             "estimated_slides": 2,
             "section_index": 6,
+            "section_type": "chapter"
+          },
+          {
+            "title": "Conclusion: Embracing the Future",
+            "description": "Summarize the key takeaways and reiterate the importance of understanding and adapting to the Big Tech landscape.",
+            "key_points": [
+              "Big Tech is a powerful force that SMBs must understand.",
+              "Opportunities exist for growth and innovation.",
+              "Challenges must be addressed proactively.",
+              "A strategic approach is essential for success."
+            ],
+            "estimated_slides": 1,
+            "section_index": 7,
             "section_type": "conclusion"
           },
           {
-            "title": "Thank You & Call to Action",
-            "description": "Express gratitude and encourage audience engagement.",
+            "title": "Conclusion: Key Takeaways",
+            "description": "Reinforce the main points of the presentation.",
             "key_points": [
-              "Thank you for your time!",
-              "Questions?",
-              "Offer a free consultation or resource (e.g., a data pipeline assessment).",
-              "Contact information: [Your Email/Phone Number]",
-              "[Your Company Website/LinkedIn Profile]"
+              "Diversify your digital strategy.",
+              "Prioritize customer relationships.",
+              "Stay informed and adaptable.",
+              "Seek expert guidance when needed."
             ],
-            "estimated_slides": 2,
-            "section_index": 7,
+            "estimated_slides": 1,
+            "section_index": 8,
             "section_type": "conclusion"
           },
           {
             "title": "Q&A",
             "description": "Open the floor for questions from the audience.",
             "key_points": [
-              "Anticipate common questions about cost, implementation, and maintenance.",
-              "Prepare answers to address specific concerns of SMBs.",
-              "Be ready to provide real-world examples and case studies."
+              "Address audience questions clearly and concisely.",
+              "Provide specific examples and actionable advice.",
+              "Offer follow-up resources and contact information."
             ],
-            "estimated_slides": 2,
-            "section_index": 8,
+            "estimated_slides": 1,
+            "section_index": 9,
             "section_type": "qa"
           },
           {
-            "title": "Backup Q&A",
-            "description": "A second Q&A slide in case there are many questions.",
+            "title": "Thank You & Contact Information",
+            "description": "Provide contact information for follow-up questions.",
             "key_points": [
-              "Continue answering audience questions.",
-              "Offer to follow up individually with more complex inquiries.",
-              "Reiterate key takeaways and benefits of data engineering."
+              "Presenter Name",
+              "Presenter Email",
+              "Presenter Phone Number",
+              "Company Website"
             ],
-            "estimated_slides": 2,
-            "section_index": 9,
+            "estimated_slides": 1,
+            "section_index": 10,
             "section_type": "qa"
           }
         ],
         "total_slides": 20,
-        "description": "A presentation for small and medium businesses on the importance of data engineering and data pipelines."
+        "description": "A presentation designed to educate small and medium-sized businesses about the influence of Big Tech and how to leverage or mitigate its impact."
       },
-      "created_at": 1751267204.0508883,
+      "created_at": 1751969977.5631442,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:06:44"
+      "created_at_formatted": "2025-07-08 17:19:37"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -179,33 +185,35 @@
       "content": {
         "slides": [
           {
-            "title": "Data Engineering: Building Strong Data Pipelines for Business Success",
+            "title": "Navigating the Big Tech Landscape: Opportunities and Challenges for SMBs",
             "content": [
-              "[Your Name/Title]",
-              "[Your Company Logo]"
+              "Presenter: [Your Name/Company]",
+              "Date: [Date]"
             ],
-            "notes": "Welcome everyone. This presentation will cover the fundamentals of data engineering and how it can benefit your business. I'm [Your Name], [Your Title] at [Your Company].",
+            "notes": "Welcome everyone. This presentation will explore how small and medium-sized businesses can navigate the complex world of Big Tech.",
             "images_needed": [
-              "Company logo"
+              "Abstract image representing technology and business"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "Data Engineering",
-              "Data Pipelines",
-              "Business Success",
-              "SMBs"
+              "Big Tech",
+              "SMBs",
+              "Opportunities",
+              "Challenges",
+              "Technology",
+              "Business"
             ],
             "slide_index": 0,
             "section_index": 0
           }
         ]
       },
-      "created_at": 1751267205.7384782,
+      "created_at": 1751969980.1119177,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:06:45"
+      "created_at_formatted": "2025-07-08 17:19:40"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -215,35 +223,40 @@
           {
             "title": "Agenda",
             "content": [
-              "Introduction: Why Data Engineering Matters",
-              "Understanding Data Pipelines: The Foundation",
-              "Real-World Business Problems Solved by Data Pipelines",
-              "Building Your First Data Pipeline (Simplified)",
-              "Conclusion: Key Takeaways and Next Steps",
+              "Introduction: Why Big Tech Matters to SMBs",
+              "Understanding the Big Tech Players",
+              "Opportunities: Leveraging Big Tech for Growth",
+              "Challenges: Mitigating Risks and Competition",
+              "Strategies for Success",
               "Q&A"
             ],
-            "notes": "This slide outlines the topics we'll be covering today. We'll start with why data engineering is crucial, then delve into the fundamentals of data pipelines. Next, we'll explore practical applications, followed by a simplified guide to building your own pipeline. Finally, we'll summarize key takeaways and open the floor for questions.",
+            "notes": "This slide provides an overview of the topics we'll be covering today. We'll start by discussing why Big Tech is important for SMBs, then move on to understanding the key players, exploring opportunities, addressing challenges, and finally, outlining strategies for success. We'll conclude with a Q&A session.",
             "images_needed": [],
-            "diagrams_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "1. Introduction\n2. Big Tech Players\n3. Opportunities\n4. Challenges\n5. Strategies\n6. Q&A",
+                "relations": "1 -> 2 -> 3 -> 4 -> 5 -> 6"
+              }
+            ],
             "keywords": [
               "agenda",
-              "data engineering",
-              "data pipelines",
-              "business problems",
-              "key takeaways",
-              "Q&A"
+              "big tech",
+              "SMBs",
+              "opportunities",
+              "challenges",
+              "strategies"
             ],
             "slide_index": 0,
             "section_index": 1
           }
         ]
       },
-      "created_at": 1751267205.8604484,
+      "created_at": 1751969980.6887984,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:06:45"
+      "created_at_formatted": "2025-07-08 17:19:40"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -251,7 +264,7 @@
       "content": {
         "slides": [
           {
-            "title": "Introduction: Why Data Engineering Matters",
+            "title": "Introduction: Why Big Tech Matters to SMBs",
             "content": "03",
             "notes": null,
             "images_needed": [],
@@ -261,70 +274,75 @@
             "section_index": 2
           },
           {
-            "title": "The Data Deluge: Are You Drowning?",
+            "title": "Defining 'Big Tech'",
             "content": [
-              "Businesses are collecting massive amounts of data:",
-              "  * Customer interactions",
-              "  * Website activity",
-              "  * Sensor data",
-              "  * Sales transactions",
-              "This data holds immense potential, but...",
-              "Raw data is like crude oil – valuable, but unusable without refining."
+              "The usual suspects:",
+              "   * Google (Alphabet): Search, advertising, cloud services",
+              "   * Amazon: E-commerce, cloud computing, digital advertising",
+              "   * Meta (Facebook): Social media, advertising, metaverse",
+              "   * Apple: Hardware, software, services",
+              "   * Microsoft: Software, cloud services, hardware",
+              "Dominant market share in their respective areas.",
+              "Significant influence on consumer behavior and business operations."
             ],
-            "notes": "Emphasize the sheer volume of data and the analogy of 'data as the new oil.' Highlight that simply having data isn't enough; it needs to be processed to extract value.",
-            "images_needed": [
-              "image of a flood of data",
-              "image of an oil refinery"
+            "notes": "Briefly introduce each company and their primary areas of influence. Emphasize their scale and market dominance. Mention that this list is not exhaustive, but represents the major players.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Google: Search, Ads, Cloud; Amazon: E-commerce, AWS, Ads; Meta: Social Media, Ads, Metaverse; Apple: Hardware, Software, Services; Microsoft: Software, Cloud, Hardware",
+                "relations": "Google -> Amazon; Google -> Meta; Google -> Apple; Google -> Microsoft; Amazon -> Meta; Amazon -> Apple; Amazon -> Microsoft; Meta -> Apple; Meta -> Microsoft; Apple -> Microsoft"
+              }
             ],
-            "diagrams_needed": [],
             "keywords": [
-              "data volume",
-              "data explosion",
-              "raw data",
-              "data processing",
-              "data refinery"
+              "Big Tech",
+              "Google",
+              "Amazon",
+              "Meta",
+              "Apple",
+              "Microsoft",
+              "market share",
+              "influence"
             ],
             "slide_index": 1,
             "section_index": 2
           },
           {
-            "title": "Data Engineering: Building the Foundation",
+            "title": "The Reach of Big Tech",
             "content": [
-              "Data Engineering Defined:",
-              "  * The discipline of designing, building, and maintaining data pipelines and infrastructure.",
-              "  * Ensures data is reliable, accessible, and ready for analysis.",
-              "Key Responsibilities:",
-              "  * Data ingestion and storage",
-              "  * Data transformation and cleaning",
-              "  * Data pipeline monitoring and maintenance"
+              "Marketing: SEO, social media marketing, paid advertising.",
+              "Sales: E-commerce platforms, online marketplaces.",
+              "Operations: Cloud computing, data storage, software solutions.",
+              "Customer Service: AI-powered chatbots, CRM systems.",
+              "Data Analytics: Tools for understanding customer behavior and market trends."
             ],
-            "notes": "Clearly define data engineering and its core functions. Explain that it's about creating the infrastructure that allows data scientists and analysts to do their jobs effectively.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Source Systems -> Data Ingestion -> Data Storage -> Data Transformation -> Data Analysis",
-                "relations": "Source Systems -> Data Ingestion, Data Ingestion -> Data Storage, Data Storage -> Data Transformation, Data Transformation -> Data Analysis"
-              }
+            "notes": "Explain how Big Tech platforms and services are integrated into almost every aspect of a modern business. Provide specific examples of how each area is impacted. For example, for marketing, discuss the importance of Google Ads and Facebook Ads.",
+            "images_needed": [
+              "query: a collage of icons representing marketing, sales, operations, and customer service, with a subtle Big Tech logo overlay"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "data engineering",
-              "data pipelines",
-              "data infrastructure",
-              "data ingestion",
-              "data transformation",
-              "data storage"
+              "marketing",
+              "sales",
+              "operations",
+              "customer service",
+              "data analytics",
+              "SEO",
+              "social media marketing",
+              "e-commerce",
+              "cloud computing",
+              "CRM"
             ],
             "slide_index": 2,
             "section_index": 2
           }
         ]
       },
-      "created_at": 1751267208.0899858,
+      "created_at": 1751969983.255095,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:06:48"
+      "created_at_formatted": "2025-07-08 17:19:43"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -332,7 +350,7 @@
       "content": {
         "slides": [
           {
-            "title": "Understanding Data Pipelines: The Foundation",
+            "title": "Understanding the Big Tech Players",
             "content": "04",
             "notes": null,
             "images_needed": [],
@@ -342,86 +360,102 @@
             "section_index": 3
           },
           {
-            "title": "What is a Data Pipeline?",
+            "title": "Google: The King of Search and Beyond",
             "content": [
-              "A series of steps to move and transform data from various sources to a destination.",
-              "Automates the flow of data for analysis and decision-making.",
-              "Essential for modern data-driven businesses."
+              "Core Business: Search Engine, Online Advertising",
+              "Key Services:",
+              "  - Google Search: Dominant search engine",
+              "  - Google Ads: Pay-per-click advertising platform",
+              "  - Google Workspace: Productivity suite (Gmail, Docs, Drive, Calendar)",
+              "  - Google Cloud Platform (GCP): Cloud computing services",
+              "  - YouTube: Video sharing platform"
             ],
-            "notes": "Explain that data pipelines are not just about moving data, but also about preparing it for use. Emphasize the importance of automation for efficiency and scalability.",
+            "notes": "Google's primary revenue source is advertising. Highlight the importance of understanding SEO and paid advertising for SMBs. Briefly mention the growing importance of Google Cloud.",
             "images_needed": [],
             "diagrams_needed": [],
             "keywords": [
-              "data pipeline",
-              "data movement",
-              "data transformation",
-              "automation"
+              "Google",
+              "Search",
+              "Advertising",
+              "Google Ads",
+              "Google Workspace",
+              "Google Cloud Platform",
+              "YouTube"
             ],
             "slide_index": 1,
             "section_index": 3
           },
           {
-            "title": "ETL: The Core of Data Pipelines",
+            "title": "Amazon: E-Commerce Giant and Cloud Pioneer",
             "content": [
-              "**Extract:** Collect data from various sources (databases, APIs, files).",
-              "**Transform:** Clean, filter, aggregate, and enrich the data.",
-              "**Load:** Store the processed data into a data warehouse or data lake."
+              "Core Business: E-commerce, Cloud Computing",
+              "Key Services:",
+              "  - Amazon Marketplace: Online retail platform",
+              "  - Amazon Web Services (AWS): Cloud computing infrastructure",
+              "  - Amazon Advertising: Advertising platform for sellers and brands",
+              "  - Prime: Subscription service with various benefits",
+              "  - Twitch: Live streaming platform"
             ],
-            "notes": "Walk through each step of the ETL process. Provide examples of transformations (e.g., converting data types, removing duplicates, calculating aggregates).",
+            "notes": "Emphasize the opportunities for SMBs to sell on Amazon Marketplace. Discuss the benefits and challenges of using AWS. Mention the growing importance of Amazon Advertising for reaching customers.",
             "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Source -> Extraction -> Transformation -> Loading -> Destination",
-                "relations": "Source extracts data, then transformation cleans and prepares it, and loading stores it in the destination."
-              }
-            ],
+            "diagrams_needed": [],
             "keywords": [
-              "ETL",
-              "Extract",
-              "Transform",
-              "Load",
-              "data warehouse",
-              "data lake"
+              "Amazon",
+              "E-commerce",
+              "AWS",
+              "Amazon Web Services",
+              "Amazon Advertising",
+              "Prime",
+              "Twitch"
             ],
             "slide_index": 2,
             "section_index": 3
           },
           {
-            "title": "Key Components: Sources & Storage",
+            "title": "Meta, Apple & Microsoft: Connecting People, Powering Devices, and Enabling Productivity",
             "content": [
-              "**Data Sources:**",
-              "  * Databases (SQL, NoSQL)",
-              "  * APIs (REST, SOAP)",
-              "  * Files (CSV, JSON, XML)",
-              "  * Streaming platforms (Kafka, Kinesis)",
-              "**Data Storage:**",
-              "  * Data Warehouses (Snowflake, BigQuery, Redshift)",
-              "  * Data Lakes (S3, Azure Data Lake Storage)",
-              "  * Cloud Storage (Object Storage)"
+              "Meta (Facebook):",
+              "  - Social Media (Facebook, Instagram, WhatsApp)",
+              "  - Advertising",
+              "  - Metaverse (Horizon Worlds)",
+              "Apple:",
+              "  - Hardware (iPhone, Mac, iPad)",
+              "  - Software (iOS, macOS)",
+              "  - Services (App Store, Apple Pay, iCloud)",
+              "Microsoft:",
+              "  - Software (Windows, Office)",
+              "  - Cloud Services (Azure, Microsoft 365)",
+              "  - Hardware (Surface)"
             ],
-            "notes": "Provide examples of each data source and storage option. Discuss the characteristics of each (e.g., structured vs. unstructured data, batch vs. real-time processing).",
+            "notes": "Briefly describe each company's core offerings. Highlight the advertising opportunities on Meta platforms. Discuss the importance of Apple's ecosystem for reaching affluent customers. Mention the benefits of using Microsoft's cloud services for SMBs.",
             "images_needed": [],
             "diagrams_needed": [],
             "keywords": [
-              "data sources",
-              "databases",
-              "APIs",
-              "files",
-              "data storage",
-              "data warehouses",
-              "data lakes"
+              "Meta",
+              "Facebook",
+              "Instagram",
+              "WhatsApp",
+              "Apple",
+              "iPhone",
+              "Mac",
+              "iPad",
+              "Microsoft",
+              "Windows",
+              "Office",
+              "Azure",
+              "Microsoft 365"
             ],
             "slide_index": 3,
             "section_index": 3
           }
         ]
       },
-      "created_at": 1751267212.6797757,
+      "created_at": 1751969990.1478555,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:06:52"
+      "created_at_formatted": "2025-07-08 17:19:50"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -429,7 +463,7 @@
       "content": {
         "slides": [
           {
-            "title": "Real-World Business Problems Solved by Data Pipelines",
+            "title": "Opportunities: Leveraging Big Tech for Growth",
             "content": "05",
             "notes": null,
             "images_needed": [],
@@ -439,99 +473,86 @@
             "section_index": 4
           },
           {
-            "title": "Improving Sales Forecasting",
+            "title": "Digital Marketing: Targeted Reach",
             "content": [
-              "Problem: Inaccurate sales forecasts lead to inventory issues (overstocking/stockouts).",
-              "Solution: Data pipeline integrates:",
-              "  *  Historical sales data",
-              "  *  Marketing campaign data",
-              "  *  Economic indicators (e.g., GDP, unemployment)",
-              "  *  Social Media Trends",
-              "Result: More accurate forecasts, reduced inventory costs, improved customer satisfaction."
+              "Google Ads: Reach customers actively searching for your products/services.",
+              "Facebook/Instagram Ads: Target specific demographics, interests, and behaviors.",
+              "Data-driven insights: Track campaign performance and optimize for better results.",
+              "Retargeting: Re-engage website visitors who haven't made a purchase."
             ],
-            "notes": "Explain how integrating diverse data sources provides a more holistic view of demand. Emphasize the cost savings and customer benefits.",
+            "notes": "Emphasize the power of targeted advertising and the ability to track ROI. Discuss the importance of A/B testing and continuous optimization.",
             "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Sales Data -> Marketing Data -> Economic Indicators -> Social Media Trends -> Data Pipeline -> Sales Forecast",
-                "relations": "Sales Data, Marketing Data, Economic Indicators, Social Media Trends are inputs to the Data Pipeline. The Data Pipeline outputs Sales Forecast."
-              }
-            ],
+            "diagrams_needed": [],
             "keywords": [
-              "sales forecasting",
-              "inventory management",
-              "data pipeline",
-              "economic indicators",
-              "marketing data"
+              "digital marketing",
+              "google ads",
+              "facebook ads",
+              "targeted advertising",
+              "retargeting"
             ],
             "slide_index": 1,
             "section_index": 4
           },
           {
-            "title": "Enhancing Customer Experience",
+            "title": "E-commerce: Expanding Your Sales Channels",
             "content": [
-              "Problem: Lack of personalized customer experiences leads to lower engagement and retention.",
-              "Solution: Data pipeline combines customer data from:",
-              "  *  CRM (Customer Relationship Management)",
-              "  *  Website activity",
-              "  *  Social media interactions",
-              "  *  Purchase history",
-              "Result: Personalized marketing campaigns, targeted product recommendations, improved customer satisfaction, increased customer lifetime value."
+              "Amazon Marketplace: Access a massive customer base and established infrastructure.",
+              "Shopify (powered by AWS): Create your own branded online store with powerful features.",
+              "Social Media Shops: Sell directly to your followers on platforms like Instagram and Facebook.",
+              "Streamline order fulfillment and shipping processes."
             ],
-            "notes": "Highlight the importance of a 360-degree view of the customer. Discuss examples of personalized marketing and product recommendations.",
+            "notes": "Highlight the benefits of each e-commerce platform and the importance of choosing the right one for your business. Mention the potential for increased sales and brand awareness.",
             "images_needed": [],
             "diagrams_needed": [
               {
-                "data": "CRM Data -> Website Data -> Social Media Data -> Purchase History -> Data Pipeline -> Customer Profile",
-                "relations": "CRM Data, Website Data, Social Media Data, Purchase History are inputs to the Data Pipeline. The Data Pipeline outputs Customer Profile."
+                "data": "graph LR\nA[SMB] --> B(Google Ads)\nA --> C(Facebook Ads)\nA --> D(Amazon Marketplace)\nstyle A fill:#f9f,stroke:#333,stroke-width:2px",
+                "relations": "SMB uses Google Ads, Facebook Ads, and Amazon Marketplace"
               }
             ],
             "keywords": [
-              "customer experience",
-              "personalization",
-              "CRM",
-              "data pipeline",
-              "customer data"
+              "e-commerce",
+              "amazon marketplace",
+              "shopify",
+              "social media shops",
+              "online sales"
             ],
             "slide_index": 2,
             "section_index": 4
           },
           {
-            "title": "Optimizing Marketing Spend",
+            "title": "Cloud Computing & CRM: Efficiency and Customer Focus",
             "content": [
-              "Problem: Difficulty tracking the ROI of marketing campaigns results in wasted budget.",
-              "Solution: Data pipeline connects:",
-              "  *  Marketing platform data (e.g., Google Ads, Facebook Ads)",
-              "  *  Sales data",
-              "  *  Website analytics",
-              "Result: Better understanding of campaign performance, optimized marketing spend, increased conversion rates, higher ROI."
+              "Cloud Computing (AWS, Azure, Google Cloud): Scalable and cost-effective solutions for data storage, application hosting, and more.",
+              "Customer Relationship Management (CRM): Centralize customer data, improve communication, and personalize experiences.",
+              "Integrate CRM with Big Tech platforms for seamless data flow and automation.",
+              "Example: A local bakery using Instagram for marketing and online ordering."
             ],
-            "notes": "Explain how attribution modeling becomes easier with a unified view of marketing and sales data. Emphasize the ability to shift budget to high-performing campaigns.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Marketing Platform Data -> Sales Data -> Website Analytics -> Data Pipeline -> Campaign Performance Report",
-                "relations": "Marketing Platform Data, Sales Data, Website Analytics are inputs to the Data Pipeline. The Data Pipeline outputs Campaign Performance Report."
-              }
+            "notes": "Explain how cloud computing can help SMBs reduce IT costs and improve scalability. Emphasize the importance of CRM for building strong customer relationships and driving loyalty. Use the bakery example to illustrate how these technologies can be applied in practice.",
+            "images_needed": [
+              "bakery using instagram for online ordering"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "marketing ROI",
-              "marketing spend",
-              "data pipeline",
-              "campaign performance",
-              "attribution modeling"
+              "cloud computing",
+              "aws",
+              "azure",
+              "google cloud",
+              "crm",
+              "customer relationship management",
+              "data storage",
+              "application hosting"
             ],
             "slide_index": 3,
             "section_index": 4
           }
         ]
       },
-      "created_at": 1751267214.2560277,
+      "created_at": 1751969991.1499722,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:06:54"
+      "created_at_formatted": "2025-07-08 17:19:51"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -539,7 +560,7 @@
       "content": {
         "slides": [
           {
-            "title": "Building Your First Data Pipeline (Simplified)",
+            "title": "Challenges: Mitigating Risks and Competition",
             "content": "06",
             "notes": null,
             "images_needed": [],
@@ -549,120 +570,69 @@
             "section_index": 5
           },
           {
-            "title": "Start Small: Focus on a Specific Problem",
+            "title": "The Dark Side of Big Tech: Key Challenges",
             "content": [
-              "Identify a manageable business problem.",
-              "Example: Tracking website traffic to understand user behavior.",
-              "Define clear goals and metrics for success.",
-              "Avoid boiling the ocean – iterate and expand later."
+              "<b>Data Privacy Concerns:</b> GDPR, CCPA compliance is crucial. Data breaches can be devastating.",
+              "<b>Platform Dependence:</b> Algorithm changes can kill your traffic. Policy updates can shut you down.",
+              "<b>Competition:</b> Big Tech companies are often your direct competitors.",
+              "<b>Cost:</b> Advertising, subscriptions, and transaction fees can eat into profits.",
+              "<b>Vendor Lock-in:</b> Difficult and costly to switch to alternative solutions."
             ],
-            "notes": "Emphasize the importance of starting with a well-defined, achievable goal. This helps to avoid getting overwhelmed and ensures early successes.",
+            "notes": "Highlight the potential downsides of relying too heavily on Big Tech. Emphasize the importance of being aware of these risks and taking proactive steps to mitigate them. Give examples of algorithm changes that negatively impacted businesses.",
             "images_needed": [],
-            "diagrams_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Data Privacy -> Platform Dependence -> Competition -> Cost -> Vendor Lock-in",
+                "relations": "Each element leads to the next, forming a chain of challenges."
+              }
+            ],
             "keywords": [
-              "business problem",
-              "specific",
-              "goals",
-              "metrics",
-              "iterate"
+              "data privacy",
+              "GDPR",
+              "CCPA",
+              "platform dependence",
+              "algorithm changes",
+              "competition",
+              "cost",
+              "vendor lock-in"
             ],
             "slide_index": 1,
             "section_index": 5
           },
           {
-            "title": "Data Pipeline: Key Steps",
+            "title": "Strategies for Mitigating Risks",
             "content": [
-              "<b>Data Extraction:</b> Gather data from various sources.",
-              "<b>Data Transformation:</b> Clean, format, and prepare the data.",
-              "<b>Data Loading:</b> Store the transformed data in a data warehouse."
+              "<b>Diversify Marketing Channels:</b> Don't put all your eggs in one basket. Explore SEO, email marketing, content marketing, and other platforms.",
+              "<b>Build Direct Customer Relationships:</b> Own your audience. Collect email addresses, build a community, and foster loyalty.",
+              "<b>Invest in Independent Infrastructure:</b> Consider your own website, e-commerce platform, and data storage solutions.",
+              "<b>Stay Informed:</b> Keep up-to-date with Big Tech policies and algorithm changes."
             ],
-            "notes": "Explain each step in detail, highlighting the importance of each stage. Use the diagram to illustrate the flow of data.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "graph LR\nA[Data Source] --> B(Extraction);\nB --> C{Transformation};\nC --> D[Data Warehouse];",
-                "relations": "Data flows from source, is extracted, transformed, and loaded into a data warehouse."
-              }
-            ],
-            "keywords": [
-              "extraction",
-              "transformation",
-              "loading",
-              "data warehouse"
-            ],
-            "slide_index": 2,
-            "section_index": 5
-          },
-          {
-            "title": "Tools & Monitoring",
-            "content": [
-              "<b>Choose the Right Tools:</b> Cloud-based solutions (e.g., AWS, Google Cloud, Azure) offer managed services.",
-              "<b>Simple Transformations:</b> Use tools like SQL or Python for cleaning.",
-              "<b>Data Loading:</b> Load the transformed data into a data warehouse or data lake.",
-              "<b>Monitoring and Maintenance:</b> Regularly monitor your pipeline for errors and performance issues."
-            ],
-            "notes": "Discuss the benefits of using cloud-based solutions for scalability and ease of management. Emphasize the importance of monitoring to ensure data quality and pipeline reliability.",
+            "notes": "Provide actionable strategies for SMBs to reduce their reliance on Big Tech and protect themselves from potential risks. Emphasize the importance of building a diversified and resilient business model.",
             "images_needed": [
-              "cloud data pipeline monitoring dashboard"
+              "image of a diverse marketing strategy wheel",
+              "image of a company building a strong customer relationship"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "cloud",
-              "AWS",
-              "Google Cloud",
-              "Azure",
-              "SQL",
-              "Python",
-              "monitoring",
-              "maintenance"
+              "diversify marketing",
+              "SEO",
+              "email marketing",
+              "content marketing",
+              "customer relationships",
+              "independent infrastructure",
+              "stay informed"
             ],
-            "slide_index": 3,
+            "slide_index": 2,
             "section_index": 5
           }
         ]
       },
-      "created_at": 1751267222.8216958,
+      "created_at": 1751970004.2171688,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:07:02"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "flowchart",
-        "diagram_spec": "flowchart LR\n    A[Source Systems] --> B(Data Ingestion)\n    B --> C{Data Storage}\n    C --> D[Data Transformation & Cleaning]\n    D --> E((Data Analysis))\n\n    style A fill:#f9f,stroke:#333,stroke-width:2px\n    style B fill:#ccf,stroke:#333,stroke-width:2px\n    style C fill:#ccf,stroke:#333,stroke-width:2px\n    style D fill:#ccf,stroke:#333,stroke-width:2px\n    style E fill:#ccf,stroke:#333,stroke-width:2px",
-        "diagram_path": "temp/slides\\diagram_2_2.png",
-        "previously_drawn_diagrams": [
-          "flowchart"
-        ]
-      },
-      "created_at": 1751267223.604041,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-06-30 14:07:03"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "flowchart",
-        "diagram_spec": "flowchart LR\n    A[Data Sources] --> B(Extraction)\n    B --> C(Transformation)\n    C --> D(Loading)\n    D --> E[Data Warehouse / Data Lake]\n\n    style A fill:#f9f,stroke:#333,stroke-width:2px\n    style E fill:#ccf,stroke:#333,stroke-width:2px\n    style B fill:#fff,stroke:#333,stroke-width:2px\n    style C fill:#fff,stroke:#333,stroke-width:2px\n    style D fill:#fff,stroke:#333,stroke-width:2px\n\n\n",
-        "diagram_path": "temp/slides\\diagram_3_2.png",
-        "previously_drawn_diagrams": [
-          "flowchart"
-        ]
-      },
-      "created_at": 1751267225.6874025,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-06-30 14:07:05"
+      "created_at_formatted": "2025-07-08 17:20:04"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -670,69 +640,226 @@
       "content": {
         "slides": [
           {
-            "title": "Key Takeaways: Data Engineering for Success",
-            "content": [
-              "Data engineering unlocks the true potential of your data.",
-              "Data pipelines drive better decisions, efficiency, and customer experiences.",
-              "Start with a specific problem and build incrementally.",
-              "Cloud solutions offer ease of use and scalability.",
-              "Invest in data engineering expertise for long-term success."
-            ],
-            "notes": "Remind the audience of the core benefits discussed throughout the presentation. Emphasize the importance of starting small and focusing on solving tangible business problems. Highlight the advantages of cloud-based solutions and the need for skilled data engineers.",
+            "title": "Strategies for Success",
+            "content": "07",
+            "notes": null,
             "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Data -> Transformation -> Insights",
-                "relations": "Data flows from left to right, being transformed and ultimately leading to actionable insights."
-              }
-            ],
-            "keywords": [
-              "data engineering",
-              "data pipelines",
-              "decision making",
-              "efficiency",
-              "cloud solutions",
-              "expertise"
-            ],
+            "diagrams_needed": [],
+            "keywords": [],
             "slide_index": 0,
             "section_index": 6
           },
           {
-            "title": "Next Steps: Empower Your Business with Data",
+            "title": "Building a Solid Foundation",
             "content": [
-              "Identify a key business problem that data can solve.",
-              "Explore available data sources and their potential.",
-              "Research cloud-based data pipeline solutions.",
-              "Consult with data engineering experts to assess your needs.",
-              "Begin building your first data pipeline!",
-              "Continuously monitor, improve, and scale your data pipelines."
+              "Embrace a Multi-Channel Approach: Diversify your presence across different platforms.",
+              "Build a Strong Brand: Define your unique value proposition and communicate it effectively.",
+              "Focus on Customer Experience: Prioritize excellent service and build lasting relationships.",
+              "Stay Informed: Continuously monitor Big Tech trends and policy updates."
             ],
-            "notes": "Provide actionable steps the audience can take to begin their data engineering journey. Encourage them to identify a specific problem, explore data sources, research solutions, and seek expert advice. Emphasize the importance of continuous monitoring and improvement.",
+            "notes": "Emphasize the importance of not putting all eggs in one basket. Discuss brand building strategies like consistent messaging and visual identity. Highlight the value of customer feedback and proactive customer service. Mention resources for staying updated on industry news.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "A -> B -> C -> D",
+                "relations": "A: Multi-Channel Approach; B: Strong Brand; C: Customer Experience; D: Stay Informed"
+              }
+            ],
+            "keywords": [
+              "multi-channel",
+              "branding",
+              "customer experience",
+              "trends",
+              "policy"
+            ],
+            "slide_index": 1,
+            "section_index": 6
+          },
+          {
+            "title": "Taking Action and Optimizing",
+            "content": [
+              "Seek Expert Advice: Leverage the knowledge of marketing agencies, IT consultants, and legal professionals.",
+              "Invest in Data Analytics: Track key performance indicators (KPIs) and make data-driven decisions.",
+              "Adapt and Evolve: Be prepared to adjust your strategies as the Big Tech landscape changes."
+            ],
+            "notes": "Suggest specific types of experts SMBs might need. Explain how data analytics can inform marketing campaigns, product development, and customer service. Stress the need for agility and continuous improvement.",
             "images_needed": [
-              "image of a roadmap or journey with milestones"
+              "business intelligence dashboard"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "business problem",
-              "data sources",
-              "cloud solutions",
-              "data engineering experts",
-              "data pipeline",
-              "monitoring",
-              "improvement",
-              "scaling"
+              "expert advice",
+              "data analytics",
+              "KPIs",
+              "adaptation",
+              "evolution"
             ],
-            "slide_index": 1,
+            "slide_index": 2,
             "section_index": 6
           }
         ]
       },
-      "created_at": 1751267229.427105,
+      "created_at": 1751970005.2891066,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:07:09"
+      "created_at_formatted": "2025-07-08 17:20:05"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "mindmap",
+        "diagram_spec": "mindmap\n  root((Building a Solid Foundation))\n\n    Central Themes\n      Multi-Channel Approach\n        Diversify platforms\n      Strong Brand\n        Unique value proposition\n        Effective communication\n      Customer Experience\n        Excellent service\n        Lasting relationships\n      Stay Informed\n        Big Tech trends\n        Policy updates",
+        "diagram_path": "temp/slides\\diagram_6_1.png",
+        "previously_drawn_diagrams": [
+          "mindmap"
+        ]
+      },
+      "created_at": 1751970015.2411375,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-08 17:20:15"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Embracing the Future: A Strategic Imperative",
+            "content": [
+              "Big Tech's influence is undeniable – understanding it is crucial.",
+              "Opportunities abound for SMBs to leverage Big Tech for growth and innovation.",
+              "Proactive mitigation of challenges is essential for sustainable success.",
+              "A well-defined strategy is the key to thriving in the Big Tech landscape.",
+              "Adapt, innovate, and succeed!"
+            ],
+            "notes": "Summarize the key takeaways from the presentation. Reiterate the importance of SMBs understanding and adapting to the Big Tech landscape. Emphasize the need for a strategic approach to navigate the opportunities and challenges.",
+            "images_needed": [
+              "futuristic cityscape with small businesses thriving alongside large tech companies"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "Big Tech",
+              "SMBs",
+              "opportunities",
+              "challenges",
+              "strategy",
+              "future",
+              "innovation",
+              "adaptation"
+            ],
+            "slide_index": 0,
+            "section_index": 7
+          }
+        ]
+      },
+      "created_at": 1751970024.8287616,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-08 17:20:24"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Key Takeaways: Thriving in the Big Tech World",
+            "content": [
+              "Diversify your digital strategy: Don't put all your eggs in one basket.",
+              "Prioritize customer relationships: Big Tech can help, but personal connections are key.",
+              "Stay informed and adaptable: The Big Tech landscape is constantly evolving.",
+              "Seek expert guidance when needed: Navigating this landscape can be complex."
+            ],
+            "notes": "Remind the audience of the core principles discussed throughout the presentation. Emphasize the importance of a balanced approach, combining the benefits of Big Tech with traditional business values. Encourage them to view Big Tech as a tool, not a replacement, for strong customer relationships. Highlight the need for continuous learning and adaptation in this dynamic environment. Offer resources for further learning and support.",
+            "images_needed": [
+              "image of a diverse ecosystem of digital tools",
+              "image of a small business owner interacting with a customer",
+              "image of a person reading a news article about technology"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "diversification",
+              "customer relationships",
+              "adaptability",
+              "expert guidance",
+              "big tech",
+              "SMBs"
+            ],
+            "slide_index": 0,
+            "section_index": 8
+          }
+        ]
+      },
+      "created_at": 1751970032.4358797,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-08 17:20:32"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "quadrantChart",
+        "diagram_spec": "quadrantChart\n    title Big Tech Influence and Market Share\n    xTitle Market Share\n    yTitle Influence\n    quadrant 1 [High Influence, High Market Share]\n    quadrant 2 [Low Influence, High Market Share]\n    quadrant 3 [Low Influence, Low Market Share]\n    quadrant 4 [High Influence, Low Market Share]\n\n    Google: 80, 90\n    Amazon: 70, 80\n    Meta: 60, 70\n    Apple: 90, 60\n    Microsoft: 75, 75\n",
+        "diagram_path": "temp/slides\\diagram_2_1.png",
+        "previously_drawn_diagrams": []
+      },
+      "created_at": 1751970039.7270432,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-08 17:20:39"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Q & A",
+            "content": [
+              "Thank you for your attention!",
+              "Now, let's open the floor for questions.",
+              "I'll do my best to provide clear and actionable answers.",
+              "If I can't answer your question immediately, I'll follow up with you afterward."
+            ],
+            "notes": "Encourage audience participation. Be prepared to address a wide range of questions related to Big Tech, SMB strategy, and specific platform usage. Have some example questions prepared in case the audience is hesitant to start.",
+            "images_needed": [
+              "Image of a diverse group of people asking questions at a conference or presentation."
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "Q&A",
+              "questions",
+              "answers",
+              "audience",
+              "interaction",
+              "big tech",
+              "SMB",
+              "strategy"
+            ],
+            "slide_index": 0,
+            "section_index": 9
+          }
+        ]
+      },
+      "created_at": 1751970042.1890478,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-08 17:20:42"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -742,187 +869,51 @@
           {
             "title": "Thank You!",
             "content": [
-              "Thank you for your time and attention!",
-              "We hope you found this presentation informative and helpful.",
-              "Key Takeaways:",
-              "  * Data engineering is crucial for business success.",
-              "  * Data pipelines automate data flow and improve efficiency.",
-              "  * Even simple pipelines can solve real-world problems."
-            ],
-            "notes": "Reiterate the main points of the presentation. Emphasize the value proposition of data engineering for SMBs. Briefly recap the key takeaways.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Data Engineering -> Business Success",
-                "relations": "Data Engineering enhances data quality, improves decision-making, and drives business growth."
-              }
-            ],
-            "keywords": [
-              "thank you",
-              "data engineering",
-              "data pipelines",
-              "key takeaways",
-              "business success"
-            ],
-            "slide_index": 0,
-            "section_index": 7
-          },
-          {
-            "title": "Let's Build Your Data Pipeline!",
-            "content": [
               "Questions?",
-              "Free Data Pipeline Assessment",
-              "  * Let us help you identify opportunities to improve your data infrastructure.",
-              "Contact Us:",
-              "  * [Your Email/Phone Number]",
-              "  * [Your Company Website/LinkedIn Profile]"
+              "",
+              "**[Presenter Name]**",
+              "[Presenter Email]",
+              "[Presenter Phone Number]",
+              "[Company Website]"
             ],
-            "notes": "Open the floor for questions. Offer a free consultation or data pipeline assessment to encourage engagement. Provide clear contact information.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Contact -> Assessment -> Solution",
-                "relations": "Contact leads to a free assessment, which then leads to a tailored data pipeline solution."
-              }
+            "notes": "Thank the audience for their time and attention. Encourage them to ask any questions they may have. Remind them to reach out via email or phone for follow-up questions or discussions. Point them to the company website for more information.",
+            "images_needed": [
+              "Image of presenter smiling and approachable"
             ],
-            "keywords": [
-              "questions",
-              "free assessment",
-              "data pipeline",
-              "contact information",
-              "call to action"
-            ],
-            "slide_index": 1,
-            "section_index": 7
-          }
-        ]
-      },
-      "created_at": 1751267229.6437783,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-06-30 14:07:09"
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-            "title": "Q&A",
-            "content": [
-              "Open the floor for your questions!",
-              "We're here to help you understand how data engineering can benefit your business."
-            ],
-            "notes": "Encourage audience participation. Remind them that no question is too basic. Be prepared to address common concerns.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-              "questions",
-              "answers",
-              "data engineering",
-              "SMBs"
-            ],
-            "slide_index": 0,
-            "section_index": 8
-          },
-          {
-            "title": "Q&A - Let's Talk Data!",
-            "content": [
-              "Anticipating your questions:",
-              "- Cost of implementation?",
-              "- Time to value?",
-              "- Maintenance and support?",
-              "- Scalability for future growth?",
-              "Contact us for a personalized consultation:",
-              "[Your Company Website]",
-              "[Your Email Address]",
-              "[Your Phone Number]"
-            ],
-            "notes": "Address common concerns proactively. Provide contact information for follow-up discussions and personalized consultations. Offer case studies or success stories if relevant.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-              "questions",
-              "cost",
-              "implementation",
-              "maintenance",
-              "scalability",
-              "contact information"
-            ],
-            "slide_index": 1,
-            "section_index": 8
-          }
-        ]
-      },
-      "created_at": 1751267235.9504192,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-06-30 14:07:15"
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-            "title": "Q&A - Let's Continue the Conversation",
-            "content": [
-              "More questions?",
-              "We're here to help you understand data engineering better.",
-              "No question is too simple or too complex!"
-            ],
-            "notes": "Encourage further questions from the audience. Remind them that this is a safe space to ask anything related to data engineering and its applications.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-              "Q&A",
-              "questions",
-              "data engineering",
-              "audience",
-              "discussion"
-            ],
-            "slide_index": 0,
-            "section_index": 9
-          },
-          {
-            "title": "Thank You - Let's Connect!",
-            "content": [
-              "Thank you for your insightful questions!",
-              "For more complex inquiries, please reach out to us directly:",
-              "  * [Your Name]",
-              "  * [Your Email]",
-              "  * [Your LinkedIn Profile (Optional)]",
-              "Key Takeaways:",
-              "  * Data pipelines are crucial for modern businesses.",
-              "  * They enable data-driven decision-making.",
-              "  * Starting small and iterating is key to success."
-            ],
-            "notes": "Express gratitude for the audience's participation. Provide contact information for follow-up. Reiterate the core benefits of data engineering to leave a lasting impression.",
-            "images_needed": [],
             "diagrams_needed": [],
             "keywords": [
               "thank you",
+              "questions",
               "contact information",
-              "follow up",
-              "data pipelines",
-              "data-driven",
-              "key takeaways"
+              "follow up"
             ],
-            "slide_index": 1,
-            "section_index": 9
+            "slide_index": 0,
+            "section_index": 10
           }
         ]
       },
-      "created_at": 1751267237.4931583,
+      "created_at": 1751970048.107564,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-06-30 14:07:17"
+      "created_at_formatted": "2025-07-08 17:20:48"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "radar",
+        "diagram_spec": "radarChart\n  polarAxis\n    max = 100\n  \n  set Challenges\n    Data Privacy : 85\n    Platform Dependence : 90\n    Competition : 75\n    Cost : 80\n    Vendor Lock-in : 70",
+        "diagram_path": "temp/slides\\diagram_5_1.png",
+        "previously_drawn_diagrams": []
+      },
+      "created_at": 1751970057.4504378,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-08 17:20:57"
     }
   ]
 }

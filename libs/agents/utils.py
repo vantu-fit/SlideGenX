@@ -100,7 +100,7 @@ def filter_slide_info(slide_data, base_dir="."):
                     
                     image_info = {
                         "title": result.get("title", ""),
-                        "image_path": image_path,
+                        "image_path": full_image_path,
                         "width": width,
                         "height": height,
                         "ratio": ratio,

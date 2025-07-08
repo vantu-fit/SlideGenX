@@ -140,7 +140,7 @@ Your task is to classify the layouts into **6 groups** based on their appropriat
 - "chapter_title": (1 slide) layouts used at the start of a new chapter/section (e.g. with "Horizontal Chaper" or "Vertical Chapter")
 - "chapter": layouts used for presenting main content within a chapter (typically used 2–10 times) there are have type of data such as "title", "body", "object", "picture", "center_title", "slide_number", ...
 - "conclusion": (2 slide) perfer vertical title conclusion layout, used for summarizing the report or providing final thoughts
-- "qa": (2 slide) perfer horizontal title Q&A layout, used for the question and answer session
+- "qa": (2 slide) prefer horizontal title Q&A layout, used for the question and answer session
 
 **Note**:
 - A layout can belong to multiple groups if appropriate.

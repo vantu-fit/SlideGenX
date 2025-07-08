@@ -268,6 +268,7 @@ class SlideHandler:
             ph_height = placeholder.height
             ph_ratio = ph_width / ph_height
 
+
             # Adjust threshold for extreme aspect ratios
             if ph_ratio >= 3:
                 threshold *= 6
@@ -297,6 +298,80 @@ class SlideHandler:
                 error_info["actual_image_ratio"] = round(img_ratio, 2)
                 
             return error_info
+        
+    # def insert_image(self, placeholder, image_path: str, threshold=0.3):
+    #     try:
+    #         print(f"🔍 Attempting to insert image: {image_path}")
+            
+    #         # Check if the image exists
+    #         if not os.path.exists(image_path):
+    #             print(f"❌ File not found: {image_path}")
+    #             raise FileNotFoundError(f"Image not found: {image_path}")
+            
+    #         print(f"✅ File exists: {os.path.getsize(image_path)} bytes")
+            
+    #         # Get image dimensions and ratio
+    #         with Image.open(image_path) as img:
+    #             img_width, img_height = img.size
+    #             img_ratio = img_width / img_height
+    #             print(f"📏 Image dimensions: {img_width}x{img_height}, ratio: {img_ratio:.2f}")
+
+    #         # Validate placeholder
+    #         print(f"🎯 Placeholder type: {placeholder.shape_type}")
+    #         print(f"🎯 Has placeholder_format: {placeholder.placeholder_format is not None}")
+            
+    #         if (
+    #             placeholder.shape_type != MSO_SHAPE_TYPE.PICTURE
+    #             and not placeholder.placeholder_format
+    #         ):
+    #             print(f"❌ Invalid placeholder for image")
+    #             raise ValueError("Invalid placeholder for image")
+
+    #         # Get placeholder dimensions and ratio
+    #         ph_width = placeholder.width
+    #         ph_height = placeholder.height
+    #         ph_ratio = ph_width / ph_height
+    #         print(f"📐 Placeholder dimensions: {ph_width}x{ph_height}, ratio: {ph_ratio:.2f}")
+
+    #         # Calculate ratio difference
+    #         ratio_diff = abs(img_ratio - ph_ratio) / ph_ratio
+    #         print(f"📊 Ratio difference: {ratio_diff:.2f}, threshold: {threshold}")
+
+    #         # Adjust threshold for extreme aspect ratios
+    #         if ph_ratio >= 3:
+    #             threshold *= 6
+    #             print(f"📊 Adjusted threshold for wide placeholder: {threshold}")
+
+    #         # Insert based on ratio difference
+    #         if ratio_diff <= threshold:
+    #             print("✅ Direct insert (ratios compatible)")
+    #             placeholder.insert_picture(image_path)
+    #         else:
+    #             print("🔄 Adding padding to match aspect ratio")
+    #             padded_image = self._add_padding_to_image(image_path, ph_ratio)
+    #             placeholder.insert_picture(padded_image)
+            
+    #         print("✅ Image inserted successfully")
+    #         return {"fit": True}
+                
+    #     except Exception as e:
+    #         print(f"❌ Error inserting image: {str(e)}")
+    #         import traceback
+    #         traceback.print_exc()
+            
+    #         error_info = {
+    #             "fit": False,
+    #             "type": "image",
+    #             "image_destination": image_path,
+    #             "error": str(e)
+    #         }
+            
+    #         if 'ph_ratio' in locals():
+    #             error_info["expected_image_ratio"] = round(ph_ratio, 2)
+    #         if 'img_ratio' in locals():
+    #             error_info["actual_image_ratio"] = round(img_ratio, 2)
+                
+    #         return error_info
 
     def get_type_slide(self, layout_index, placeholder_index):
         layout = self.prs.slide_master.slide_layouts[layout_index]
@@ -308,8 +383,20 @@ class SlideHandler:
                 return phf.type
         return None
 
-
-    
+    def _extract_image_path(self, content: str) -> str:
+        """Extract image path from mixed content"""
+        import re
+        
+        # Look for pattern like "Image: path/to/image.png"
+        image_match = re.search(r'Image:\s*([^\n\r]+\.(?:png|jpg|jpeg))', content)
+        if image_match:
+            return image_match.group(1).strip()
+        
+        # If content is just a path
+        if content.strip().endswith(('.png', '.jpg', '.jpeg')) and not '\n' in content:
+            return content.strip()
+        
+        return ""
 
     def create_slides(
         self,
@@ -352,8 +439,12 @@ class SlideHandler:
                     "OBJECT",
                     "PICTURE",
                     "DIAGRAM",
-                    "CHART",
+                    "CHART"
                 ]:
+                    print(f"Content: {content}")
+                    print(
+                        f"Warning: Placeholder type {place_folder_type} is not supported. Skipping."
+                    )
                     continue
 
                 placeholder = slide_obj.placeholders[int(placeholder_idx)]

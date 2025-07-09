@@ -16,9 +16,6 @@ def is_valid_email(email: str) -> bool:
 import subprocess
 import os
 
-<<<<<<< HEAD
-
-=======
 def convert_pptx_to_pdf(pptx_path, output_dir):
     os.makedirs(output_dir, exist_ok=True)
 
@@ -75,4 +72,3 @@ if __name__ == "__main__":
     output_dir = "slides/40c6b22e-d668-4a7f-9846-5039f30753dc"
     response = convert_pptx_to_pdf(pptx_path, output_dir)
     print(convert_pdf_to_img(response))
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc

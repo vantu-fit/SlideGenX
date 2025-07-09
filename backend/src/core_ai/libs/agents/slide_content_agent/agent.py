@@ -48,7 +48,8 @@ class SlideContentAgent(BaseAgent):
             audience: str, 
             purpose: str, 
             outline : Outline,
-            section: Section) -> Tuple[PromptTemplate, Dict[str, Union[str, int]]]:
+            section: Section,
+            section_index: int) -> Tuple[PromptTemplate, Dict[str, Union[str, int]]]:
         """
         Determine which prompt to use and prepare the inputs.
         
@@ -72,7 +73,8 @@ class SlideContentAgent(BaseAgent):
             "purpose": purpose or "Informational",
             "data": json_to_readable_str(outline.model_dump(), section.model_dump()),
             "estimated_slides": section.estimated_slides,
-            "format_instructions": self.output_parser.get_format_instructions()
+            "format_instructions": self.output_parser.get_format_instructions(),
+            "section_index": section_index,
         }
         format_instructions = self.output_parser.get_format_instructions()
         formatted_prompt = self.section_prompt.partial(
@@ -110,7 +112,8 @@ class SlideContentAgent(BaseAgent):
                 audience=audience,
                 purpose=purpose,
                 outline=outline,
-                section=section
+                section=section,
+                section_index=section_index
             )
 
             self.session.save_prompt(key=section_index, type="slide_content", prompt=formatted_prompt)
@@ -121,7 +124,7 @@ class SlideContentAgent(BaseAgent):
             parsed_content : SectionContent = self.output_parser.invoke(response)
             
             # Log success
-            logger.info(f"Successfully generated content for section: #{section_index}")
+            logger.info(f"Successfully generated content for section: #{section_index} - {section}")
 
 
             def dump_result(index : int, slide : SlideContent) -> Dict[str, Any]:

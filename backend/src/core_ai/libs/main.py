@@ -321,9 +321,9 @@ if __name__ == "__main__":
     # sys.exit(main())  
     # test gen_slide function
     gen_slide(
-        topic="The Future of AI in Healthcare",
+        topic="Reinforcement learning",
         audience="Healthcare Professionals",
-        duration=45,
+        duration=20,
         purpose="educate",
         output_path="future_ai_healthcare.pptx",
         template_path="core_ai/pptx_templates/FIT-HCMUS_template.pptx"

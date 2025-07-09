@@ -107,10 +107,11 @@ async def get_slide_by_session_id(
     request: Request,
     service: SlideService = Depends(get_slide_service)
 ):
-    import logging
-    user = await get_user_info_from_request(request)
-    logging.error(user)
-    if service.check_slide_belongs_to_user(session_id, user['username']):
+    user_info = await get_user_info_from_request(request)
+    if not user_info:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not authenticated")
+    
+    if service.check_slide_belongs_to_user(session_id, user_info['username']):
         slide_path = f"slides/{session_id}"
         if os.path.exists(slide_path):
             pptx_files = [f for f in os.listdir(slide_path) if f.endswith('.pptx')]

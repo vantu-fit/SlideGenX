@@ -1,7 +1,6 @@
 """
 Evaluation functions for the Slide Generator Agent.
 """
-
 import logging
 from typing import Dict, Any, List
 

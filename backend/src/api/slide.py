@@ -53,11 +53,10 @@ async def generate_slide(
         response = service.generate_slide(title, content, duration, purpose, output_file_name, template)
         import logging
         logging.error(f"File name: {output_file_name}, Session ID: {response['session_id']}")
-        return FileResponse(response['output_path'], 
-                            media_type='application/vnd.openxmlformats-officedocument.presentationml.presentation',
-                            headers={"Session-ID": response['session_id']},
-                            filename=f"{output_file_name}.pptx"
-                            )
+        return JSONResponse(
+            content = response,
+            status_code=status.HTTP_201_CREATED
+        )
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     
@@ -80,8 +79,8 @@ async def save_slide(
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     
-@router.get("/get_slide_ids_by_username", response_model=list[str])
-async def get_slides_by_username(
+@router.get("/get_slide_ids", response_model=list[str])
+async def get_slides_ids(
     request: Request,
     service: SlideService = Depends(get_slide_service)
 ):
@@ -92,6 +91,8 @@ async def get_slides_by_username(
     
     try:
         slides = service.get_slide_session_ids_by_username(user_info['username'])
+        if not slides:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No slides found for this user")
         return JSONResponse(content=slides, status_code=status.HTTP_200_OK)
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
@@ -102,8 +103,10 @@ async def get_slide_by_session_id(
     request: Request,
     service: SlideService = Depends(get_slide_service)
 ):
-    username = await get_user_info_from_request(request)
-    if service.check_slide_belongs_to_user(session_id, username['username']):
+    import logging
+    user = await get_user_info_from_request(request)
+    logging.error(user)
+    if service.check_slide_belongs_to_user(session_id, user['username']):
         slide_path = f"slides/{session_id}"
         if os.path.exists(slide_path):
             pptx_files = [f for f in os.listdir(slide_path) if f.endswith('.pptx')]
@@ -118,3 +121,37 @@ async def get_slide_by_session_id(
     else:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")
     
+@router.get("/get_slide_info/{session_id}", response_model=dict)
+async def get_slide_info(
+    session_id: str,
+    request: Request,
+    service: SlideService = Depends(get_slide_service)
+):
+    """Get slide information by session ID."""
+    username = await get_user_info_from_request(request)
+    if service.check_slide_belongs_to_user(session_id, username['username']):
+        try:
+            slide_info = service.get_slide_info_by_session_id(session_id)
+            return JSONResponse(content=slide_info, status_code=status.HTTP_200_OK)
+        except Exception as e:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+    else:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")
+
+@router.get("/get_slide_image/{session_id}", response_class=FileResponse)
+async def get_slide_image(
+    session_id: str,
+    request: Request,
+    service: SlideService = Depends(get_slide_service)
+):
+    """Get the image link of the slide by session ID."""
+    username = await get_user_info_from_request(request)
+    if service.check_slide_belongs_to_user(session_id, username['username']):
+        try:
+            img_files = service.get_slide_img_by_session_id(session_id)
+            img_files = sorted(img_files, key=lambda x: int(x.split('_')[-1].split('.')[0]))  # Sort images by page number
+            return JSONResponse(content=img_files, status_code=status.HTTP_200_OK)
+        except Exception as e:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+    else:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")

@@ -1,6 +1,7 @@
 from core_ai.libs.main import gen_slide
 from crud.crud_slide import CRUDSlide
 from model.slide import Slide
+from util.common_function import convert_pptx_to_img
 import os
 
 class SlideService:
@@ -76,10 +77,11 @@ class SlideService:
         session_id = str(uuid.uuid4())
         os.makedirs(f"slides/{session_id}")
         output_path = f"slides/{session_id}/{output_file_name}.pptx"
+        result = gen_slide(title, content, duration, purpose, output_path, template_path)
+        image_paths = convert_pptx_to_img(output_path, f"slides/{session_id}")
         try:
-            result = gen_slide(title, content, duration, purpose, output_path, template_path)
             return {
-                "output_path": output_path,
+                "images_path": image_paths,
                 "session_id": session_id,
             }
         except Exception as e:
@@ -144,16 +146,66 @@ class SlideService:
         
         return self.crud_slide.check_slide_belongs_to_user(session_id, username)
     
+    def get_slide_info_by_session_id(self, session_id: str):
+        """
+        Get slide information by session ID.
+
+        Args:
+            session_id (str): Session ID of the slide.
+
+        Returns:
+            dict: Information about the slide.
+        """
+        if not self.crud_slide:
+            raise Exception("Database session is not initialized.")
+        
+        slide = self.crud_slide.get(Slide, {
+            "session_id": session_id
+        })
+        if not slide:
+            raise Exception(f"Slide with session ID {session_id} not found.")
+        
+        if not os.path.exists(f"slides/{session_id}"):
+            raise Exception(f"Slide directory for session ID {session_id} does not exist.")
+        
+        img_link = os.path.abspath(f"slides/{session_id}/images/page_1.png")
+        
+        return {
+            "id": slide.id,
+            "session_id": slide.session_id,
+            "img_link": img_link,
+        }
+    
+    def get_slide_img_by_session_id(self, session_id: str):
+        """
+        Get the image link of the slide by session ID.
+
+        Args:
+            session_id (str): Session ID of the slide.
+
+        Returns:
+            str: Image link of the slide.
+        """
+        if not os.path.exists(f"slides/{session_id}"):
+            raise Exception(f"Slide directory for session ID {session_id} does not exist.")
+        
+        img_dir = f"slides/{session_id}/images"
+        if not os.path.exists(img_dir):
+            raise Exception(f"Image directory for session ID {session_id} does not exist.")
+        img_files = [os.path.abspath(f) for f in os.listdir(img_dir) if f.endswith('.png')]
+        if not img_files:
+            raise Exception(f"No images found for session ID {session_id}.")
+        return img_files
+    
     
 if __name__ == "__main__":
     # Example usage
-    slide_service = SlideService()
-    success = slide_service.generate_slide(
+    slide_service = SlideService(None)
+    print(slide_service.generate_slide(
         title="Machine Learning Deep Dive",
-        content="Machine learning deep dive for researchers and students",
-        duration=45,
-        purpose="educate",
+        content="This is a deep dive into machine learning concepts.",
+        duration=30,
+        purpose="Educational",
         output_file_name="machine_learning_deep_dive",
         template="FIT-HCMUS_template"
-    )
-    print("Slide generated successfully:", success)
+    ))

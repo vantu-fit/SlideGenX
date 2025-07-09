@@ -13,4 +13,5 @@ dependencies = [
     "python-jose>=3.5.0",
     "sqlalchemy>=2.0.41",
     "uvicorn>=0.34.3",
+    "aspose-slides-python>=23.12.0",
 ]

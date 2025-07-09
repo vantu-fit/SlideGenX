@@ -5,13 +5,12 @@ from fastapi import APIRouter, Depends, HTTPException, Request, Body, UploadFile
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi import status
 from service.slide import SlideService
-from db.session import get_db, Session
+from db.session import get_db
 from util.auth import get_user_info_from_request
-from util.common_function import pptx_to_png_aspose
 
 
 router = APIRouter()
-def get_slide_service(db: Session = Depends(get_db)):
+def get_slide_service(db = Depends(get_db)):
 
     return SlideService(db)
 
@@ -136,58 +135,26 @@ async def get_template_image(
         raise HTTPException(status_code=404, detail="Preview image not found")
     return FileResponse(image_path, media_type="image/png", filename=f"{template_name}.png")
 
-    
-
-@router.post("/convert_pptx_to_png_by_name")
-async def convert_pptx_to_png_by_name(
+@router.get("/get_all_template_images")
+async def get_all_template_images(
     request: Request,
-    name: str = Body(..., embed=True),
     service: SlideService = Depends(get_slide_service)
 ):
     """
-    Convert PPTX to PNG by name (template name or session ID).
-    Uses the convert function from common_function.
+    Get all template images with public URLs.
     """
     try:
-        # Check user authentication for session IDs
-        user_info = await get_user_info_from_request(request)
-        if not user_info:
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not authenticated")
-        
-        # Convert PPTX to PNG
-        result = service.convert_pptx_to_png_by_name(name)
-        
-        if not result["success"]:
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail=result["error"]
-            )
-        
-        # If it's a session ID, check ownership
-        if result["type"] == "session":
-            if not service.check_slide_belongs_to_user(name, user_info['username']):
-                raise HTTPException(
-                    status_code=status.HTTP_403_FORBIDDEN,
-                    detail="You do not have permission to access this slide"
-                )
-        
-        # Create ZIP file containing all PNG images
-        with tempfile.TemporaryDirectory() as temp_dir:
-            zip_path = os.path.join(temp_dir, f"{name}_slides.zip")
-            with zipfile.ZipFile(zip_path, 'w') as zipf:
-                for png_file in result["png_files"]:
-                    png_path = os.path.join(result["output_dir"], png_file)
-                    zipf.write(png_path, png_file)
-            
-            # Return ZIP file
-            return FileResponse(
-                zip_path,
-                media_type="application/zip",
-                filename=f"{name}_slides.zip"
-            )
-            
+        templates = service.list_templates()
+        result = {}
+
+        for template in templates:
+            image_path = os.path.abspath(f"img/{template}.png")
+            # Assumes you serve /static from ./img
+            if os.path.exists(image_path):
+                result[template] = image_path
+            else:
+                result[template] = None
+
+        return JSONResponse(content=result, status_code=status.HTTP_200_OK)
     except Exception as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
-            detail=f"Error converting PPTX to PNG: {str(e)}"
-        )
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))

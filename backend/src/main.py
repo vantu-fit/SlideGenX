@@ -11,11 +11,11 @@ app = FastAPI(title="Portfolio Management API", version="1.0.0")
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust this to your frontend's URL in production
-    allow_credentials=True,
+    allow_origins=["http://localhost:3000"],  # <-- sửa tại đây
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 # Include routers
 app.include_router(auth_router, prefix="/api/auth", tags=["auth"])
 app.include_router(slide_router, prefix="/api/slide", tags=["slide"])

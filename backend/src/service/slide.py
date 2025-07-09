@@ -1,7 +1,6 @@
 from core_ai.libs.main import gen_slide
 from crud.crud_slide import CRUDSlide
 from model.slide import Slide
-from util.common_function import pptx_to_png_aspose
 import os
 
 class SlideService:
@@ -55,7 +54,7 @@ class SlideService:
         """
         return os.path.join("core_ai/pptx_templates", f"{template_name}.pptx")
 
-    def generate_slide(self, title: str, content: str, duration: int, purpose: str, output_file_name: str, template: str = None):
+    def generate_slide(self, title: str, content: str, duration: int, purpose: str, output_file_name: str, template: str):
         """
         Generate a slide with the given parameters.
 
@@ -111,7 +110,7 @@ class SlideService:
             "user_id": slide.username
         }
     
-    def get_slide_session_ids_by_username(self, username: int):
+    def get_slide_session_ids_by_username(self, username: str):
         """
         Get slides created by a specific user.
 
@@ -145,49 +144,6 @@ class SlideService:
         
         return self.crud_slide.check_slide_belongs_to_user(session_id, username)
     
-    def convert_pptx_to_png_by_name(self, name: str) -> dict:
-        """
-        Convert PPTX to PNG by name (template name or session ID).
-
-        Args:
-            name (str): Template name or session ID.
-
-        Returns:
-            dict: Information about the conversion result.
-        """
-        try:
-            
-            session_path = f"slides/{name}"
-            if os.path.exists(session_path):
-                pptx_files = [f for f in os.listdir(session_path) if f.endswith('.pptx')]
-                if pptx_files:
-                    pptx_path = os.path.join(session_path, pptx_files[0])
-                    output_dir = f"slides"
-                    os.makedirs(output_dir, exist_ok=True)
-                    pptx_to_png_aspose(pptx_path, output_dir)
-                    
-                    # Get list of generated PNG files
-                    png_files = [f for f in os.listdir(output_dir) if f.endswith('.png')]
-                    png_files.sort()  # Sort to maintain slide order
-                    
-                    return {
-                        "success": True,
-                        "type": "session",
-                        "name": name,
-                        "output_dir": output_dir,
-                        "png_files": png_files,
-                        "slide_count": len(png_files)
-                    }
-                else:
-                    raise Exception(f"No PPTX file found in session {name}")
-            else:
-                raise Exception(f"Template or session '{name}' not found")
-                
-        except Exception as e:
-            return {
-                "success": False,
-                "error": str(e)
-            }
     
     
 

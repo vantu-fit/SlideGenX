@@ -11,11 +11,13 @@ Create an SVG diagram to illustrate the following slide:
   
 # Slide:  
 {slide}  
-  
+
+
 # IMPORTANT: Do not use the following diagram types:  
 {previously_used_diagram_types}  
   
 SVG DIAGRAM REQUIREMENTS:  
+VERY IMPORTANT: The content inside diagram MUST be in English, even if the slide content is in Vietnamese.
 1. Select the MOST APPROPRIATE diagram type, prioritizing SVG's data visualization strengths:  
    - bar (for data comparison with animated bars)  
    - line (for trends with smooth curves or markers)  
@@ -33,6 +35,7 @@ SVG DIAGRAM REQUIREMENTS:
    - timeline (for chronological sequences with styled milestones)  
    - mindmap (for concept hierarchies with unique node designs)  
    - flowchart (for process flows with custom shapes or animations) 
+
 
 2. IMPORTANT: AVOID selecting any diagram type that appears in the PREVIOUSLY USED DIAGRAM TYPES list. Only reuse a type if no other type can represent the content effectively, and provide a specific justification based on the slide content.
 

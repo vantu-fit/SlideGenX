@@ -74,8 +74,10 @@ class SlideContentAgent(BaseAgent):
             "data": json_to_readable_str(outline.model_dump(), section.model_dump()),
             "estimated_slides": section.estimated_slides,
             "format_instructions": self.output_parser.get_format_instructions(),
-            "section_index": section_index,
+            "chapter_number": self.convert_section_index_to_chapter_number(section_index),
+            "section_type": section.section_type or "section"
         }
+
         format_instructions = self.output_parser.get_format_instructions()
         formatted_prompt = self.section_prompt.partial(
             format_instructions=format_instructions
@@ -124,7 +126,7 @@ class SlideContentAgent(BaseAgent):
             parsed_content : SectionContent = self.output_parser.invoke(response)
             
             # Log success
-            logger.info(f"Successfully generated content for section: #{section_index} - {section}")
+            logger.info(f"Successfully generated content for section: #{section_index} - {section.section_type}")
 
 
             def dump_result(index : int, slide : SlideContent) -> Dict[str, Any]:
@@ -151,7 +153,19 @@ class SlideContentAgent(BaseAgent):
                 message=f"Failed to generate slide content #{section_index}: {str(e)}",
                 data={"error": str(e)}
             )
+    
+    def convert_section_index_to_chapter_number(self, section_index: int) -> str:
+        """
+        Convert section index to chapter number format (01, 02, etc.).
         
+        Args:
+            section_index: Index of the section
+            
+        Returns:
+            Formatted chapter number as a string
+        """
+        return f"{section_index - 1:02d}"
+
     def edit_slide_content(self, section, current_slide, edit_prompt: str) -> AgentResponse:
         """
         Edit existing slide content based on user prompt.

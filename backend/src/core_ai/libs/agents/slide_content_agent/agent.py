@@ -4,7 +4,6 @@ Implementation of the Slide Content Agent, responsible for generating content fo
 
 import logging
 from typing import List, Dict, Any, Optional, Union, Tuple
-
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import PromptTemplate
 from pydantic import BaseModel, Field
@@ -66,7 +65,6 @@ class SlideContentAgent(BaseAgent):
         """
         self.session.output_message.add(f"Generating content for section slides...", level="info")
         
-
         inputs = {
             "topic": topic or "Unknown topic",
             "presentation_title": presentation_title or "Untitled Presentation",
@@ -77,13 +75,13 @@ class SlideContentAgent(BaseAgent):
             "format_instructions": self.output_parser.get_format_instructions()
         }
         format_instructions = self.output_parser.get_format_instructions()
-
         formatted_prompt = self.section_prompt.partial(
             format_instructions=format_instructions
         ).format(**inputs)
         
         return formatted_prompt, inputs
     
+
     def run(self, section_index: int, agent_index : int = 0) -> AgentResponse:
         """
         Generate content for slides based on section information.
@@ -133,7 +131,6 @@ class SlideContentAgent(BaseAgent):
                 return result
 
             data_save =[dump_result(index, slide) for index, slide in enumerate(parsed_content.slides)]
-            
             
             # Return successful response
             return AgentResponse(

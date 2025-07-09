@@ -15,6 +15,7 @@ Create a Mermaid diagram to illustrate the following slide:
 {slide}
 
 MERMAID DIAGRAM REQUIREMENTS:
+VERY IMPORTANT: The content inside diagram MUST be in English, even if the slide content is in Vietnamese.
 1. Select the MOST APPROPRIATE diagram type from the following options, with strong preference for non-flowchart options:
    - mindmap (for concept hierarchies and brainstorming)
    - timeline (for chronological sequences and historical events)

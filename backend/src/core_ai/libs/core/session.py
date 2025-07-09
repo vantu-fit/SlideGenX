@@ -287,7 +287,6 @@ class Memory(BaseModel):
                     return section
         return None
 
-
     def slides_from_agent(self, slides: List[Dict[str, Any]]):
         """Set the slides from the slide agent"""
         try:
@@ -419,7 +418,6 @@ class Session:
         self.updated_at = None
 
         self.memory: Memory = Memory()
-
 
         # Initialize the session
         self._initialize()

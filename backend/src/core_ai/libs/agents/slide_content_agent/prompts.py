@@ -20,6 +20,8 @@ IMPORTANT: "Have many image or diagram"
   - `content`: Bullet points or main content
   - `speaker_notes`: Notes for the presenter
 
+IMPORTANT: 'title' MUST be long enough to be meaningful, but not too long to fit in a single line. Ideally, it should be 4-6 words.
+
 **SLIDE FORMATTING RULES**:
 - For section types:
   - `"title"`, `"agenda"`, `"conclusion"`, `"Q&A"` → Follow standard title/content flow.
@@ -63,5 +65,5 @@ IMPORTANT: "Have many image or diagram"
 section_slides_content_prompt = PromptTemplate(
     template=SECTION_SLIDES_CONTENT_TEMPLATE,
     input_variables=["topic", "presentation_title", "audience", "purpose", 
-                     "data", "estimated_slides", "format_instructions"],
+                     "data", "estimated_slides", "format_instructions", "section_index"],
 )

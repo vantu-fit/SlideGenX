@@ -5,7 +5,7 @@ from service.auth import AuthService
 from db.session import get_db, Session
 from util.auth import get_user_info_from_request
 
-def get_auth_service(db: Session = Depends(get_db)):
+def get_auth_service(db = Depends(get_db)):
     return AuthService(db)
 
 router = APIRouter()

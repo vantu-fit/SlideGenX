@@ -1,13 +1,18 @@
 import os
-from fastapi import APIRouter, Depends, HTTPException, Request, Body
+import tempfile
+import zipfile
+from fastapi import APIRouter, Depends, HTTPException, Request, Body, UploadFile
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi import status
 from service.slide import SlideService
 from db.session import get_db, Session
 from util.auth import get_user_info_from_request
+from util.common_function import pptx_to_png_aspose
+
 
 router = APIRouter()
 def get_slide_service(db: Session = Depends(get_db)):
+
     return SlideService(db)
 
 @router.get("/list_templates", response_model=list[str])
@@ -102,8 +107,11 @@ async def get_slide_by_session_id(
     request: Request,
     service: SlideService = Depends(get_slide_service)
 ):
-    username = await get_user_info_from_request(request)
-    if service.check_slide_belongs_to_user(session_id, username['username']):
+    user_info = await get_user_info_from_request(request)
+    if not user_info:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not authenticated")
+    
+    if service.check_slide_belongs_to_user(session_id, user_info['username']):
         slide_path = f"slides/{session_id}"
         if os.path.exists(slide_path):
             pptx_files = [f for f in os.listdir(slide_path) if f.endswith('.pptx')]
@@ -118,3 +126,68 @@ async def get_slide_by_session_id(
     else:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")
     
+@router.get("/get_template_image")
+async def get_template_image(
+    template_name: str,
+):
+    # Đường dẫn tới file ảnh preview
+    image_path = f"img/{template_name}.png"
+    if not os.path.exists(image_path):
+        raise HTTPException(status_code=404, detail="Preview image not found")
+    return FileResponse(image_path, media_type="image/png", filename=f"{template_name}.png")
+
+    
+
+@router.post("/convert_pptx_to_png_by_name")
+async def convert_pptx_to_png_by_name(
+    request: Request,
+    name: str = Body(..., embed=True),
+    service: SlideService = Depends(get_slide_service)
+):
+    """
+    Convert PPTX to PNG by name (template name or session ID).
+    Uses the convert function from common_function.
+    """
+    try:
+        # Check user authentication for session IDs
+        user_info = await get_user_info_from_request(request)
+        if not user_info:
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not authenticated")
+        
+        # Convert PPTX to PNG
+        result = service.convert_pptx_to_png_by_name(name)
+        
+        if not result["success"]:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=result["error"]
+            )
+        
+        # If it's a session ID, check ownership
+        if result["type"] == "session":
+            if not service.check_slide_belongs_to_user(name, user_info['username']):
+                raise HTTPException(
+                    status_code=status.HTTP_403_FORBIDDEN,
+                    detail="You do not have permission to access this slide"
+                )
+        
+        # Create ZIP file containing all PNG images
+        with tempfile.TemporaryDirectory() as temp_dir:
+            zip_path = os.path.join(temp_dir, f"{name}_slides.zip")
+            with zipfile.ZipFile(zip_path, 'w') as zipf:
+                for png_file in result["png_files"]:
+                    png_path = os.path.join(result["output_dir"], png_file)
+                    zipf.write(png_path, png_file)
+            
+            # Return ZIP file
+            return FileResponse(
+                zip_path,
+                media_type="application/zip",
+                filename=f"{name}_slides.zip"
+            )
+            
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
+            detail=f"Error converting PPTX to PNG: {str(e)}"
+        )

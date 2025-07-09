@@ -52,3 +52,6 @@ def convert_to_pdf(ppt_path: str, output_path: str) -> None:
     except Exception as e:
         logger.error(f"Unknown error during PDF conversion: {e}")
         raise
+
+if __name__ == "__main__":
+    convert_to_pdf("slides/123/presentation.pptx", "slides/123/presentation.pdf")

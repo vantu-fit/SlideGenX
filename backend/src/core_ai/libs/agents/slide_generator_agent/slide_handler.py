@@ -66,6 +66,7 @@ class SlideHandler:
 
         return results
 
+
     def _get_font_size_for_placeholder(self, placeholder):
         """
         Determine the appropriate font size based on the placeholder name
@@ -308,8 +309,6 @@ class SlideHandler:
                 return phf.type
         return None
 
-
-    
 
     def create_slides(
         self,

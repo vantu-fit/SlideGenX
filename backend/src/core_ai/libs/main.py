@@ -329,5 +329,5 @@ if __name__ == "__main__":
         duration=45,
         purpose="educate",
         output_path="future_ai_healthcare.pptx",
-        template_path="core_ai/pptx_templates/Geometric.pptx"
+        template_path="core_ai/pptx_templates/FIT-HCMUS_template.pptx"
     )

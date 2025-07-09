@@ -92,6 +92,8 @@ export default function CreateSlidePage() {
     error: errorImages,
   } = useTemplateImages(templates);
 
+  console.log(templateImages);
+
   // Phân trang templates
   const templatesPerPage = 4;
   const totalPages = Math.ceil(templates.length / templatesPerPage);
@@ -229,11 +231,18 @@ export default function CreateSlidePage() {
                         <>
                           <div className="grid grid-cols-2 gap-4">
                             {currentTemplates.map((templateName, localIdx) => {
-                              const imageData = templateImages[templateName];
+                              const imageData = templateImages?.[
+                                templateName
+                              ] || {
+                                imageUrl: null,
+                                loading: true,
+                                error: null,
+                              };
+
                               const isLoading =
-                                loadingImages || imageData?.loading;
-                              const imageUrl = imageData?.imageUrl;
-                              const imageError = imageData?.error;
+                                loadingImages || imageData.loading;
+                              const imageUrl = imageData.imageUrl;
+                              const imageError = imageData.error;
 
                               return (
                                 <div

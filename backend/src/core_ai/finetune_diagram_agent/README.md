@@ -42,7 +42,3 @@ finetune_diagram_agent/
 ```
 
 ---
-
-## Ghi chú
-- Đây là ví dụ fake, không chạy thực tế.
-- Bạn cần tự chuẩn bị data thật nếu muốn fine-tune thực sự. 

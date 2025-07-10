@@ -180,7 +180,7 @@ export function TemplatesTab() {
                     <div className="w-full h-40 bg-gray-200 rounded-t-lg animate-pulse" />
                   ) : (
                     <img
-                      src={template.thumbnail}
+                      src={'http://localhost:8000/image/'+ template.thumbnail}
                       alt={template.title}
                       className="w-full h-40 object-cover rounded-t-lg"
                       onError={(e) => {

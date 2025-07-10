@@ -6,17 +6,39 @@ export {
   useRegister,
 } from "./use-auth";
 
-// API hooks
+// Slide generation hooks
 export {
-  useApi,
-  useCreateSlide,
-  useGetSlides,
-  useUpdateSlide,
-  useDeleteSlide,
-  useUpdateProfile,
-  useChangePassword,
-} from "./use-api";
+  useGenerateSlide,
+  useSlideGenerator,
+  getImagePaths,
+  getSessionId,
+  getOutputFileName,
+} from "./use-generate-slide";
 
-// Re-export existing hooks
+// Slide save hooks
+export {
+  useSaveSlide,
+  useSlideWorkflow,
+  getSavedSlideId,
+  getSavedSessionId,
+  getSavedUserId,
+} from "./use-save-slide";
+
+// Slide management hooks
+export {
+  useGetSlideIds,
+  useGetSlideBySessionId,
+  useSlideManagement,
+  useSlideManagementWithAutoFetch,
+  hasSlides,
+  getSlideCount,
+  isValidSessionId,
+} from "./use-get-slides";
+
+// Template hooks
+export { useListTemplates } from "./use-list-templates";
+export { useTemplateImages } from "./use-template-images";
+
+// Utility hooks
 export { useToast } from "./use-toast";
 export { useIsMobile } from "./use-mobile";

@@ -1,13 +1,26 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { Search, Filter, MoreVertical, Edit, Trash2, Download, Plus } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Search,
+  Filter,
+  MoreVertical,
+  Edit,
+  Trash2,
+  Download,
+  Plus,
+} from "lucide-react";
 
 // Mock slides data
 const mockSlides = [
@@ -53,30 +66,34 @@ const mockSlides = [
     createdAt: "2024-01-01",
     slideCount: 6,
   },
-]
+];
 
 export function SlidesTab() {
-  const [searchTerm, setSearchTerm] = useState("")
-  const [sortBy, setSortBy] = useState("date")
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortBy, setSortBy] = useState("date");
 
   const filteredSlides = mockSlides
-    .filter((slide) => slide.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    .filter((slide) =>
+      slide.title.toLowerCase().includes(searchTerm.toLowerCase())
+    )
     .sort((a, b) => {
       if (sortBy === "date") {
-        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        return (
+          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        );
       } else if (sortBy === "title") {
-        return a.title.localeCompare(b.title)
+        return a.title.localeCompare(b.title);
       }
-      return 0
-    })
+      return 0;
+    });
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", {
       year: "numeric",
       month: "short",
       day: "numeric",
-    })
-  }
+    });
+  };
 
   return (
     <div className="space-y-6">
@@ -100,8 +117,12 @@ export function SlidesTab() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem onClick={() => setSortBy("date")}>Sort by Date</DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setSortBy("title")}>Sort by Title</DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setSortBy("date")}>
+                Sort by Date
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setSortBy("title")}>
+                Sort by Title
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
@@ -115,7 +136,9 @@ export function SlidesTab() {
               <Plus className="w-8 h-8 text-blue-600" />
             </div>
             <h3 className="text-lg font-semibold mb-2">Create New Slide</h3>
-            <p className="text-gray-600 text-center">Start creating amazing presentations with AI</p>
+            <p className="text-gray-600 text-center">
+              Start creating amazing presentations with AI
+            </p>
           </CardContent>
         </Card>
       </Link>
@@ -124,7 +147,10 @@ export function SlidesTab() {
       {filteredSlides.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSlides.map((slide) => (
-            <Card key={slide.id} className="group hover:shadow-lg transition-shadow cursor-pointer">
+            <Card
+              key={slide.id}
+              className="group hover:shadow-lg transition-shadow cursor-pointer"
+            >
               <CardContent className="p-0">
                 <div className="relative">
                   <img
@@ -155,11 +181,17 @@ export function SlidesTab() {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
-                  <Badge className="absolute bottom-2 left-2">{slide.slideCount} slides</Badge>
+                  <Badge className="absolute bottom-2 left-2">
+                    {slide.slideCount} slides
+                  </Badge>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold mb-2 line-clamp-1">{slide.title}</h3>
-                  <p className="text-sm text-gray-600">Created {formatDate(slide.createdAt)}</p>
+                  <h3 className="font-semibold mb-2 line-clamp-1">
+                    {slide.title}
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Created {formatDate(slide.createdAt)}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -171,5 +203,5 @@ export function SlidesTab() {
         </div>
       )}
     </div>
-  )
+  );
 }

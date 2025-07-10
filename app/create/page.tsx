@@ -26,60 +26,39 @@ import {
   Edit3,
   ChevronLeft,
   ChevronRight,
+  AlertCircle,
 } from "lucide-react";
 import { useListTemplates } from "@/hooks/use-list-templates";
 import { useTemplateImages } from "@/hooks/use-template-images";
+import { useGenerateSlide, useSaveSlide } from "@/hooks";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
-// Mock slide data
-const mockSlides = [
-  {
-    id: 1,
-    title: "Introduction",
-    content:
-      "Welcome to our presentation about sustainable energy solutions for the future.",
-    thumbnail: "/placeholder.svg?height=200&width=300",
-  },
-  {
-    id: 2,
-    title: "Current Challenges",
-    content:
-      "The world faces significant energy challenges including climate change and resource depletion.",
-    thumbnail: "/placeholder.svg?height=200&width=300",
-  },
-  {
-    id: 3,
-    title: "Solar Energy Solutions",
-    content:
-      "Solar power offers clean, renewable energy with decreasing costs and increasing efficiency.",
-    thumbnail: "/placeholder.svg?height=200&width=300",
-  },
-  {
-    id: 4,
-    title: "Implementation Strategy",
-    content:
-      "A phased approach to implementing renewable energy solutions across different sectors.",
-    thumbnail: "/placeholder.svg?height=200&width=300",
-  },
-  {
-    id: 5,
-    title: "Conclusion",
-    content:
-      "Together, we can build a sustainable energy future for generations to come.",
-    thumbnail: "/placeholder.svg?height=200&width=300",
-  },
-];
+// Interface for slide data
+interface SlideData {
+  id: string;
+  title: string;
+  content: string;
+  thumbnail: string;
+  imagePath: string;
+}
 
 export default function CreateSlidePage() {
   const [selectedTemplate, setSelectedTemplate] = useState<number | null>(null);
   const [topic, setTopic] = useState("");
   const [contentFile, setContentFile] = useState<File | null>(null);
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedSlides, setGeneratedSlides] = useState<typeof mockSlides>([]);
+  const [generatedSlides, setGeneratedSlides] = useState<SlideData[]>([]);
   const [selectedSlide, setSelectedSlide] = useState<number | null>(null);
   const [editPrompt, setEditPrompt] = useState("");
   const [currentPage, setCurrentPage] = useState(0);
+  const [sessionId, setSessionId] = useState<string | null>(null);
 
-  // Sử dụng hooks để lấy templates và images
+  // Form fields for slide generation
+  const [slideTitle, setSlideTitle] = useState("");
+  const [duration, setDuration] = useState(60);
+  const [purpose, setPurpose] = useState("");
+  const [outputFileName, setOutputFileName] = useState("");
+
+  // Sử dụng hooks
   const {
     templates,
     loading: loadingTemplates,
@@ -92,7 +71,20 @@ export default function CreateSlidePage() {
     error: errorImages,
   } = useTemplateImages(templates);
 
-  console.log(templateImages);
+  const {
+    generateSlide,
+    isLoading: isGenerating,
+    error: generateError,
+    response: generateResponse,
+  } = useGenerateSlide();
+
+  const {
+    saveSlide,
+    isLoading: isSaving,
+    error: saveError,
+    response: saveResponse,
+    reset: resetSave,
+  } = useSaveSlide();
 
   // Phân trang templates
   const templatesPerPage = 4;
@@ -124,27 +116,89 @@ export default function CreateSlidePage() {
     const file = event.target.files?.[0];
     if (file) {
       setContentFile(file);
+      // Auto-generate output filename from uploaded file
+      const fileName = file.name.split(".")[0];
+      setOutputFileName(fileName);
+    }
+  };
+
+  const handleTemplateUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      console.log("Template file uploaded:", file.name);
     }
   };
 
   const handleGenerate = async () => {
-    if (!selectedTemplate || (!topic && !contentFile)) return;
+    if (selectedTemplate === null || (!topic && !contentFile)) return;
 
-    setIsGenerating(true);
+    try {
+      // Reset save state for new generation
+      resetSave();
 
-    // Simulate AI generation
-    setTimeout(() => {
-      setGeneratedSlides(mockSlides);
-      setIsGenerating(false);
-    }, 3000);
+      // Prepare content
+      let content = topic;
+      if (contentFile) {
+        // If file is uploaded, read its content
+        const fileContent = await readFileContent(contentFile);
+        content = fileContent;
+      }
+
+      // Get selected template name
+      const selectedTemplateName = templates[selectedTemplate] || "";
+
+      // Generate unique output filename if not provided
+      const finalOutputFileName = outputFileName || `slide_${Date.now()}`;
+      // Call API to generate slides
+      const result = await generateSlide({
+        title: slideTitle || "Generated Presentation",
+        content: content,
+        duration: duration,
+        purpose: purpose || "presentation",
+        output_file_name: finalOutputFileName,
+        template: selectedTemplateName,
+      });
+
+      // Convert API response to slide data
+      const slides: SlideData[] = result.images_path.map(
+        (imagePath, index) => ({
+          id: `slide_${index + 1}`,
+          title: `Slide ${index + 1}`,
+          content: `Generated slide content ${index + 1}`,
+          thumbnail: `http://localhost:8000/image/${imagePath}`,
+          imagePath: imagePath,
+        })
+      );
+
+      setGeneratedSlides(slides);
+      setSessionId(result.session_id);
+      setOutputFileName(result.output_file_name);
+    } catch (error) {
+      console.error("Error generating slides:", error);
+    }
   };
 
-  const handleSlideEdit = (slideId: number) => {
-    setSelectedSlide(slideId);
+  const readFileContent = (file: File): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const content = e.target?.result as string;
+        resolve(content);
+      };
+      reader.onerror = reject;
+      reader.readAsText(file);
+    });
+  };
+
+  const handleSlideEdit = (slideId: string) => {
+    const slideIndex = generatedSlides.findIndex(
+      (slide) => slide.id === slideId
+    );
+    setSelectedSlide(slideIndex);
   };
 
   const handleRegenerateSlide = () => {
-    if (!selectedSlide || !editPrompt) return;
+    if (selectedSlide === null || !editPrompt) return;
 
     // Simulate slide regeneration
     setTimeout(() => {
@@ -153,14 +207,32 @@ export default function CreateSlidePage() {
     }, 1500);
   };
 
-  const handleSave = () => {
-    // Simulate saving to slides
-    alert("Slides saved successfully!");
+  const handleSave = async () => {
+    if (!sessionId) {
+      alert("No session to save!");
+      return;
+    }
+
+    try {
+      await saveSlide(sessionId);
+      // Success notification will be handled by the UI update
+    } catch (error) {
+      console.error("Error saving slide:", error);
+    }
   };
 
-  const handleDownload = () => {
-    // Simulate download
-    alert("Downloading presentation as .pptx...");
+  const handleDownload = async () => {
+    if (sessionId && outputFileName) {
+      const downloadUrl = `http://localhost:8000/${sessionId}/${outputFileName}`;
+
+      const response = await fetch(downloadUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = outputFileName;
+      a.click();
+    }
   };
 
   return (
@@ -179,10 +251,49 @@ export default function CreateSlidePage() {
           </div>
           {generatedSlides.length > 0 && (
             <div className="flex items-center space-x-2">
-              <Button onClick={handleSave} variant="outline">
-                <Save className="w-4 h-4 mr-2" />
-                Save
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  setGeneratedSlides([]);
+                  setSessionId(null);
+                  setTopic("");
+                  setContentFile(null);
+                  setSlideTitle("");
+                  setDuration(60);
+                  setPurpose("");
+                  setOutputFileName("");
+                  resetSave();
+                }}
+              >
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Create New
               </Button>
+
+              {!saveResponse ? (
+                <Button
+                  onClick={handleSave}
+                  variant="outline"
+                  disabled={isSaving}
+                >
+                  {isSaving ? (
+                    <>
+                      <Sparkles className="w-4 h-4 mr-2 animate-spin" />
+                      Saving...
+                    </>
+                  ) : (
+                    <>
+                      <Save className="w-4 h-4 mr-2" />
+                      Save
+                    </>
+                  )}
+                </Button>
+              ) : (
+                <Button variant="outline" disabled className="text-green-600">
+                  <Save className="w-4 h-4 mr-2" />
+                  Saved ✓
+                </Button>
+              )}
+
               <Button
                 onClick={handleDownload}
                 className="bg-gradient-to-r from-green-800 to-green-700 hover:from-green-900 hover:to-green-800 text-white"
@@ -196,6 +307,27 @@ export default function CreateSlidePage() {
       </header>
 
       <div className="container mx-auto px-6 py-8">
+        {/* Error Display */}
+        {(generateError || saveError) && (
+          <Alert className="mb-6 border-red-200 bg-red-50">
+            <AlertCircle className="h-4 w-4 text-red-600" />
+            <AlertDescription className="text-red-800">
+              {generateError && `Error generating slides: ${generateError}`}
+              {saveError && `Error saving slides: ${saveError}`}
+            </AlertDescription>
+          </Alert>
+        )}
+
+        {/* Success Display */}
+        {saveResponse && (
+          <Alert className="mb-6 border-green-200 bg-green-50">
+            <Save className="h-4 w-4 text-green-600" />
+            <AlertDescription className="text-green-800">
+              Slides saved successfully! Slide ID: {saveResponse.id}
+            </AlertDescription>
+          </Alert>
+        )}
+
         {generatedSlides.length === 0 ? (
           <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-8">
@@ -231,7 +363,7 @@ export default function CreateSlidePage() {
                         <>
                           <div className="grid grid-cols-2 gap-4">
                             {currentTemplates.map((templateName, localIdx) => {
-                              const imageData = templateImages?.[
+                              const imageData = templateImages[
                                 templateName
                               ] || {
                                 imageUrl: null,
@@ -240,7 +372,7 @@ export default function CreateSlidePage() {
                               };
 
                               const isLoading =
-                                loadingImages || imageData.loading;
+                                imageData.loading || loadingImages;
                               const imageUrl = imageData.imageUrl;
                               const imageError = imageData.error;
 
@@ -258,7 +390,10 @@ export default function CreateSlidePage() {
                                     <div className="animate-pulse h-24 bg-gray-200 rounded mb-2" />
                                   ) : (
                                     <img
-                                      src={imageUrl || "/placeholder.svg"}
+                                      src={
+                                        "http://localhost:8000/image/" +
+                                          imageUrl || "/placeholder.svg"
+                                      }
                                       alt={templateName}
                                       className="w-full h-24 object-cover rounded mb-2"
                                       onError={(e) => {
@@ -327,11 +462,6 @@ export default function CreateSlidePage() {
                           )}
                         </>
                       )}
-                      {errorImages && (
-                        <div className="text-orange-500 text-sm mt-2">
-                          Một số ảnh template không thể tải: {errorImages}
-                        </div>
-                      )}
                     </TabsContent>
                     <TabsContent value="upload">
                       <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
@@ -339,10 +469,21 @@ export default function CreateSlidePage() {
                         <p className="text-gray-600 mb-4">
                           Upload your .pptx template
                         </p>
-                        <Button variant="outline">
-                          <Upload className="w-4 h-4 mr-2" />
-                          Choose File
-                        </Button>
+                        <input
+                          type="file"
+                          accept=".pptx"
+                          onChange={handleTemplateUpload}
+                          className="hidden"
+                          id="template-file"
+                        />
+                        <label htmlFor="template-file">
+                          <Button variant="outline" asChild>
+                            <span>
+                              <Upload className="w-4 h-4 mr-2" />
+                              Choose File
+                            </span>
+                          </Button>
+                        </label>
                       </div>
                     </TabsContent>
                   </Tabs>
@@ -365,13 +506,56 @@ export default function CreateSlidePage() {
                     </TabsList>
                     <TabsContent value="topic" className="space-y-4">
                       <div>
-                        <Label htmlFor="topic">Presentation Topic</Label>
+                        <Label htmlFor="slide-title">Slide Title</Label>
+                        <Textarea
+                          id="slide-title"
+                          placeholder="Enter presentation title..."
+                          value={slideTitle}
+                          onChange={(e) => setSlideTitle(e.target.value)}
+                          rows={2}
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="topic">Presentation Content</Label>
                         <Textarea
                           id="topic"
                           placeholder="Enter your presentation topic or key points..."
                           value={topic}
                           onChange={(e) => setTopic(e.target.value)}
-                          rows={6}
+                          rows={4}
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="purpose">Purpose</Label>
+                        <Textarea
+                          id="purpose"
+                          placeholder="What is the purpose of this presentation?"
+                          value={purpose}
+                          onChange={(e) => setPurpose(e.target.value)}
+                          rows={2}
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="duration">Duration (minutes)</Label>
+                        <input
+                          type="number"
+                          id="duration"
+                          value={duration}
+                          onChange={(e) => setDuration(Number(e.target.value))}
+                          className="w-full p-2 border rounded"
+                          min="1"
+                          max="120"
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="output-name">Output File Name</Label>
+                        <input
+                          type="text"
+                          id="output-name"
+                          value={outputFileName}
+                          onChange={(e) => setOutputFileName(e.target.value)}
+                          placeholder="Enter output filename (optional)"
+                          className="w-full p-2 border rounded"
                         />
                       </div>
                     </TabsContent>
@@ -413,7 +597,9 @@ export default function CreateSlidePage() {
               <Button
                 onClick={handleGenerate}
                 disabled={
-                  !selectedTemplate || (!topic && !contentFile) || isGenerating
+                  selectedTemplate === null ||
+                  (!topic && !contentFile) ||
+                  isGenerating
                 }
                 size="lg"
                 className="bg-gradient-to-r from-green-800 to-green-700 hover:from-green-900 hover:to-green-800 text-white"
@@ -435,7 +621,19 @@ export default function CreateSlidePage() {
         ) : (
           /* Generated Slides Preview */
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col gap-12 items-center">
+            <div className="mb-6">
+              <h2 className="text-xl font-semibold mb-2">Generated Slides</h2>
+              <div className="flex items-center gap-4 text-sm text-gray-600">
+                <p>Session ID: {sessionId}</p>
+                {saveResponse && (
+                  <Badge className="bg-green-100 text-green-800">
+                    Saved to Database (ID: {saveResponse.id})
+                  </Badge>
+                )}
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-14 items-center">
               {generatedSlides.map((slide, index) => (
                 <Card
                   key={slide.id}
@@ -445,9 +643,13 @@ export default function CreateSlidePage() {
                   <CardContent className="p-0">
                     <div className="relative">
                       <img
-                        src={slide.thumbnail || "/placeholder.svg"}
+                        src={slide.thumbnail}
                         alt={slide.title}
                         className="w-full h-[600px] object-cover rounded"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src =
+                            "/placeholder.svg";
+                        }}
                       />
                       <Badge className="absolute top-2 left-2">
                         {index + 1}
@@ -466,7 +668,7 @@ export default function CreateSlidePage() {
             </div>
 
             {/* Edit Slide Modal */}
-            {selectedSlide && (
+            {selectedSlide !== null && (
               <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                 <Card className="w-full max-w-md">
                   <CardHeader>

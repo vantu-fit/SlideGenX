@@ -22,9 +22,6 @@ json5~=0.9.14
 requests~=2.32.3
 pypdf~=5.4.0
 
-transformers>=4.48.0
-torch>=2.6.0
-
 lxml~=4.9.3
 tqdm~=4.66.5
 numpy

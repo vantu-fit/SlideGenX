@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Run core_ai.libs.main",
+            "type": "python",
+            "request": "launch",
+            "module": "core_ai.libs.main",
+            "console": "integratedTerminal",
+            "justMyCode": false,  // Set to false to debug into google-auth library
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

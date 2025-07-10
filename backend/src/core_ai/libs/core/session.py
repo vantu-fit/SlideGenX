@@ -7,7 +7,7 @@ import uuid
 import json
 import os
 import logging
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional, List, Union
 from pydantic import BaseModel, Field
 from datetime import datetime
 
@@ -227,7 +227,7 @@ class Memory(BaseModel):
     user_input : UserInput = Field(
         description="User input for the presentation", default=UserInput()
     )
-    slide_layouts : CLassifyLayout | None = Field(
+    slide_layouts : Union[CLassifyLayout, Any] = Field(
         description="Layout information for the slides", default=None
     )
 

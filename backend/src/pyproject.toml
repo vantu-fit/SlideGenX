@@ -7,10 +7,12 @@ requires-python = ">=3.9"
 dependencies = [
     "fastapi>=0.115.13",
     "httpx>=0.28.1",
+    "pdf2image>=3.1.0",
     "psycopg2-binary>=2.9.10",
     "pydantic>=2.11.7",
     "pydantic-settings>=2.9.1",
     "python-jose>=3.5.0",
     "sqlalchemy>=2.0.41",
     "uvicorn>=0.34.3",
+    "aspose-slides-python>=23.12.0",
 ]

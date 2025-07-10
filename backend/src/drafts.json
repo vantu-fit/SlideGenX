@@ -58,6 +58,7 @@
               "Exploration vs. Exploitation Trade-off"
             ],
             "estimated_slides": 3,
+            "estimated_slides": 3,
             "section_index": 2,
             "section_type": "chapter"
           },
@@ -71,6 +72,7 @@
               "Transfer Learning Challenges in RL",
               "Safety Concerns and Ethical Considerations"
             ],
+            "estimated_slides": 3,
             "estimated_slides": 3,
             "section_index": 3,
             "section_type": "chapter"
@@ -87,6 +89,7 @@
               "Diagram: High-level flowchart showing RL agent interacting with a complex environment, receiving sparse rewards, and needing intrinsic motivation."
             ],
             "estimated_slides": 3,
+            "estimated_slides": 3,
             "section_index": 4,
             "section_type": "chapter"
           },
@@ -101,7 +104,7 @@
               "Reinforcement Learning with Memory and Attention Mechanisms",
               "Mermaid Diagram: ```mermaid\ngraph LR\n    A[Agent] --> B(Environment);\n    B --> C{Reward?};\n    C -- Yes --> D[Update Policy];\n    C -- No --> E[Explore];\n    E --> B;\n    D --> A;\n```"
             ],
-            "estimated_slides": 4,
+            "estimated_slides": 1,
             "section_index": 5,
             "section_type": "chapter"
           },
@@ -140,8 +143,8 @@
               "Thank you for your attention.",
               "Open for questions."
             ],
-            "estimated_slides": 2,
-            "section_index": 8,
+            "estimated_slides": 1,
+            "section_index": 7,
             "section_type": "qa"
           }
         ],
@@ -446,6 +449,7 @@
               "Reinforcement Learning"
             ],
             "slide_index": 2,
+            "slide_index": 2,
             "section_index": 3
           }
         ]
@@ -740,8 +744,8 @@
       "created_at_formatted": "2025-07-11 00:16:26"
     },
     {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
       "content": {
         "slides": [
           {
@@ -813,7 +817,6 @@
             "images_needed": [],
             "diagrams_needed": [],
             "keywords": [
-              "cảm ơn",
               "hỏi đáp",
               "câu hỏi",
               "thảo luận"

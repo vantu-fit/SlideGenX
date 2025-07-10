@@ -15,43 +15,49 @@ def is_valid_email(email: str) -> bool:
 
 import subprocess
 import os
+import fitz
 
 def convert_pptx_to_pdf(pptx_path, output_dir):
     os.makedirs(output_dir, exist_ok=True)
 
+    pptx_name = os.path.basename(pptx_path)
+    # Thay bằng đường dẫn tuyệt đối
+    pptx_path = os.path.abspath(pptx_path)
+    output_dir = os.path.abspath(output_dir)
     command = [
+        "docker",
+        "run",
+        "-v", f"{pptx_path}:/app/{pptx_name}",
+        "-v", f"{output_dir}:/output",
         "libreoffice",
-        "--headless",
-        "--convert-to", "pdf",
-        "--outdir", output_dir,
-        pptx_path
-    ]
+]		
 
     subprocess.run(command, check=True)
     pptx_name = pptx_path.split(".")[0]
     pdf_path = pptx_name + ".pdf"
     return pdf_path
 
-def convert_pdf_to_img(pdf_path, output_dir = None):
-    import pdf2image
-    if output_dir is None:
-        output_dir = os.path.dirname(pdf_path) + "/images"
-    print(output_dir)
-    os.makedirs(output_dir, exist_ok=True)
-    print(pdf_path)
-    # return
-    images = pdf2image.convert_from_path(pdf_path, dpi=200, output_folder=os.path.dirname(pdf_path), fmt='png')
-    image_paths = []
-    for i, image in enumerate(images):
-        image_path = os.path.join(output_dir, f"page_{i + 1}.png")
-        image.save(image_path, 'PNG')
-        image_paths.append(os.path.abspath(image_path))
-    # remove the image in images folder
-    for image in os.listdir(os.path.dirname(pdf_path)):
-        if image.endswith('.png'):
-            os.remove(os.path.join(os.path.dirname(pdf_path), image))
-    return image_paths
 
+def convert_pdf_to_img(pdf_path, output_dir=None):
+    if output_dir is None:
+        output_dir = os.path.join(os.path.dirname(pdf_path), "images")
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    doc = fitz.open(pdf_path)
+    image_paths = []
+
+    for page_number in range(len(doc)):
+        page = doc.load_page(page_number)  # page_number is 0-based
+        pix = page.get_pixmap(dpi=200)  # you can increase dpi for better quality
+    
+        image_path = os.path.join(output_dir, f"page_{page_number + 1}.png")
+        pix.save(image_path)
+        relative_path = image_path.split("src", 1)[-1][8:]
+        image_paths.append(relative_path)
+
+    doc.close()
+    return image_paths
 def convert_pptx_to_img(pptx_path, output_dir=None):
     """
     Convert a PPTX file to images.
@@ -68,7 +74,7 @@ def convert_pptx_to_img(pptx_path, output_dir=None):
 
 if __name__ == "__main__":
     # Example usage
-    pptx_path = "slides/40c6b22e-d668-4a7f-9846-5039f30753dc/deep_learning.pptx"
-    output_dir = "slides/40c6b22e-d668-4a7f-9846-5039f30753dc"
+    pptx_path = "slides/56bcd8b5-a30e-4dbe-9116-98ec778d4277/presentation.pptx"
+    output_dir = "slides/56bcd8b5-a30e-4dbe-9116-98ec778d4277"
     response = convert_pptx_to_pdf(pptx_path, output_dir)
     print(convert_pdf_to_img(response))

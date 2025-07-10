@@ -1,13 +1,17 @@
 import os
-from fastapi import APIRouter, Depends, HTTPException, Request, Body
+import tempfile
+import zipfile
+from fastapi import APIRouter, Depends, HTTPException, Request, Body, UploadFile
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi import status
 from service.slide import SlideService
-from db.session import get_db, Session
+from db.session import get_db
 from util.auth import get_user_info_from_request
 
+
 router = APIRouter()
-def get_slide_service(db: Session = Depends(get_db)):
+def get_slide_service(db = Depends(get_db)):
+
     return SlideService(db)
 
 @router.get("/list_templates", response_model=list[str])
@@ -38,7 +42,7 @@ async def get_template(
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-@router.post("/generate_slide", response_class=FileResponse)
+@router.post("/generate_slide")
 async def generate_slide(
     request: Request,
     title: str = Body(..., embed=True),
@@ -96,6 +100,27 @@ async def get_slides_ids(
         return JSONResponse(content=slides, status_code=status.HTTP_200_OK)
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+
+@router.get("/get_slide_info/{session_id}", response_model=dict)
+async def get_slide_info(
+    session_id: str,
+    request: Request,
+    service: SlideService = Depends(get_slide_service)
+):
+    """Get detailed slide information from memory.json file."""
+    user_info = await get_user_info_from_request(request)
+    if not user_info:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not authenticated")
+    
+    # Check if user has permission to access this slide
+    if not service.check_slide_belongs_to_user(session_id, user_info['username']):
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")
+    
+    try:
+        slide_info = service.get_info_slide(session_id)
+        return JSONResponse(content=slide_info, status_code=status.HTTP_200_OK)
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     
 @router.get("/get_slide_by_session_id/{session_id}", response_class=FileResponse)
 async def get_slide_by_session_id(
@@ -103,10 +128,11 @@ async def get_slide_by_session_id(
     request: Request,
     service: SlideService = Depends(get_slide_service)
 ):
-    import logging
-    user = await get_user_info_from_request(request)
-    logging.error(user)
-    if service.check_slide_belongs_to_user(session_id, user['username']):
+    user_info = await get_user_info_from_request(request)
+    if not user_info:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not authenticated")
+    
+    if service.check_slide_belongs_to_user(session_id, user_info['username']):
         slide_path = f"slides/{session_id}"
         if os.path.exists(slide_path):
             pptx_files = [f for f in os.listdir(slide_path) if f.endswith('.pptx')]
@@ -121,37 +147,34 @@ async def get_slide_by_session_id(
     else:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")
     
-@router.get("/get_slide_info/{session_id}", response_model=dict)
-async def get_slide_info(
-    session_id: str,
-    request: Request,
-    service: SlideService = Depends(get_slide_service)
+@router.get("/get_template_image")
+async def get_template_image(
+    template_name: str,
 ):
-    """Get slide information by session ID."""
-    username = await get_user_info_from_request(request)
-    if service.check_slide_belongs_to_user(session_id, username['username']):
-        try:
-            slide_info = service.get_slide_info_by_session_id(session_id)
-            return JSONResponse(content=slide_info, status_code=status.HTTP_200_OK)
-        except Exception as e:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
-    else:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")
+    # Đường dẫn tới file ảnh preview
+    image_path = f"img/{template_name}.png"
+    if not os.path.exists(image_path):
+        raise HTTPException(status_code=404, detail="Preview image not found")
+    return FileResponse(image_path, media_type="image/png", filename=f"{template_name}.png")
 
-@router.get("/get_slide_image/{session_id}", response_class=FileResponse)
-async def get_slide_image(
-    session_id: str,
+@router.get("/get_all_template_images")
+async def get_all_template_images(
     request: Request,
     service: SlideService = Depends(get_slide_service)
 ):
-    """Get the image link of the slide by session ID."""
-    username = await get_user_info_from_request(request)
-    if service.check_slide_belongs_to_user(session_id, username['username']):
-        try:
-            img_files = service.get_slide_img_by_session_id(session_id)
-            img_files = sorted(img_files, key=lambda x: int(x.split('_')[-1].split('.')[0]))  # Sort images by page number
-            return JSONResponse(content=img_files, status_code=status.HTTP_200_OK)
-        except Exception as e:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
-    else:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to access this slide")
+    """
+    Get all template images with public URLs.
+    """
+    try:
+        templates = service.list_templates()
+        result = {}
+
+        for template in templates:
+            image_path = f"{template}.png"
+
+            result[template] = image_path
+            
+
+        return JSONResponse(content=result, status_code=status.HTTP_200_OK)
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))

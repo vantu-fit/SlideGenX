@@ -9,6 +9,7 @@ import argparse
 import json
 from typing import Dict, Any, Optional
 
+
 from core_ai.libs.core.session import Session
 from core_ai.libs.orchestration.orchestrator import TreeOfThoughtOrchestrator
 from core_ai.libs.orchestration.slide_edit_orchestrator import SlideEditOrchestrator
@@ -104,6 +105,8 @@ def save_presentation(presentation: Dict[str, Any], output_path: str) -> bool:
     except Exception as e:
         logger.error(f"Failed to save presentation: {e}")
         return False
+
+
 
 def edit_slide(session_path: str, 
                section_index: int, 

@@ -3,6 +3,7 @@ from crud.crud_slide import CRUDSlide
 from model.slide import Slide
 from util.common_function import convert_pptx_to_img
 import os
+import json
 
 class SlideService:
     """
@@ -198,6 +199,91 @@ class SlideService:
             raise Exception(f"No images found for session ID {session_id}.")
         return img_files
     
+    def get_info_slide(self, session_id: str):
+        """
+        Get slide information from memory.json file.
+
+        Args:
+            session_id (str): Session ID of the slide.
+
+        Returns:
+            dict: Information containing title and number of slides.
+        """
+        # Check if slide directory exists
+        slide_dir = f"slides/{session_id}"
+        if not os.path.exists(slide_dir):
+            raise Exception(f"Slide directory for session ID {session_id} does not exist.")
+        
+        # Check if memory.json exists
+        memory_file = os.path.join(slide_dir, "memory.json")
+        if not os.path.exists(memory_file):
+            raise Exception(f"Memory file for session ID {session_id} does not exist.")
+        
+        try:
+            # Read and parse memory.json
+            with open(memory_file, 'r', encoding='utf-8') as f:
+                memory_data = json.load(f)
+            
+            # Extract title - priority order: outline.topic > user_input.presentation_title > user_input.topic
+            title = None
+            if 'outline' in memory_data and 'topic' in memory_data['outline']:
+                title = memory_data['outline']['topic']
+            elif 'user_input' in memory_data and 'presentation_title' in memory_data['user_input']:
+                title = memory_data['user_input']['presentation_title']
+            elif 'user_input' in memory_data and 'topic' in memory_data['user_input']:
+                title = memory_data['user_input']['topic']
+            else:
+                title = "Untitled Presentation"
+            
+            # Extract number of slides
+            num_slides = 0
+            if 'slides' in memory_data:
+                num_slides = len(memory_data['slides'])
+            elif 'outline' in memory_data and 'num_slides' in memory_data['outline']:
+                num_slides = memory_data['outline']['num_slides']
+            
+            # Extract additional information
+            template = None
+            if 'user_input' in memory_data and 'template_path' in memory_data['user_input']:
+                template_path = memory_data['user_input']['template_path']
+                template = os.path.basename(template_path).replace('.pptx', '') if template_path else None
+            
+            created_at = None
+            if os.path.exists(memory_file):
+                created_at = os.path.getctime(memory_file)
+            
+            # Extract slide details for preview
+            slide_details = []
+            if 'slides' in memory_data:
+                for idx, slide in enumerate(memory_data['slides']):
+                    slide_info = {
+                        "slide_index": idx,
+                        "title": slide.get('content', {}).get('title', f"Slide {idx + 1}"),
+                        "content": slide.get('content', {}).get('content', ""),
+                        "notes": slide.get('content', {}).get('notes', ""),
+                        "keywords": slide.get('content', {}).get('keywords', []),
+                        "has_images": len(slide.get('images', [])) > 0,
+                        "has_diagrams": len(slide.get('diagrams', [])) > 0,
+                        "section_index": slide.get('section_index', 0),
+                        "slide_index_in_section": slide.get('slide_index', 0)
+                    }
+                    slide_details.append(slide_info)
+            
+            return {
+                "session_id": session_id,
+                "title": title,
+                "num_slides": num_slides,
+                "template": template,
+                "created_at": created_at,
+                "slide_details": slide_details,
+                "outline": memory_data.get('outline', {}),
+                "user_input": memory_data.get('user_input', {})
+            }
+            
+        except json.JSONDecodeError as e:
+            raise Exception(f"Error parsing memory.json for session ID {session_id}: {str(e)}")
+        except Exception as e:
+            raise Exception(f"Error reading slide info for session ID {session_id}: {str(e)}")
     
     
 

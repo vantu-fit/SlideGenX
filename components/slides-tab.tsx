@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { useRouter } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,9 +21,12 @@ import {
   Trash2,
   Download,
   Plus,
+  LogIn,
 } from "lucide-react";
+import { useGetSlideIds } from "@/hooks/use-get-slides";
+import { useAuth } from "@/hooks/use-auth"; // Add this import
 
-// Mock slides data
+// Mock slides data (keep as fallback)
 const mockSlides = [
   {
     id: 1,
@@ -69,8 +73,89 @@ const mockSlides = [
 ];
 
 export function SlidesTab() {
+  const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("date");
+  
+  // Use authentication hook
+  const { isAuthenticated, isLoading: authLoading, user } = useAuth();
+  const { slideIds, isLoading, error, fetchSlideIds, reset } = useGetSlideIds();
+
+  // Only fetch slides when user is authenticated
+  useEffect(() => {
+    if (isAuthenticated && !authLoading) {
+      fetchSlideIds();
+    }
+  }, [isAuthenticated, authLoading, fetchSlideIds]);
+
+  console.log("Auth status:", { isAuthenticated, user, slideIds });
+
+  // Handle authentication loading
+  if (authLoading) {
+    return (
+      <div className="flex items-center justify-center py-12">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Handle unauthenticated state
+  if (!isAuthenticated) {
+    return (
+      <div className="space-y-6">
+        <div className="text-center py-12">
+          <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <LogIn className="w-8 h-8 text-gray-400" />
+          </div>
+          <h3 className="text-lg font-semibold mb-2">Authentication Required</h3>
+          <p className="text-gray-600 mb-4">
+            Please log in to view and manage your slides.
+          </p>
+          <Button onClick={() => router.push('/login')} className="mr-2">
+            Log In
+          </Button>
+          <Button variant="outline" onClick={() => router.push('/register')}>
+            Sign Up
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  // Handle API loading
+  if (isLoading) {
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center justify-center py-12">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <p className="text-gray-600">Loading your slides...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Handle API error
+  if (error) {
+    return (
+      <div className="space-y-6">
+        <div className="text-center py-12">
+          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Trash2 className="w-8 h-8 text-red-600" />
+          </div>
+          <h3 className="text-lg font-semibold mb-2">Error Loading Slides</h3>
+          <p className="text-red-600 mb-4">{error}</p>
+          <Button onClick={() => fetchSlideIds()} variant="outline">
+            Try Again
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   const filteredSlides = mockSlides
     .filter((slide) =>
@@ -97,6 +182,16 @@ export function SlidesTab() {
 
   return (
     <div className="space-y-6">
+      {/* Welcome message */}
+      <div className="bg-blue-50 p-4 rounded-lg">
+        <h2 className="text-lg font-semibold text-blue-900">
+          Welcome back, {user?.full_name || user?.username}!
+        </h2>
+        <p className="text-blue-700">
+          You have {slideIds.length} slide{slideIds.length !== 1 ? 's' : ''} in your collection.
+        </p>
+      </div>
+
       {/* Search and Filters */}
       <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
         <div className="relative flex-1 max-w-md">
@@ -144,19 +239,26 @@ export function SlidesTab() {
       </Link>
 
       {/* Slides Grid */}
-      {filteredSlides.length > 0 ? (
+      {slideIds.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSlides.map((slide) => (
+          {slideIds.map((slide, index) => (
             <Card
-              key={slide.id}
+              onClick={() => {
+                router.push(`/slide/${slide}`);
+              }}
+              key={index}
               className="group hover:shadow-lg transition-shadow cursor-pointer"
             >
               <CardContent className="p-0">
                 <div className="relative">
                   <img
-                    src={slide.thumbnail || "/placeholder.svg"}
-                    alt={slide.title}
+                    src={`http://localhost:8000/image/${slide}/images/page_1.png`}
+                    alt={slide}
                     className="w-full h-48 object-cover rounded-t-lg"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      e.currentTarget.src = "/placeholder.svg?height=200&width=300";
+                    }}
                   />
                   <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     <DropdownMenu>
@@ -181,17 +283,17 @@ export function SlidesTab() {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
-                  <Badge className="absolute bottom-2 left-2">
-                    {slide.slideCount} slides
-                  </Badge>
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold mb-2 line-clamp-1">
-                    {slide.title}
+                    {slide}
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    Created {formatDate(slide.createdAt)}
-                  </p>
+                  <div className="flex items-center justify-between text-sm text-gray-500">
+                    <span>Session ID</span>
+                    <Badge variant="secondary" className="text-xs">
+                      {slide.slice(0, 8)}...
+                    </Badge>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -199,7 +301,16 @@ export function SlidesTab() {
         </div>
       ) : (
         <div className="text-center py-12">
-          <p className="text-gray-600">No slides found matching your search.</p>
+          <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Plus className="w-8 h-8 text-gray-400" />
+          </div>
+          <h3 className="text-lg font-semibold mb-2">No Slides Yet</h3>
+          <p className="text-gray-600 mb-4">
+            Start creating your first presentation to see it here.
+          </p>
+          <Button onClick={() => router.push('/create')}>
+            Create Your First Slide
+          </Button>
         </div>
       )}
     </div>

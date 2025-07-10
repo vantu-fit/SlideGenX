@@ -19,6 +19,37 @@ interface UseGetSlideBySessionIdReturn {
   reset: () => void;
 }
 
+interface SlideDetail {
+  slide_index: number;
+  title: string;
+  content: string | string[];
+  notes: string;
+  keywords: string[];
+  has_images: boolean;
+  has_diagrams: boolean;
+  section_index: number;
+  slide_index_in_section: number;
+}
+
+interface SlideInfo {
+  session_id: string;
+  title: string;
+  num_slides: number;
+  template: string | null;
+  created_at: number | null;
+  slide_details: SlideDetail[];
+  outline: any;
+  user_input: any;
+}
+
+interface UseGetSlideInfoReturn {
+  slideInfo: SlideInfo | null;
+  isLoading: boolean;
+  error: string | null;
+  fetchSlideInfo: (sessionId: string) => Promise<SlideInfo>;
+  reset: () => void;
+}
+
 interface UseSlideManagementReturn {
   slideIds: string[];
   isLoadingIds: boolean;
@@ -87,6 +118,86 @@ export const useGetSlideIds = (): UseGetSlideIdsReturn => {
     isLoading,
     error,
     fetchSlideIds,
+    reset,
+  };
+};
+
+/**
+ * Hook để lấy thông tin chi tiết slide từ memory.json
+ * API: GET /api/slide/get_slide_info/{session_id}
+ */
+export const useGetSlideInfo = (): UseGetSlideInfoReturn => {
+  const [slideInfo, setSlideInfo] = useState<SlideInfo | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const authenticatedFetch = useAuthenticatedFetch();
+
+  const fetchSlideInfo = useCallback(
+    async (sessionId: string): Promise<SlideInfo> => {
+      console.log("fetchSlideInfo called with sessionId:", sessionId);
+
+      // Check if token exists before making request
+      const token = localStorage.getItem("access_token");
+      if (!token) {
+        const errorMessage = "No authentication token available";
+        console.error(errorMessage);
+        setError(errorMessage);
+        throw new Error(errorMessage);
+      }
+
+      console.log("Authentication token found, proceeding with request");
+      setIsLoading(true);
+      setError(null);
+
+      try {
+        const url = `${API_BASE_URL}/api/slide/get_slide_info/${sessionId}`;
+        console.log("Making request to:", url);
+
+        const response = await authenticatedFetch(url, {
+          method: "GET",
+        });
+
+        console.log("Response received:", response.status, response.statusText);
+
+        if (!response.ok) {
+          const errorData = await response.json().catch(() => ({}));
+          console.error("API error response:", errorData);
+
+          const errorMessage =
+            errorData.detail || `Lỗi lấy thông tin slide: ${response.status}`;
+          setError(errorMessage);
+          throw new Error(errorMessage);
+        }
+
+        const result: SlideInfo = await response.json();
+        console.log("Slide info fetched successfully:", result);
+        setSlideInfo(result);
+        return result;
+      } catch (err) {
+        const errorMessage =
+          err instanceof Error ? err.message : "Lỗi lấy thông tin slide";
+        console.error("Error in fetchSlideInfo:", err);
+        setError(errorMessage);
+        throw err;
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [authenticatedFetch]
+  );
+
+  const reset = useCallback(() => {
+    setSlideInfo(null);
+    setError(null);
+    setIsLoading(false);
+  }, []);
+
+  return {
+    slideInfo,
+    isLoading,
+    error,
+    fetchSlideInfo,
     reset,
   };
 };
@@ -222,4 +333,23 @@ export const isValidSessionId = (sessionId: string): boolean => {
   const uuidRegex =
     /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   return uuidRegex.test(sessionId);
+};
+
+// Helper functions for slide info
+export const formatSlideCreatedDate = (timestamp: number | null): string => {
+  if (!timestamp) return "Unknown";
+  return new Date(timestamp * 1000).toLocaleDateString("vi-VN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+};
+
+export const getSlideImageUrl = (
+  sessionId: string,
+  slideIndex: number
+): string => {
+  return `${API_BASE_URL}/image/${sessionId}/images/page_${slideIndex + 1}.png`;
 };

@@ -125,6 +125,10 @@ export const useAuth = (): UseAuthReturn => {
         // Store token
         localStorage.setItem("access_token", data.access_token);
 
+        // Dispatch custom event to notify token update
+        window.dispatchEvent(new CustomEvent("tokenUpdated"));
+        console.log("Token stored and event dispatched");
+
         // Fetch user info from backend
         await fetchUserInfo();
       } catch (err) {
@@ -144,6 +148,10 @@ export const useAuth = (): UseAuthReturn => {
     localStorage.removeItem("user");
     setUser(null);
     setError(null);
+
+    // Dispatch custom event to notify token removal
+    window.dispatchEvent(new CustomEvent("tokenUpdated"));
+    console.log("Token removed and event dispatched");
   }, []);
 
   const isAuthenticated = !!user;
@@ -211,13 +219,45 @@ export const useRegister = () => {
   };
 };
 
-// Hook to get the auth token for API calls
+// Hook to get the auth token for API calls - Updated to be reactive
 export const useAuthToken = (): string | null => {
   const [token, setToken] = useState<string | null>(null);
 
   useEffect(() => {
-    const storedToken = localStorage.getItem("access_token");
-    setToken(storedToken);
+    // Initial token check
+    const updateToken = () => {
+      const storedToken = localStorage.getItem("access_token");
+      console.log("Token updated:", storedToken ? "Present" : "Not found");
+      setToken(storedToken);
+    };
+
+    updateToken();
+
+    // Listen for storage changes
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === "access_token") {
+        console.log("Storage change detected for access_token");
+        updateToken();
+      }
+    };
+
+    // Listen for custom token update events
+    const handleTokenUpdate = () => {
+      console.log("Custom token update event received");
+      updateToken();
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+    window.addEventListener("tokenUpdated", handleTokenUpdate);
+
+    // Also check periodically as a fallback
+    const interval = setInterval(updateToken, 1000);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+      window.removeEventListener("tokenUpdated", handleTokenUpdate);
+      clearInterval(interval);
+    };
   }, []);
 
   return token;
@@ -225,10 +265,14 @@ export const useAuthToken = (): string | null => {
 
 // Hook to create authenticated fetch requests
 export const useAuthenticatedFetch = () => {
-  const token = useAuthToken();
-
   const authenticatedFetch = useCallback(
     async (url: string, options: RequestInit = {}): Promise<Response> => {
+      // Get token fresh each time to ensure it's up to date
+      const token = localStorage.getItem("access_token");
+
+      console.log("Making authenticated request to:", url);
+      console.log("Token available:", token ? "Yes" : "No");
+
       const headers: Record<string, string> = {
         "Content-Type": "application/json",
       };
@@ -245,14 +289,20 @@ export const useAuthenticatedFetch = () => {
 
       if (token) {
         headers["Authorization"] = `Bearer ${token}`;
+        console.log("Authorization header added");
+      } else {
+        console.warn("No token available for authenticated request");
       }
 
-      return fetch(url, {
+      const response = await fetch(url, {
         ...options,
         headers,
       });
+
+      console.log("Response status:", response.status);
+      return response;
     },
-    [token]
+    []
   );
 
   return authenticatedFetch;

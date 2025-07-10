@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+
+\usepackage{hcmus-report-template}
+
+% Disable indentation on new paragraphs
+\setlength{\parindent}{0pt}
+
+% Line spacing 1.5
+\renewcommand{\baselinestretch}{1.4}
+
+% Optional: graphic path
+% \graphicspath{PATH_TO_GRAPHIC_FOLDER}
+
+% To use Times font family, uncomment this row
+% \usepackage{mathptmx}
+
+% To use roman section / subsection, uncomment these rows
+% \renewcommand{\thesection}{\Roman{section}}
+% \renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+% Define course name, report name and report title.
+\newcommand{\coursename}{Nhập môn Học máy}
+\newcommand{\reportname}{Đồ án cuối kì}
+\newcommand{\reporttitle}{Ứng dụng nhắn tin đa ngôn ngữ}
+
+\newcommand{\studentname}{Trần Trường Giang - 22120085\\Uông Nhật Nam - 22120221\\Lê Hữu Sang - 22120310 \\ Vũ Châu Minh Trí - 22120456\\Lê Minh Quân - 22120291}
+\newcommand{\teachername}{TS. Bùi Tiến Lên\\
+TS. Bùi Duy Đăng\\
+ThS. Lê Nhựt Nam
+}
+% Header
+\lhead{\reporttitle}
+\rhead{
+Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
+\coursename
+}
+
+
+
+% ============ DOCUMENT ============
+\begin{document}
+
+\pagenumbering{roman}
+\input{content/title.tex}
+
+\tableofcontents
+\pagebreak
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% % References
+% \input{ref/ref.tex}
+
+% % Appendix
+% \appendix
+% % Add \cleardoublepage to move appendices to next page.
+% \input{appendix/appendix.tex}
+\input{content/introduction}
+\input{content/purpose}
+\input{content/idea}
+\input{content/problem}
+\input{content/solution}
+
+\end{document}

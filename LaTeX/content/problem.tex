@@ -1,0 +1,29 @@
+\section{Phân Tích Và Xác Định Vấn Đề}
+
+\subsection{Vấn đề cốt lõi}
+Các ứng dụng nhắn tin hiện tại thiếu khả năng dịch thuật tự động, thời gian thực và tích hợp sâu sắc. Người dùng thường phải chuyển đổi giữa ứng dụng nhắn tin và các công cụ dịch thuật bên ngoài, gây gián đoạn và giảm hiệu quả giao tiếp. Điều này tạo ra rào cản lớn cho các cuộc trò chuyện đa quốc gia, đa văn hóa.
+
+\subsection{Các thách thức kỹ thuật và nghiệp vụ}
+
+\begin{enumerate}
+    \item \textbf{Độ chính xác và tính tự nhiên của bản dịch:}
+    \begin{itemize}
+        \item \textbf{Thách thức:} Đảm bảo bản dịch không chỉ đúng ngữ pháp, từ vựng mà còn truyền tải chính xác ngữ nghĩa, sắc thái cảm xúc, và duy trì tính tự nhiên, trôi chảy của ngôn ngữ hội thoại. Các bản dịch máy thường gặp khó khăn với thành ngữ, tiếng lóng và ngữ cảnh đặc thù.
+        \item \textbf{Giải pháp đề xuất:} Tinh chỉnh mô hình trên tập dữ liệu hội thoại, sử dụng các kỹ thuật như ``context window'' để mô hình có thể ghi nhớ và sử dụng ngữ cảnh của các tin nhắn trước đó trong cuộc trò chuyện (Nhóm gặp giới hạn về mặt kĩ thuật nên không thực hiện được).
+    \end{itemize}
+    \item \textbf{Tốc độ xử lý (Latency):}
+    \begin{itemize}
+        \item \textbf{Thách thức:} Trong ứng dụng nhắn tin thời gian, độ trễ dịch thuật phải cực thấp để không làm gián đoạn cuộc trò chuyện.
+        \item \textbf{Giải pháp đề xuất:} Sử dụng mô hình LLM có kích thước phù hợp (Mistral 7B thay vì các mô hình lớn hơn), tối ưu hóa triển khai bằng QLoRA để giảm tải tính toán, và xây dựng backend bằng Python để tận dụng hiệu suất cao.
+    \end{itemize}
+    \item \textbf{Quản lý tài nguyên tính toán:}
+    \begin{itemize}
+        \item \textbf{Thách thức:} Các mô hình LLM thường yêu cầu tài nguyên GPU lớn để huấn luyện và suy luận, gây tốn kém.
+        \item \textbf{Giải pháp đề xuất:} Sử dụng QLoRA giúp giảm đáng kể tài nguyên huấn luyện và lưu trữ mô hình. Tối ưu hóa quá trình suy luận (inference) bằng các thư viện chuyên dụng và kỹ thuật quantilization (lượng tử hóa) nếu cần thiết.
+    \end{itemize}
+    \item \textbf{Hỗ trợ đa ngôn ngữ:}
+    \begin{itemize}
+        \item \textbf{Thách thức:} Hỗ trợ dịch thuật giữa nhiều cặp ngôn ngữ khác nhau (ví dụ: Việt-Trung, Việt-Anh, Trung-Hàn...).
+        \item \textbf{Giải pháp đề xuất:} Thiết kế mô hình fine-tune có khả năng xử lý đa ngôn ngữ, hoặc fine-tune riêng cho các cặp ngôn ngữ ưu tiên.
+    \end{itemize}
+\end{enumerate}

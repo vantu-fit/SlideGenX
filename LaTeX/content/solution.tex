@@ -1,0 +1,134 @@
+\section{Mô Hình Giải Pháp Đề Xuất}
+
+Để giải quyết các vấn đề đã được phân tích, nhóm đề xuất một kiến trúc hệ thống hiện đại và hiệu quả, tập trung vào việc tối ưu hóa hiệu suất dịch thuật và trải nghiệm người dùng trong môi trường thời gian thực.
+
+\subsection{Tổng quan kiến trúc}
+Kiến trúc của ứng dụng được thiết kế theo mô hình Client-Server, với sự phân tách rõ ràng giữa giao diện người dùng, logic nghiệp vụ và dịch vụ mô hình ngôn ngữ lớn. Dòng chảy dữ liệu chính như sau:
+\begin{itemize}
+    \item \textbf{Web Client:} Là giao diện người dùng mà tại đó người dùng tương tác, gửi và nhận tin nhắn.
+    \item \textbf{Backend (Python):} Đảm nhiệm vai trò xử lý logic nghiệp vụ, quản lý các phiên giao tiếp thời gian thực thông qua WebSockets, và điều phối các yêu cầu dịch thuật tới LLM Service.
+    \item \textbf{LLM Service (Mistral 7B + QLoRA):} Là một dịch vụ độc lập chứa mô hình ngôn ngữ lớn đã được tinh chỉnh, chịu trách nhiệm chính về việc dịch thuật tin nhắn.
+\end{itemize}
+Quá trình giao tiếp diễn ra như sau: Tin nhắn từ \texttt{Web Client} được gửi tới \texttt{Backend (Python)} qua WebSocket/HTTP. \texttt{Backend (Python)} sau đó gửi yêu cầu dịch tới \texttt{LLM Service} thông qua HTTP/gRPC. \texttt{LLM Service} thực hiện dịch và trả về bản dịch cho \texttt{Backend (Python)}, rồi \texttt{Backend (Python)} chuyển tiếp bản dịch đó về \texttt{Web Client} để hiển thị cho người dùng.
+
+
+\subsection{Các thành phần chi tiết và quy trình thực hiện}
+
+\subsubsection{Thu thập và xử lý Dữ liệu}
+\begin{itemize}
+    \item \textbf{Mục tiêu:} Xây dựng tập dữ liệu chất lượng cao, đa dạng và phù hợp cho việc tinh chỉnh mô hình dịch thuật hội thoại, đặc biệt chú trọng đến tính tự nhiên của ngôn ngữ trong giao tiếp hàng ngày.
+    \item \textbf{Nguồn dữ liệu:}
+    \begin{itemize}
+        \item \textbf{Dữ liệu hội thoại:} Các cuộc hội thọa, phiên dịch của các bộ phim gồm phụ đề cho nhiều ngôn ngữ, được thủ thập qua các trang web cung cấp phụ đề cho phim. Dữ liệu này giúp mô hình học được văn phong tự nhiên, tiếng lóng, cách diễn đạt thông thường và ngữ cảnh hội thoại, yếu tố then chốt để cải thiện tính tự nhiên của bản dịch trong ứng dụng.
+chat.
+    \end{itemize}
+    \item \textbf{Tiền xử lý dữ liệu:}
+    \begin{itemize}
+        \item \textbf{Làm sạch:} Loại bỏ các ký tự không hợp lệ, HTML tags, hoặc các đoạn văn bản không liên quan/nhiễu từ dữ liệu thô.
+        \item \textbf{Chuẩn hóa:} Chuyển đổi văn bản về một định dạng thống nhất (ví dụ: chữ thường, xử lý dấu câu, hợp nhất các khoảng trắng dư thừa, chuẩn hóa số và ký hiệu đặc biệt), chuẩn hóa về dạng template:
+        \begin{itemize}
+            \item System Prompt: Prompt hướng dẫn model, vai trò cao nhất
+            \item user: input của user
+            \item assistant: câu trả lời của LLM
+        \end{itemize}
+        \item \textbf{Căn chỉnh câu (Sentence Alignment):} Đảm bảo mỗi câu trong ngôn ngữ nguồn tương ứng chính xác với câu dịch trong ngôn ngữ đích. Đây là bước quan trọng để tạo ra các cặp dịch thuật hợp lệ.
+        \item \textbf{Tokenization:} Chuyển đổi văn bản đã làm sạch thành các token (đơn vị từ/chữ cái/subword) mà mô hình có thể xử lý. nhóm sẽ sử dụng tokenizer tương thích với Mistral 7B (ví dụ: \texttt{Hugging Face's AutoTokenizer}) để đảm bảo tính tương thích và hiệu quả.
+        \item \textbf{Phân chia tập dữ liệu:} Chia dữ liệu thành các tập huấn luyện (khoảng 80\%), kiểm định (khoảng 10\%) và kiểm thử (khoảng 10\%) để đánh giá khách quan hiệu suất mô hình và theo dõi quá trình huấn luyện.
+    \end{itemize}
+\end{itemize}
+
+
+\subsubsection{Thiết kế và triển khai Mô hình}
+\begin{itemize}
+    \item \textbf{Mô hình nền tảng (Base Model):}
+    \begin{itemize}
+        \item \textbf{Lựa chọn:} \textbf{Mistral 7B} -- một mô hình ngôn ngữ lớn (LLM) mạnh mẽ và hiệu quả, đã được huấn luyện trước (pre-trained) trên một lượng lớn dữ liệu văn bản. Mistral 7B được chọn vì sự cân bằng tối ưu giữa kích thước mô hình (7 tỷ tham số) và hiệu suất ấn tượng mà nó mang lại, giúp giảm đáng kể yêu cầu về tài nguyên GPU so với các LLM lớn hơn. Nó có kiến trúc Transformer phù hợp cho các tác vụ chuyển đổi ngôn ngữ.
+        \item \textbf{Đặc điểm:} Mô hình này sử dụng kiến trúc Transformer, được tối ưu hóa cho tốc độ suy luận và hiệu quả tính toán, là nền tảng lý tưởng cho việc tinh chỉnh dịch thuật thời gian thực.
+    \end{itemize}
+    \item \textbf{Phương pháp tinh chỉnh (Fine-tuning): QLoRA (Quantized Low-Rank Adaptation)}
+    \begin{itemize}
+        \item \textbf{Nguyên lý:} QLoRA là một kỹ thuật tinh chỉnh hiệu quả tham số (Parameter-Efficient Fine-tuning - PEFT) dựa trên LoRA, nhưng có thêm bước lượng tử hóa (quantization) các trọng số của mô hình cơ sở xuống 4-bit. Thay vì tinh chỉnh tất cả các tham số của mô hình cơ sở (thường là hàng tỷ tham số), QLoRA chèn các ma trận bậc thấp (low-rank matrices) vào các lớp trọng số của mô hình đã được huấn luyện trước. Chỉ các ma trận bậc thấp này được huấn luyện, trong khi các trọng số gốc của mô hình cơ sở được giữ nguyên ở dạng lượng tử hóa 4-bit. Điều này giúp giảm đáng kể số lượng tham số cần huấn luyện và lượng VRAM cần thiết.
+        \item \textbf{Lợi ích:}
+        \begin{itemize}
+            \item \textbf{Tiết kiệm tài nguyên vượt trội:} Giảm hàng chục đến hàng trăm lần số lượng tham số huấn luyện và yêu cầu VRAM so với full fine-tuning, cho phép fine-tuning trên phần cứng khiêm tốn hơn (ví dụ: một GPU đơn).
+            \item \textbf{Tốc độ huấn luyện:} Thời gian huấn luyện nhanh hơn đáng kể do chỉ có một phần nhỏ tham số được cập nhật.
+            \item \textbf{Dễ dàng lưu trữ và chuyển đổi:} Các trọng số QLoRA rất nhỏ gọn (chỉ vài trăm MB, nhỏ hơn rất nhiều so với kích thước của mô hình gốc), dễ dàng lưu trữ, chia sẻ và hoán đổi cho các tác vụ hoặc tập dữ liệu khác nhau.
+        \end{itemize}
+        \item \textbf{Cụ thể triển khai:} Các ma trận QLoRA sẽ được chèn vào các lớp \textbf{Attention (Q, K, V, O)} và các lớp \textbf{Feed-Forward Network (FFN) (\texttt{gate\_proj}, \texttt{up\_proj}, \texttt{down\_proj})} của mô hình Mistral 7B. Việc này nhắm vào những vị trí thường đóng vai trò quan trọng trong việc học các mối quan hệ ngôn ngữ và là nơi QLoRA thể hiện hiệu quả nhất.
+    \end{itemize}
+\end{itemize}
+
+
+\subsubsection{Huấn luyện Mô hình}
+\begin{itemize}
+    \item \textbf{Môi trường:} Quá trình huấn luyện sẽ được thực hiện trên các môi trường có GPU (NVIDIA RTX 3090) để đẩy nhanh quá trình tính toán. nhóm sẽ sử dụng các script viết bằng Triton của thư viện Unsloth kết hợp transformers của Huggingface
+    \item \textbf{Cấu hình QLoRA:}
+    \begin{itemize}
+        \item \texttt{r} (rank): Giá trị `r` (bậc của ma trận bậc thấp) là \textbf{16}.
+        \item \texttt{target\_modules}: Các module cụ thể trong kiến trúc Transformer mà QLoRA sẽ được áp dụng: ["q\_proj", "k\_proj", "v\_proj", "o\_proj", "gate\_proj", "up\_proj", "down\_proj"].
+        \item \texttt{lora\_alpha}: Một siêu tham số scaling cho các trọng số của QLoRA, được đặt là \textbf{16}.
+        \item \texttt{lora\_dropout}: (ví dụ: 0.05, 0.1) Được sử dụng để tránh overfitting bằng cách ngẫu nhiên bỏ qua một số kết nối trong quá trình huấn luyện.
+    \end{itemize}
+    \item \textbf{Tham số huấn luyện:}
+    \begin{itemize}
+        \item \textbf{Optimizer:} AdamW là lựa chọn phổ biến và hiệu quả cho việc huấn luyện các mô hình Transformer.
+        \item \textbf{Learning Rate Scheduler:} Sử dụng các chiến lược như Warmup và Cosine annealing để điều chỉnh tốc độ học (learning rate) trong suốt quá trình huấn luyện, giúp tối ưu hóa việc hội tụ.
+        \item \textbf{Epochs:} Số lượng vòng lặp trên toàn bộ tập dữ liệu.
+        \item \textbf{Batch Size:} Kích thước batch phù hợp với VRAM của GPU.
+        \item \textbf{Gradient Accumulation:} Nếu VRAM hạn chế, kỹ thuật này cho phép mô phỏng batch size lớn hơn bằng cách tích lũy gradient qua nhiều bước nhỏ hơn trước khi cập nhật trọng số.
+    \end{itemize}
+    \item \textbf{Quy trình huấn luyện:}
+    \begin{enumerate}
+        \item Tải mô hình Mistral 7B đã được huấn luyện trước từ Hugging Face Hub ở dạng lượng tử hóa 4-bit.
+        \item Cấu hình QLoRA model bằng cách thêm các adapter QLoRA vào mô hình gốc.
+        \item Tải dữ liệu đã tiền xử lý và chuẩn bị dưới dạng \texttt{Dataset} của Hugging Face.
+        \item Định nghĩa \texttt{Trainer} của Hugging Face hoặc viết vòng lặp huấn luyện thủ công, bao gồm các bước forward pass, backward pass và cập nhật trọng số.
+        \item Tiến hành huấn luyện và định kỳ lưu lại các checkpoint của QLoRA adapters để phục hồi hoặc đánh giá.
+    \end{enumerate}
+\end{itemize}
+
+
+\subsubsection{Chỉ số Tự động (Automatic Metrics)}
+Sử dụng chỉ số \textbf{BLEU (Bilingual Evaluation Understudy)} để đo lường sự tương đồng về N-gram giữa bản dịch của mô hình và bản dịch tham chiếu của con người.
+
+
+\subsubsection{Hiệu suất Dịch máy và Tối ưu hóa Triển khai}
+Trong quá trình đánh giá khả năng dịch của mô hình Mistral 7B, nhóm \textbf{không thể triển khai và đánh giá phiên bản gốc 16-bit của mô hình do hạn chế về tài chính và tài nguyên tính toán cần thiết}. Thay vào đó, nhóm tập trung vào các cấu hình lượng tử hóa 4-bit.
+
+\begin{itemize}
+    \item \textbf{Mô hình cơ sở 4-bit với Adapter 16-bit:}
+    Để cân bằng giữa hiệu suất và tối ưu tài nguyên, nhóm đã tinh chỉnh mô hình \textbf{Mistral 7B cơ sở ở định dạng 4-bit} sử dụng các \textbf{adapter (QLoRA) ở định dạng 16-bit}. Trong thử nghiệm này, mô hình đạt \textbf{BLEU score là 0.22}. Mặc dù kết quả này vẫn còn khiêm tốn so với các hệ thống dịch chuyên dụng, nó cho thấy tiềm năng của Mistral 7B khi các thành phần tinh chỉnh cốt lõi được giữ ở độ chính xác cao. Đáng tiếc, do hạn chế về công cụ (cụ thể là \texttt{vllm} hiện chưa hỗ trợ cấu hình này), nhóm không thể thực hiện trình diễn (demo) trực tiếp cho kịch bản này.
+
+    \item \textbf{Mô hình hoàn chỉnh 4-bit (sau khi hợp nhất Adapter):}
+    Với mục tiêu cuối cùng là giảm thiểu tối đa kích thước mô hình và yêu cầu bộ nhớ GPU cho việc triển khai, nhóm đã tiến hành \textbf{hợp nhất các trọng số adapter 16-bit vào mô hình Mistral 7B 4-bit cơ sở}. Quá trình này tạo ra một mô hình hoàn chỉnh hoạt động ở định dạng 4-bit. Tuy nhiên, việc lượng tử hóa các trọng số adapter từ 16-bit xuống 4-bit trong quá trình hợp nhất đã dẫn đến sự sụt giảm hiệu suất đáng kể. Điểm BLEU đo được sau khi hợp nhất là \textbf{0.18}. Sự sụt giảm này là một hệ quả của việc mất thông tin do lượng tử hóa sâu, đặc biệt ảnh hưởng đến các trọng số adapter vốn nhạy cảm với sự thay đổi độ chính xác. Điều này nhấn mạnh rằng dù việc lượng tử hóa toàn bộ mô hình mang lại lợi ích lớn về tài nguyên, nó cũng đặt ra thách thức về việc duy trì chất lượng đầu ra.
+\end{itemize}
+
+
+\subsubsection{Đánh giá con người (Human Evaluation)}
+Bên cạnh các chỉ số tự động, nhóm cũng chú trọng đến đánh giá chất lượng dịch bởi con người để có cái nhìn toàn diện hơn:
+\begin{itemize}
+    \item \textbf{Chất lượng bản dịch:} Yêu cầu các chuyên gia ngôn ngữ hoặc người bản ngữ đánh giá bản dịch về độ chính xác (accuracy), trôi chảy (fluency), tính tự nhiên (naturalness) và khả năng truyền tải ngữ nghĩa (semantic adequacy).
+    \item \textbf{Tốc độ và trải nghiệm:} Thu thập phản hồi từ người dùng cuối về độ trễ của hệ thống, cảm nhận về sự mượt mà của cuộc trò chuyện và mức độ hài lòng tổng thể.
+\end{itemize}
+
+
+\subsubsection{Hiệu suất suy luận (Inference Performance)}
+Khả năng hoạt động ổn định và hiệu quả của hệ thống trong môi trường thực tế cũng là một yếu tố quan trọng:
+\begin{itemize}
+    \item \textbf{Độ trễ (Latency):} Đo thời gian trung bình từ khi tin nhắn được gửi đến khi bản dịch được trả về từ LLM Service. Mục tiêu là đạt được độ trễ dưới 20s để đảm bảo trải nghiệm thời gian thực.
+    \item \textbf{Thông lượng (Throughput):} Số lượng tin nhắn mà LLM Service có thể dịch được trong một đơn vị thời gian (ví dụ: tin nhắn/giây). Đánh giá này quan trọng cho khả năng mở rộng của hệ thống.
+\end{itemize}
+
+\subsubsection{So sánh và tinh chỉnh Mô hình}
+\begin{itemize}
+    \item \textbf{So sánh hiệu suất:}
+    \begin{itemize}
+        \item \textbf{Baseline:} So sánh hiệu suất của mô hình đã tinh chỉnh với các dịch vụ dịch thuật phổ biến hiện có (ví dụ: Google Translate API) để có cái nhìn tổng quan về chất lượng tương đối.
+        \item \textbf{Các cấu hình QLoRA khác nhau:} Thực hiện các thử nghiệm với các giá trị `r`, `lora\_alpha` và `target\_modules` khác nhau trong cấu hình QLoRA để tìm ra sự kết hợp tối ưu mang lại hiệu suất tốt nhất với tài nguyên tối thiểu.
+    \end{itemize}
+    \item \textbf{Tinh chỉnh nâng cao:}
+    \begin{itemize}
+        \item \textbf{Kỹ thuật Regularization:} Thử nghiệm các kỹ thuật như Early Stopping (dừng huấn luyện sớm nếu hiệu suất trên tập kiểm định không cải thiện) và Weight Decay để tránh overfitting và cải thiện khả năng tổng quát hóa của mô hình.
+        \item \textbf{Tăng cường dữ liệu (Data Augmentation):} Nếu cần, tạo thêm dữ liệu huấn luyện bằng các kỹ thuật như back-translation (dịch ngược lại rồi dịch xuôi để tạo thêm cặp dữ liệu) hoặc thay thế từ đồng nghĩa để đa dạng hóa tập dữ liệu và cải thiện khả năng tổng quát hóa của mô hình.
+    \end{itemize}
+\end{itemize}

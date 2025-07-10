@@ -42,7 +42,7 @@ async def get_template(
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-@router.post("/generate_slide", response_class=FileResponse)
+@router.post("/generate_slide")
 async def generate_slide(
     request: Request,
     title: str = Body(..., embed=True),
@@ -149,12 +149,10 @@ async def get_all_template_images(
         result = {}
 
         for template in templates:
-            image_path = os.path.abspath(f"img/{template}.png")
-            # Assumes you serve /static from ./img
-            if os.path.exists(image_path):
-                result[template] = image_path
-            else:
-                result[template] = None
+            image_path = f"{template}.png"
+
+            result[template] = image_path
+            
 
         return JSONResponse(content=result, status_code=status.HTTP_200_OK)
     except Exception as e:

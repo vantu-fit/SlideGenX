@@ -1,53 +1,29 @@
 {
   "metadata": {
-<<<<<<< HEAD
-    "session_id": "4a88907c-d6e9-47a3-87af-5dc9ecf0ce33",
-    "created_at": 1752062450.5131557,
-    "created_at_formatted": "2025-07-09 19:00:50",
-    "updated_at": 1752062450.5131557,
-    "updated_at_formatted": "2025-07-09 19:00:50",
-    "draft_count": 14,
+    "session_id": "e3ac855d-a599-4141-a8b4-8d71f9c92f48",
+    "created_at": 1752133598.0735075,
+    "created_at_formatted": "2025-07-10 14:46:38",
+    "updated_at": 1752133598.0735075,
+    "updated_at_formatted": "2025-07-10 14:46:38",
+    "draft_count": 12,
     "current_step": "init",
-    "export_timestamp": 1752062517.3635855,
-    "export_timestamp_formatted": "2025-07-09 19:01:57"
-=======
-    "session_id": "4312e58b-e521-4c59-b645-af7c2743563f",
-    "created_at": 1752066840.708071,
-    "created_at_formatted": "2025-07-09 20:14:00",
-    "updated_at": 1752066840.708071,
-    "updated_at_formatted": "2025-07-09 20:14:00",
-    "draft_count": 11,
-    "current_step": "init",
-    "export_timestamp": 1752066883.335702,
-    "export_timestamp_formatted": "2025-07-09 20:14:43"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+    "export_timestamp": 1752133648.333471,
+    "export_timestamp_formatted": "2025-07-10 14:47:28"
   },
   "drafts": [
     {
       "agent_name": "outline_agent",
       "step": "outline",
       "content": {
-<<<<<<< HEAD
-        "title": "Reinforcement Learning for Healthcare Professionals",
+        "title": "Ăn Uống Đủ Bữa: Dinh Dưỡng Cho Cuộc Sống Khỏe Mạnh",
         "sections": [
           {
             "title": "Title Slide",
-            "description": "Presentation title, presenter name, and date.",
+            "description": "Presentation title, presenter name, date.",
             "key_points": [
-              "Presentation Title: Reinforcement Learning for Healthcare Professionals",
-              "Presenter: [Your Name/Organization]",
+              "Presentation Title: Ăn Uống Đủ Bữa: Dinh Dưỡng Cho Cuộc Sống Khỏe Mạnh",
+              "Presenter: [Your Name]",
               "Date: [Date]"
-=======
-        "title": "Rediscovering Vietnam: A Journey Home",
-        "sections": [
-          {
-            "title": "Title Slide",
-            "description": "Presentation title, presenter name/affiliation (optional), and a captivating image of Vietnam.",
-            "key_points": [
-              "Title: Rediscovering Vietnam: A Journey Home",
-              "Presenter: [Your Name/Organization]",
-              "Visually appealing image of Vietnam (e.g., Ha Long Bay, Hoi An)"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
             ],
             "estimated_slides": 1,
             "section_index": 0,
@@ -55,231 +31,122 @@
           },
           {
             "title": "Agenda",
-<<<<<<< HEAD
-            "description": "Overview of the topics to be covered in the presentation.",
+            "description": "Overview of the presentation topics.",
             "key_points": [
-              "Introduction to Reinforcement Learning (RL)",
-              "Key Concepts in RL",
-              "RL Applications in Healthcare",
-              "Benefits and Challenges",
-              "Conclusion"
-=======
-            "description": "Outline of the presentation, providing a roadmap for the audience.",
-            "key_points": [
-              "Welcome and Introduction",
-              "Chapter 1: Beyond the Tourist Trail: Unveiling Hidden Gems",
-              "Chapter 2: A Culinary Homecoming: Savoring Authentic Flavors",
-              "Chapter 3: Reconnecting with Culture: Festivals and Traditions",
-              "Chapter 4: Planning Your Trip: Practical Tips and Resources",
-              "Conclusion: Embrace the Journey Home",
+              "Introduction: Why is eating regularly important?",
+              "Chapter 1: Tầm Quan Trọng Của Ăn Uống Đủ Bữa (The Importance of Eating Regular Meals)",
+              "Chapter 2: Các Bữa Ăn Chính và Phụ (Main and Snack Meals)",
+              "Chapter 3: Xây Dựng Một Chế Độ Ăn Uống Cân Bằng (Building a Balanced Diet)",
+              "Conclusion: Key Takeaways and Next Steps",
               "Q&A"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
             ],
             "estimated_slides": 1,
             "section_index": 1,
             "section_type": "agenda"
           },
           {
-<<<<<<< HEAD
-            "title": "Introduction to Reinforcement Learning (RL)",
-            "description": "Defining RL and contrasting it with other machine learning paradigms.",
+            "title": "Chapter 1: Tầm Quan Trọng Của Ăn Uống Đủ Bữa (The Importance of Eating Regular Meals)",
+            "description": "Explaining why eating regular meals is crucial for health and well-being.",
             "key_points": [
-              "What is Reinforcement Learning? (Learning through interaction)",
-              "RL vs. Supervised Learning vs. Unsupervised Learning",
-              "The RL Framework: Agent, Environment, Action, Reward, State",
-              "Goal: Maximize cumulative reward over time"
-=======
-            "title": "Chapter 1: Beyond the Tourist Trail: Unveiling Hidden Gems",
-            "description": "Focuses on lesser-known destinations in Vietnam, encouraging exploration beyond typical tourist spots.",
-            "key_points": [
-              "Introduction: Why explore beyond the familiar?",
-              "Northern Highlands: Ha Giang Loop, Sapa's less-traveled trails, ethnic minority villages",
-              "Central Vietnam: Phong Nha-Ke Bang National Park, Bach Ma National Park, Quy Nhon beaches",
-              "Southern Vietnam: Mekong Delta's hidden canals, Phu Quoc's less crowded beaches, Con Dao Islands",
-              "Emphasis on sustainable and responsible tourism",
-              "Showcase stunning photography of these locations"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+              "Maintaining stable blood sugar levels.",
+              "Providing consistent energy throughout the day.",
+              "Preventing overeating and unhealthy snacking.",
+              "Supporting metabolism and weight management.",
+              "Improving cognitive function and concentration."
             ],
-            "estimated_slides": 4,
+            "estimated_slides": 3,
             "section_index": 2,
             "section_type": "chapter"
           },
           {
-<<<<<<< HEAD
-            "title": "Key Concepts in RL",
-            "description": "Explaining core RL concepts like states, actions, rewards, policies, and value functions.",
+            "title": "Chapter 2: Các Bữa Ăn Chính và Phụ (Main and Snack Meals)",
+            "description": "Discussing the different types of meals and their roles in a balanced diet.",
             "key_points": [
-              "States: Representation of the environment's current situation",
-              "Actions: Choices the agent can make in each state",
-              "Rewards: Feedback signal indicating the desirability of an action",
-              "Policy: Strategy for selecting actions in different states (mapping from state to action)",
-              "Value Function: Estimate of the long-term reward achievable from a given state or state-action pair",
-              "Mermaid Diagram: State --> Action --> Reward --> Next State"
-=======
-            "title": "Chapter 2: A Culinary Homecoming: Savoring Authentic Flavors",
-            "description": "Highlights the diverse and authentic Vietnamese cuisine, encouraging a deeper appreciation for local food.",
-            "key_points": [
-              "Introduction: The heart of Vietnamese culture through its food",
-              "Regional specialties: Northern (Pho, Bun Cha), Central (Hue cuisine, Cao Lau), Southern (Banh Xeo, Com Tam)",
-              "Street food experiences: Exploring local markets, trying regional delicacies",
-              "Cooking classes: Learning to prepare traditional dishes",
-              "Food safety tips and recommendations for reputable vendors",
-              "Diagram: A simple flowchart illustrating the key ingredients and preparation steps for a popular dish like Pho.  Diagram Type: Flowchart. Elements: Rice Noodles -> Broth (Beef/Chicken) -> Herbs & Spices -> Meat -> Served with Lime & Chili"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+              "Breakfast: The most important meal of the day.",
+              "Lunch: Fueling the afternoon.",
+              "Dinner: Replenishing energy and nutrients.",
+              "Snacks: Healthy options to bridge the gaps between meals.",
+              "Examples of healthy meals and snacks."
             ],
-            "estimated_slides": 4,
+            "estimated_slides": 3,
             "section_index": 3,
             "section_type": "chapter"
           },
           {
-<<<<<<< HEAD
-            "title": "RL Applications in Healthcare",
-            "description": "Illustrating potential applications of RL in various healthcare domains.",
+            "title": "Chapter 3: Xây Dựng Một Chế Độ Ăn Uống Cân Bằng (Building a Balanced Diet)",
+            "description": "Providing guidance on how to create a balanced diet that includes all the necessary nutrients.",
             "key_points": [
-              "Personalized Treatment Plans: Optimizing drug dosages or therapy schedules",
-              "Resource Allocation: Efficiently managing hospital beds or staff",
-              "Medical Diagnosis: Assisting in the detection of diseases from medical images",
-              "Robotics in Surgery: Training robots for precise surgical procedures",
-              "Example: Optimizing Insulin Dosage for Diabetes Management"
-=======
-            "title": "Chapter 3: Reconnecting with Culture: Festivals and Traditions",
-            "description": "Explores Vietnamese festivals and traditions, encouraging participation and cultural immersion.",
-            "key_points": [
-              "Introduction: The richness of Vietnamese cultural heritage",
-              "Major festivals: Tet Nguyen Dan (Lunar New Year), Mid-Autumn Festival, Hung Kings Festival",
-              "Traditional arts: Water puppetry, silk painting, calligraphy",
-              "Religious practices: Visiting temples and pagodas, understanding ancestor worship",
-              "Etiquette and customs: Dos and don'ts for respectful cultural interaction",
-              "Mermaid Diagram: Illustrating the flow of a traditional Vietnamese wedding ceremony.  ```mermaid\ngraph LR\n    A[Bride's Family Preparation] --> B(Groom's Family Arrival)\n    B --> C{Tea Ceremony}\n    C --> D[Family Blessings]\n    D --> E(Wedding Feast)\n```"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+              "Understanding the food groups: Carbohydrates, Proteins, Fats, Vitamins, and Minerals.",
+              "Portion control and mindful eating.",
+              "Reading food labels and making informed choices.",
+              "Hydration: The importance of drinking enough water.",
+              "Sample meal plans for a healthy diet."
             ],
-            "estimated_slides": 4,
+            "estimated_slides": 3,
             "section_index": 4,
             "section_type": "chapter"
           },
           {
-<<<<<<< HEAD
-            "title": "Benefits and Challenges",
-            "description": "Discussing the advantages and limitations of using RL in healthcare.",
+            "title": "Conclusion: Key Takeaways",
+            "description": "Summarizing the main points of the presentation.",
             "key_points": [
-              "Benefits: Improved patient outcomes, personalized treatments, increased efficiency, reduced costs",
-              "Challenges: Data scarcity, ethical considerations (patient safety), interpretability, computational complexity, need for careful reward function design",
-              "Importance of validation and clinical trials"
-=======
-            "title": "Chapter 4: Planning Your Trip: Practical Tips and Resources",
-            "description": "Provides practical advice and resources for planning a trip to Vietnam, addressing common concerns and questions.",
-            "key_points": [
-              "Visa requirements and application process",
-              "Transportation options: Flights, trains, buses, motorbikes",
-              "Accommodation: Hotels, guesthouses, homestays",
-              "Currency and payment methods: Dong, credit cards, ATMs",
-              "Health and safety: Vaccinations, travel insurance, emergency contacts",
-              "Useful apps and websites: Translation tools, booking platforms, travel guides"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+              "Eating regular meals is essential for maintaining health and well-being.",
+              "A balanced diet includes all the necessary nutrients from different food groups.",
+              "Portion control and mindful eating are important for weight management.",
+              "Making informed food choices and staying hydrated are crucial for a healthy lifestyle."
             ],
-            "estimated_slides": 4,
+            "estimated_slides": 1,
             "section_index": 5,
-            "section_type": "chapter"
+            "section_type": "conclusion"
           },
           {
-<<<<<<< HEAD
-            "title": "Conclusion",
-            "description": "Summarizing the key takeaways and future directions of RL in healthcare.",
+            "title": "Conclusion: Next Steps",
+            "description": "Encouraging the audience to take action and improve their eating habits.",
             "key_points": [
-              "Reinforcement Learning offers a promising approach to solving complex healthcare problems.",
-              "Further research and development are needed to address the challenges and ensure safe and ethical implementation.",
-              "RL has the potential to revolutionize healthcare by enabling personalized and adaptive treatments."
-=======
-            "title": "Conclusion: Embrace the Journey Home",
-            "description": "Summarizes the key takeaways and encourages the audience to reconnect with their heritage through travel.",
-            "key_points": [
-              "Recap of the beauty and diversity of Vietnam",
-              "Emphasis on the emotional connection of returning home",
-              "Inspiration to explore, learn, and share experiences",
-              "Call to action: Start planning your trip today!"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+              "Start by making small changes to your diet.",
+              "Plan your meals and snacks in advance.",
+              "Cook at home more often.",
+              "Seek professional advice from a registered dietitian or nutritionist.",
+              "Resources for healthy eating (websites, books, etc.)."
             ],
-            "estimated_slides": 2,
+            "estimated_slides": 1,
             "section_index": 6,
             "section_type": "conclusion"
           },
           {
-<<<<<<< HEAD
             "title": "Q&A",
             "description": "Open the floor for questions from the audience.",
             "key_points": [
-              "Address audience questions about RL concepts and applications.",
-              "Provide further clarification and examples as needed."
+              "Address audience questions about the presentation topics.",
+              "Provide clear and concise answers.",
+              "Offer additional resources if needed."
             ],
-            "estimated_slides": 2,
+            "estimated_slides": 1,
             "section_index": 7,
             "section_type": "qa"
           },
           {
-            "title": "Thank you & Q&A",
-            "description": "Thank the audience and provide contact information.",
+            "title": "Q&A - Continued",
+            "description": "Continued Q&A session.",
             "key_points": [
-              "Thank you for your attention!",
-              "Contact Information: [Your Email/Website]",
-              "Open for questions"
-=======
-            "title": "Thank You & Call to Action",
-            "description": "Express gratitude and provide contact information.",
-            "key_points": [
-              "Thank you for your time and attention",
-              "Encouragement to share their own Vietnam travel stories",
-              "Contact information (optional): Website, social media, email"
+              "Address audience questions about the presentation topics.",
+              "Provide clear and concise answers.",
+              "Offer additional resources if needed."
             ],
             "estimated_slides": 1,
-            "section_index": 7,
-            "section_type": "conclusion"
-          },
-          {
-            "title": "Q&A",
-            "description": "Open the floor for questions from the audience.",
-            "key_points": [
-              "Opportunity for audience members to ask questions about the presentation or planning their trip.",
-              "Prepare answers to common questions about travel to Vietnam."
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-            ],
-            "estimated_slides": 2,
             "section_index": 8,
             "section_type": "qa"
-<<<<<<< HEAD
           }
         ],
-        "total_slides": 20,
-        "description": "A concise introduction to Reinforcement Learning and its potential applications in healthcare."
+        "total_slides": 15,
+        "description": "A presentation on the importance of eating regular, balanced meals for a healthy lifestyle."
       },
-      "created_at": 1752062461.1639287,
-=======
-          },
-          {
-            "title": "Backup Q&A",
-            "description": "A slide to keep on screen during the Q&A session.",
-            "key_points": [
-              "Thank you for your questions!",
-              "Contact information (optional): Website, social media, email"
-            ],
-            "estimated_slides": 1,
-            "section_index": 9,
-            "section_type": "qa"
-          }
-        ],
-        "total_slides": 24,
-        "description": "A presentation designed to inspire Vietnamese people living abroad to travel and reconnect with their homeland."
-      },
-      "created_at": 1752066853.951487,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at": 1752133609.1637714,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:01"
-=======
-      "created_at_formatted": "2025-07-09 20:14:13"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at_formatted": "2025-07-10 14:46:49"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -287,61 +154,35 @@
       "content": {
         "slides": [
           {
-<<<<<<< HEAD
-            "title": "Reinforcement Learning for Healthcare Professionals",
+            "title": "Ăn Uống Đủ Bữa: Sống Khỏe Mạnh",
             "content": [
-              "Presenter: [Your Name/Organization]",
-              "Date: [Date]"
+              "Bài thuyết trình về dinh dưỡng hợp lý",
+              "Người trình bày: [Your Name]",
+              "Ngày: [Date]"
             ],
-            "notes": "Welcome the audience. Briefly introduce yourself and your organization. Mention the date of the presentation.",
+            "notes": "Chào mừng mọi người đến với buổi thuyết trình. Hôm nay, chúng ta sẽ cùng nhau tìm hiểu về tầm quan trọng của việc ăn uống đủ bữa và cách xây dựng một chế độ dinh dưỡng cân bằng để có một cuộc sống khỏe mạnh.",
             "images_needed": [
-              "healthcare professional interacting with a computer",
-              "abstract representation of reinforcement learning"
+              "healthy eating habits",
+              "balanced diet plate"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "Reinforcement Learning",
-              "Healthcare",
-              "AI",
-              "Machine Learning"
-=======
-            "title": "Khám Phá Lại Việt Nam",
-            "content": [
-              "Một Hành Trình Về Nguồn",
-              "[Tên của bạn/Tổ chức của bạn]"
-            ],
-            "notes": "Chào mừng đến với bài thuyết trình của tôi. Trong buổi hôm nay, chúng ta sẽ cùng nhau khám phá lại vẻ đẹp và sự phong phú của Việt Nam, không chỉ là những điểm đến du lịch nổi tiếng mà còn là những nét văn hóa, ẩm thực đặc sắc và những vùng đất ít người biết đến.",
-            "images_needed": [
-              "Phong cảnh Việt Nam đẹp (ví dụ: Vịnh Hạ Long, Hội An, ruộng bậc thang)"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "Việt Nam",
-              "du lịch",
-              "văn hóa",
-              "ẩm thực",
-              "khám phá"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+              "dinh dưỡng",
+              "ăn uống",
+              "sức khỏe",
+              "bữa ăn"
             ],
             "slide_index": 0,
             "section_index": 0
           }
         ]
       },
-<<<<<<< HEAD
-      "created_at": 1752062463.041488,
-=======
-      "created_at": 1752066856.458961,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at": 1752133610.7572675,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:03"
-=======
-      "created_at_formatted": "2025-07-09 20:14:16"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at_formatted": "2025-07-10 14:46:50"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -349,75 +190,39 @@
       "content": {
         "slides": [
           {
-<<<<<<< HEAD
-            "title": "Presentation Agenda: Reinforcement Learning in Healthcare",
+            "title": "Nội Dung Chính Của Bài Thuyết Trình",
             "content": [
-              "Introduction to Reinforcement Learning (RL)",
-              "Key Concepts in RL",
-              "RL Applications in Healthcare",
-              "Benefits and Challenges",
-              "Conclusion"
-            ],
-            "notes": "This slide outlines the topics we'll be covering today. We'll start with a basic introduction to RL, then delve into the core concepts. Next, we'll explore some exciting applications in healthcare, followed by a discussion of the benefits and challenges. Finally, we'll wrap up with a conclusion summarizing the key takeaways.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "1. Introduction to RL; 2. Key Concepts; 3. Applications in Healthcare; 4. Benefits & Challenges; 5. Conclusion",
-                "relations": "Sequential flow from Introduction to Conclusion"
-=======
-            "title": "Hành Trình Khám Phá Việt Nam: Lộ Trình",
-            "content": [
-              "Chào mừng và Giới thiệu",
-              "Chương 1: Vượt Ra Khỏi Những Con Đường Du Lịch: Khám Phá Những Viên Ngọc Ẩn",
-              "Chương 2: Trở Về Với Ẩm Thực: Thưởng Thức Hương Vị Thuần Việt",
-              "Chương 3: Kết Nối Lại Với Văn Hóa: Lễ Hội và Truyền Thống",
-              "Chương 4: Lên Kế Hoạch Cho Chuyến Đi: Mẹo và Nguồn Lực Thiết Thực",
-              "Kết luận: Tận Hưởng Hành Trình Trở Về",
+              "Giới thiệu: Tại sao ăn uống đều đặn lại quan trọng?",
+              "Chương 1: Tầm Quan Trọng Của Ăn Uống Đủ Bữa",
+              "Chương 2: Các Bữa Ăn Chính và Phụ",
+              "Chương 3: Xây Dựng Một Chế Độ Ăn Uống Cân Bằng",
+              "Kết luận: Tóm tắt và Các Bước Tiếp Theo",
               "Hỏi & Đáp"
             ],
-            "notes": "Chào mừng khán giả và giới thiệu sơ lược về nội dung chính của buổi thuyết trình. Nhấn mạnh rằng chúng ta sẽ cùng nhau khám phá Việt Nam từ những góc nhìn mới mẻ và sâu sắc hơn.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Chào mừng và Giới thiệu -> Chương 1 -> Chương 2 -> Chương 3 -> Chương 4 -> Kết luận -> Hỏi & Đáp",
-                "relations": "Sequential flow of presentation topics"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-              }
+            "notes": "Chào mừng mọi người đến với buổi thuyết trình. Trong buổi hôm nay, chúng ta sẽ cùng nhau tìm hiểu về tầm quan trọng của việc ăn uống đủ bữa và cách xây dựng một chế độ ăn uống cân bằng. Chúng ta sẽ bắt đầu với phần giới thiệu, sau đó đi vào chi tiết từng chương và cuối cùng là phần hỏi đáp.",
+            "images_needed": [
+              "healthy eating habits",
+              "balanced diet pyramid"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "lộ trình",
               "agenda",
-<<<<<<< HEAD
-              "reinforcement learning",
-              "healthcare",
-              "topics",
-              "overview"
-=======
-              "Việt Nam",
-              "khám phá",
-              "văn hóa",
-              "ẩm thực"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+              "nội dung",
+              "ăn uống",
+              "dinh dưỡng",
+              "bữa ăn"
             ],
             "slide_index": 0,
             "section_index": 1
           }
         ]
       },
-<<<<<<< HEAD
-      "created_at": 1752062463.450026,
-=======
-      "created_at": 1752066857.2598884,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at": 1752133611.574383,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:03"
-=======
-      "created_at_formatted": "2025-07-09 20:14:17"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at_formatted": "2025-07-10 14:46:51"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -425,10 +230,7 @@
       "content": {
         "slides": [
           {
-<<<<<<< HEAD
-            "title": "Introduction to Reinforcement Learning (RL)",
-=======
-            "title": "Chapter 1: Beyond the Tourist Trail",
+            "title": "Tầm Quan Trọng Của Ăn Uống Đủ Bữa",
             "content": "01",
             "notes": null,
             "images_needed": [],
@@ -438,93 +240,58 @@
             "section_index": 2
           },
           {
-            "title": "Khám Phá Việt Nam: Tại Sao?",
+            "title": "Ổn Định Đường Huyết",
             "content": [
-              "Tránh xa đám đông, trải nghiệm chân thực.",
-              "Khám phá vẻ đẹp tiềm ẩn, ít người biết đến.",
-              "Hỗ trợ du lịch bền vững, có trách nhiệm.",
-              "Tạo kỷ niệm độc đáo, khó quên."
+              "Duy trì mức đường huyết ổn định.",
+              "Ngăn ngừa các cơn thèm ngọt và hạ đường huyết.",
+              "Giảm nguy cơ mắc bệnh tiểu đường loại 2."
             ],
-            "notes": "Nhấn mạnh sự khác biệt giữa du lịch đại trà và khám phá những điều mới mẻ. Giải thích lợi ích của việc đi xa hơn những điểm du lịch quen thuộc.",
+            "notes": "Giải thích về cách ăn uống đủ bữa giúp duy trì đường huyết ổn định, tránh tình trạng đường huyết tăng giảm đột ngột, gây mệt mỏi và ảnh hưởng đến sức khỏe.",
             "images_needed": [
-              "aerial view of a less crowded beach in Vietnam",
-              "a local artisan working in a remote village in Vietnam"
+              "blood sugar level chart"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "du lịch bền vững",
-              "khám phá",
-              "điểm đến ít người biết",
-              "trải nghiệm chân thực"
+              "đường huyết",
+              "tiểu đường",
+              "ổn định"
             ],
             "slide_index": 1,
             "section_index": 2
           },
           {
-            "title": "Miền Bắc: Vẻ Đẹp Hoang Sơ",
+            "title": "Năng Lượng Ổn Định Cả Ngày",
             "content": [
-              "<b>Hà Giang:</b> Cung đường phượt huyền thoại, cảnh quan hùng vĩ.",
-              "<b>Sapa:</b> Những con đường mòn ít người, bản làng dân tộc độc đáo.",
-              "<b>Cao Bằng:</b> Thác Bản Giốc, Pác Bó - di tích lịch sử.",
-              "<b>Mộc Châu:</b> Mùa hoa cải, đồi chè xanh mướt."
+              "Cung cấp năng lượng liên tục cho cơ thể.",
+              "Tăng cường sự tập trung và hiệu suất làm việc.",
+              "Giảm cảm giác mệt mỏi và uể oải."
             ],
-            "notes": "Mô tả chi tiết hơn về từng địa điểm, gợi ý các hoạt động trải nghiệm (trekking, homestay, khám phá văn hóa địa phương).",
+            "notes": "Nhấn mạnh rằng việc ăn uống đều đặn giúp cơ thể có đủ năng lượng để hoạt động suốt cả ngày, cải thiện sự tập trung và năng suất làm việc.",
             "images_needed": [
-              "Ha Giang Loop motorbike tour",
-              "Sapa rice terraces with ethnic minority villagers",
-              "Ban Gioc Waterfall Cao Bang"
+              "person feeling energetic at work"
             ],
-            "diagrams_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Bữa sáng: 20%, Bữa trưa: 30%, Bữa tối: 30%, Bữa phụ: 20%",
+                "relations": "Pie chart showing the distribution of energy intake throughout the day."
+              }
+            ],
             "keywords": [
-              "Hà Giang",
-              "Sapa",
-              "Cao Bằng",
-              "Mộc Châu",
-              "miền núi phía Bắc",
-              "du lịch phượt"
+              "năng lượng",
+              "tập trung",
+              "hiệu suất"
             ],
             "slide_index": 2,
-            "section_index": 2
-          },
-          {
-            "title": "Miền Trung & Nam: Biển Gọi",
-            "content": [
-              "<b>Phong Nha-Kẻ Bàng:</b> Hang động kỳ vĩ, khám phá thiên nhiên.",
-              "<b>Bạch Mã:</b> Vườn quốc gia, hệ sinh thái đa dạng.",
-              "<b>Quy Nhơn:</b> Bãi biển hoang sơ, ẩm thực biển tươi ngon.",
-              "<b>Mekong Delta:</b> Chợ nổi, kênh rạch, cuộc sống sông nước.",
-              "<b>Phú Quốc:</b> Bãi Sao (ít người), lặn biển ngắm san hô.",
-              "<b>Côn Đảo:</b> Bãi biển vắng vẻ, di tích lịch sử."
-            ],
-            "notes": "Nhấn mạnh sự khác biệt giữa các bãi biển nổi tiếng và những bãi biển ít người biết đến. Gợi ý các hoạt động như lặn biển, chèo thuyền kayak, khám phá hệ sinh thái.",
-            "images_needed": [
-              "Phong Nha cave interior",
-              "Quy Nhon beach sunset",
-              "Mekong Delta floating market",
-              "Con Dao beach aerial view"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "Phong Nha",
-              "Bạch Mã",
-              "Quy Nhơn",
-              "Mekong Delta",
-              "Phú Quốc",
-              "Côn Đảo",
-              "du lịch biển",
-              "du lịch sinh thái"
-            ],
-            "slide_index": 3,
             "section_index": 2
           }
         ]
       },
-      "created_at": 1752066862.5441628,
+      "created_at": 1752133613.2803397,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-09 20:14:22"
+      "created_at_formatted": "2025-07-10 14:46:53"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -532,7 +299,7 @@
       "content": {
         "slides": [
           {
-            "title": "Hồi Hương Ẩm Thực: Hương Vị Quê Nhà",
+            "title": "Các Bữa Ăn Chính và Phụ",
             "content": "02",
             "notes": null,
             "images_needed": [],
@@ -542,93 +309,71 @@
             "section_index": 3
           },
           {
-            "title": "Ẩm Thực: Linh Hồn Văn Hóa Việt",
+            "title": "Bữa Sáng: Quan Trọng Nhất!",
             "content": [
-              "Ẩm thực Việt Nam không chỉ là món ăn, mà còn là một phần văn hóa.",
-              "Mỗi món ăn đều mang một câu chuyện, một lịch sử.",
-              "Khám phá ẩm thực là khám phá tâm hồn Việt Nam."
+              "Cung cấp năng lượng cho cả ngày.",
+              "Tăng cường sự tập trung và trí nhớ.",
+              "Giúp kiểm soát cân nặng.",
+              "Ví dụ: Bún bò, phở, bánh mì ốp la, sữa chua trái cây."
             ],
-            "notes": "Nhấn mạnh vai trò của ẩm thực trong việc thể hiện văn hóa và lịch sử Việt Nam. Khuyến khích khán giả cảm nhận ẩm thực bằng cả trái tim.",
+            "notes": "Nhấn mạnh tầm quan trọng của bữa sáng đầy đủ dinh dưỡng. Giải thích tại sao bỏ bữa sáng lại có hại.",
             "images_needed": [
-              "Vietnamese family eating together",
-              "Various colorful Vietnamese dishes"
+              "healthy breakfast options vietnamese",
+              "bowl of pho",
+              "banh mi op la"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "ẩm thực",
-              "văn hóa",
-              "Việt Nam",
-              "lịch sử",
-              "hương vị"
+              "bữa sáng",
+              "năng lượng",
+              "tập trung",
+              "kiểm soát cân nặng"
             ],
             "slide_index": 1,
             "section_index": 3
           },
           {
-            "title": "Đặc Sản Vùng Miền: Muôn Màu Muôn Vẻ",
+            "title": "Bữa Trưa và Bữa Tối",
             "content": [
-              "**Miền Bắc:** Phở, Bún Chả, Bún Thang",
-              "**Miền Trung:** Bún Bò Huế, Cao Lầu, Mì Quảng",
-              "**Miền Nam:** Bánh Xèo, Cơm Tấm, Gỏi Cuốn",
-              "Mỗi vùng miền có những nguyên liệu và cách chế biến riêng, tạo nên sự đa dạng và phong phú."
+              "Bữa trưa: Tiếp năng lượng cho buổi chiều.",
+              "Bữa tối: Bổ sung dưỡng chất đã mất.",
+              "Cần cân bằng các nhóm chất: tinh bột, protein, chất béo, vitamin và khoáng chất.",
+              "Ví dụ bữa trưa: Cơm văn phòng với thịt/cá/đậu, rau xanh.",
+              "Ví dụ bữa tối: Canh, món xào, thịt/cá kho."
             ],
-            "notes": "Giới thiệu các món ăn đặc trưng của từng vùng miền. Khuyến khích khán giả thử các món ăn khác nhau để trải nghiệm sự đa dạng của ẩm thực Việt Nam.",
+            "notes": "Giải thích vai trò của bữa trưa và bữa tối. Nhấn mạnh sự cân bằng dinh dưỡng trong mỗi bữa ăn.",
             "images_needed": [
-              "Pho",
-              "Bun Cha",
-              "Banh Xeo",
-              "Com Tam",
-              "Bun Bo Hue",
-              "Cao Lau"
+              "healthy lunch options vietnamese",
+              "healthy dinner options vietnamese",
+              "balanced meal plate"
             ],
-            "diagrams_needed": [],
-            "keywords": [
-              "đặc sản",
-              "vùng miền",
-              "miền Bắc",
-              "miền Trung",
-              "miền Nam",
-              "phở",
-              "bún chả",
-              "bánh xèo",
-              "cơm tấm"
-            ],
-            "slide_index": 2,
-            "section_index": 3
-          },
-          {
-            "title": "Phở: Tinh Túy Ẩm Thực Việt",
-            "content": [
-              "Sợi Phở -> Nước Dùng (Bò/Gà) -> Rau Thơm & Gia Vị -> Thịt -> Chanh & Ớt",
-              "Khám phá quy trình chế biến phở truyền thống.",
-              "Nếm trọn hương vị tinh tế của món ăn quốc hồn quốc túy."
-            ],
-            "notes": "Giải thích quy trình chế biến phở một cách đơn giản và dễ hiểu. Nhấn mạnh tầm quan trọng của nước dùng và các loại gia vị.",
-            "images_needed": [],
             "diagrams_needed": [
               {
-                "data": "Rice Noodles -> Broth (Beef/Chicken) -> Herbs & Spices -> Meat -> Served with Lime & Chili",
-                "relations": "Rice Noodles -> Broth; Broth -> Herbs & Spices; Herbs & Spices -> Meat; Meat -> Served with Lime & Chili"
+                "data": "Protein: 25%, Carbs: 45%, Fats: 30%",
+                "relations": "Pie chart showing the proportion of each macronutrient in a balanced meal."
               }
             ],
             "keywords": [
-              "phở",
-              "quy trình",
-              "nước dùng",
-              "gia vị",
-              "truyền thống"
+              "bữa trưa",
+              "bữa tối",
+              "cân bằng dinh dưỡng",
+              "protein",
+              "tinh bột",
+              "chất béo",
+              "vitamin",
+              "khoáng chất"
             ],
-            "slide_index": 3,
+            "slide_index": 2,
             "section_index": 3
           }
         ]
       },
-      "created_at": 1752066868.11689,
+      "created_at": 1752133619.2874901,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-09 20:14:28"
+      "created_at_formatted": "2025-07-10 14:46:59"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -636,8 +381,46 @@
       "content": {
         "slides": [
           {
-            "title": "Reconnecting with Culture",
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+            "title": "Kết Luận: Những Điểm Chính",
+            "content": [
+              "Ăn uống đủ bữa rất quan trọng cho sức khỏe.",
+              "Chế độ ăn cân bằng cần đủ chất dinh dưỡng.",
+              "Kiểm soát khẩu phần, ăn chậm giúp quản lý cân nặng.",
+              "Chọn thực phẩm thông minh, uống đủ nước để khỏe mạnh."
+            ],
+            "notes": "Nhấn mạnh lại tầm quan trọng của việc ăn uống điều độ và cân bằng. Khuyến khích khán giả áp dụng những kiến thức đã học vào cuộc sống hàng ngày.",
+            "images_needed": [
+              "balanced diet plate",
+              "portion control guide",
+              "water glass"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "ăn uống đủ bữa",
+              "dinh dưỡng",
+              "cân bằng",
+              "khẩu phần",
+              "nước"
+            ],
+            "slide_index": 0,
+            "section_index": 5
+          }
+        ]
+      },
+      "created_at": 1752133621.2520132,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-10 14:47:01"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Xây Dựng Chế Độ Cân Bằng",
             "content": "03",
             "notes": null,
             "images_needed": [],
@@ -647,145 +430,68 @@
             "section_index": 4
           },
           {
-<<<<<<< HEAD
-            "title": "What is Reinforcement Learning?",
+            "title": "Các Nhóm Thực Phẩm Chính",
             "content": [
-              "Learning through interaction with an environment.",
-              "Agent learns to make decisions to achieve a goal.",
-              "Receives feedback in the form of rewards or penalties.",
-              "Goal: Maximize cumulative reward over time."
+              "Carbohydrates (Tinh bột): Nguồn năng lượng chính.",
+              "Proteins (Chất đạm): Xây dựng và sửa chữa tế bào.",
+              "Fats (Chất béo): Hỗ trợ chức năng não và hấp thụ vitamin.",
+              "Vitamins (Vitamin): Điều hòa chức năng cơ thể.",
+              "Minerals (Khoáng chất): Cần thiết cho xương, răng và nhiều chức năng khác."
             ],
-            "notes": "Explain the core idea of RL: an agent interacting with an environment to learn optimal behavior through trial and error. Emphasize the role of rewards in guiding the learning process.",
+            "notes": "Nhấn mạnh tầm quan trọng của việc ăn đa dạng các loại thực phẩm từ tất cả các nhóm. Giải thích vai trò của từng nhóm thực phẩm đối với sức khỏe.",
             "images_needed": [],
             "diagrams_needed": [
               {
-                "data": "Agent -> Action -> Environment -> State, Reward -> Agent",
-                "relations": "The agent takes an action in the environment, which transitions to a new state and provides a reward. The agent uses this reward to update its policy."
+                "data": "Carbohydrates: 45-65%, Proteins: 10-35%, Fats: 20-35%",
+                "relations": "Pie chart showing the recommended percentage of each macronutrient in a balanced diet."
               }
             ],
             "keywords": [
-              "Reinforcement Learning",
-              "Agent",
-              "Environment",
-              "Reward",
-              "Policy"
-            ],
-            "slide_index": 1,
-            "section_index": 2
-          },
-          {
-            "title": "RL vs. Other Learning Paradigms",
-            "content": [
-              "Supervised Learning: Learning from labeled data.",
-              "Unsupervised Learning: Discovering patterns in unlabeled data.",
-              "Reinforcement Learning: Learning through interaction and feedback.",
-              "Key Difference: RL learns optimal behavior, not just prediction or pattern recognition."
-            ],
-            "notes": "Contrast RL with supervised and unsupervised learning. Highlight that RL is about learning to make decisions, while supervised learning is about prediction and unsupervised learning is about finding patterns.",
-            "images_needed": [
-              "supervised learning example",
-              "unsupervised learning example"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "Supervised Learning",
-              "Unsupervised Learning",
-              "Reinforcement Learning",
-              "Comparison"
-            ],
-            "slide_index": 2,
-            "section_index": 2
-          }
-        ]
-      },
-      "created_at": 1752062464.6838841,
-=======
-            "title": "Di sản Văn hóa Việt Nam",
-            "content": [
-              "Sự phong phú và đa dạng của văn hóa Việt Nam.",
-              "Khám phá các lễ hội truyền thống và nghệ thuật độc đáo.",
-              "Tìm hiểu về tín ngưỡng và phong tục tập quán lâu đời.",
-              "Trải nghiệm sự kết nối sâu sắc với nguồn cội."
-            ],
-            "notes": "Nhấn mạnh tầm quan trọng của việc bảo tồn và phát huy di sản văn hóa. Khuyến khích khán giả tích cực tham gia vào các hoạt động văn hóa.",
-            "images_needed": [
-              "Vietnamese traditional costumes",
-              "Vietnamese cultural heritage"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "văn hóa",
-              "di sản",
-              "truyền thống",
-              "Việt Nam"
+              "carbohydrates",
+              "proteins",
+              "fats",
+              "vitamins",
+              "minerals",
+              "dinh dưỡng"
             ],
             "slide_index": 1,
             "section_index": 4
           },
           {
-            "title": "Lễ Hội Truyền Thống",
+            "title": "Kiểm Soát Khẩu Phần & Chú Tâm",
             "content": [
-              "Tết Nguyên Đán: Lễ hội lớn nhất trong năm, đánh dấu sự khởi đầu của năm mới.",
-              "Tết Trung Thu: Lễ hội của trẻ em, với đèn lồng, bánh trung thu và múa lân.",
-              "Giỗ Tổ Hùng Vương: Tưởng nhớ công ơn dựng nước của các Vua Hùng.",
-              "Nhiều lễ hội địa phương khác: Lễ hội chùa Hương, Lễ hội Nghinh Ông, v.v."
+              "Portion control (Kiểm soát khẩu phần): Ăn vừa đủ, không quá nhiều.",
+              "Mindful eating (Ăn uống có ý thức): Tập trung vào hương vị và cảm giác no.",
+              "Đọc nhãn thực phẩm: Hiểu rõ thành phần dinh dưỡng.",
+              "Uống đủ nước: Duy trì sự cân bằng chất lỏng trong cơ thể."
             ],
-            "notes": "Mô tả chi tiết về các hoạt động trong từng lễ hội. Nhấn mạnh ý nghĩa văn hóa và tinh thần của các lễ hội.",
+            "notes": "Giải thích cách kiểm soát khẩu phần ăn bằng cách sử dụng bát đĩa nhỏ hơn, đọc nhãn thực phẩm để đưa ra lựa chọn thông minh, và tầm quan trọng của việc uống đủ nước mỗi ngày.",
             "images_needed": [
-              "Tet Nguyen Dan celebration",
-              "Mid-Autumn Festival celebration",
-              "Hung Kings Festival celebration"
+              "Image of a person reading a food label",
+              "Image of a person drinking water"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "lễ hội",
-              "Tết Nguyên Đán",
-              "Tết Trung Thu",
-              "Giỗ Tổ Hùng Vương"
+              "portion control",
+              "mindful eating",
+              "food labels",
+              "hydration",
+              "kiểm soát khẩu phần",
+              "ăn uống có ý thức",
+              "nhãn thực phẩm",
+              "uống nước"
             ],
             "slide_index": 2,
-            "section_index": 4
-          },
-          {
-            "title": "Nghi Lễ Cưới Hỏi Truyền Thống",
-            "content": [
-              "Các bước trong lễ cưới truyền thống Việt Nam.",
-              "Sự chuẩn bị của hai bên gia đình.",
-              "Lễ ăn hỏi, rước dâu, và các nghi thức khác.",
-              "Ý nghĩa của từng nghi thức trong hôn nhân."
-            ],
-            "notes": "Giải thích ý nghĩa của từng bước trong sơ đồ. Nhấn mạnh tầm quan trọng của gia đình và dòng họ trong văn hóa Việt Nam.",
-            "images_needed": [
-              "Vietnamese wedding ceremony"
-            ],
-            "diagrams_needed": [
-              {
-                "data": "graph LR\n    A[Bride's Family Preparation] --> B(Groom's Family Arrival)\n    B --> C{Tea Ceremony}\n    C --> D[Family Blessings]\n    D --> E(Wedding Feast)",
-                "relations": "Workflow of a traditional Vietnamese wedding ceremony"
-              }
-            ],
-            "keywords": [
-              "cưới hỏi",
-              "truyền thống",
-              "nghi lễ",
-              "Việt Nam"
-            ],
-            "slide_index": 3,
             "section_index": 4
           }
         ]
       },
-      "created_at": 1752066868.290337,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at": 1752133621.4884496,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:04"
-=======
-      "created_at_formatted": "2025-07-09 20:14:28"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at_formatted": "2025-07-10 14:47:01"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -793,714 +499,57 @@
       "content": {
         "slides": [
           {
-<<<<<<< HEAD
-            "title": "Key Concepts in Reinforcement Learning",
-=======
-            "title": "Chapter 4: Planning Your Trip",
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-            "content": "04",
-            "notes": null,
-            "images_needed": [],
+            "title": "Bước Tiếp Theo: Hành Động!",
+            "content": [
+              "Bắt đầu với những thay đổi nhỏ trong chế độ ăn.",
+              "Lên kế hoạch cho các bữa ăn chính và phụ trước.",
+              "Tự nấu ăn tại nhà thường xuyên hơn.",
+              "Tìm kiếm lời khuyên từ chuyên gia dinh dưỡng.",
+              "Tài liệu tham khảo về ăn uống lành mạnh (website, sách,...)."
+            ],
+            "notes": "Nhấn mạnh rằng những thay đổi nhỏ có thể tạo ra sự khác biệt lớn. Khuyến khích khán giả tìm kiếm sự hỗ trợ chuyên nghiệp nếu cần.",
+            "images_needed": [
+              "healthy meal prep containers",
+              "fruits and vegetables",
+              "registered dietitian consultation"
+            ],
             "diagrams_needed": [],
-            "keywords": [],
+            "keywords": [
+              "chế độ ăn",
+              "kế hoạch bữa ăn",
+              "nấu ăn tại nhà",
+              "chuyên gia dinh dưỡng",
+              "tài liệu tham khảo"
+            ],
             "slide_index": 0,
-            "section_index": 5
-          },
-          {
-<<<<<<< HEAD
-            "title": "States, Actions, and Rewards",
-            "content": [
-              "**State:** Representation of the environment's current situation. Think of it as the agent's 'observation'.",
-              "**Action:** Choices the agent can make in each state. These actions change the environment.",
-              "**Reward:** Feedback signal indicating the desirability of an action. Can be positive (good) or negative (bad)."
-=======
-            "title": "Thủ Tục Visa và Nhập Cảnh",
-            "content": [
-              "Visa du lịch: Cần thiết cho hầu hết các quốc tịch.",
-              "Miễn visa: Một số quốc tịch được miễn (ví dụ: ASEAN).",
-              "E-visa: Thủ tục online, nhanh chóng và tiện lợi.",
-              "Gia hạn visa: Có thể gia hạn tại Việt Nam (tùy trường hợp)."
-            ],
-            "notes": "Nhấn mạnh tầm quan trọng của việc kiểm tra thông tin visa mới nhất trên trang web của Đại sứ quán/Lãnh sự quán Việt Nam.",
-            "images_needed": [
-              "Vietnamese visa sample",
-              "Map of countries with visa exemption for Vietnam"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-            ],
-            "notes": "Explain each concept with simple examples. For instance, in a game, the state could be the game board, the action could be a move, and the reward could be points scored.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-<<<<<<< HEAD
-              "state",
-              "action",
-              "reward",
-              "environment",
-              "agent"
-=======
-              "visa",
-              "nhập cảnh",
-              "e-visa",
-              "miễn visa"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-            ],
-            "slide_index": 1,
-            "section_index": 5
-          },
-          {
-<<<<<<< HEAD
-            "title": "Policy: The Agent's Strategy",
-            "content": [
-              "**Policy:** A strategy for selecting actions in different states.",
-              "It's a mapping from state to action: π(a|s)",
-              "Deterministic Policy: Always chooses the same action in a given state.",
-              "Stochastic Policy: Chooses actions with probabilities."
-            ],
-            "notes": "Emphasize that the policy is what the RL agent learns. It's the 'brain' that guides its decisions. Use the analogy of a doctor's treatment plan as a policy.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-              "policy",
-              "strategy",
-              "state",
-              "action",
-              "deterministic",
-              "stochastic"
-            ],
-            "slide_index": 2,
-            "section_index": 3
-          },
-          {
-            "title": "Value Function: Long-Term Reward",
-            "content": [
-              "**Value Function:** Estimate of the long-term reward achievable from a given state or state-action pair.",
-              "V(s): Value of a state - expected return starting from that state.",
-              "Q(s, a): Value of a state-action pair - expected return starting from that state, taking that action.",
-              "Helps the agent make informed decisions by considering future rewards."
-            ],
-            "notes": "Explain that the value function helps the agent look beyond immediate rewards and consider the long-term consequences of its actions. Use the example of investing in education for future career benefits.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "state --> action --> reward --> next state",
-                "relations": "The agent starts in a state, takes an action, receives a reward, and transitions to the next state. This cycle repeats."
-              }
-            ],
-            "keywords": [
-              "value function",
-              "long-term reward",
-              "state",
-              "action",
-              "expected return"
-            ],
-            "slide_index": 3,
-            "section_index": 3
+            "section_index": 6
           }
         ]
       },
-      "created_at": 1752062469.89407,
-=======
-            "title": "Phương Tiện Di Chuyển Tại Việt Nam",
-            "content": [
-              "Máy bay: Nhanh chóng cho các chặng dài (Hà Nội - TP.HCM).",
-              "Tàu hỏa: Ngắm cảnh đẹp, trải nghiệm văn hóa.",
-              "Xe khách: Phổ biến, giá rẻ, nhiều tuyến đường.",
-              "Xe máy: Tự do khám phá, phù hợp cho các phượt thủ.",
-              "Taxi/Grab: Tiện lợi trong thành phố."
-            ],
-            "notes": "So sánh ưu nhược điểm của từng loại phương tiện. Lưu ý về an toàn khi đi xe máy.",
-            "images_needed": [
-              "Vietnamese train",
-              "Vietnamese bus",
-              "Motorbikes in Vietnam",
-              "Vietnam Airlines airplane"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "máy bay",
-              "tàu hỏa",
-              "xe khách",
-              "xe máy",
-              "taxi",
-              "Grab"
-            ],
-            "slide_index": 2,
-            "section_index": 5
-          },
-          {
-            "title": "Lưu Trú và Thanh Toán",
-            "content": [
-              "Khách sạn: Đa dạng, từ bình dân đến cao cấp.",
-              "Nhà nghỉ (Guesthouse): Giá rẻ, phù hợp cho du lịch bụi.",
-              "Homestay: Trải nghiệm văn hóa địa phương.",
-              "Tiền tệ: Đồng Việt Nam (VND).",
-              "Thẻ tín dụng: Chấp nhận ở các thành phố lớn, khách sạn.",
-              "ATM: Dễ dàng tìm thấy ở các khu du lịch.",
-              "Ứng dụng thanh toán: Ví điện tử (Momo, ZaloPay) ngày càng phổ biến."
-            ],
-            "notes": "Gợi ý các trang web đặt phòng uy tín. Nhắc nhở đổi tiền trước khi đi và cẩn thận với tiền giả.",
-            "images_needed": [
-              "Vietnamese hotel",
-              "Vietnamese homestay",
-              "Vietnamese currency (Dong)",
-              "ATM in Vietnam"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "khách sạn",
-              "nhà nghỉ",
-              "homestay",
-              "tiền tệ",
-              "thẻ tín dụng",
-              "ATM",
-              "Momo",
-              "ZaloPay"
-            ],
-            "slide_index": 3,
-            "section_index": 5
-          }
-        ]
-      },
-      "created_at": 1752066875.2008274,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at": 1752133626.6449482,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:09"
-=======
-      "created_at_formatted": "2025-07-09 20:14:35"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-<<<<<<< HEAD
-            "title": "RL Applications in Healthcare",
-            "content": "05",
-            "notes": null,
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [],
-            "slide_index": 0,
-            "section_index": 4
-          },
-          {
-            "title": "Personalized Treatment Plans with RL",
-            "content": [
-              "Optimizing drug dosages based on patient response.",
-              "Tailoring therapy schedules for individual needs.",
-              "Predicting treatment outcomes and adjusting plans proactively.",
-              "Example: Adjusting chemotherapy dosage based on tumor response and side effects."
-            ],
-            "notes": "Discuss how RL can learn optimal treatment strategies for individual patients, considering their unique characteristics and responses to treatment. Emphasize the potential for improved efficacy and reduced side effects.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Patient State -> Action (Dosage Adjustment) -> Reward (Health Improvement/Side Effects) -> Next State",
-                "relations": "Sequential decision-making process in personalized treatment."
-              }
-            ],
-            "keywords": [
-              "personalized medicine",
-              "treatment optimization",
-              "drug dosage",
-              "therapy schedules"
-            ],
-            "slide_index": 1,
-            "section_index": 4
-          },
-          {
-            "title": "Resource Allocation Using Reinforcement Learning",
-            "content": [
-              "Efficiently managing hospital beds based on demand.",
-              "Optimizing staff allocation to reduce wait times.",
-              "Predicting resource needs and proactively adjusting allocation.",
-              "Example: Dynamically allocating nurses to different units based on patient acuity and staffing levels."
-            ],
-            "notes": "Explain how RL can be used to optimize resource allocation in healthcare settings, leading to improved efficiency and reduced costs. Discuss the challenges of balancing competing demands and ensuring equitable access to resources.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Hospital State (Bed Occupancy, Staff Availability) -> Action (Resource Allocation) -> Reward (Patient Satisfaction, Cost Efficiency) -> Next State",
-                "relations": "Feedback loop for resource allocation optimization."
-              }
-            ],
-            "keywords": [
-              "resource management",
-              "hospital beds",
-              "staff allocation",
-              "wait times"
-            ],
-            "slide_index": 2,
-            "section_index": 4
-          },
-          {
-            "title": "RL for Medical Diagnosis & Robotics",
-            "content": [
-              "Assisting in the detection of diseases from medical images (e.g., cancer detection).",
-              "Training robots for precise surgical procedures.",
-              "Improving diagnostic accuracy and reducing human error.",
-              "Example: Training a robot to perform minimally invasive surgery with greater precision and dexterity."
-            ],
-            "notes": "Discuss the potential of RL in medical diagnosis and robotics, highlighting the benefits of improved accuracy, precision, and efficiency. Address the ethical considerations and safety concerns associated with these applications.",
-            "images_needed": [
-              "Medical image analysis using AI",
-              "Surgical robot performing a procedure"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "medical diagnosis",
-              "image analysis",
-              "surgical robotics",
-              "disease detection"
-            ],
-            "slide_index": 3,
-            "section_index": 4
-          }
-        ]
-      },
-      "created_at": 1752062471.4264164,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-09 19:01:11"
+      "created_at_formatted": "2025-07-10 14:47:06"
     },
     {
       "agent_name": "diagram_agent",
       "step": "image_create_diagram_specs",
       "content": {
-        "diagram_type": "sequenceDiagram",
-        "diagram_spec": "sequenceDiagram\n  participant Agent\n  participant Environment\n\n  Agent->>Environment: Action\n  activate Environment\n  Environment->>Agent: State, Reward\n  deactivate Environment\n  Agent->>Agent: Learns/Updates Policy\n",
-        "diagram_path": "temp/slides\\diagram_2_1.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "timeline",
-          "stateDiagram"
-        ]
-      },
-      "created_at": 1752062472.9220595,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-09 19:01:12"
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-            "title": "Benefits and Challenges",
-            "content": "06",
-            "notes": null,
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [],
-            "slide_index": 0,
-            "section_index": 5
-          },
-          {
-            "title": "Reinforcement Learning: Key Benefits",
-            "content": [
-              "Improved Patient Outcomes: Optimize treatment plans for better results.",
-              "Personalized Treatments: Tailor interventions based on individual patient characteristics.",
-              "Increased Efficiency: Automate tasks and streamline workflows.",
-              "Reduced Costs: Optimize resource allocation and minimize waste."
-            ],
-            "notes": "Highlight the potential for RL to revolutionize healthcare delivery by improving outcomes, personalizing care, increasing efficiency, and reducing costs. Provide specific examples where possible.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Patient Data -> RL Algorithm -> Personalized Treatment Plan -> Improved Outcome",
-                "relations": "The diagram illustrates the flow of data and the role of the RL algorithm in generating personalized treatment plans that lead to improved patient outcomes."
-              }
-            ],
-            "keywords": [
-              "patient outcomes",
-              "personalized treatment",
-              "efficiency",
-              "cost reduction"
-            ],
-            "slide_index": 1,
-            "section_index": 5
-          },
-          {
-            "title": "Challenges of RL in Healthcare",
-            "content": [
-              "Data Scarcity: Limited availability of high-quality, labeled data.",
-              "Ethical Considerations: Ensuring patient safety and avoiding bias.",
-              "Interpretability: Understanding the reasoning behind RL's decisions.",
-              "Computational Complexity: High computational demands for training and deployment.",
-              "Reward Function Design: Carefully crafting reward functions to align with desired outcomes."
-            ],
-            "notes": "Acknowledge the challenges associated with implementing RL in healthcare, including data scarcity, ethical concerns, interpretability issues, computational complexity, and the need for careful reward function design. Emphasize the importance of addressing these challenges to ensure responsible and effective use of RL.",
-            "images_needed": [
-              "ethical considerations in healthcare AI"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "data scarcity",
-              "ethics",
-              "interpretability",
-              "computational complexity",
-              "reward function"
-            ],
-            "slide_index": 2,
-            "section_index": 5
-          }
-        ]
-      },
-      "created_at": 1752062480.2426786,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-09 19:01:20"
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-            "title": "Key Takeaways: RL in Healthcare",
-            "content": [
-              "RL offers a novel approach to complex healthcare problems.",
-              "Personalized treatment plans are within reach.",
-              "Adaptive interventions can improve patient outcomes.",
-              "Ethical considerations are paramount for responsible implementation."
-            ],
-            "notes": "Summarize the main points covered in the presentation. Emphasize the potential of RL to transform healthcare while acknowledging the importance of ethical considerations.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Personalized Treatment -> Adaptive Interventions -> Improved Outcomes",
-                "relations": "The diagram shows a linear progression from personalized treatment to adaptive interventions, ultimately leading to improved patient outcomes. Each step builds upon the previous one."
-              }
-            ],
-            "keywords": [
-              "reinforcement learning",
-              "healthcare",
-              "personalized treatment",
-              "adaptive interventions",
-              "ethical considerations"
-            ],
-            "slide_index": 0,
-            "section_index": 6
-          },
-          {
-            "title": "Future Directions and Conclusion",
-            "content": [
-              "Further research is crucial to address current limitations.",
-              "Focus on safe and ethical implementation strategies.",
-              "RL has the potential to revolutionize healthcare.",
-              "Let's work together to unlock its full potential!"
-            ],
-            "notes": "Conclude with a call to action, encouraging further research and collaboration to realize the full potential of RL in healthcare. Emphasize the transformative impact RL can have on the field.",
-            "images_needed": [
-              "futuristic healthcare technology",
-              "collaboration in medical research"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "reinforcement learning",
-              "healthcare",
-              "future research",
-              "ethical implementation",
-              "revolutionize healthcare"
-            ],
-            "slide_index": 1,
-            "section_index": 6
-          }
-        ]
-      },
-      "created_at": 1752062484.574949,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-09 19:01:24"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "mindmap",
-        "diagram_spec": "mindmap\n  root((Reinforcement Learning Benefits))\n    Improved Patient Outcomes\n      Optimize treatment plans\n      Better results\n    Personalized Treatments\n      Tailor interventions\n      Individual patient characteristics\n    Increased Efficiency\n      Automate tasks\n      Streamline workflows\n    Reduced Costs\n      Optimize resource allocation\n      Minimize waste",
-        "diagram_path": "temp/slides\\diagram_5_1.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "timeline",
-          "stateDiagram"
-        ]
-      },
-      "created_at": 1752062487.6827643,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-09 19:01:27"
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-            "title": "Open Forum: Your Questions Answered",
-            "content": [
-              "We're now happy to address any questions you may have.",
-              "No question is too basic or too complex!",
-              "Let's explore the possibilities of RL in healthcare together."
-            ],
-            "notes": "Encourage audience participation. Be prepared to provide clear and concise answers. If you don't know the answer, acknowledge it and offer to follow up later.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-              "Q&A",
-              "questions",
-              "reinforcement learning",
-              "healthcare",
-              "discussion"
-=======
-            "title": "Cảm ơn & Kết Nối",
-            "content": [
-              "Xin chân thành cảm ơn sự quan tâm và thời gian của quý vị!",
-              "Hy vọng quý vị đã có thêm cảm hứng để khám phá Việt Nam.",
-              "Hãy chia sẻ những câu chuyện du lịch Việt Nam của bạn với chúng tôi!",
-              "Liên hệ với chúng tôi:",
-              "Website: [Địa chỉ website]",
-              "Email: [Địa chỉ email]",
-              "Mạng xã hội: [Liên kết mạng xã hội]"
-            ],
-            "notes": "Nhấn mạnh sự biết ơn. Khuyến khích khán giả chia sẻ trải nghiệm của họ. Cung cấp thông tin liên hệ để tiếp tục kết nối.",
-            "images_needed": [
-              "Image of a group of people smiling and waving goodbye in a Vietnamese setting (e.g., rice field, beach)"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "cảm ơn",
-              "kết nối",
-              "du lịch Việt Nam",
-              "chia sẻ",
-              "thông tin liên hệ"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-            ],
-            "slide_index": 0,
-            "section_index": 7
-          },
-          {
-            "title": "Further Clarification and Examples",
-            "content": [
-              "Need more details on a specific RL concept?",
-              "Want to see more examples of RL applications?",
-              "We're here to provide further clarification and insights."
-            ],
-            "notes": "Be ready to elaborate on previous points. Have some backup examples prepared in case the audience asks for them. Consider showing a simple RL algorithm diagram if relevant.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "State -> Action -> Reward -> Next State",
-                "relations": "The diagram shows the basic flow of a reinforcement learning environment, where an agent in a given state takes an action, receives a reward, and transitions to the next state."
-              }
-            ],
-            "keywords": [
-              "examples",
-              "clarification",
-              "RL concepts",
-              "applications",
-              "healthcare"
-            ],
-            "slide_index": 1,
-            "section_index": 7
-          }
-        ]
-      },
-<<<<<<< HEAD
-      "created_at": 1752062492.4261582,
-=======
-      "created_at": 1752066876.3141499,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:32"
-=======
-      "created_at_formatted": "2025-07-09 20:14:36"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-<<<<<<< HEAD
-            "title": "Thank You & Questions",
-            "content": [
-              "Thank you for your attention!",
-              "Open for questions",
-              "Contact Information: [Your Email/Website]"
-            ],
-            "notes": "This is the final slide. Encourage audience participation and provide contact information for follow-up questions.",
-            "images_needed": [
-              "Image of a person smiling and waving"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "thank you",
-              "questions",
-              "contact information",
-              "reinforcement learning",
-              "healthcare"
-=======
-            "title": "Việt Nam Chờ Đón Bạn Trở Về",
-            "content": [
-              "Tóm tắt vẻ đẹp và sự đa dạng của Việt Nam: Phong cảnh, văn hóa, ẩm thực.",
-              "Nhấn mạnh sự kết nối tình cảm khi trở về quê hương.",
-              "Khuyến khích khám phá, học hỏi và chia sẻ những trải nghiệm đáng nhớ."
-            ],
-            "notes": "Nhắc lại những điểm nổi bật đã trình bày trong các chương trước. Thúc đẩy cảm xúc tự hào và mong muốn khám phá Việt Nam.",
-            "images_needed": [
-              "Beautiful landscape of Vietnam",
-              "Family reunion in Vietnam"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "Việt Nam",
-              "quê hương",
-              "kết nối",
-              "khám phá",
-              "văn hóa",
-              "ẩm thực"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-            ],
-            "slide_index": 0,
-            "section_index": 6
-          },
-          {
-            "title": "Lên Kế Hoạch Cho Chuyến Đi!",
-            "content": [
-              "Đừng chần chừ nữa! Hãy bắt đầu lên kế hoạch cho chuyến đi của bạn ngay hôm nay.",
-              "Tìm hiểu thông tin, đặt vé máy bay, và chuẩn bị hành lý.",
-              "Chia sẻ kế hoạch của bạn với gia đình và bạn bè.",
-              "Hãy để Việt Nam chào đón bạn trở về!"
-            ],
-            "notes": "Kêu gọi hành động cụ thể. Cung cấp thông tin về các trang web du lịch, đại lý vé máy bay, và các nguồn tài nguyên hữu ích khác. Tạo động lực cho khán giả thực hiện chuyến đi.",
-            "images_needed": [
-              "Vietnam travel planning",
-              "Excited traveler in Vietnam"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "kế hoạch",
-              "du lịch",
-              "Việt Nam",
-              "vé máy bay",
-              "hành lý",
-              "gia đình",
-              "bạn bè"
-            ],
-            "slide_index": 1,
-            "section_index": 6
-          }
-        ]
-      },
-<<<<<<< HEAD
-      "created_at": 1752062496.9468355,
-=======
-      "created_at": 1752066877.9419732,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:36"
-=======
-      "created_at_formatted": "2025-07-09 20:14:37"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-<<<<<<< HEAD
-        "diagram_type": "timeline",
-        "diagram_spec": "timeline\n    title Personalized Treatment Plan\n    dateFormat  YYYY-MM-DD\n    axisFormat  %Y-%m-%d\n\n    section Initial Assessment\n    2023-01-01 : Patient Data Collection\n    2023-01-05 : Initial Health Assessment\n    2023-01-10 : Treatment Plan Selection\n\n    section Treatment Application\n    2023-01-15 : Dosage/Schedule Implementation\n    2023-01-22 : Treatment Applied\n\n    section Monitoring & Adjustment\n    2023-01-29 : Reward Observation (Health Improvement/Side Effects)\n    2023-02-05 : Plan Adjustment (if needed)\n    2023-02-12 : Repeat Treatment & Monitoring\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "diagram_type": "pie",
+        "diagram_spec": "pie title Macronutrient Distribution\n    \"Carbohydrates\" : 55\n    \"Proteins\" : 22.5\n    \"Fats\" : 22.5",
         "diagram_path": "temp/slides\\diagram_4_1.png",
         "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "timeline",
-          "stateDiagram"
+          "pie"
         ]
       },
-      "created_at": 1752062513.594187,
-=======
-        "slides": [
-          {
-            "title": "Cảm ơn & Hỏi đáp",
-            "content": [
-              "Cảm ơn bạn đã đặt câu hỏi!",
-              "Thông tin liên hệ (tùy chọn):",
-              "- Website: [Địa chỉ website]",
-              "- Mạng xã hội: [Liên kết mạng xã hội]",
-              "- Email: [Địa chỉ email]"
-            ],
-            "notes": "Nhấn mạnh sự cảm kích đối với sự tham gia của khán giả. Cung cấp thông tin liên hệ để khán giả có thể tiếp tục đặt câu hỏi hoặc tìm hiểu thêm sau buổi thuyết trình.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-              "cảm ơn",
-              "hỏi đáp",
-              "thông tin liên hệ",
-              "website",
-              "mạng xã hội",
-              "email"
-            ],
-            "slide_index": 0,
-            "section_index": 9
-          }
-        ]
-      },
-      "created_at": 1752066883.279479,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at": 1752133629.6523807,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:53"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "stateDiagram",
-        "diagram_spec": "stateDiagram\n    [*] --> HospitalState : Initial State\n    HospitalState --> ResourceAllocation : Demand Changes\n    ResourceAllocation --> Evaluation : Allocation Made\n    Evaluation --> HospitalState : Update State\n\n    state HospitalState {\n        BedOccupancy : Level\n        StaffAvailability : Count\n    }\n\n    state ResourceAllocation {\n        Action : Allocate Beds/Staff\n    }\n\n    state Evaluation {\n        Reward : Patient Satisfaction, Cost Efficiency\n    }\n\n    note right of HospitalState : Represents the current state of the hospital resources.\n    note right of ResourceAllocation : RL agent takes action based on the hospital state.\n    note right of Evaluation : RL agent receives a reward based on the action taken.",
-        "diagram_path": "temp/slides\\diagram_4_2.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "timeline",
-          "stateDiagram"
-        ]
-      },
-      "created_at": 1752062517.3624663,
-=======
-      "created_at_formatted": "2025-07-09 20:14:43"
+      "created_at_formatted": "2025-07-10 14:47:09"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -1510,60 +559,83 @@
           {
             "title": "Hỏi & Đáp: Thắc Mắc Của Bạn",
             "content": [
-              "Đây là cơ hội để bạn đặt câu hỏi về:",
-              "- Nội dung bài thuyết trình",
-              "- Lên kế hoạch cho chuyến đi Việt Nam của bạn",
-              "Chúng tôi sẵn sàng giải đáp mọi thắc mắc!"
+              "Chào mừng các câu hỏi của bạn!",
+              "Hãy thoải mái hỏi về bất kỳ chủ đề nào đã được trình bày.",
+              "Chúng tôi ở đây để cung cấp câu trả lời rõ ràng và hữu ích.",
+              "Liên hệ để được hỗ trợ thêm: [Email Address]"
             ],
-            "notes": "Nhấn mạnh sự sẵn sàng trả lời mọi câu hỏi. Khuyến khích khán giả đặt câu hỏi, không ngại ngần.",
+            "notes": "Nhấn mạnh sự sẵn sàng trả lời câu hỏi. Cung cấp thông tin liên hệ để theo dõi sau.",
             "images_needed": [],
             "diagrams_needed": [],
             "keywords": [
               "hỏi đáp",
               "thắc mắc",
-              "du lịch Việt Nam",
-              "giải đáp"
+              "dinh dưỡng",
+              "liên hệ"
             ],
             "slide_index": 0,
-            "section_index": 8
-          },
-          {
-            "title": "Liên Hệ & Thông Tin Thêm",
-            "content": [
-              "Nếu bạn có thêm câu hỏi sau buổi thuyết trình, vui lòng liên hệ:",
-              "- Email: [your_email@example.com]",
-              "- Số điện thoại: [your_phone_number]",
-              "- Website: [your_website]",
-              "Cảm ơn sự quan tâm của bạn!"
-            ],
-            "notes": "Cung cấp thông tin liên hệ đầy đủ. Nhắc lại lời cảm ơn và khuyến khích liên hệ nếu có bất kỳ thắc mắc nào.",
-            "images_needed": [
-              "Vietnamese landscape with friendly people"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "liên hệ",
-              "thông tin",
-              "email",
-              "website",
-              "du lịch Việt Nam"
-            ],
-            "slide_index": 1,
-            "section_index": 8
+            "section_index": 7
           }
         ]
       },
-      "created_at": 1752066883.3351302,
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at": 1752133632.8998673,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-<<<<<<< HEAD
-      "created_at_formatted": "2025-07-09 19:01:57"
-=======
-      "created_at_formatted": "2025-07-09 20:14:43"
->>>>>>> b7d7c45846f345863d1a6659d6f46947518de0fc
+      "created_at_formatted": "2025-07-10 14:47:12"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Tiếp Tục Giải Đáp Thắc Mắc",
+            "content": [
+              "Cảm ơn vì những câu hỏi tuyệt vời!",
+              "Chúng ta sẽ tiếp tục giải đáp các thắc mắc.",
+              "Xin mời quý vị đặt câu hỏi."
+            ],
+            "notes": "Nhấn mạnh sự sẵn sàng giải đáp mọi thắc mắc. Khuyến khích khán giả tiếp tục đặt câu hỏi.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "Q&A",
+              "thắc mắc",
+              "giải đáp",
+              "dinh dưỡng",
+              "ăn uống"
+            ],
+            "slide_index": 0,
+            "section_index": 8
+          }
+        ]
+      },
+      "created_at": 1752133639.1339617,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-10 14:47:19"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "pie",
+        "diagram_spec": "pie title Macronutrient Distribution\n    \"Carbohydrates\" : 45\n    \"Protein\" : 25\n    \"Fats\" : 30",
+        "diagram_path": "temp/slides\\diagram_3_2.png",
+        "previously_drawn_diagrams": [
+          "pie"
+        ]
+      },
+      "created_at": 1752133648.3325508,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-10 14:47:28"
     }
   ]
 }

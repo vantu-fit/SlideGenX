@@ -83,6 +83,7 @@ class SlideService:
             return {
                 "images_path": image_paths,
                 "session_id": session_id,
+                "output_file_name": f"{output_file_name}.pptx"
             }
         except Exception as e:
             raise Exception(f"Error generating slide: {str(e)}")

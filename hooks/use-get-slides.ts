@@ -214,6 +214,7 @@ export const useGetSlideBySessionId = (): UseGetSlideBySessionIdReturn => {
 
   const downloadSlide = useCallback(
     async (sessionId: string, fileName?: string) => {
+      console.log("Starting download for session:", sessionId);
       setIsLoading(true);
       setError(null);
 
@@ -222,26 +223,71 @@ export const useGetSlideBySessionId = (): UseGetSlideBySessionIdReturn => {
           `${API_BASE_URL}/api/slide/get_slide_by_session_id/${sessionId}`,
           {
             method: "GET",
+            headers: {
+              Accept:
+                "application/vnd.openxmlformats-officedocument.presentationml.presentation, application/octet-stream, */*",
+            },
           }
         );
 
+        console.log("Download response status:", response.status);
+        console.log("Download response headers:", response.headers);
+
         if (!response.ok) {
-          const errorData = await response.json().catch(() => ({}));
-          throw new Error(
-            errorData.detail || `Lỗi download slide: ${response.status}`
-          );
+          let errorMessage = `Lỗi download slide: ${response.status}`;
+          try {
+            const errorData = await response.json();
+            errorMessage = errorData.detail || errorMessage;
+          } catch {
+            // If response is not JSON, use status text
+            errorMessage = response.statusText || errorMessage;
+          }
+          throw new Error(errorMessage);
         }
 
-        // Tạo blob từ response và download file PPTX
+        // Check if response has the correct content type
+        const contentType = response.headers.get("content-type") || "";
+        console.log("Response content-type:", contentType);
+
+        // Get filename from response headers if available
+        const contentDisposition = response.headers.get("content-disposition");
+        let downloadFileName = fileName || `slide_${sessionId}.pptx`;
+
+        if (contentDisposition) {
+          const matches = contentDisposition.match(/filename="?([^"]+)"?/);
+          if (matches && matches[1]) {
+            downloadFileName = matches[1];
+          }
+        }
+
+        console.log("Download filename:", downloadFileName);
+
+        // Create blob từ response và download file PPTX
         const blob = await response.blob();
+        console.log("Downloaded blob size:", blob.size, "bytes");
+
+        if (blob.size === 0) {
+          throw new Error("File tải xuống rỗng. Vui lòng thử lại!");
+        }
+
+        // Create download URL
         const url = window.URL.createObjectURL(blob);
+
+        // Create temporary download link
         const a = document.createElement("a");
         a.href = url;
-        a.download = fileName || `slide_${sessionId}.pptx`;
+        a.download = downloadFileName;
+        a.style.display = "none";
+
+        // Add to DOM, click, and remove
         document.body.appendChild(a);
         a.click();
-        window.URL.revokeObjectURL(url);
-        document.body.removeChild(a);
+
+        // Cleanup
+        setTimeout(() => {
+          window.URL.revokeObjectURL(url);
+          document.body.removeChild(a);
+        }, 100);
 
         console.log("Slide downloaded successfully:", sessionId);
       } catch (err) {

@@ -10,39 +10,39 @@ import { useListTemplates } from "@/hooks/use-list-templates";
 import { useTemplateImages } from "@/hooks/use-template-images";
 
 const categories = [
-  "All",
-  "Business",
-  "Education",
-  "Marketing",
-  "Creative",
-  "Finance",
+  "Tất cả",
+  "Kinh doanh",
+  "Giáo dục",
+  "Tiếp thị",
+  "Sáng tạo",
+  "Tài chính",
 ];
 
 // Hàm tạo mock data cho template
 const generateMockData = (templateName: string, index: number) => {
   // Tạo category dựa trên tên template
-  let category = "Business";
+  let category = "Kinh doanh";
   const name = templateName.toLowerCase();
   if (
     name.includes("academic") ||
     name.includes("education") ||
     name.includes("training")
   ) {
-    category = "Education";
+    category = "Giáo dục";
   } else if (name.includes("marketing") || name.includes("pitch")) {
-    category = "Marketing";
+    category = "Tiếp thị";
   } else if (
     name.includes("creative") ||
     name.includes("portfolio") ||
     name.includes("design")
   ) {
-    category = "Creative";
+    category = "Sáng tạo";
   } else if (
     name.includes("financial") ||
     name.includes("finance") ||
     name.includes("budget")
   ) {
-    category = "Finance";
+    category = "Tài chính";
   }
 
   // Tạo các giá trị mock khác
@@ -60,7 +60,7 @@ const generateMockData = (templateName: string, index: number) => {
 
 export function TemplatesTab() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("Tất cả");
 
   // Sử dụng hooks để lấy templates và images
   const {
@@ -92,7 +92,7 @@ export function TemplatesTab() {
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
     const matchesCategory =
-      selectedCategory === "All" || template.category === selectedCategory;
+      selectedCategory === "Tất cả" || template.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
@@ -144,7 +144,7 @@ export function TemplatesTab() {
         <div className="relative max-w-md">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
           <Input
-            placeholder="Search templates..."
+            placeholder="Tìm kiếm template..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="pl-10"
@@ -180,7 +180,7 @@ export function TemplatesTab() {
                     <div className="w-full h-40 bg-gray-200 rounded-t-lg animate-pulse" />
                   ) : (
                     <img
-                      src={'http://localhost:8000/image/'+ template.thumbnail}
+                      src={"http://localhost:8000/image/" + template.thumbnail}
                       alt={template.title}
                       className="w-full h-40 object-cover rounded-t-lg"
                       onError={(e) => {
@@ -198,7 +198,7 @@ export function TemplatesTab() {
                       className="opacity-0 group-hover:opacity-100 transition-opacity"
                       size="sm"
                     >
-                      Use Template
+                      Sử dụng Template
                     </Button>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export function TemplatesTab() {
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 mt-1">
-                    {template.downloads.toLocaleString()} downloads
+                    {template.downloads.toLocaleString()} lượt tải
                   </p>
                   {template.error && (
                     <p className="text-xs text-red-400 mt-1">
@@ -233,7 +233,7 @@ export function TemplatesTab() {
       ) : (
         <div className="text-center py-12">
           <p className="text-gray-600">
-            No templates found matching your criteria.
+            Không tìm thấy template nào phù hợp với tiêu chí của bạn.
           </p>
         </div>
       )}

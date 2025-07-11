@@ -43,13 +43,13 @@ export default function SignInPage() {
     const newErrors: { username?: string; password?: string } = {};
 
     if (!username) {
-      newErrors.username = "Username is required";
+      newErrors.username = "Tên đăng nhập là bắt buộc";
     }
 
     if (!password) {
-      newErrors.password = "Password is required";
+      newErrors.password = "Mật khẩu là bắt buộc";
     } else if (password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
+      newErrors.password = "Mật khẩu phải có ít nhất 6 ký tự";
     }
 
     setErrors(newErrors);
@@ -84,16 +84,19 @@ export default function SignInPage() {
           <div className="w-10 h-10 bg-gradient-to-br from-green-800 to-green-700 rounded-lg flex items-center justify-center">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
-          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-green-800 to-green-700 bg-clip-text text-transparent">
+          <Link
+            href="/"
+            className="text-2xl font-bold bg-gradient-to-r from-green-800 to-green-700 bg-clip-text text-transparent"
+          >
             SlideGen
           </Link>
         </div>
 
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl">Welcome Back</CardTitle>
+            <CardTitle className="text-2xl">Chào mừng trở lại</CardTitle>
             <CardDescription>
-              Sign in to your account to continue creating amazing slides
+              Đăng nhập vào tài khoản của bạn để tiếp tục tạo slide tuyệt vời
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -105,11 +108,11 @@ export default function SignInPage() {
               )}
 
               <div className="space-y-2">
-                <Label htmlFor="username">Username</Label>
+                <Label htmlFor="username">Tên đăng nhập</Label>
                 <Input
                   id="username"
                   type="text"
-                  placeholder="Enter your username"
+                  placeholder="Nhập tên đăng nhập của bạn"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className={errors.username ? "border-red-500" : ""}
@@ -120,12 +123,12 @@ export default function SignInPage() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password">Mật khẩu</Label>
                 <div className="relative">
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
-                    placeholder="Enter your password"
+                    placeholder="Nhập mật khẩu của bạn"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     className={
@@ -156,23 +159,21 @@ export default function SignInPage() {
                 className="w-full bg-gradient-to-r from-green-800 to-green-700 hover:from-green-900 hover:to-green-800"
                 disabled={isLoading}
               >
-                {isLoading ? "Signing In..." : "Sign In"}
+                {isLoading ? "Đang đăng nhập..." : "Đăng nhập"}
               </Button>
             </form>
 
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
-                {"Don't have an account? "}
+                {"Chưa có tài khoản? "}
                 <Link
                   href="/sign-up"
                   className="text-green-800 hover:underline font-medium"
                 >
-                  Sign up here
+                  Đăng ký tại đây
                 </Link>
               </p>
             </div>
-
-           
           </CardContent>
         </Card>
       </div>

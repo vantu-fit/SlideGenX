@@ -169,7 +169,7 @@ export default function SlidePage({ params }: SlidePageProps) {
   const handleShare = () => {
     const shareUrl = `${window.location.origin}/slide/${id}`;
     navigator.clipboard.writeText(shareUrl);
-    alert("Share link copied to clipboard!");
+    alert("Link chia sẻ đã được sao chép vào clipboard!");
   };
 
   // Combined loading state
@@ -182,7 +182,7 @@ export default function SlidePage({ params }: SlidePageProps) {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Authenticating...</p>
+          <p className="text-gray-600">Đang xác thực...</p>
         </div>
       </div>
     );
@@ -198,19 +198,19 @@ export default function SlidePage({ params }: SlidePageProps) {
               <Link href="/dashboard">
                 <Button variant="ghost" size="sm">
                   <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Dashboard
+                  Quay lại Dashboard
                 </Button>
               </Link>
               <div className="flex items-center space-x-3">
                 <FileText className="h-6 w-6 text-blue-600" />
                 <div>
                   <h1 className="text-2xl font-bold">
-                    {slideInfo?.title || "Slide Details"}
+                    {slideInfo?.title || "Chi tiết Slide"}
                   </h1>
                   <p className="text-gray-600 text-sm">
                     {slideInfo
-                      ? `${slideInfo.num_slides} slides`
-                      : "Loading..."}
+                      ? `${slideInfo.num_slides} slide`
+                      : "Đang tải..."}
                   </p>
                 </div>
               </div>
@@ -220,7 +220,7 @@ export default function SlidePage({ params }: SlidePageProps) {
               <div className="flex items-center space-x-2">
                 <Button variant="outline" size="sm" onClick={handleShare}>
                   <Share2 className="w-4 h-4 mr-2" />
-                  Share
+                  Chia sẻ
                 </Button>
 
                 <Button
@@ -230,7 +230,7 @@ export default function SlidePage({ params }: SlidePageProps) {
                   className="text-red-600 hover:text-red-700"
                 >
                   <Trash2 className="w-4 h-4 mr-2" />
-                  Delete
+                  Xóa
                 </Button>
 
                 <Button
@@ -241,12 +241,12 @@ export default function SlidePage({ params }: SlidePageProps) {
                   {isDownloading ? (
                     <>
                       <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
-                      Downloading...
+                      Đang tải xuống...
                     </>
                   ) : (
                     <>
                       <Download className="w-4 h-4 mr-2" />
-                      Download .pptx
+                      Tải xuống .pptx
                     </>
                   )}
                 </Button>
@@ -256,46 +256,13 @@ export default function SlidePage({ params }: SlidePageProps) {
         </header>
 
         <div className="container mx-auto px-6 py-8">
-          {/* Debug Info Panel (only in development) */}
-          {process.env.NODE_ENV === "development" && (
-            <Card className="mb-6 border-yellow-200 bg-yellow-50">
-              <CardHeader>
-                <CardTitle className="text-sm text-yellow-800">
-                  Debug Information
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-xs text-yellow-700">
-                <div className="grid grid-cols-2 gap-2">
-                  <div>Auth Loading: {isAuthLoading ? "Yes" : "No"}</div>
-                  <div>Is Authenticated: {isAuthenticated ? "Yes" : "No"}</div>
-                  <div>User: {user?.username || "None"}</div>
-                  <div>
-                    Token:{" "}
-                    {localStorage.getItem("access_token")
-                      ? "Present"
-                      : "Missing"}
-                  </div>
-                  <div>Valid ID: {isValidId ? "Yes" : "No"}</div>
-                  <div>Slide Info: {slideInfo ? "Loaded" : "Not loaded"}</div>
-                  <div>Loading: {isLoading ? "Yes" : "No"}</div>
-                  <div>Error: {hasError ? "Yes" : "No"}</div>
-                </div>
-                {hasError && (
-                  <div className="mt-2 p-2 bg-red-100 rounded text-red-700">
-                    {slideInfoError || downloadError}
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          )}
-
           {/* Error Display */}
           {hasError && (
             <Alert className="mb-6 border-red-200 bg-red-50">
               <AlertCircle className="h-4 w-4 text-red-600" />
               <AlertDescription className="text-red-800">
-                {slideInfoError && `Error loading slide: ${slideInfoError}`}
-                {downloadError && `Error downloading slide: ${downloadError}`}
+                {slideInfoError && `Lỗi tải slide: ${slideInfoError}`}
+                {downloadError && `Lỗi tải xuống slide: ${downloadError}`}
               </AlertDescription>
             </Alert>
           )}
@@ -304,7 +271,7 @@ export default function SlidePage({ params }: SlidePageProps) {
           {isLoading && (
             <div className="text-center py-12">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-              <p className="text-gray-600">Loading slide details...</p>
+              <p className="text-gray-600">Đang tải chi tiết slide...</p>
             </div>
           )}
 
@@ -314,7 +281,7 @@ export default function SlidePage({ params }: SlidePageProps) {
               <Alert className="max-w-md mx-auto border-red-200 bg-red-50">
                 <AlertCircle className="h-4 w-4 text-red-600" />
                 <AlertDescription className="text-red-800">
-                  Invalid slide ID. Please check the URL and try again.
+                  ID slide không hợp lệ. Vui lòng kiểm tra URL và thử lại.
                 </AlertDescription>
               </Alert>
             </div>
@@ -329,14 +296,13 @@ export default function SlidePage({ params }: SlidePageProps) {
               <div className="text-center py-12">
                 <AlertCircle className="h-16 w-16 text-red-500 mx-auto mb-4" />
                 <h2 className="text-2xl font-semibold text-gray-900 mb-2">
-                  Slide Not Found
+                  Không tìm thấy Slide
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  The slide you're looking for doesn't exist or you don't have
-                  permission to view it.
+                  Slide bạn đang tìm không tồn tại hoặc bạn không có quyền xem.
                 </p>
                 <Link href="/dashboard">
-                  <Button variant="outline">Back to Dashboard</Button>
+                  <Button variant="outline">Quay lại Dashboard</Button>
                 </Link>
               </div>
             )}
@@ -351,14 +317,14 @@ export default function SlidePage({ params }: SlidePageProps) {
                     <div className="flex items-center justify-between">
                       <div>
                         <CardTitle className="text-xl">
-                          Slide Information
+                          Thông tin Slide
                         </CardTitle>
                         <CardDescription>
-                          Details about your presentation
+                          Chi tiết về bài thuyết trình của bạn
                         </CardDescription>
                       </div>
                       <Badge variant="default" className="text-sm">
-                        Active
+                        Hoạt động
                       </Badge>
                     </div>
                   </CardHeader>
@@ -380,10 +346,10 @@ export default function SlidePage({ params }: SlidePageProps) {
                         <User className="h-5 w-5 text-gray-500" />
                         <div>
                           <p className="text-sm font-medium text-gray-900">
-                            Created by
+                            Tạo bởi
                           </p>
                           <p className="text-sm text-gray-600">
-                            {user?.full_name || user?.username || "Unknown"}
+                            {user?.full_name || user?.username || "Không rõ"}
                           </p>
                         </div>
                       </div>
@@ -392,7 +358,7 @@ export default function SlidePage({ params }: SlidePageProps) {
                         <Calendar className="h-5 w-5 text-gray-500" />
                         <div>
                           <p className="text-sm font-medium text-gray-900">
-                            Created at
+                            Ngày tạo
                           </p>
                           <p className="text-sm text-gray-600">
                             {formatSlideCreatedDate(slideInfo.created_at)}
@@ -407,7 +373,7 @@ export default function SlidePage({ params }: SlidePageProps) {
                             Template
                           </p>
                           <p className="text-sm text-gray-600">
-                            {slideInfo.template || "Default Template"}
+                            {slideInfo.template || "Template Mặc định"}
                           </p>
                         </div>
                       </div>
@@ -417,8 +383,10 @@ export default function SlidePage({ params }: SlidePageProps) {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl">Quick Actions</CardTitle>
-                    <CardDescription>Manage your presentation</CardDescription>
+                    <CardTitle className="text-xl">Thao tác nhanh</CardTitle>
+                    <CardDescription>
+                      Quản lý bài thuyết trình của bạn
+                    </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     <Button
@@ -427,15 +395,15 @@ export default function SlidePage({ params }: SlidePageProps) {
                       onClick={handleShare}
                     >
                       <Share2 className="w-4 h-4 mr-2" />
-                      Share Presentation
+                      Chia sẻ Bài thuyết trình
                     </Button>
                     <Button variant="outline" className="w-full justify-start">
                       <Eye className="w-4 h-4 mr-2" />
-                      Preview Mode
+                      Chế độ xem trước
                     </Button>
                     <Button variant="outline" className="w-full justify-start">
                       <RefreshCw className="w-4 h-4 mr-2" />
-                      Regenerate All
+                      Tạo lại tất cả
                     </Button>
                   </CardContent>
                 </Card>
@@ -443,9 +411,9 @@ export default function SlidePage({ params }: SlidePageProps) {
 
               {/* Slides Preview */}
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold mb-4">Slides Preview</h2>
+                <h2 className="text-2xl font-semibold mb-4">Xem trước Slide</h2>
                 <p className="text-gray-600 mb-6">
-                  Click on any slide to edit or regenerate it
+                  Nhấp vào bất kỳ slide nào để chỉnh sửa hoặc tạo lại
                 </p>
               </div>
 
@@ -475,7 +443,7 @@ export default function SlidePage({ params }: SlidePageProps) {
                           className="absolute top-4 right-4 bg-gradient-to-r from-green-800 to-green-700 hover:from-green-900 hover:to-green-800 text-white"
                         >
                           <Edit3 className="w-3 h-3 mr-1" />
-                          Edit
+                          Chỉnh sửa
                         </Button>
 
                         {/* Slide Info Overlay */}
@@ -486,22 +454,22 @@ export default function SlidePage({ params }: SlidePageProps) {
                           <p className="text-sm opacity-90">
                             {Array.isArray(slide.content)
                               ? slide.content.join(" ")
-                              : slide.content || "No content available"}
+                              : slide.content || "Không có nội dung"}
                           </p>
                           <div className="flex items-center gap-2 mt-2">
                             {slide.has_images && (
                               <Badge variant="secondary" className="text-xs">
-                                Images
+                                Hình ảnh
                               </Badge>
                             )}
                             {slide.has_diagrams && (
                               <Badge variant="secondary" className="text-xs">
-                                Diagrams
+                                Biểu đồ
                               </Badge>
                             )}
                             {slide.keywords.length > 0 && (
                               <Badge variant="secondary" className="text-xs">
-                                {slide.keywords.length} Keywords
+                                {slide.keywords.length} Từ khóa
                               </Badge>
                             )}
                           </div>
@@ -518,18 +486,18 @@ export default function SlidePage({ params }: SlidePageProps) {
                   <Card className="w-full max-w-md">
                     <CardHeader>
                       <CardTitle>
-                        Edit Slide {selectedSlideForEdit + 1}
+                        Chỉnh sửa Slide {selectedSlideForEdit + 1}
                       </CardTitle>
                       <CardDescription>
-                        Describe how you want to modify this slide
+                        Mô tả cách bạn muốn chỉnh sửa slide này
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div>
-                        <Label htmlFor="edit-prompt">Edit Instructions</Label>
+                        <Label htmlFor="edit-prompt">Hướng dẫn chỉnh sửa</Label>
                         <Textarea
                           id="edit-prompt"
-                          placeholder="e.g., Make it more visual, add statistics, change the tone, include more details about..."
+                          placeholder="Ví dụ: Làm cho trực quan hơn, thêm thống kê, thay đổi tông điệu, bao gồm thêm chi tiết về..."
                           value={editPrompt}
                           onChange={(e) => setEditPrompt(e.target.value)}
                           rows={4}
@@ -541,7 +509,7 @@ export default function SlidePage({ params }: SlidePageProps) {
                           onClick={() => setSelectedSlideForEdit(null)}
                           disabled={isRegenerating}
                         >
-                          Cancel
+                          Hủy
                         </Button>
                         <Button
                           onClick={handleRegenerateSlide}
@@ -551,12 +519,12 @@ export default function SlidePage({ params }: SlidePageProps) {
                           {isRegenerating ? (
                             <>
                               <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
-                              Regenerating...
+                              Đang tạo lại...
                             </>
                           ) : (
                             <>
                               <Sparkles className="w-4 h-4 mr-2" />
-                              Regenerate Slide
+                              Tạo lại Slide
                             </>
                           )}
                         </Button>
@@ -572,11 +540,11 @@ export default function SlidePage({ params }: SlidePageProps) {
                   <Card className="w-full max-w-md">
                     <CardHeader>
                       <CardTitle className="text-red-600">
-                        Delete Presentation
+                        Xóa Bài thuyết trình
                       </CardTitle>
                       <CardDescription>
-                        Are you sure you want to delete this presentation? This
-                        action cannot be undone.
+                        Bạn có chắc chắn muốn xóa bài thuyết trình này? Hành động này
+                        không thể hoàn tác.
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -585,14 +553,14 @@ export default function SlidePage({ params }: SlidePageProps) {
                           variant="outline"
                           onClick={() => setShowDeleteConfirm(false)}
                         >
-                          Cancel
+                          Hủy
                         </Button>
                         <Button
                           onClick={handleDeleteSlide}
                           className="bg-red-600 hover:bg-red-700 text-white"
                         >
                           <Trash2 className="w-4 h-4 mr-2" />
-                          Delete
+                          Xóa
                         </Button>
                       </div>
                     </CardContent>

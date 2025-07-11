@@ -55,25 +55,25 @@ export default function SignUpPage() {
     } = {};
 
     if (!username) {
-      newErrors.username = "Username is required";
+      newErrors.username = "Tên đăng nhập là bắt buộc";
     } else if (username.length < 3) {
-      newErrors.username = "Username must be at least 3 characters";
+      newErrors.username = "Tên đăng nhập phải có ít nhất 3 ký tự";
     }
 
     if (!email) {
-      newErrors.email = "Email is required";
+      newErrors.email = "Email là bắt buộc";
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Please enter a valid email";
+      newErrors.email = "Vui lòng nhập email hợp lệ";
     }
 
     if (!password) {
-      newErrors.password = "Password is required";
+      newErrors.password = "Mật khẩu là bắt buộc";
     } else if (password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
+      newErrors.password = "Mật khẩu phải có ít nhất 6 ký tự";
     }
 
     if (!fullName) {
-      newErrors.fullName = "Full name is required";
+      newErrors.fullName = "Họ tên là bắt buộc";
     }
 
     setErrors(newErrors);
@@ -118,11 +118,11 @@ export default function SignUpPage() {
                 <CheckCircle className="w-8 h-8 text-green-700" />
               </div>
               <h2 className="text-2xl font-bold text-green-700 mb-2">
-                Account Created!
+                Tạo tài khoản thành công!
               </h2>
               <p className="text-gray-600 mb-4">
-                Your account has been successfully created. Redirecting to sign
-                in...
+                Tài khoản của bạn đã được tạo thành công. Đang chuyển hướng đến
+                trang đăng nhập...
               </p>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <div
@@ -152,9 +152,9 @@ export default function SignUpPage() {
 
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl">Create Your Account</CardTitle>
+            <CardTitle className="text-2xl">Tạo tài khoản của bạn</CardTitle>
             <CardDescription>
-              Join SlideGen and start creating amazing presentations with AI
+              Tham gia SlideGen và bắt đầu tạo bài thuyết trình tuyệt vời với AI
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -166,11 +166,11 @@ export default function SignUpPage() {
               )}
 
               <div className="space-y-2">
-                <Label htmlFor="fullName">Full Name</Label>
+                <Label htmlFor="fullName">Họ và tên</Label>
                 <Input
                   id="fullName"
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder="Nhập họ và tên của bạn"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   className={errors.fullName ? "border-red-500" : ""}
@@ -181,11 +181,11 @@ export default function SignUpPage() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="username">Username</Label>
+                <Label htmlFor="username">Tên đăng nhập</Label>
                 <Input
                   id="username"
                   type="text"
-                  placeholder="Choose a username"
+                  placeholder="Chọn tên đăng nhập"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className={errors.username ? "border-red-500" : ""}
@@ -200,7 +200,7 @@ export default function SignUpPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Nhập email của bạn"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className={errors.email ? "border-red-500" : ""}
@@ -211,12 +211,12 @@ export default function SignUpPage() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password">Mật khẩu</Label>
                 <div className="relative">
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
-                    placeholder="Create a password"
+                    placeholder="Tạo mật khẩu"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     className={
@@ -247,18 +247,18 @@ export default function SignUpPage() {
                 className="w-full bg-gradient-to-r from-green-800 to-green-700 hover:from-green-900 hover:to-green-800"
                 disabled={isLoading}
               >
-                {isLoading ? "Creating Account..." : "Sign Up"}
+                {isLoading ? "Đang tạo tài khoản..." : "Đăng ký"}
               </Button>
             </form>
 
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
-                Already have an account?{" "}
+                Đã có tài khoản?{" "}
                 <Link
                   href="/sign-in"
                   className="text-green-800 hover:underline font-medium"
                 >
-                  Sign in here
+                  Đăng nhập tại đây
                 </Link>
               </p>
             </div>

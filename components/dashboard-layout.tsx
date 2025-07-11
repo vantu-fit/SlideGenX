@@ -50,9 +50,9 @@ function AppSidebar({
   const { user, logout } = useAuthContext();
 
   const menuItems = [
-    { id: "slides", label: "Slides", icon: FileSliders },
-    { id: "templates", label: "Templates", icon: Layout },
-    { id: "settings", label: "Settings", icon: Settings },
+    { id: "slides", label: "Slide", icon: FileSliders },
+    { id: "templates", label: "Template", icon: Layout },
+    { id: "settings", label: "Cài đặt", icon: Settings },
   ];
 
   const handleLogout = () => {
@@ -111,11 +111,11 @@ function AppSidebar({
               >
                 <DropdownMenuItem>
                   <User className="w-4 h-4 mr-2" />
-                  Profile
+                  Hồ sơ
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={handleLogout}>
                   <LogOut className="w-4 h-4 mr-2" />
-                  Sign Out
+                  Đăng xuất
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -145,7 +145,7 @@ export function DashboardLayout({
               <Link href="/create">
                 <Button className="bg-gradient-to-r from-green-800 to-green-700 hover:from-green-900 hover:to-green-800">
                   <Sparkles className="w-4 h-4 mr-2" />
-                  Create New Slide
+                  Tạo Slide Mới
                 </Button>
               </Link>
             </div>

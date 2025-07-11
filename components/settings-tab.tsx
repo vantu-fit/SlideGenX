@@ -65,17 +65,17 @@ export function SettingsTab() {
   const handleUpdateProfile = async () => {
     // Basic validation
     if (!name.trim()) {
-      alert("Full name is required!");
+      alert("Họ tên là bắt buộc!");
       return;
     }
 
     if (!email.trim()) {
-      alert("Email is required!");
+      alert("Email là bắt buộc!");
       return;
     }
 
     if (!/\S+@\S+\.\S+/.test(email)) {
-      alert("Please enter a valid email address!");
+      alert("Vui lòng nhập địa chỉ email hợp lệ!");
       return;
     }
 
@@ -91,7 +91,7 @@ export function SettingsTab() {
       // Refresh user info from backend
       await fetchUserInfo();
 
-      setSuccessMessage("Profile updated successfully!");
+      setSuccessMessage("Cập nhật hồ sơ thành công!");
       setShowSuccess(true);
       setTimeout(() => {
         setShowSuccess(false);
@@ -104,22 +104,22 @@ export function SettingsTab() {
 
   const handleChangePassword = async () => {
     if (!currentPassword) {
-      alert("Current password is required!");
+      alert("Mật khẩu hiện tại là bắt buộc!");
       return;
     }
 
     if (!newPassword) {
-      alert("New password is required!");
+      alert("Mật khẩu mới là bắt buộc!");
       return;
     }
 
     if (newPassword.length < 6) {
-      alert("New password must be at least 6 characters!");
+      alert("Mật khẩu mới phải có ít nhất 6 ký tự!");
       return;
     }
 
     if (newPassword !== confirmPassword) {
-      alert("Passwords don't match!");
+      alert("Mật khẩu không khớp!");
       return;
     }
 
@@ -137,7 +137,7 @@ export function SettingsTab() {
       setNewPassword("");
       setConfirmPassword("");
 
-      setSuccessMessage("Password changed successfully!");
+      setSuccessMessage("Đổi mật khẩu thành công!");
       setShowSuccess(true);
       setTimeout(() => {
         setShowSuccess(false);
@@ -151,18 +151,16 @@ export function SettingsTab() {
   const handleDeleteAccount = () => {
     if (
       confirm(
-        "Are you sure you want to delete your account? This action cannot be undone."
+        "Bạn có chắc chắn muốn xóa tài khoản? Hành động này không thể hoàn tác."
       )
     ) {
       // Simulate account deletion
-      alert(
-        "Account deletion initiated. You will receive a confirmation email."
-      );
+      alert("Đã bắt đầu xóa tài khoản. Bạn sẽ nhận được email xác nhận.");
     }
   };
 
   const handleLogout = () => {
-    if (confirm("Are you sure you want to log out?")) {
+    if (confirm("Bạn có chắc chắn muốn đăng xuất?")) {
       logout();
       router.push("/sign-in");
     }
@@ -191,9 +189,9 @@ export function SettingsTab() {
           <div className="flex items-center space-x-4">
             <User className="w-5 h-5" />
             <div>
-              <CardTitle>Profile Settings</CardTitle>
+              <CardTitle>Cài đặt Hồ sơ</CardTitle>
               <CardDescription>
-                Update your personal information and profile details
+                Cập nhật thông tin cá nhân và chi tiết hồ sơ của bạn
               </CardDescription>
             </div>
           </div>
@@ -208,17 +206,17 @@ export function SettingsTab() {
             </Avatar>
             <div>
               <Button variant="outline" size="sm">
-                Change Photo
+                Đổi ảnh
               </Button>
               <p className="text-sm text-gray-600 mt-1">
-                JPG, PNG or GIF. Max size 2MB.
+                JPG, PNG hoặc GIF. Kích thước tối đa 2MB.
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
+              <Label htmlFor="name">Họ và tên</Label>
               <Input
                 id="name"
                 value={name}
@@ -226,7 +224,7 @@ export function SettingsTab() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email Address</Label>
+              <Label htmlFor="email">Địa chỉ Email</Label>
               <Input
                 id="email"
                 type="email"
@@ -237,7 +235,7 @@ export function SettingsTab() {
           </div>
 
           <Button onClick={handleUpdateProfile} disabled={isUpdatingProfile}>
-            {isUpdatingProfile ? "Updating..." : "Update Profile"}
+            {isUpdatingProfile ? "Đang cập nhật..." : "Cập nhật Hồ sơ"}
           </Button>
         </CardContent>
       </Card>
@@ -248,16 +246,16 @@ export function SettingsTab() {
           <div className="flex items-center space-x-4">
             <Shield className="w-5 h-5" />
             <div>
-              <CardTitle>Security Settings</CardTitle>
+              <CardTitle>Cài đặt Bảo mật</CardTitle>
               <CardDescription>
-                Manage your password and security preferences
+                Quản lý mật khẩu và tùy chọn bảo mật của bạn
               </CardDescription>
             </div>
           </div>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="current-password">Current Password</Label>
+            <Label htmlFor="current-password">Mật khẩu hiện tại</Label>
             <Input
               id="current-password"
               type="password"
@@ -268,7 +266,7 @@ export function SettingsTab() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="new-password">New Password</Label>
+              <Label htmlFor="new-password">Mật khẩu mới</Label>
               <Input
                 id="new-password"
                 type="password"
@@ -277,7 +275,7 @@ export function SettingsTab() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="confirm-password">Confirm New Password</Label>
+              <Label htmlFor="confirm-password">Xác nhận mật khẩu mới</Label>
               <Input
                 id="confirm-password"
                 type="password"
@@ -288,7 +286,7 @@ export function SettingsTab() {
           </div>
 
           <Button onClick={handleChangePassword} disabled={isChangingPassword}>
-            {isChangingPassword ? "Changing..." : "Change Password"}
+            {isChangingPassword ? "Đang thay đổi..." : "Đổi mật khẩu"}
           </Button>
         </CardContent>
       </Card>
@@ -299,9 +297,9 @@ export function SettingsTab() {
           <div className="flex items-center space-x-4">
             <Globe className="w-5 h-5" />
             <div>
-              <CardTitle>Preferences</CardTitle>
+              <CardTitle>Tùy chọn</CardTitle>
               <CardDescription>
-                Customize your app experience and notifications
+                Tùy chỉnh trải nghiệm ứng dụng và thông báo của bạn
               </CardDescription>
             </div>
           </div>
@@ -309,9 +307,9 @@ export function SettingsTab() {
         <CardContent className="space-y-6">
           <div className="flex items-center justify-between">
             <div className="space-y-0.5">
-              <Label>Dark Mode</Label>
+              <Label>Chế độ tối</Label>
               <p className="text-sm text-gray-600">
-                Switch between light and dark themes
+                Chuyển đổi giữa giao diện sáng và tối
               </p>
             </div>
             <Switch checked={darkMode} onCheckedChange={setDarkMode} />
@@ -320,12 +318,13 @@ export function SettingsTab() {
           <Separator />
 
           <div className="space-y-2">
-            <Label htmlFor="language">Language</Label>
+            <Label htmlFor="language">Ngôn ngữ</Label>
             <Select value={language} onValueChange={setLanguage}>
               <SelectTrigger className="w-full md:w-[200px]">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
+                <SelectItem value="vi">Tiếng Việt</SelectItem>
                 <SelectItem value="en">English</SelectItem>
                 <SelectItem value="es">Español</SelectItem>
                 <SelectItem value="fr">Français</SelectItem>
@@ -339,9 +338,9 @@ export function SettingsTab() {
 
           <div className="flex items-center justify-between">
             <div className="space-y-0.5">
-              <Label>Email Notifications</Label>
+              <Label>Thông báo Email</Label>
               <p className="text-sm text-gray-600">
-                Receive updates about your presentations
+                Nhận cập nhật về bài thuyết trình của bạn
               </p>
             </div>
             <Switch
@@ -358,9 +357,9 @@ export function SettingsTab() {
           <div className="flex items-center space-x-4">
             <Trash2 className="w-5 h-5 text-red-600" />
             <div>
-              <CardTitle className="text-red-600">Danger Zone</CardTitle>
+              <CardTitle className="text-red-600">Vùng nguy hiểm</CardTitle>
               <CardDescription>
-                Irreversible and destructive actions
+                Các hành động không thể hoàn tác và có tính hủy diệt
               </CardDescription>
             </div>
           </div>
@@ -368,9 +367,9 @@ export function SettingsTab() {
         <CardContent className="space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 border border-red-200 rounded-lg bg-red-50">
             <div>
-              <h4 className="font-medium text-red-800">Delete Account</h4>
+              <h4 className="font-medium text-red-800">Xóa tài khoản</h4>
               <p className="text-sm text-red-600">
-                Permanently delete your account and all associated data
+                Xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan
               </p>
             </div>
             <Button
@@ -378,15 +377,15 @@ export function SettingsTab() {
               onClick={handleDeleteAccount}
               className="sm:w-auto"
             >
-              Delete Account
+              Xóa tài khoản
             </Button>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 border border-gray-200 rounded-lg">
             <div>
-              <h4 className="font-medium">Sign Out</h4>
+              <h4 className="font-medium">Đăng xuất</h4>
               <p className="text-sm text-gray-600">
-                Sign out of your account on this device
+                Đăng xuất khỏi tài khoản trên thiết bị này
               </p>
             </div>
             <Button
@@ -395,7 +394,7 @@ export function SettingsTab() {
               className="sm:w-auto"
             >
               <LogOut className="w-4 h-4 mr-2" />
-              Sign Out
+              Đăng xuất
             </Button>
           </div>
         </CardContent>

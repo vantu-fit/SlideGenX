@@ -76,7 +76,7 @@ export function SlidesTab() {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("date");
-  
+
   // Use authentication hook
   const { isAuthenticated, isLoading: authLoading, user } = useAuth();
   const { slideIds, isLoading, error, fetchSlideIds, reset } = useGetSlideIds();
@@ -96,7 +96,7 @@ export function SlidesTab() {
       <div className="flex items-center justify-center py-12">
         <div className="text-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading...</p>
+          <p className="text-gray-600">Đang tải...</p>
         </div>
       </div>
     );
@@ -110,15 +110,15 @@ export function SlidesTab() {
           <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <LogIn className="w-8 h-8 text-gray-400" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">Authentication Required</h3>
+          <h3 className="text-lg font-semibold mb-2">Yêu cầu xác thực</h3>
           <p className="text-gray-600 mb-4">
-            Please log in to view and manage your slides.
+            Vui lòng đăng nhập để xem và quản lý slide của bạn.
           </p>
-          <Button onClick={() => router.push('/login')} className="mr-2">
-            Log In
+          <Button onClick={() => router.push("/login")} className="mr-2">
+            Đăng nhập
           </Button>
-          <Button variant="outline" onClick={() => router.push('/register')}>
-            Sign Up
+          <Button variant="outline" onClick={() => router.push("/register")}>
+            Đăng ký
           </Button>
         </div>
       </div>
@@ -132,7 +132,7 @@ export function SlidesTab() {
         <div className="flex items-center justify-center py-12">
           <div className="text-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
-            <p className="text-gray-600">Loading your slides...</p>
+            <p className="text-gray-600">Đang tải slide của bạn...</p>
           </div>
         </div>
       </div>
@@ -147,10 +147,10 @@ export function SlidesTab() {
           <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <Trash2 className="w-8 h-8 text-red-600" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">Error Loading Slides</h3>
+          <h3 className="text-lg font-semibold mb-2">Lỗi tải slide</h3>
           <p className="text-red-600 mb-4">{error}</p>
           <Button onClick={() => fetchSlideIds()} variant="outline">
-            Try Again
+            Thử lại
           </Button>
         </div>
       </div>
@@ -185,10 +185,11 @@ export function SlidesTab() {
       {/* Welcome message */}
       <div className="bg-blue-50 p-4 rounded-lg">
         <h2 className="text-lg font-semibold text-blue-900">
-          Welcome back, {user?.full_name || user?.username}!
+          Chào mừng trở lại, {user?.full_name || user?.username}!
         </h2>
         <p className="text-blue-700">
-          You have {slideIds.length} slide{slideIds.length !== 1 ? 's' : ''} in your collection.
+          Bạn có {slideIds.length} slide{slideIds.length !== 1 ? "" : ""} trong
+          bộ sưu tập của mình.
         </p>
       </div>
 
@@ -197,7 +198,7 @@ export function SlidesTab() {
         <div className="relative flex-1 max-w-md">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
           <Input
-            placeholder="Search slides..."
+            placeholder="Tìm kiếm slide..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="pl-10"
@@ -208,15 +209,15 @@ export function SlidesTab() {
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm">
                 <Filter className="w-4 h-4 mr-2" />
-                Sort by {sortBy === "date" ? "Date" : "Title"}
+                Sắp xếp theo {sortBy === "date" ? "Ngày" : "Tiêu đề"}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => setSortBy("date")}>
-                Sort by Date
+                Sắp xếp theo Ngày
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => setSortBy("title")}>
-                Sort by Title
+                Sắp xếp theo Tiêu đề
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -230,9 +231,9 @@ export function SlidesTab() {
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
               <Plus className="w-8 h-8 text-blue-600" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Create New Slide</h3>
+            <h3 className="text-lg font-semibold mb-2">Tạo Slide Mới</h3>
             <p className="text-gray-600 text-center">
-              Start creating amazing presentations with AI
+              Bắt đầu tạo bài thuyết trình tuyệt vời với AI
             </p>
           </CardContent>
         </Card>
@@ -257,7 +258,8 @@ export function SlidesTab() {
                     className="w-full h-48 object-cover rounded-t-lg"
                     onError={(e) => {
                       // Fallback to placeholder if image fails to load
-                      e.currentTarget.src = "/placeholder.svg?height=200&width=300";
+                      e.currentTarget.src =
+                        "/placeholder.svg?height=200&width=300";
                     }}
                   />
                   <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -270,24 +272,22 @@ export function SlidesTab() {
                       <DropdownMenuContent>
                         <DropdownMenuItem>
                           <Edit className="w-4 h-4 mr-2" />
-                          Edit
+                          Chỉnh sửa
                         </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Download className="w-4 h-4 mr-2" />
-                          Download
+                          Tải xuống
                         </DropdownMenuItem>
                         <DropdownMenuItem className="text-red-600">
                           <Trash2 className="w-4 h-4 mr-2" />
-                          Delete
+                          Xóa
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold mb-2 line-clamp-1">
-                    {slide}
-                  </h3>
+                  <h3 className="font-semibold mb-2 line-clamp-1">{slide}</h3>
                   <div className="flex items-center justify-between text-sm text-gray-500">
                     <span>Session ID</span>
                     <Badge variant="secondary" className="text-xs">
@@ -304,12 +304,12 @@ export function SlidesTab() {
           <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <Plus className="w-8 h-8 text-gray-400" />
           </div>
-          <h3 className="text-lg font-semibold mb-2">No Slides Yet</h3>
+          <h3 className="text-lg font-semibold mb-2">Chưa có slide nào</h3>
           <p className="text-gray-600 mb-4">
-            Start creating your first presentation to see it here.
+            Bắt đầu tạo bài thuyết trình đầu tiên để xem ở đây.
           </p>
-          <Button onClick={() => router.push('/create')}>
-            Create Your First Slide
+          <Button onClick={() => router.push("/create")}>
+            Tạo slide đầu tiên
           </Button>
         </div>
       )}

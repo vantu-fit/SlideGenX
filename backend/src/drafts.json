@@ -1,30 +1,29 @@
 {
   "metadata": {
-    "session_id": "1e24a531-3727-4592-84b3-7ca3e49cd754",
-    "created_at": 1752167727.9838839,
-    "created_at_formatted": "2025-07-11 00:15:27",
-    "updated_at": 1752167727.9838839,
-    "updated_at_formatted": "2025-07-11 00:15:27",
-    "draft_count": 15,
+    "session_id": "afe2278a-6296-4485-82c4-39dca05b9c5d",
+    "created_at": 1752252638.443709,
+    "created_at_formatted": "2025-07-11 23:50:38",
+    "updated_at": 1752252638.443709,
+    "updated_at_formatted": "2025-07-11 23:50:38",
+    "draft_count": 13,
     "current_step": "init",
-    "export_timestamp": 1752167801.0473328,
-    "export_timestamp_formatted": "2025-07-11 00:16:41"
+    "export_timestamp": 1752252791.5444932,
+    "export_timestamp_formatted": "2025-07-11 23:53:11"
   },
   "drafts": [
     {
       "agent_name": "outline_agent",
       "step": "outline",
       "content": {
-        "title": "Reinforcement Learning and the Future of AGI",
+        "title": "Insect Behavior and Ecology: A World of Tiny Wonders",
         "sections": [
           {
             "title": "Title Slide",
-            "description": "Presentation title, presenter name, affiliation, and date.",
+            "description": "Presentation title, presenter name, and date.",
             "key_points": [
-              "Presentation Title: Reinforcement Learning and the Future of AGI",
-              "Presenter: [Your Name]",
-              "Affiliation: [Your Affiliation]",
-              "Date: [Date]"
+              "Presentation Title: Insect Behavior and Ecology: A World of Tiny Wonders",
+              "Presenter Name",
+              "Date"
             ],
             "estimated_slides": 1,
             "section_index": 0,
@@ -32,131 +31,140 @@
           },
           {
             "title": "Agenda",
-            "description": "Overview of the presentation topics and their order.",
+            "description": "Overview of the topics to be covered in the presentation.",
             "key_points": [
-              "Introduction to Reinforcement Learning",
-              "RL's Successes and Limitations",
-              "RL for AGI: Challenges and Opportunities",
-              "Advanced RL Techniques for AGI",
-              "The Future of RL and AGI",
-              "Conclusion",
-              "Q&A"
+              "Introduction to Insect Diversity and Importance",
+              "Insect Communication and Social Behavior",
+              "Insect-Plant Interactions",
+              "Insect Roles in Ecosystems",
+              "Conservation and the Future of Insects"
             ],
             "estimated_slides": 1,
             "section_index": 1,
             "section_type": "agenda"
           },
           {
-            "title": "Introduction to Reinforcement Learning",
-            "description": "A foundational overview of reinforcement learning concepts.",
+            "title": "Introduction to Insect Diversity and Importance",
+            "description": "Introduce the incredible diversity of insects and their ecological and economic importance.",
             "key_points": [
-              "What is Reinforcement Learning?",
-              "Key Components: Agent, Environment, State, Action, Reward",
-              "RL vs. Supervised and Unsupervised Learning",
-              "Markov Decision Processes (MDPs): Definition and Importance",
-              "Value Functions and Policies",
-              "Exploration vs. Exploitation Trade-off"
+              "What is an insect? (Basic anatomy: 3 body segments, 6 legs, antennae)",
+              "Insect diversity: Numbers of species, comparison to other animal groups",
+              "Ecological roles: Pollination, decomposition, nutrient cycling, food source",
+              "Economic importance: Agriculture (pests and beneficial insects), medicine, products (honey, silk)"
             ],
-            "estimated_slides": 3,
-            "estimated_slides": 3,
+            "estimated_slides": 5,
             "section_index": 2,
             "section_type": "chapter"
           },
           {
-            "title": "RL's Successes and Limitations",
-            "description": "Highlighting the achievements and shortcomings of current RL approaches.",
+            "title": "Insect Communication and Social Behavior",
+            "description": "Explore the diverse ways insects communicate and the fascinating social structures of some species.",
             "key_points": [
-              "Success Stories: Game Playing (AlphaGo, Atari), Robotics, Resource Management",
-              "Limitations: Sample Efficiency, Reward Shaping, Generalization",
-              "The Problem of Sparse Rewards",
-              "Transfer Learning Challenges in RL",
-              "Safety Concerns and Ethical Considerations"
+              "Modes of communication: Pheromones (chemical signals), visual signals, auditory signals, tactile signals",
+              "Pheromone examples: Sex pheromones, alarm pheromones, trail pheromones",
+              "Social insects: Ants, bees, termites (caste systems, division of labor)",
+              "Diagram: Simple flowchart of pheromone communication: Insect A releases pheromone -> Insect B detects pheromone -> Insect B responds"
             ],
-            "estimated_slides": 3,
-            "estimated_slides": 3,
+            "estimated_slides": 6,
             "section_index": 3,
             "section_type": "chapter"
           },
           {
-            "title": "RL for AGI: Challenges and Opportunities",
-            "description": "Discussing the specific hurdles and potential benefits of using RL to achieve AGI.",
+            "title": "Insect-Plant Interactions",
+            "description": "Examine the complex relationships between insects and plants, including herbivory, pollination, and defense mechanisms.",
             "key_points": [
-              "AGI Definition and Requirements",
-              "Why RL is a Promising Approach for AGI",
-              "Challenges: Scaling RL to Complex, Real-World Environments",
-              "The Need for Intrinsic Motivation and Curiosity",
-              "Hierarchical Reinforcement Learning for Complex Tasks",
-              "Diagram: High-level flowchart showing RL agent interacting with a complex environment, receiving sparse rewards, and needing intrinsic motivation."
+              "Herbivory: Different feeding strategies (chewing, sucking, mining)",
+              "Plant defenses: Physical defenses (thorns, hairs), chemical defenses (toxins, repellents)",
+              "Pollination: Insect pollinators (bees, butterflies, flies, beetles), co-evolution of flowers and pollinators",
+              "Mutualism: Benefits for both insects and plants (e.g., ant-plant mutualisms)"
             ],
-            "estimated_slides": 3,
-            "estimated_slides": 3,
+            "estimated_slides": 7,
             "section_index": 4,
             "section_type": "chapter"
           },
           {
-            "title": "Advanced RL Techniques for AGI",
-            "description": "Exploring advanced RL techniques that could contribute to AGI development.",
+            "title": "Insect Roles in Ecosystems",
+            "description": "Discuss the vital roles insects play in maintaining healthy ecosystems.",
             "key_points": [
-              "Meta-Reinforcement Learning: Learning to Learn",
-              "Multi-Agent Reinforcement Learning (MARL): Cooperation and Competition",
-              "Off-Policy Learning and Imitation Learning",
-              "World Models: Learning Predictive Models of the Environment",
-              "Reinforcement Learning with Memory and Attention Mechanisms",
-              "Mermaid Diagram: ```mermaid\ngraph LR\n    A[Agent] --> B(Environment);\n    B --> C{Reward?};\n    C -- Yes --> D[Update Policy];\n    C -- No --> E[Explore];\n    E --> B;\n    D --> A;\n```"
+              "Decomposition: Breakdown of organic matter by insects and other organisms",
+              "Nutrient cycling: Release of nutrients back into the soil",
+              "Food web dynamics: Insects as a food source for other animals (birds, reptiles, amphibians, mammals)",
+              "Ecosystem engineers: Insects that modify their environment (e.g., termites building mounds)"
             ],
-            "estimated_slides": 1,
+            "estimated_slides": 7,
             "section_index": 5,
             "section_type": "chapter"
           },
           {
-            "title": "The Future of RL and AGI",
-            "description": "Speculating on the future directions of RL research and its impact on AGI.",
+            "title": "Conservation and the Future of Insects",
+            "description": "Address the threats facing insect populations and discuss conservation efforts.",
             "key_points": [
-              "Potential Breakthroughs in RL Algorithms",
-              "The Role of Embodied AI and Robotics",
-              "Ethical Implications of AGI Developed with RL",
-              "The Convergence of RL with Other AI Fields (e.g., NLP, Computer Vision)",
-              "Timeline Predictions for AGI Development",
-              "Open Questions and Research Directions"
+              "Threats to insect populations: Habitat loss, pesticide use, climate change, invasive species",
+              "Consequences of insect decline: Impacts on pollination, food webs, ecosystem services",
+              "Conservation strategies: Habitat restoration, reducing pesticide use, promoting pollinator-friendly practices",
+              "Citizen science: How individuals can contribute to insect conservation"
             ],
-            "estimated_slides": 3,
+            "estimated_slides": 7,
             "section_index": 6,
             "section_type": "chapter"
           },
           {
-            "title": "Conclusion",
-            "description": "Summarizing the key takeaways and reinforcing the importance of RL in the pursuit of AGI.",
+            "title": "Conclusion: The Importance of Insects",
+            "description": "Summarize the key points and emphasize the importance of insects to our planet.",
             "key_points": [
-              "Reinforcement Learning is a powerful tool for developing intelligent agents.",
-              "Significant challenges remain in scaling RL to AGI.",
-              "Advanced RL techniques and interdisciplinary collaboration are crucial.",
-              "The future of AGI may heavily rely on advancements in RL."
+              "Recap of insect diversity, ecological roles, and economic importance",
+              "Emphasis on the interconnectedness of ecosystems and the vital role of insects",
+              "Call to action: Encourage audience members to learn more about insects and support conservation efforts"
             ],
             "estimated_slides": 2,
             "section_index": 7,
             "section_type": "conclusion"
           },
           {
+            "title": "Conclusion: A World Without Insects",
+            "description": "Paint a picture of what the world would look like without insects.",
+            "key_points": [
+              "Describe the potential collapse of ecosystems without insect pollination and decomposition.",
+              "Highlight the economic consequences of losing insect-related services.",
+              "Reiterate the importance of insect conservation for a healthy planet.",
+              "Mermaid Diagram: Illustrate the impact of insect decline on the food web:\n```mermaid\ngraph LR\n    A[Plants] --> B(Insects)\n    B --> C(Birds)\n    B --> D(Mammals)\n    subgraph With Insects\n    A --> B\n    B --> C\n    B --> D\n    end\n    E[Plants] --> F(( ))\n    F --> G(Birds)\n    F --> H(Mammals)\n    subgraph Without Insects\n    E -- No Insects --> F\n    F --> G\n    F --> H\n    end\n```"
+            ],
+            "estimated_slides": 2,
+            "section_index": 8,
+            "section_type": "conclusion"
+          },
+          {
             "title": "Q&A",
             "description": "Open the floor for questions from the audience.",
             "key_points": [
-              "Thank you for your attention.",
-              "Open for questions."
+              "Thank the audience for their attention.",
+              "Invite questions about any of the topics covered in the presentation."
             ],
             "estimated_slides": 1,
-            "section_index": 7,
+            "section_index": 9,
+            "section_type": "qa"
+          },
+          {
+            "title": "Q&A: Resources",
+            "description": "Provide resources for further learning.",
+            "key_points": [
+              "List of websites, books, and organizations related to insect behavior and ecology.",
+              "Contact information for the presenter."
+            ],
+            "estimated_slides": 1,
+            "section_index": 10,
             "section_type": "qa"
           }
         ],
-        "total_slides": 20,
-        "description": "A presentation exploring the role of reinforcement learning in the pursuit of artificial general intelligence."
+        "total_slides": 40,
+        "description": "An introduction to the fascinating world of insect behavior and ecology for a general audience."
       },
-      "created_at": 1752167739.4965806,
+      "created_at": 1752252711.5941558,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:39"
+      "created_at_formatted": "2025-07-11 23:51:51"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -164,37 +172,35 @@
       "content": {
         "slides": [
           {
-            "title": "Nội dung chương trình",
+            "title": "Nội dung chính của bài thuyết trình",
             "content": [
-              "Giới thiệu về Học Tăng Cường (Reinforcement Learning)",
-              "Thành công và Hạn chế của RL",
-              "RL cho AGI: Thách thức và Cơ hội",
-              "Các Kỹ thuật RL Nâng cao cho AGI",
-              "Tương lai của RL và AGI",
-              "Kết luận",
-              "Hỏi & Đáp"
+              "Giới thiệu về sự đa dạng và tầm quan trọng của côn trùng",
+              "Hành vi giao tiếp và xã hội của côn trùng",
+              "Tương tác giữa côn trùng và thực vật",
+              "Vai trò của côn trùng trong hệ sinh thái",
+              "Bảo tồn và tương lai của côn trùng"
             ],
-            "notes": "Chào mừng mọi người đến với buổi thuyết trình. Slide này tóm tắt các chủ đề chính mà chúng ta sẽ thảo luận hôm nay. Chúng ta sẽ bắt đầu với phần giới thiệu về RL, sau đó xem xét những thành công và hạn chế của nó. Tiếp theo, chúng ta sẽ đi sâu vào các thách thức và cơ hội khi áp dụng RL cho AGI, khám phá các kỹ thuật RL tiên tiến và cuối cùng là thảo luận về tương lai của RL và AGI. Cuối cùng, chúng ta sẽ có phần Hỏi & Đáp.",
+            "notes": "Chào mừng mọi người đến với bài thuyết trình về hành vi và sinh thái côn trùng. Trong buổi hôm nay, chúng ta sẽ cùng nhau khám phá những khía cạnh thú vị và quan trọng của thế giới côn trùng.",
             "images_needed": [],
             "diagrams_needed": [],
             "keywords": [
-              "agenda",
-              "reinforcement learning",
-              "AGI",
-              "topics",
-              "overview"
+              "nội dung",
+              "côn trùng",
+              "đa dạng",
+              "hệ sinh thái",
+              "bảo tồn"
             ],
             "slide_index": 0,
             "section_index": 1
           }
         ]
       },
-      "created_at": 1752167742.9510255,
+      "created_at": 1752252713.6065009,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:42"
+      "created_at_formatted": "2025-07-11 23:51:53"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -202,36 +208,35 @@
       "content": {
         "slides": [
           {
-            "title": "Học Tăng Cường và Tương Lai AGI",
+            "title": "Hành Vi và Sinh Thái Côn Trùng",
             "content": [
+              "Một Thế Giới Kỳ Diệu Nhỏ Bé",
               "Người trình bày: [Tên của bạn]",
-              "Đơn vị: [Đơn vị công tác]",
-              "Ngày: [Ngày]"
+              "Ngày: [Ngày hiện tại]"
             ],
-            "notes": "Chào mừng đến với buổi thuyết trình về Học Tăng Cường và Tương Lai của Trí Tuệ Nhân Tạo Tổng Quát (AGI). Trong buổi này, chúng ta sẽ khám phá những tiềm năng và thách thức của việc sử dụng Học Tăng Cường để đạt được AGI.",
+            "notes": "Chào mừng đến với bài thuyết trình về hành vi và sinh thái côn trùng. Trong bài thuyết trình này, chúng ta sẽ khám phá sự đa dạng đáng kinh ngạc của côn trùng, vai trò quan trọng của chúng trong hệ sinh thái và những thách thức mà chúng đang phải đối mặt.",
             "images_needed": [
-              "futuristic cityscape with AI integration",
-              "reinforcement learning agent interacting with environment"
+              "macro photograph of diverse insects"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "Học Tăng Cường",
-              "Reinforcement Learning",
-              "Trí Tuệ Nhân Tạo Tổng Quát",
-              "AGI",
-              "Tương lai"
+              "côn trùng",
+              "sinh thái",
+              "hành vi",
+              "đa dạng",
+              "bảo tồn"
             ],
             "slide_index": 0,
             "section_index": 0
           }
         ]
       },
-      "created_at": 1752167743.5359678,
+      "created_at": 1752252714.052719,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:43"
+      "created_at_formatted": "2025-07-11 23:51:54"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -239,7 +244,7 @@
       "content": {
         "slides": [
           {
-            "title": "Giới thiệu về Reinforcement Learning",
+            "title": "Giới Thiệu: Sự Đa Dạng Côn Trùng",
             "content": "01",
             "notes": null,
             "images_needed": [],
@@ -249,68 +254,109 @@
             "section_index": 2
           },
           {
-            "title": "Reinforcement Learning là gì?",
+            "title": "Côn Trùng Là Gì?",
             "content": [
-              "RL là một phương pháp học máy, trong đó:",
-              "➤ Một agent học cách đưa ra quyết định trong một environment để tối đa hóa reward tích lũy.",
-              "➤ Agent học thông qua thử và sai, không cần dữ liệu được gắn nhãn.",
-              "➤ Tương tác liên tục với môi trường để cải thiện chính sách (policy)."
+              "Động vật chân đốt: Ba phần cơ thể (đầu, ngực, bụng)",
+              "Sáu chân",
+              "Râu",
+              "Thường có cánh (một số loài không có)",
+              "Số lượng loài côn trùng chiếm phần lớn trong giới động vật."
             ],
-            "notes": "Giải thích ngắn gọn về RL, nhấn mạnh vào các yếu tố chính: agent, environment, reward. So sánh với cách con người học hỏi.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Agent -> Action -> Environment -> State, Reward -> Agent",
-                "relations": "Agent takes an Action in the Environment, which results in a new State and a Reward. The Agent uses the State and Reward to update its policy."
-              }
+            "notes": "Nhấn mạnh sự khác biệt cơ bản của côn trùng so với các loài động vật khác. Sử dụng hình ảnh minh họa rõ ràng.",
+            "images_needed": [
+              "diagram of insect anatomy showing head, thorax, abdomen, legs, antennae"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "Reinforcement Learning",
-              "Agent",
-              "Environment",
-              "Reward",
-              "Policy"
+              "côn trùng",
+              "giải phẫu",
+              "đặc điểm"
             ],
             "slide_index": 1,
             "section_index": 2
           },
           {
-            "title": "Các thành phần chính của RL",
+            "title": "Sự Đa Dạng Tuyệt Vời Của Côn Trùng",
             "content": [
-              "Agent: Thực thể đưa ra quyết định.",
-              "Environment: Thế giới mà agent tương tác.",
-              "State: Mô tả hiện tại của environment.",
-              "Action: Hành động mà agent có thể thực hiện.",
-              "Reward: Tín hiệu phản hồi từ environment, cho biết hành động tốt hay xấu.",
-              "Markov Decision Processes (MDPs): Khuôn khổ toán học cho RL, giả định trạng thái hiện tại chứa tất cả thông tin cần thiết để đưa ra quyết định."
+              "Số lượng loài: Ước tính khoảng 5.5 triệu loài (đã biết và chưa biết)",
+              "Chiếm khoảng 80% số loài côn trùng vẫn chưa được mô tả.",
+              "So sánh với các nhóm động vật khác: Vượt trội về số lượng loài.",
+              "Dữ liệu cho thấy, các tình nguyện viên đã thu thập khoảng 25% hồ sơ loài côn trùng trên toàn cầu, và lên đến 80% ở Châu Âu."
             ],
-            "notes": "Giải thích chi tiết từng thành phần. Nhấn mạnh vai trò của MDPs trong việc đơn giản hóa bài toán.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "S_t -> A_t -> R_{t+1}, S_{t+1}",
-                "relations": "State at time t (S_t) leads to Action at time t (A_t), which results in Reward at time t+1 (R_{t+1}) and State at time t+1 (S_{t+1})"
-              }
+            "notes": "So sánh trực quan số lượng loài côn trùng với các nhóm động vật khác (ví dụ: biểu đồ cột). Nhấn mạnh tầm quan trọng của việc nghiên cứu và bảo tồn.",
+            "images_needed": [
+              "image of diverse insect species",
+              "bar graph comparing number of insect species to other animal groups"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "Agent",
-              "Environment",
-              "State",
-              "Action",
-              "Reward",
-              "MDP"
+              "đa dạng",
+              "số lượng",
+              "loài",
+              "so sánh"
             ],
             "slide_index": 2,
+            "section_index": 2
+          },
+          {
+            "title": "Vai Trò Sinh Thái Quan Trọng",
+            "content": [
+              "Thụ phấn: Hỗ trợ sinh sản cho nhiều loài thực vật.",
+              "Phân hủy: Phân hủy chất hữu cơ, trả lại chất dinh dưỡng cho đất.",
+              "Chu trình dinh dưỡng: Tham gia vào các chu trình dinh dưỡng quan trọng.",
+              "Nguồn thức ăn: Là nguồn thức ăn cho nhiều loài động vật khác.",
+              "Theo nghiên cứu, sự suy giảm quần thể côn trùng có thể gây ra khủng hoảng thụ phấn, ảnh hưởng đến 75% cây trồng lương thực."
+            ],
+            "notes": "Minh họa vai trò của côn trùng trong các hệ sinh thái khác nhau. Sử dụng hình ảnh về quá trình thụ phấn, phân hủy, và chuỗi thức ăn.",
+            "images_needed": [
+              "image of insect pollinating a flower",
+              "image of insects decomposing organic matter",
+              "diagram of a food web showing insects as a food source"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "sinh thái",
+              "thụ phấn",
+              "phân hủy",
+              "dinh dưỡng",
+              "chuỗi thức ăn"
+            ],
+            "slide_index": 3,
+            "section_index": 2
+          },
+          {
+            "title": "Tầm Quan Trọng Kinh Tế",
+            "content": [
+              "Nông nghiệp: Côn trùng gây hại và côn trùng có ích.",
+              "Y học: Nghiên cứu và ứng dụng trong y học.",
+              "Sản phẩm: Mật ong, tơ tằm, sáp ong...",
+              "Thị trường côn trùng có ích đạt 877 triệu đô la vào năm 2023, với tốc độ tăng trưởng kép hàng năm (CAGR) là 13.2% (2023-2028), dự kiến đạt 1.63 tỷ đô la vào năm 2028. Bắc Mỹ dẫn đầu thị phần.",
+              "Ví dụ cụ thể: Ong mật đóng vai trò quan trọng trong ngành nông nghiệp."
+            ],
+            "notes": "Nêu bật cả mặt tích cực và tiêu cực của côn trùng đối với kinh tế. Sử dụng hình ảnh về các sản phẩm từ côn trùng và các ứng dụng trong nông nghiệp.",
+            "images_needed": [
+              "image of honey and silk products",
+              "image of beneficial insects used in agriculture"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "kinh tế",
+              "nông nghiệp",
+              "y học",
+              "sản phẩm",
+              "lợi ích"
+            ],
+            "slide_index": 4,
             "section_index": 2
           }
         ]
       },
-      "created_at": 1752167746.7517629,
+      "created_at": 1752252722.0104024,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:46"
+      "created_at_formatted": "2025-07-11 23:52:02"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -318,82 +364,7 @@
       "content": {
         "slides": [
           {
-            "title": "RL cho AGI: Thách Thức & Cơ Hội",
-            "content": "03",
-            "notes": null,
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [],
-            "slide_index": 0,
-            "section_index": 4
-          },
-          {
-            "title": "AGI và Vai Trò của RL",
-            "content": [
-              "Định nghĩa AGI: Trí tuệ nhân tạo tổng quát.",
-              "Yêu cầu của AGI: Khả năng học hỏi, thích nghi, giải quyết vấn đề trong nhiều lĩnh vực.",
-              "Tại sao RL hứa hẹn cho AGI?",
-              "Học hỏi thông qua tương tác với môi trường.",
-              "Khả năng tự động khám phá và tối ưu hóa chiến lược.",
-              "Phù hợp với việc xây dựng các hệ thống tự chủ."
-            ],
-            "notes": "Nhấn mạnh sự khác biệt giữa AI hẹp và AGI. Giải thích tại sao khả năng học hỏi từ kinh nghiệm của RL là quan trọng cho AGI.",
-            "images_needed": [],
-            "diagrams_needed": [],
-            "keywords": [
-              "AGI",
-              "Reinforcement Learning",
-              "tự chủ",
-              "học hỏi",
-              "môi trường"
-            ],
-            "slide_index": 1,
-            "section_index": 4
-          },
-          {
-            "title": "Thách Thức Khi Triển Khai RL cho AGI",
-            "content": [
-              "Mở rộng RL cho môi trường phức tạp, thực tế.",
-              "Không gian trạng thái và hành động lớn.",
-              "Phần thưởng thưa thớt (sparse rewards).",
-              "Sự cần thiết của động lực nội tại (intrinsic motivation) và tính tò mò.",
-              "Khám phá các trạng thái mới và học hỏi mà không cần phần thưởng bên ngoài.",
-              "Học tập phân cấp (Hierarchical Reinforcement Learning) cho các nhiệm vụ phức tạp."
-            ],
-            "notes": "Giải thích các vấn đề cụ thể như 'curse of dimensionality' và làm thế nào động lực nội tại có thể giúp giải quyết vấn đề phần thưởng thưa thớt.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "Agent -> Environment -> Reward",
-                "relations": "Agent interacts with Environment, receives Reward from Environment"
-              }
-            ],
-            "keywords": [
-              "thách thức",
-              "môi trường phức tạp",
-              "phần thưởng thưa thớt",
-              "động lực nội tại",
-              "học tập phân cấp"
-            ],
-            "slide_index": 2,
-            "section_index": 4
-          }
-        ]
-      },
-      "created_at": 1752167751.3671076,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:51"
-    },
-    {
-      "agent_name": "tree_of_thought_orchestrator",
-      "step": "content_selected",
-      "content": {
-        "slides": [
-          {
-            "title": "Thành Công và Hạn Chế của RL",
+            "title": "Giao Tiếp và Tập Tính Xã Hội",
             "content": "02",
             "notes": null,
             "images_needed": [],
@@ -403,103 +374,136 @@
             "section_index": 3
           },
           {
-            "title": "Những Thành Công Vượt Bậc của RL",
+            "title": "Phương Thức Giao Tiếp Của Côn Trùng",
             "content": [
-              "Chơi Game: AlphaGo, Atari (vượt trội so với con người)",
-              "Ứng dụng trong Robotics: Điều khiển robot, tự động hóa",
-              "Quản lý Tài nguyên: Tối ưu hóa sử dụng năng lượng, phân bổ tài nguyên"
+              "Pheromone (tín hiệu hóa học): Phổ biến nhất",
+              "Tín hiệu thị giác: Màu sắc, chuyển động",
+              "Tín hiệu âm thanh: Tiếng kêu, rung động",
+              "Tín hiệu xúc giác: Tiếp xúc cơ thể"
             ],
-            "notes": "Nhấn mạnh vào những thành tựu cụ thể và có tính ứng dụng cao của RL. Ví dụ, AlphaGo đánh bại kỳ thủ cờ vây hàng đầu thế giới, robot tự học cách đi lại và thao tác đồ vật, hệ thống RL giúp tiết kiệm năng lượng trong các trung tâm dữ liệu.",
+            "notes": "Nhấn mạnh sự đa dạng và phức tạp của các phương thức giao tiếp. Ví dụ, một số loài bướm sử dụng tín hiệu thị giác phức tạp để thu hút bạn tình.",
             "images_needed": [
-              "AlphaGo playing Go",
-              "Robot performing a task",
-              "Data center energy management diagram"
+              "insect pheromone communication",
+              "insect visual communication",
+              "insect auditory communication",
+              "insect tactile communication"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "AlphaGo",
-              "Atari",
-              "Robotics",
-              "Resource Management",
-              "Reinforcement Learning"
+              "pheromone",
+              "visual signals",
+              "auditory signals",
+              "tactile signals",
+              "communication"
             ],
             "slide_index": 1,
             "section_index": 3
           },
           {
-            "title": "Những Hạn Chế Của RL Hiện Tại",
+            "title": "Pheromone: Ngôn Ngữ Hóa Học",
             "content": [
-              "Hiệu Quả Mẫu (Sample Efficiency): Cần rất nhiều dữ liệu để học",
-              "Định Hình Phần Thưởng (Reward Shaping): Khó khăn trong việc thiết kế phần thưởng phù hợp",
-              "Khả Năng Tổng Quát Hóa (Generalization): Khó áp dụng cho các tình huống mới"
+              "Pheromone giới tính: Thu hút bạn tình",
+              "Pheromone báo động: Cảnh báo nguy hiểm",
+              "Pheromone đường đi: Dẫn đường đến nguồn thức ăn",
+              "Ví dụ: Kiến sử dụng pheromone để tạo đường đi kiếm ăn. Ong chúa sử dụng pheromone để kiểm soát đàn."
             ],
-            "notes": "Giải thích rõ hơn về từng hạn chế. Ví dụ, RL thường cần hàng triệu lượt thử nghiệm để học một tác vụ đơn giản, việc thiết kế phần thưởng có thể vô tình dẫn đến các hành vi không mong muốn, và mô hình RL có thể hoạt động tốt trong môi trường huấn luyện nhưng lại thất bại trong môi trường thực tế.",
-            "images_needed": [],
+            "notes": "Giải thích rõ hơn về từng loại pheromone và vai trò của chúng. Dẫn chứng các loài côn trùng cụ thể sử dụng pheromone như thế nào.",
+            "images_needed": [
+              "ant trail pheromone",
+              "bee queen pheromone",
+              "insect alarm pheromone"
+            ],
             "diagrams_needed": [
               {
-                "data": "High Sample Complexity -> Poor Generalization",
-                "relations": "Sample Complexity -> Generalization"
+                "data": "Insect A -> Pheromone Release -> Pheromone Detection -> Insect B -> Response",
+                "relations": "Insect A releases pheromone, Insect B detects pheromone, Insect B responds"
               }
             ],
             "keywords": [
-              "Sample Efficiency",
-              "Reward Shaping",
-              "Generalization",
-              "Limitations",
-              "Reinforcement Learning"
+              "sex pheromones",
+              "alarm pheromones",
+              "trail pheromones",
+              "chemical signals"
             ],
             "slide_index": 2,
-            "slide_index": 2,
+            "section_index": 3
+          },
+          {
+            "title": "Côn Trùng Xã Hội: Tổ Chức Phức Tạp",
+            "content": [
+              "Kiến, ong, mối: Các loài côn trùng có tổ chức xã hội cao",
+              "Hệ thống đẳng cấp (caste system): Phân chia vai trò rõ ràng",
+              "Phân công lao động (division of labor): Mỗi đẳng cấp đảm nhận nhiệm vụ riêng",
+              "Ví dụ: Ong mật có ong chúa, ong thợ, ong đực với các vai trò khác nhau."
+            ],
+            "notes": "Mô tả chi tiết hơn về hệ thống đẳng cấp và phân công lao động trong các loài côn trùng xã hội. So sánh sự khác biệt giữa các loài kiến, ong và mối.",
+            "images_needed": [
+              "ant colony",
+              "bee hive",
+              "termite mound"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "social insects",
+              "ants",
+              "bees",
+              "termites",
+              "caste systems",
+              "division of labor"
+            ],
+            "slide_index": 3,
+            "section_index": 3
+          },
+          {
+            "title": "Hiệu Quả Giao Tiếp Xã Hội",
+            "content": [
+              "Theo nghiên cứu gần đây, hiệu quả tìm kiếm thức ăn của kiến có thể lên đến 95% nhờ giao tiếp pheromone.",
+              "Điều này cho thấy sự phối hợp và tổ chức cao trong các đàn kiến.",
+              "Các chiến lược tối ưu hóa dựa trên hành vi của côn trùng có thể giúp tăng 20% số lượng loài nguy cấp."
+            ],
+            "notes": "Nhấn mạnh tầm quan trọng của giao tiếp trong việc duy trì sự sống và phát triển của các loài côn trùng xã hội.",
+            "images_needed": [
+              "ants foraging",
+              "bees collecting nectar"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "foraging efficiency",
+              "ant colonies",
+              "social behavior"
+            ],
+            "slide_index": 4,
+            "section_index": 3
+          },
+          {
+            "title": "Ứng Dụng Nghiên Cứu Tập Tính",
+            "content": [
+              "Nghiên cứu tập tính côn trùng giúp phát triển các phương pháp kiểm soát dịch hại hiệu quả hơn.",
+              "Ví dụ, sử dụng pheromone để bẫy côn trùng gây hại, giảm 40% thiệt hại mùa màng ở các khu vực được xử lý (2022).",
+              "Quản lý dịch hại tổng hợp (IPM) dựa trên hành vi côn trùng giúp giảm 25% việc sử dụng thuốc trừ sâu trong nông nghiệp trong 3 năm."
+            ],
+            "notes": "Nêu bật các ứng dụng thực tế của nghiên cứu tập tính côn trùng trong nông nghiệp và các lĩnh vực khác.",
+            "images_needed": [
+              "pheromone trap",
+              "integrated pest management"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "crop damage reduction",
+              "integrated pest management",
+              "pesticide use"
+            ],
+            "slide_index": 5,
             "section_index": 3
           }
         ]
       },
-      "created_at": 1752167751.8007708,
+      "created_at": 1752252726.6405833,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:51"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "sequenceDiagram",
-        "diagram_spec": "sequenceDiagram\n  participant Agent\n  participant Environment\n\n  Agent->>Environment: Action\n  activate Environment\n  Environment-->>Agent: State, Reward\n  deactivate Environment\n  Note over Agent: Learns Policy\n",
-        "diagram_path": "temp/slides\\diagram_2_1.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "stateDiagram"
-        ]
-      },
-      "created_at": 1752167753.9512568,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:53"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "mindmap",
-        "diagram_spec": "mindmap\n  root((Reinforcement Learning Components))\n    Agent\n      Decision Maker\n    Environment\n      World Agent Interacts With\n    State\n      Current Description of Environment\n    Action\n      Agent's Possible Moves\n    Reward\n      Feedback on Action Quality\n    MDPs\n      Mathematical Framework",
-        "diagram_path": "temp/slides\\diagram_2_2.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "stateDiagram"
-        ]
-      },
-      "created_at": 1752167758.4175947,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-11 00:15:58"
+      "created_at_formatted": "2025-07-11 23:52:06"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -507,7 +511,183 @@
       "content": {
         "slides": [
           {
-            "title": "Kỹ Thuật RL Nâng Cao Cho AGI",
+            "title": "Tương Tác Giữa Côn Trùng và Thực Vật",
+            "content": "03",
+            "notes": null,
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [],
+            "slide_index": 0,
+            "section_index": 4
+          },
+          {
+            "title": "Sự Ăn Thực Vật: Các Chiến Lược",
+            "content": [
+              "Nhiều loài côn trùng ăn thực vật theo nhiều cách khác nhau.",
+              "Gặm nhấm: Ăn lá, thân cây (ví dụ: sâu bướm).",
+              "Hút: Hút nhựa cây (ví dụ: rệp).",
+              "Đào hầm: Tạo đường hầm trong lá (ví dụ: sâu vẽ bùa).",
+              "Ảnh hưởng lớn đến sức khỏe và năng suất cây trồng."
+            ],
+            "notes": "Nhấn mạnh sự đa dạng trong cách ăn thực vật của côn trùng và tác động của chúng.",
+            "images_needed": [
+              "caterpillar eating leaf",
+              "aphids sucking plant sap",
+              "leaf miner damage"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "herbivory",
+              "feeding strategies",
+              "chewing insects",
+              "sucking insects",
+              "mining insects"
+            ],
+            "slide_index": 1,
+            "section_index": 4
+          },
+          {
+            "title": "Phòng Thủ của Thực Vật: Vật Lý",
+            "content": [
+              "Thực vật tiến hóa các cơ chế phòng thủ để chống lại côn trùng.",
+              "Gai: Ngăn chặn côn trùng ăn (ví dụ: hoa hồng, xương rồng).",
+              "Lông: Cản trở côn trùng di chuyển và ăn (ví dụ: cây tầm ma).",
+              "Lớp sáp: Khó khăn cho côn trùng hút nhựa cây."
+            ],
+            "notes": "Giải thích cách thực vật sử dụng các đặc điểm vật lý để tự bảo vệ.",
+            "images_needed": [
+              "rose thorns",
+              "nettle hairs",
+              "plant with waxy coating"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "plant defenses",
+              "physical defenses",
+              "thorns",
+              "hairs",
+              "wax"
+            ],
+            "slide_index": 2,
+            "section_index": 4
+          },
+          {
+            "title": "Phòng Thủ của Thực Vật: Hóa Học",
+            "content": [
+              "Thực vật sản xuất các hợp chất hóa học để chống lại côn trùng.",
+              "Chất độc: Gây hại hoặc giết chết côn trùng (ví dụ: nicotine trong thuốc lá).",
+              "Chất xua đuổi: Ngăn chặn côn trùng đến gần (ví dụ: pyrethrin trong cúc vạn thọ).",
+              "Hợp chất dễ bay hơi: Thu hút kẻ thù của côn trùng gây hại."
+            ],
+            "notes": "Thảo luận về các loại phòng thủ hóa học khác nhau và cách chúng hoạt động.",
+            "images_needed": [
+              "tobacco plant nicotine",
+              "marigold pyrethrin",
+              "plant releasing volatile compounds"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "plant defenses",
+              "chemical defenses",
+              "toxins",
+              "repellents",
+              "volatile compounds"
+            ],
+            "slide_index": 3,
+            "section_index": 4
+          },
+          {
+            "title": "Sự Thụ Phấn: Côn Trùng Quan Trọng",
+            "content": [
+              "Nhiều loài côn trùng là tác nhân thụ phấn quan trọng.",
+              "Ong: Thụ phấn cho nhiều loại cây trồng và hoa.",
+              "Bướm: Thụ phấn cho hoa có màu sắc sặc sỡ.",
+              "Ruồi: Thụ phấn cho hoa có mùi khó chịu.",
+              "Bọ cánh cứng: Thụ phấn cho các loài cây cổ xưa."
+            ],
+            "notes": "Nhấn mạnh vai trò của côn trùng trong thụ phấn và sự đa dạng của các loài thụ phấn.",
+            "images_needed": [
+              "bee pollinating flower",
+              "butterfly pollinating flower",
+              "fly pollinating flower",
+              "beetle pollinating flower"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "pollination",
+              "insect pollinators",
+              "bees",
+              "butterflies",
+              "flies",
+              "beetles"
+            ],
+            "slide_index": 4,
+            "section_index": 4
+          },
+          {
+            "title": "Tiến Hóa Chung: Hoa và Côn Trùng",
+            "content": [
+              "Hoa và côn trùng đã tiến hóa cùng nhau.",
+              "Hình dạng hoa: Phù hợp với hình dạng cơ thể của côn trùng thụ phấn.",
+              "Màu sắc hoa: Thu hút các loài côn trùng thụ phấn cụ thể.",
+              "Mùi hương hoa: Dẫn dụ côn trùng từ xa.",
+              "Ví dụ: Hoa lan và ong bắp cày."
+            ],
+            "notes": "Giải thích sự tiến hóa chung giữa hoa và côn trùng thụ phấn.",
+            "images_needed": [
+              "orchid and wasp coevolution",
+              "various flower shapes and pollinators"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "co-evolution",
+              "flower morphology",
+              "pollinator attraction",
+              "orchid",
+              "wasp"
+            ],
+            "slide_index": 5,
+            "section_index": 4
+          },
+          {
+            "title": "Hợp Tác: Lợi Ích Cho Cả Hai",
+            "content": [
+              "Một số mối quan hệ giữa côn trùng và thực vật mang lại lợi ích cho cả hai.",
+              "Kiến và cây: Kiến bảo vệ cây khỏi côn trùng gây hại, cây cung cấp nơi ở và thức ăn cho kiến.",
+              "Ví dụ: Cây keo và kiến Acacia.",
+              "Theo nghiên cứu, sự hợp tác này giúp giảm 50% thiệt hại do côn trùng ăn lá khi có sự đa dạng của các loài côn trùng."
+            ],
+            "notes": "Thảo luận về các mối quan hệ hợp tác giữa côn trùng và thực vật.",
+            "images_needed": [
+              "acacia tree and ants",
+              "ant-plant mutualism diagram"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "mutualism",
+              "ant-plant interactions",
+              "Acacia",
+              "benefits for both"
+            ],
+            "slide_index": 6,
+            "section_index": 4
+          }
+        ]
+      },
+      "created_at": 1752252727.9264965,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-11 23:52:07"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Vai Trò Của Côn Trùng Trong Hệ Sinh Thái",
             "content": "04",
             "notes": null,
             "images_needed": [],
@@ -517,86 +697,148 @@
             "section_index": 5
           },
           {
-            "title": "Meta-RL: Học Cách Học",
+            "title": "Phân Hủy: Làm Sạch Môi Trường",
             "content": [
-              "Mục tiêu: Huấn luyện agent có thể nhanh chóng thích nghi với các nhiệm vụ mới.",
-              "Cách tiếp cận: Học một quy trình học tập (learning procedure) thay vì một chính sách cụ thể.",
-              "Ứng dụng: Chuyển kiến thức giữa các môi trường khác nhau, giải quyết các bài toán few-shot learning.",
-              "Ví dụ: Mô hình MAML (Model-Agnostic Meta-Learning)."
+              "Côn trùng và vi sinh vật phân hủy chất hữu cơ.",
+              "Quá trình này giải phóng các chất dinh dưỡng quan trọng.",
+              "Ví dụ: Bọ hung (Dung Beetles) tăng 20% chu trình dinh dưỡng trong đất.",
+              "Hình ảnh: Bọ hung đang phân hủy phân động vật."
             ],
-            "notes": "Giải thích về meta-learning và cách nó giúp agent học nhanh hơn. Nhấn mạnh khả năng thích ứng với các nhiệm vụ mới.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "graph LR\n    A[Meta-RL Agent] --> B(New Task);\n    B --> C{Performance?};\n    C -- Good --> D[Deploy];\n    C -- Bad --> E[Fine-tune];\n    E --> B;\n    D --> F[Real World];",
-                "relations": "Meta-RL Agent learns to adapt quickly to new tasks. Performance is evaluated, and the agent is either deployed or fine-tuned."
-              }
+            "notes": "Nhấn mạnh vai trò của côn trùng trong việc làm sạch môi trường và tái chế chất dinh dưỡng.",
+            "images_needed": [
+              "dung beetle rolling dung ball"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "Meta-Reinforcement Learning",
-              "Learning to Learn",
-              "Adaptation",
-              "Few-shot Learning"
+              "phân hủy",
+              "chất hữu cơ",
+              "bọ hung",
+              "chu trình dinh dưỡng"
             ],
             "slide_index": 1,
             "section_index": 5
           },
           {
-            "title": "MARL: Hợp Tác và Cạnh Tranh",
+            "title": "Chu Trình Dinh Dưỡng: Sự Sống Cho Đất",
             "content": [
-              "Mục tiêu: Huấn luyện nhiều agent cùng tương tác trong một môi trường.",
-              "Thách thức: Môi trường trở nên không ổn định do hành động của các agent khác.",
-              "Ứng dụng: Robot cộng tác, xe tự hành, trò chơi chiến lược.",
-              "Các phương pháp: Centralized Training with Decentralized Execution (CTDE), Communication Learning."
+              "Côn trùng giúp giải phóng dinh dưỡng vào đất.",
+              "Các chất dinh dưỡng này nuôi cây trồng và các sinh vật khác.",
+              "Ví dụ: Termites ( mối ) xây tổ giúp cải tạo đất.",
+              "Hình ảnh: Sơ đồ chu trình dinh dưỡng trong đất."
             ],
-            "notes": "Giải thích về MARL và những thách thức đặc biệt của nó. Nhấn mạnh tầm quan trọng của hợp tác và cạnh tranh giữa các agent.",
-            "images_needed": [
-              "multi agent reinforcement learning cooperative robots"
+            "notes": "Giải thích cách côn trùng tham gia vào chu trình dinh dưỡng và tầm quan trọng của nó đối với hệ sinh thái.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "Organic Matter -> Insects -> Soil Nutrients -> Plants",
+                "relations": "Sequential flow of nutrient cycling"
+              }
             ],
-            "diagrams_needed": [],
             "keywords": [
-              "Multi-Agent Reinforcement Learning",
-              "Cooperation",
-              "Competition",
-              "Decentralized Execution"
+              "chu trình dinh dưỡng",
+              "đất",
+              "cây trồng",
+              "mối"
             ],
             "slide_index": 2,
             "section_index": 5
           },
           {
-            "title": "Off-Policy và Imitation Learning",
+            "title": "Lưới Thức Ăn: Nguồn Sống Quan Trọng",
             "content": [
-              "Off-Policy Learning: Học từ dữ liệu được tạo ra bởi một chính sách khác.",
-              "Ưu điểm: Tái sử dụng dữ liệu cũ, khám phá hiệu quả hơn.",
-              "Imitation Learning: Học bằng cách bắt chước hành vi của một chuyên gia.",
-              "Ứng dụng: Huấn luyện robot thực hiện các nhiệm vụ phức tạp, tự động hóa quy trình.",
-              "Ví dụ: Behavioral Cloning, Dagger."
+              "Côn trùng là nguồn thức ăn cho nhiều loài động vật khác.",
+              "Chim, bò sát, lưỡng cư và động vật có vú đều ăn côn trùng.",
+              "Ví dụ: Sâu bướm là thức ăn quan trọng cho chim non.",
+              "Hình ảnh: Chim đang mớm mồi sâu cho con."
             ],
-            "notes": "Giải thích về off-policy learning và imitation learning, nhấn mạnh ưu điểm và ứng dụng của chúng.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "graph LR\n    A[Expert Demonstrations] --> B(Imitation Learning);\n    C[Off-Policy Data] --> B;\n    B --> D[Trained Policy];\n    D --> E[Environment];",
-                "relations": "Imitation Learning uses Expert Demonstrations and Off-Policy Data to train a policy that interacts with the environment."
-              }
+            "notes": "Nhấn mạnh vai trò của côn trùng trong việc duy trì sự sống của các loài động vật khác.",
+            "images_needed": [
+              "bird feeding worm to baby bird"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "Off-Policy Learning",
-              "Imitation Learning",
-              "Behavioral Cloning",
-              "Dagger"
+              "lưới thức ăn",
+              "nguồn thức ăn",
+              "chim",
+              "sâu bướm"
             ],
             "slide_index": 3,
+            "section_index": 5
+          },
+          {
+            "title": "Kỹ Sư Hệ Sinh Thái: Thay Đổi Môi Trường",
+            "content": [
+              "Một số loài côn trùng thay đổi môi trường sống của chúng.",
+              "Ví dụ: Mối xây tổ, ong làm tổ, kiến tạo đường đi.",
+              "Những thay đổi này ảnh hưởng đến các loài khác.",
+              "Hình ảnh: Tổ mối lớn trong tự nhiên."
+            ],
+            "notes": "Giải thích cách côn trùng có thể thay đổi môi trường và tác động của nó đến hệ sinh thái.",
+            "images_needed": [
+              "termite mound in the savanna"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "kỹ sư hệ sinh thái",
+              "thay đổi môi trường",
+              "mối",
+              "tổ"
+            ],
+            "slide_index": 4,
+            "section_index": 5
+          },
+          {
+            "title": "Côn Trùng Có Lợi: Thị Trường Phát Triển",
+            "content": [
+              "Thị trường côn trùng có lợi đạt 877 triệu đô la (2023).",
+              "Tăng trưởng dự kiến 13.2% CAGR (2023-2028), đạt 1.63 tỷ đô la vào 2028.",
+              "Bắc Mỹ dẫn đầu thị phần côn trùng có lợi.",
+              "Ví dụ: Ong bắp cày Ganaspis kimorum được thả ở 15 bang của Hoa Kỳ để kiểm soát sinh học."
+            ],
+            "notes": "Nhấn mạnh tầm quan trọng kinh tế của côn trùng có lợi và sự tăng trưởng của thị trường này.",
+            "images_needed": [
+              "ladybug on a leaf"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "côn trùng có lợi",
+              "thị trường",
+              "tăng trưởng",
+              "kiểm soát sinh học"
+            ],
+            "slide_index": 5,
+            "section_index": 5
+          },
+          {
+            "title": "Suy Giảm Côn Trùng: Hậu Quả Nghiêm Trọng",
+            "content": [
+              "Suy giảm côn trùng ảnh hưởng đến các vai trò sinh thái.",
+              "Mất cân bằng hệ sinh thái, ảnh hưởng đến chuỗi thức ăn.",
+              "Ví dụ: 75% cây lương thực có nguy cơ do suy giảm thụ phấn.",
+              "Hình ảnh: Khuôn mặt buồn của trái đất."
+            ],
+            "notes": "Cảnh báo về hậu quả của việc suy giảm côn trùng đối với hệ sinh thái và an ninh lương thực.",
+            "images_needed": [
+              "sad earth cartoon"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "suy giảm côn trùng",
+              "hậu quả",
+              "mất cân bằng",
+              "thụ phấn"
+            ],
+            "slide_index": 6,
             "section_index": 5
           }
         ]
       },
-      "created_at": 1752167765.0048728,
+      "created_at": 1752252742.8584034,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:16:05"
+      "created_at_formatted": "2025-07-11 23:52:22"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -604,7 +846,7 @@
       "content": {
         "slides": [
           {
-            "title": "Tương lai của RL và AGI",
+            "title": "Bảo tồn và Tương lai Côn trùng",
             "content": "05",
             "notes": null,
             "images_needed": [],
@@ -614,193 +856,164 @@
             "section_index": 6
           },
           {
-            "title": "Đột phá tiềm năng trong RL",
+            "title": "Các mối đe dọa quần thể côn trùng",
             "content": [
-              "Các thuật toán RL hiệu quả hơn (ví dụ: off-policy, meta-learning)",
-              "Khám phá và khai thác hiệu quả hơn",
-              "RL phân cấp (Hierarchical RL) cho các tác vụ phức tạp",
-              "RL có khả năng thích ứng và chuyển giao kiến thức tốt hơn",
-              "Học tăng cường đa tác nhân (Multi-Agent Reinforcement Learning ➤ MARL) cho môi trường phức tạp"
+              "Mất môi trường sống: Phá rừng, đô thị hóa, chuyển đổi đất nông nghiệp.",
+              "Sử dụng thuốc trừ sâu: Ảnh hưởng trực tiếp và gián tiếp đến côn trùng.",
+              "Biến đổi khí hậu: Thay đổi phạm vi phân bố, thời gian sinh trưởng.",
+              "Loài xâm lấn: Cạnh tranh, ký sinh, gây bệnh cho côn trùng bản địa."
             ],
-            "notes": "Nhấn mạnh vào việc các đột phá này sẽ giúp RL giải quyết các vấn đề phức tạp hơn, tiến gần hơn đến AGI.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "A: Thuật toán RL hiện tại; B: Thuật toán RL hiệu quả hơn; C: RL phân cấp; D: RL thích ứng; E: MARL",
-                "relations": "A -> B (Cải thiện hiệu quả); A -> C (Xử lý tác vụ phức tạp); A -> D (Khả năng thích ứng); A -> E (Môi trường phức tạp)"
-              }
+            "notes": "Nhấn mạnh sự tương tác giữa các mối đe dọa này. Ví dụ, biến đổi khí hậu có thể làm tăng tính dễ bị tổn thương của côn trùng đối với thuốc trừ sâu.",
+            "images_needed": [
+              "deforestation impact on insects",
+              "pesticide spraying effects on insects",
+              "climate change insect distribution",
+              "invasive insect species"
             ],
+            "diagrams_needed": [],
             "keywords": [
-              "thuật toán RL",
-              "học tăng cường",
-              "AGI",
-              "meta-learning",
-              "off-policy",
-              "RL phân cấp",
-              "MARL"
+              "mất môi trường sống",
+              "thuốc trừ sâu",
+              "biến đổi khí hậu",
+              "loài xâm lấn"
             ],
             "slide_index": 1,
             "section_index": 6
           },
           {
-            "title": "Vai trò của AI và Robotics",
+            "title": "Hậu quả của sự suy giảm côn trùng",
             "content": [
-              "AI thể hiện (Embodied AI) tương tác với thế giới thực",
-              "Robot học hỏi và thích nghi thông qua RL",
-              "Môi trường mô phỏng thực tế để huấn luyện RL",
-              "RL điều khiển robot thực hiện các tác vụ phức tạp",
-              "Tích hợp RL vào hệ thống điều khiển robot"
+              "Ảnh hưởng đến thụ phấn: 75% cây trồng lương thực có nguy cơ do suy giảm thụ phấn.",
+              "Mất cân bằng chuỗi thức ăn: Côn trùng là nguồn thức ăn quan trọng cho nhiều loài động vật.",
+              "Giảm các dịch vụ hệ sinh thái: Phân hủy chất hữu cơ, kiểm soát dịch hại tự nhiên.",
+              "Ảnh hưởng kinh tế: Giảm năng suất cây trồng, tăng chi phí kiểm soát dịch hại."
             ],
-            "notes": "Giải thích cách AI thể hiện và robotics cung cấp một nền tảng thực tế cho RL để học hỏi và phát triển, đồng thời nhấn mạnh tầm quan trọng của việc tạo ra các môi trường mô phỏng thực tế để huấn luyện RL.",
+            "notes": "Giải thích tầm quan trọng của côn trùng trong việc duy trì các hệ sinh thái khỏe mạnh và năng suất.",
             "images_needed": [
-              "robot học tập bằng reinforcement learning",
-              "môi trường mô phỏng cho robot"
+              "pollinator decline impact on crops",
+              "food web disruption insect decline",
+              "ecosystem services insects provide"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "AI thể hiện",
-              "robotics",
-              "học tăng cường",
-              "môi trường mô phỏng",
-              "điều khiển robot"
+              "thụ phấn",
+              "chuỗi thức ăn",
+              "dịch vụ hệ sinh thái",
+              "kinh tế"
             ],
             "slide_index": 2,
             "section_index": 6
           },
           {
-            "title": "Hội tụ RL và các lĩnh vực AI",
+            "title": "Chiến lược bảo tồn côn trùng",
             "content": [
-              "RL kết hợp với xử lý ngôn ngữ tự nhiên (NLP) để tạo ra các tác nhân đối thoại thông minh",
-              "RL kết hợp với thị giác máy tính (Computer Vision) để điều khiển robot dựa trên hình ảnh",
-              "RL kết hợp với học sâu (Deep Learning) để tạo ra các mô hình mạnh mẽ hơn",
-              "Sự hợp tác giữa các lĩnh vực AI để đạt được AGI",
-              "Ứng dụng RL trong các lĩnh vực khác như tài chính, y tế, và giao thông vận tải"
+              "Phục hồi môi trường sống: Tạo ra và duy trì các khu vực sống tự nhiên cho côn trùng.",
+              "Giảm sử dụng thuốc trừ sâu: Áp dụng các phương pháp kiểm soát dịch hại tổng hợp (IPM).",
+              "Thúc đẩy các biện pháp thân thiện với côn trùng thụ phấn: Trồng cây bản địa, tạo môi trường sống cho côn trùng thụ phấn.",
+              "Quản lý bền vững đất nông nghiệp: Giảm thiểu tác động tiêu cực đến côn trùng."
             ],
-            "notes": "Nhấn mạnh rằng AGI sẽ không chỉ là một hệ thống RL đơn lẻ, mà là sự kết hợp của nhiều kỹ thuật AI khác nhau. Cần khuyến khích sự hợp tác giữa các nhà nghiên cứu trong các lĩnh vực khác nhau.",
+            "notes": "Nhấn mạnh tầm quan trọng của việc áp dụng các phương pháp tiếp cận đa dạng để bảo tồn côn trùng.",
             "images_needed": [
-              "chatbot sử dụng reinforcement learning",
-              "robot sử dụng thị giác máy tính và reinforcement learning"
+              "habitat restoration for insects",
+              "integrated pest management IPM",
+              "pollinator-friendly practices",
+              "sustainable agriculture insects"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "xử lý ngôn ngữ tự nhiên",
-              "thị giác máy tính",
-              "học sâu",
-              "AGI",
-              "tài chính",
-              "y tế",
-              "giao thông vận tải"
+              "phục hồi môi trường sống",
+              "giảm thuốc trừ sâu",
+              "thân thiện thụ phấn",
+              "quản lý bền vững"
             ],
             "slide_index": 3,
+            "section_index": 6
+          },
+          {
+            "title": "Khoa học công dân: Đóng góp bảo tồn",
+            "content": [
+              "Theo nghiên cứu, tình nguyện viên thu thập khoảng 25% dữ liệu về các loài côn trùng trên toàn cầu, và lên đến 80% ở Châu Âu.",
+              "Quan sát và ghi lại dữ liệu về côn trùng: Sử dụng các ứng dụng và nền tảng trực tuyến để chia sẻ thông tin.",
+              "Tham gia các dự án nghiên cứu: Hỗ trợ các nhà khoa học thu thập dữ liệu và phân tích mẫu.",
+              "Nâng cao nhận thức cộng đồng: Chia sẻ thông tin về tầm quan trọng của côn trùng và các mối đe dọa đối với chúng."
+            ],
+            "notes": "Khuyến khích khán giả tham gia vào các hoạt động bảo tồn côn trùng.",
+            "images_needed": [
+              "citizen science insect monitoring",
+              "insect identification app",
+              "community insect conservation project"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "khoa học công dân",
+              "dữ liệu",
+              "nghiên cứu",
+              "nhận thức"
+            ],
+            "slide_index": 4,
+            "section_index": 6
+          },
+          {
+            "title": "Thị trường côn trùng có lợi",
+            "content": [
+              "Thị trường côn trùng có lợi đạt 877 triệu đô la vào năm 2023.",
+              "Tăng trưởng dự kiến: 13.2% CAGR (2023-2028), dự kiến đạt 1.63 tỷ đô la vào năm 2028.",
+              "Bắc Mỹ dẫn đầu thị phần thị trường côn trùng có lợi."
+            ],
+            "notes": "Nhấn mạnh tiềm năng của thị trường côn trùng có lợi trong việc thúc đẩy các giải pháp bảo tồn bền vững.",
+            "images_needed": [
+              "beneficial insects for pest control",
+              "integrated pest management IPM",
+              "sustainable agriculture insects"
+            ],
+            "diagrams_needed": [
+              {
+                "data": "Year,Market Size (Millions USD)\n2023,877\n2024,993\n2025,1125\n2026,1275\n2027,1443\n2028,1633",
+                "relations": "This diagram shows the projected growth of the beneficial insects market from 2023 to 2028."
+              }
+            ],
+            "keywords": [
+              "thị trường",
+              "côn trùng có lợi",
+              "tăng trưởng",
+              "bền vững"
+            ],
+            "slide_index": 5,
+            "section_index": 6
+          },
+          {
+            "title": "Giám sát côn trùng toàn cầu",
+            "content": [
+              "Pháp: 16,349 địa điểm lấy mẫu từ năm 2006.",
+              "Hà Lan: 80-100 camera được triển khai hàng năm từ năm 2019.",
+              "Úc: Mạng lưới cảm biến âm thanh ghi lại âm thanh động vật hoang dã trên khắp nước Úc (dự án 5 năm).",
+              "Đức: AMMOD đã được thử nghiệm tại ba địa điểm từ năm 2020.",
+              "Toàn cầu: BIOSCAN nhằm mục đích mã vạch 10 triệu mẫu vật."
+            ],
+            "notes": "Giới thiệu các nỗ lực giám sát côn trùng trên toàn thế giới.",
+            "images_needed": [
+              "insect monitoring equipment",
+              "insect sampling methods",
+              "acoustic sensor network wildlife"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "giám sát",
+              "dữ liệu",
+              "toàn cầu",
+              "nghiên cứu"
+            ],
+            "slide_index": 6,
             "section_index": 6
           }
         ]
       },
-      "created_at": 1752167768.8182817,
+      "created_at": 1752252774.8780956,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:16:08"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "mindmap",
-        "diagram_spec": "mindmap\n  root((Potential Breakthroughs in RL))\n    Efficient RL Algorithms\n      Off-Policy Methods\n      Meta-Learning\n    Efficient Exploration & Exploitation\n    Hierarchical RL\n      Complex Tasks\n    Adaptive & Transferable RL\n    Multi-Agent RL (MARL)\n      Complex Environments",
-        "diagram_path": "temp/slides\\diagram_6_1.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "stateDiagram"
-        ]
-      },
-      "created_at": 1752167776.6176715,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-11 00:16:16"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "diagram_type": "stateDiagram",
-        "diagram_spec": "stateDiagram\n  [*] --> OffPolicy\n  OffPolicy --> Imitation\n  OffPolicy : Learn from different policy data\n  OffPolicy : Reuse old data\n  OffPolicy : Efficient exploration\n  Imitation : Mimic expert behavior\n  Imitation : Train robots\n  Imitation : Automate processes\n  Imitation : Behavioral Cloning, Dagger\n  Imitation --> [*]\n",
-        "diagram_path": "temp/slides\\diagram_5_3.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "stateDiagram"
-        ]
-      },
-      "created_at": 1752167786.586159,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-11 00:16:26"
-    },
-    {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
-      "content": {
-        "slides": [
-          {
-            "title": "Tổng Kết: Học Tăng Cường",
-            "content": [
-              "Học tăng cường (RL) là công cụ mạnh mẽ để phát triển các tác nhân thông minh.",
-              "RL đã đạt được những thành công đáng kể trong các lĩnh vực khác nhau, từ trò chơi đến robot.",
-              "Tuy nhiên, vẫn còn những thách thức lớn trong việc mở rộng RL để đạt được AGI."
-            ],
-            "notes": "Nhấn mạnh lại sức mạnh của RL và những thành tựu đã đạt được. Đồng thời, không quên nhắc nhở về những khó khăn còn tồn tại.",
-            "images_needed": [],
-            "diagrams_needed": [
-              {
-                "data": "RL -> Intelligent Agents -> AGI",
-                "relations": "RL leads to the development of intelligent agents, which are a stepping stone towards AGI."
-              }
-            ],
-            "keywords": [
-              "Reinforcement Learning",
-              "AGI",
-              "Intelligent Agents",
-              "Challenges"
-            ],
-            "slide_index": 0,
-            "section_index": 7
-          },
-          {
-            "title": "Hướng Tới Tương Lai AGI",
-            "content": [
-              "Các kỹ thuật RL tiên tiến và sự hợp tác liên ngành là rất quan trọng.",
-              "Tương lai của AGI có thể phụ thuộc nhiều vào những tiến bộ trong RL.",
-              "Tiếp tục nghiên cứu và khám phá để khai thác toàn bộ tiềm năng của RL."
-            ],
-            "notes": "Khuyến khích sự hợp tác và tiếp tục nghiên cứu để đạt được AGI. Kết thúc bằng một thông điệp tích cực và đầy hy vọng.",
-            "images_needed": [
-              "image of diverse group of researchers collaborating on a project"
-            ],
-            "diagrams_needed": [],
-            "keywords": [
-              "Advanced RL Techniques",
-              "Interdisciplinary Collaboration",
-              "Future of AGI",
-              "Research"
-            ],
-            "slide_index": 1,
-            "section_index": 7
-          }
-        ]
-      },
-      "created_at": 1752167790.9209633,
-      "metadata": {},
-      "status": "created",
-      "version": 1,
-      "comments": [],
-      "created_at_formatted": "2025-07-11 00:16:30"
+      "created_at_formatted": "2025-07-11 23:52:54"
     },
     {
       "agent_name": "tree_of_thought_orchestrator",
@@ -808,74 +1021,227 @@
       "content": {
         "slides": [
           {
-            "title": "Cảm ơn và Hỏi đáp",
+            "title": "Tóm Tắt: Tầm Quan Trọng Của Côn Trùng",
             "content": [
-              "Xin chân thành cảm ơn sự chú ý của quý vị.",
-              "Chúng tôi rất vui được trả lời các câu hỏi của quý vị."
+              "Đa dạng sinh học côn trùng: 80% loài chưa được mô tả.",
+              "Vai trò sinh thái: Thụ phấn, phân hủy, kiểm soát dịch hại.",
+              "Giá trị kinh tế: Thị trường côn trùng có lợi đạt 877 triệu đô la (2023).",
+              "Mối liên kết hệ sinh thái: Côn trùng là mắt xích quan trọng."
             ],
-            "notes": "Nhấn mạnh sự cảm kích đối với sự tham gia của khán giả. Chuyển sang phần hỏi đáp một cách tự tin.",
+            "notes": "Nhấn mạnh sự đa dạng chưa được khám phá của côn trùng. Giải thích ngắn gọn các vai trò sinh thái chính của chúng. Đề cập đến giá trị kinh tế ngày càng tăng của côn trùng có lợi. Nhấn mạnh rằng côn trùng là một phần không thể thiếu của hệ sinh thái.",
             "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "80% loài côn trùng chưa được mô tả; Thụ phấn; Phân hủy; Kiểm soát dịch hại; Thị trường côn trùng có lợi đạt 877 triệu đô la (2023)",
+                "relations": "Mối liên kết hệ sinh thái: Côn trùng là mắt xích quan trọng."
+              }
+            ],
+            "keywords": [
+              "đa dạng sinh học",
+              "vai trò sinh thái",
+              "giá trị kinh tế",
+              "hệ sinh thái",
+              "côn trùng"
+            ],
+            "slide_index": 0,
+            "section_index": 7
+          },
+          {
+            "title": "Hành Động: Bảo Vệ Côn Trùng",
+            "content": [
+              "Tìm hiểu thêm: Nghiên cứu về côn trùng và hệ sinh thái.",
+              "Hỗ trợ bảo tồn: Tham gia các dự án bảo tồn côn trùng.",
+              "Giảm sử dụng thuốc trừ sâu: Ưu tiên các phương pháp IPM (Integrated Pest Management).",
+              "Bảo vệ môi trường sống: Tạo môi trường sống thân thiện với côn trùng.",
+              "Hành động nhỏ, thay đổi lớn: Mỗi hành động đều có giá trị."
+            ],
+            "notes": "Khuyến khích khán giả tìm hiểu sâu hơn về côn trùng. Kêu gọi hỗ trợ các nỗ lực bảo tồn. Nhấn mạnh tầm quan trọng của việc giảm sử dụng thuốc trừ sâu và bảo vệ môi trường sống của côn trùng. Kết thúc bằng một thông điệp tích cực về sức mạnh của những hành động nhỏ.",
+            "images_needed": [
+              "conservation efforts for insects",
+              "integrated pest management",
+              "insect-friendly habitat"
+            ],
             "diagrams_needed": [],
             "keywords": [
-              "hỏi đáp",
+              "bảo tồn",
+              "thuốc trừ sâu",
+              "môi trường sống",
+              "IPM",
+              "hành động"
+            ],
+            "slide_index": 1,
+            "section_index": 7
+          }
+        ]
+      },
+      "created_at": 1752252778.131552,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-11 23:52:58"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Hỏi & Đáp: Thế Giới Côn Trùng",
+            "content": [
+              "Xin chân thành cảm ơn sự chú ý của quý vị!",
+              "Chúng tôi rất vui được trả lời bất kỳ câu hỏi nào liên quan đến các chủ đề đã trình bày.",
+              "Liên hệ để biết thêm thông tin: [Your Email Address] / [Your Phone Number]"
+            ],
+            "notes": "Nhấn mạnh sự sẵn lòng trả lời câu hỏi. Cung cấp thông tin liên hệ để theo dõi sau.",
+            "images_needed": [
+              "group of people asking questions at a conference",
+              "close up of diverse insects"
+            ],
+            "diagrams_needed": [],
+            "keywords": [
+              "Q&A",
               "câu hỏi",
-              "thảo luận"
+              "thắc mắc",
+              "côn trùng",
+              "hành vi",
+              "sinh thái"
+            ],
+            "slide_index": 0,
+            "section_index": 9
+          }
+        ]
+      },
+      "created_at": 1752252785.1890624,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-11 23:53:05"
+    },
+    {
+      "agent_name": "diagram_agent",
+      "step": "image_create_diagram_specs",
+      "content": {
+        "diagram_type": "sankey",
+        "diagram_spec": "sankey-beta\n  title Nutrient Cycling\n  Organic Matter\n  Insects\n  Soil Nutrients\n  Plants\n\n  Organic Matter, 100, Insects\n  Insects, 80, Soil Nutrients\n  Soil Nutrients, 60, Plants\n  Insects, 20, Organic Matter",
+        "diagram_path": "temp/slides\\diagram_5_2.png",
+        "previously_drawn_diagrams": []
+      },
+      "created_at": 1752252786.3954654,
+      "metadata": {},
+      "status": "created",
+      "version": 1,
+      "comments": [],
+      "created_at_formatted": "2025-07-11 23:53:06"
+    },
+    {
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
+      "content": {
+        "slides": [
+          {
+            "title": "Thế Giới Không Côn Trùng: Hậu Quả",
+            "content": [
+              "Sự sụp đổ tiềm tàng của hệ sinh thái do thiếu thụ phấn và phân hủy.",
+              "Hơn 75% cây lương thực có nguy cơ do suy giảm thụ phấn.",
+              "Mất cân bằng chuỗi thức ăn: Ảnh hưởng đến chim, động vật có vú và các loài khác.",
+              "Mất đa dạng sinh học: Nhiều loài thực vật và động vật phụ thuộc vào côn trùng sẽ biến mất."
+            ],
+            "notes": "Nhấn mạnh sự phụ thuộc lẫn nhau trong hệ sinh thái. Giải thích chi tiết về hậu quả của việc mất đi các loài thụ phấn và côn trùng phân hủy.",
+            "images_needed": [],
+            "diagrams_needed": [
+              {
+                "data": "graph LR\n    A[Thực Vật] --> B(Côn Trùng)\n    B --> C(Chim)\n    B --> D(Động Vật Có Vú)\n    subgraph Với Côn Trùng\n    A --> B\n    B --> C\n    B --> D\n    end\n    E[Thực Vật] --> F(( ))\n    F --> G(Chim)\n    F --> H(Động Vật Có Vú)\n    subgraph Không Côn Trùng\n    E -- Không Côn Trùng --> F\n    F --> G\n    F --> H\n    end",
+                "relations": "Minh họa tác động của sự suy giảm côn trùng lên chuỗi thức ăn."
+              }
+            ],
+            "keywords": [
+              "hệ sinh thái",
+              "thụ phấn",
+              "phân hủy",
+              "chuỗi thức ăn",
+              "đa dạng sinh học"
             ],
             "slide_index": 0,
             "section_index": 8
           },
           {
-            "title": "Liên hệ và Kết nối",
+            "title": "Bảo Tồn Côn Trùng: Vì Một Tương Lai",
             "content": [
-              "Thông tin liên hệ:",
-              "[Tên của bạn]",
-              "[Email của bạn]",
-              "[LinkedIn của bạn (nếu có)]",
-              "Rất mong nhận được phản hồi và hợp tác từ quý vị."
+              "Hậu quả kinh tế: Mất các dịch vụ liên quan đến côn trùng.",
+              "Thị trường côn trùng có lợi trị giá 877 triệu đô la (2023).",
+              "Tăng trưởng dự kiến 13.2% CAGR (2023-2028), đạt 1.63 tỷ đô la vào năm 2028.",
+              "Bảo tồn côn trùng là rất quan trọng cho một hành tinh khỏe mạnh.",
+              "Cần có các biện pháp bảo tồn để bảo vệ sự đa dạng sinh học và duy trì các hệ sinh thái."
             ],
-            "notes": "Cung cấp thông tin liên hệ để khán giả có thể tiếp tục thảo luận sau buổi thuyết trình. Khuyến khích kết nối qua email hoặc LinkedIn.",
+            "notes": "Nhấn mạnh tầm quan trọng của việc bảo tồn côn trùng để duy trì sự cân bằng sinh thái và kinh tế. Kêu gọi hành động để bảo vệ các loài côn trùng.",
             "images_needed": [
-              "contact information icon"
+              "insect conservation efforts",
+              "sustainable agriculture practices"
             ],
             "diagrams_needed": [],
             "keywords": [
-              "liên hệ",
-              "email",
-              "LinkedIn",
-              "hợp tác",
-              "phản hồi"
+              "bảo tồn",
+              "kinh tế",
+              "đa dạng sinh học",
+              "hệ sinh thái",
+              "tương lai"
             ],
             "slide_index": 1,
             "section_index": 8
           }
         ]
       },
-      "created_at": 1752167794.8383155,
+      "created_at": 1752252788.403901,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:16:34"
+      "created_at_formatted": "2025-07-11 23:53:08"
     },
     {
-      "agent_name": "diagram_agent",
-      "step": "image_create_diagram_specs",
+      "agent_name": "tree_of_thought_orchestrator",
+      "step": "content_selected",
       "content": {
-        "diagram_type": "mindmap",
-        "diagram_spec": "mindmap\n  root((RL Limitations))\n\n    Sample Efficiency\n      Requires large amounts of data\n\n    Reward Shaping\n      Difficult to design appropriate rewards\n      Can lead to unintended behaviors\n\n    Generalization\n      Poor performance in new situations\n      Overfitting to training environment",
-        "diagram_path": "temp/slides\\diagram_3_2.png",
-        "previously_drawn_diagrams": [
-          "sequenceDiagram",
-          "mindmap",
-          "stateDiagram"
+        "slides": [
+          {
+            "title": "Tài Nguyên Học Tập Bổ Sung",
+            "content": [
+              "Website:",
+              "➤ Côn trùng học Việt Nam (vncreatures.net)",
+              "➤ Hội Côn trùng học Hoa Kỳ (entsoc.org)",
+              "Sách:",
+              "➤ Các loại côn trùng thường gặp ở Việt Nam",
+              "➤ Côn trùng và sức khỏe cộng đồng",
+              "Tổ chức:",
+              "➤ Viện Sinh thái và Tài nguyên sinh vật",
+              "➤ Trung tâm Bảo tồn Thiên nhiên Việt (Viet Nature)",
+              "Liên hệ: [Thông tin liên hệ của người trình bày]",
+              "➤ Email: [Địa chỉ email]",
+              "➤ Số điện thoại: [Số điện thoại]"
+            ],
+            "notes": "Nhấn mạnh các nguồn tài nguyên này sẽ giúp khán giả tiếp tục tìm hiểu sâu hơn về thế giới côn trùng. Khuyến khích họ liên hệ nếu có bất kỳ câu hỏi nào.",
+            "images_needed": [],
+            "diagrams_needed": [],
+            "keywords": [
+              "tài nguyên",
+              "côn trùng",
+              "sinh thái",
+              "học tập",
+              "liên hệ"
+            ],
+            "slide_index": 0,
+            "section_index": 10
+          }
         ]
       },
-      "created_at": 1752167801.0463324,
+      "created_at": 1752252791.5432692,
       "metadata": {},
       "status": "created",
       "version": 1,
       "comments": [],
-      "created_at_formatted": "2025-07-11 00:16:41"
+      "created_at_formatted": "2025-07-11 23:53:11"
     }
   ]
 }

@@ -55,6 +55,7 @@ Purpose: {purpose}
 Context/Industry: {context}
 Brand Guidelines: {brand_guidelines}
 
+
 The outline should align with the specified context and brand guidelines.
 Include:
 1. A compelling title slide (1 slide)

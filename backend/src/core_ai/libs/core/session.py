@@ -154,8 +154,7 @@ class Section(BaseModel):
         description="Index of the section in the presentation", default=0
     )
     section_type:  str = Field(description="title, agenda, chapter, conclustion, qa", default="chaper")
-    
-    
+        
 
 class Outline(BaseModel):
     """Model for the outline of the presentation."""
@@ -233,6 +232,10 @@ class Memory(BaseModel):
 
     slide_layout_txt : str = Field(
         description="Layout type of the slide", default=""
+    )
+
+    research_content: Optional[str] = Field(
+        description="Research content from deep research agent", default=None
     )
 
     def update_mermaid_code_by_index(self, section_index: int, slide_index: int, mermaid_code: str):
@@ -460,7 +463,6 @@ class Session:
         # Log the action
         self.output_message.add(f"Saved {type} prompt to {file_path}", level="info")
         
-
 
     # Requitemnts methods
     def update_requirements(self, key: str, val: Any):
@@ -1015,6 +1017,10 @@ class Session:
             if "slide_layout_txt" in data:
                 self.memory.slide_layout_txt = data["slide_layout_txt"]
             
+            if "research_content" in data:
+                self.memory.research_content = data["research_content"]
+                print(f"DEBUG: Loaded research content: {len(self.memory.research_content) if self.memory.research_content else 0} characters")
+
             logger.info(f"Successfully loaded memory from {file_path}")
             return True
             
@@ -1024,5 +1030,47 @@ class Session:
             import traceback
             traceback.print_exc()
             return False
-            
         
+    def set_research_content(self, research_content: str):
+        """Set research content in memory"""
+        if not isinstance(research_content, str):
+            raise ValueError("Research content must be a string")
+        
+        self.memory.research_content = research_content
+        self.output_message.add(
+            f"✅ Research content stored: {len(research_content)} characters", 
+            level="info"
+        )
+
+    def get_research_content(self) -> Optional[str]:
+        """Get research content from memory"""
+        return self.memory.research_content
+
+    def has_research_content(self) -> bool:
+        """Check if research content exists and is not empty"""
+        research = self.memory.research_content
+        return research is not None and len(research.strip()) > 0
+
+    def clear_research_content(self):
+        """Clear research content from memory"""
+        self.memory.research_content = None
+        self.output_message.add("🗑️ Research content cleared", level="info")
+
+    def get_research_content_summary(self) -> Dict[str, Any]:
+        """Get summary information about research content"""
+        research = self.memory.research_content
+        if not research:
+            return {
+                "exists": False,
+                "length": 0,
+                "word_count": 0,
+                "has_data": False
+            }
+        
+        return {
+            "exists": True,
+            "length": len(research),
+            "word_count": len(research.split()),
+            "has_data": len(research.strip()) > 0,
+            "preview": research[:100] + "..." if len(research) > 100 else research
+        }

@@ -33,6 +33,8 @@ from core_ai.libs.agents.slide_generator_agent.evaluation import (
     evaluate_slide_generator_responses,
 )
 
+from core_ai.libs.agents.deep_research_agent import DeepResearchAgent
+
 from core_ai.libs.utils.merge_pptx import merge_pptx_files
 from core_ai.libs.utils.create_master import remove_all_slides
 
@@ -84,6 +86,8 @@ class TreeOfThoughtOrchestrator:
         self.session = session
         self.config = config or GlobalConfig()
         self.kwargs = kwargs
+        self.deep_research_agent = DeepResearchAgent()
+        
 
         # Agent factory method mapping
         self.agent_factories = {
@@ -316,7 +320,7 @@ class TreeOfThoughtOrchestrator:
             run_args.append(
                 {
                     "section_index": section_index,
-                    "agent_index": i,
+                    "agent_index": i
                 }
             )
 
@@ -500,9 +504,17 @@ class TreeOfThoughtOrchestrator:
         return best_slide
 
     def generate_presentation( 
-        self, topic: str, audience: str, duration: int, purpose: str, output_path : str, template_path: str = "Khai/Geometric-annual-presentation.pptx",
-        parallel: bool =  True, pdf : bool = True 
-    ) -> Dict[str, Any]: 
+        self, 
+        topic: str, 
+        audience: str, 
+        duration: int, 
+        purpose: str, 
+        output_path : str, 
+        template_path: str = "Khai/Geometric-annual-presentation.pptx",
+        parallel: bool =  True, 
+        pdf : bool = True,
+        use_research: bool = True
+    ) -> Dict[str, Any]:
         """ 
         Main method to orchestrate the entire presentation generation process. 
  
@@ -529,10 +541,49 @@ class TreeOfThoughtOrchestrator:
             memory_json_path = output_path.split("/")[:-1] + ["memory.json"]
             memory_json_path = "/".join(memory_json_path)
             os.makedirs(self.session.state.save_prompt_folder, exist_ok=True)
-            start_time = time.time() 
-            self.session.output_message.add( 
-                f"Starting presentation generation on '{topic}'...", level="info" 
-            ) 
+            
+            start_time = time.time()
+
+            # Step 0: Deep Research (if enabled)
+            research_content = None
+            if use_research:
+                self.session.output_message.add(
+                    "🔍 Starting deep research phase...", level="info"
+                )
+                research_start = time.time()
+                
+                try:
+                    research_content = self.deep_research_agent.run(
+                        topic=topic, 
+                        audience=audience, 
+                        purpose=purpose
+                    )
+                    research_end = time.time()
+                    
+                    if research_content:
+                        # Store research content using the new method
+                        self.session.set_research_content(research_content)
+                        self.session.output_message.add(
+                            f"✅ Research completed in {research_end - research_start:.1f}s", 
+                            level="info"
+                        )
+                        self.session.output_message.add(
+                            f"📊 Research data: {len(research_content)} characters, ready for outline and content generation", 
+                            level="info"
+                        )
+                    else:
+                        self.session.output_message.add(
+                            "⚠️ Research failed, proceeding without research data", 
+                            level="warning"
+                        )
+
+                except Exception as e:
+                    logger.error(f"Research failed: {str(e)}")
+                    self.session.output_message.add(
+                        f"⚠️ Research error: {str(e)}, proceeding without research data", 
+                        level="warning"
+                    )
+
             # Create template slide
             remove_all_slides(template_path, template_path)
     

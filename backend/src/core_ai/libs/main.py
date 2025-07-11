@@ -324,8 +324,8 @@ if __name__ == "__main__":
     # sys.exit(main())  
     # test gen_slide function
     gen_slide(
-        topic="Reinforcement learning and the future of AGI",
-        audience="AI researchers and enthusiasts",
+        topic="Insect Behavior and Ecology",
+        audience="General audience",
         duration=40,
         purpose="educate",
         output_path="final_slide.pptx",

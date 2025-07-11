@@ -10,10 +10,20 @@ You are an expert presentation content designer and can use Vietnamese as fluent
 
 IMPORTANT: "Have many image or diagram"
 
-
 {data}
 
 **LANGUAGE**: Vietnamese
+
+**Research Content (use this for accurate data and statistics)**:
+{research_content}
+
+**RESEARCH DATA INTEGRATION REQUIREMENTS**:
+- ALWAYS prioritize using specific data, statistics, and examples from the research content above
+- Include concrete numbers, percentages, company names, and measurable outcomes when available
+- Reference specific studies, reports, or sources mentioned in the research content
+- Use phrases like "Theo nghiên cứu gần đây...", "Dữ liệu cho thấy...", "Ví dụ cụ thể..."
+- If research content is empty or not relevant, proceed with general knowledge but clearly indicate this
+- Format statistics attractively: "**65%** doanh nghiệp báo cáo..." instead of generic statements
 
 **SLIDE DESIGN INSTRUCTIONS**:
 - Generate **{estimated_slides} slides** for this section, covering all key ideas clearly.
@@ -66,6 +76,6 @@ VERY IMPORTTANT: If {section_type} == "chapter", the first slide of the section 
 # Create the prompt templates
 section_slides_content_prompt = PromptTemplate(
     template=SECTION_SLIDES_CONTENT_TEMPLATE,
-    input_variables=["topic", "presentation_title", "audience", "purpose", "data", "estimated_slides", 
-                     "format_instructions", "chapter_number", "section_type"],
+    input_variables=["topic", "presentation_title", "audience", "purpose", "data", "research_content", 
+                     "estimated_slides", "format_instructions", "chapter_number", "section_type"],
 )

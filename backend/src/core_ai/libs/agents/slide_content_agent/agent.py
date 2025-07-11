@@ -65,8 +65,22 @@ class SlideContentAgent(BaseAgent):
         Returns:
             tuple: (prompt, inputs)
         """
+        research_content = self.session.get_research_content()
+
+        if research_content:
+            self.session.output_message.add(
+                f"🔬 Using research content ({len(research_content)} chars) for enhanced slide generation", 
+                level="info"
+            )
+        else:
+            self.session.output_message.add(
+                f"📊 No research data found, proceeding without it", 
+                level="info"
+            )
+
         self.session.output_message.add(
-            f"Generating content for section slides...", level="info"
+            f"Generating content for section slides...", 
+            level="info"
         )
 
         inputs = {
@@ -75,6 +89,7 @@ class SlideContentAgent(BaseAgent):
             "audience": audience or "General audience",
             "purpose": purpose or "Informational",
             "data": json_to_readable_str(outline.model_dump(), section.model_dump()),
+            "research_content": research_content or "",  
             "estimated_slides": section.estimated_slides,
             "format_instructions": self.output_parser.get_format_instructions(),
             "chapter_number": self.convert_section_index_to_chapter_number(
@@ -89,6 +104,7 @@ class SlideContentAgent(BaseAgent):
         ).format(**inputs)
 
         return formatted_prompt, inputs
+    
 
     def run(self, section_index: int, agent_index: int = 0) -> AgentResponse:
         """
@@ -121,6 +137,11 @@ class SlideContentAgent(BaseAgent):
                 section=section,
                 section_index=section_index,
             )
+
+            if self.session.has_research_content():
+                logger.info(f"Section #{section_index}: Using research-enhanced content generation")
+            else:
+                logger.info(f"Section #{section_index}: Using standard content generation")
 
             self.session.save_prompt(
                 key=section_index, type="slide_content", prompt=formatted_prompt

@@ -94,7 +94,14 @@ class OutlineAgent(BaseAgent):
                 data={"error": str(e)}
             )
 
-    def _get_prompt_and_inputs(self, topic, audience, duration, purpose, context, brand_guidelines, original_outline):
+    def _get_prompt_and_inputs(self, 
+                               topic, 
+                               audience, 
+                               duration, 
+                               purpose, 
+                               context, 
+                               brand_guidelines, 
+                               original_outline):
         """
         Determine which prompt to use and prepare the inputs.
         
@@ -109,7 +116,7 @@ class OutlineAgent(BaseAgent):
             "purpose": purpose,
             "format_instructions": self.output_parser.get_format_instructions()
         }
-        
+
         # Determine which prompt to use based on inputs
         if original_outline:
             self.session.output_message.add("Generating outline variation...", level="info")
